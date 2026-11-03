@@ -1,0 +1,10 @@
+/tmp/
+**/.venv/
+**/.cache/
+**/__pycache__/
+**/.pytest_cache/
+**/*.egg-info/
+**/.env
+!**/.env.example
+**/artifacts/
+/implementacion_escenario_a/reports/portable/

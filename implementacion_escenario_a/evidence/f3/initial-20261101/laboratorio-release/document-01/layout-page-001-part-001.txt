@@ -1,0 +1,73 @@
+ ANDESTRANSPORTE S.A.S.
+ Manual de mantenimiento de válvulas de línea
+
+  Código                    MAN-MTO-002                                    Versión                   1
+
+  Fecha de emisión          2023-11-09                                     Tipo                      Manual de mantenimiento
+  Área emisora              Gerencia de Integridad y                       Activo / alcance          Válvulas de línea y de
+                            Mantenimiento                                                            seccionamiento
+
+
+ 1. Objeto
+ Establecer las actividades de mantenimiento preventivo y predictivo aplicables a las válvulas de línea, de
+ seccionamiento y de alivio del sistema de transporte.
+
+ 2. Inventario de válvulas críticas
+
+  Tag                         Tipo                         Ubicación                   Diámetro                     Criticidad
+
+  VL-AC-014                   Bola, operada por            K 014+200, tramo            24"                          Alta
+                              actuador                     Ayacucho – Coveñas
+
+  VL-AC-061                   Bola, operada por            K 061+800, tramo            24"                          Alta
+                              actuador                     Ayacucho – Coveñas
+
+  VL-CC-022                   Compuerta, manual            K 022+350, tramo            16"                          Media
+                                                           Caucasia – Coveñas
+
+  VA-AY-003                   Alivio de presión            Estación Ayacucho           8"                           Alta
+
+
+ 3. Plan de mantenimiento preventivo
+
+  Actividad                                      Frecuencia                                      Responsable
+
+  Inspección visual y de fugas                   Mensual                                         Técnico de línea
+
+  Prueba de operación parcial del                Trimestral                                      Técnico de instrumentación
+  actuador
+
+  Lubricación de sellos                          Semestral                                       Técnico de línea
+
+  Prueba funcional completa                      Anual                                           Contratista especializado
+
+
+ 4. Condiciones previas a la intervención
+ Ninguna intervención sobre una válvula de línea puede ejecutarse sin la aplicación previa del procedimiento de
+ bloqueo y etiquetado vigente y sin autorización del Centro de Control.
+
+ 5. Registro
+ Las actividades ejecutadas se registran en el sistema de gestión de activos dentro de las veinticuatro horas
+ siguientes a su terminación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                        Página 1

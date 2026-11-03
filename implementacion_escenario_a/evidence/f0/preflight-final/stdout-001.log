@@ -1,0 +1,90 @@
+{
+  "operation": "read_only_inventory",
+  "application_probes_executed": false,
+  "phase_F0_complete": false,
+  "implementation_root": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "project_root": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración",
+  "python": "3.12.14",
+  "python_executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "node": {
+    "executable": "C:\\Users\\jcjca\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+    "version": "v24.22.1",
+    "inspector_minimum_met": true
+  },
+  "packages": {
+    "pypdf": "6.21.4",
+    "pydantic": "2.14.2",
+    "qdrant-client": "1.20.0",
+    "sentence-transformers": "5.7.0",
+    "torch": "2.15.0",
+    "rank-bm25": "0.2.2",
+    "mcp": "1.30.0",
+    "laya": "0.4.20",
+    "pytest": "9.2.0"
+  },
+  "sources": [
+    {
+      "id": "plan",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "actividad",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "teoria",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "alternativas",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "asignatura",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "caso",
+      "present": true,
+      "hash_matches": true
+    },
+    {
+      "id": "leeme",
+      "present": true,
+      "hash_matches": true
+    }
+  ],
+  "corpus_pdf_count": 19,
+  "corpus_md_count": 19,
+  "representation_names_match": true,
+  "corpus_files": [
+    "corpus\\pdf\\01_manuales\\MAN-MTO-002_v1.pdf",
+    "corpus\\pdf\\01_manuales\\MAN-OPE-001_v3.pdf",
+    "corpus\\pdf\\01_manuales\\MAN-OPE-004_v2.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-HSE-003_v4.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-MED-007_v1.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-MED-007_v2.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-OPE-012_v2.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-OPE-012_v3.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-OPE-021_v1.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-SEG-009_v1.pdf",
+    "corpus\\pdf\\02_procedimientos\\PRO-SEG-015_v1.pdf",
+    "corpus\\pdf\\03_normativa\\RES-ANH-0471-2023.pdf",
+    "corpus\\pdf\\03_normativa\\RES-CREG-0043-2024.pdf",
+    "corpus\\pdf\\03_normativa\\RES-CREG-0112-2021.pdf",
+    "corpus\\pdf\\04_actas\\ACTA-CTO-2025-07.pdf",
+    "corpus\\pdf\\04_actas\\ACTA-CTO-2025-11.pdf",
+    "corpus\\pdf\\05_comunicaciones\\COM-PRV-0098.pdf",
+    "corpus\\pdf\\05_comunicaciones\\COM-PRV-0134.pdf",
+    "corpus\\pdf\\06_fichas\\FIC-ACT-P101_v2.pdf"
+  ],
+  "errors": [],
+  "warnings": [],
+  "next_step": "Completar pruebas reales de F0; no inferir funcionamiento por instalación"
+}

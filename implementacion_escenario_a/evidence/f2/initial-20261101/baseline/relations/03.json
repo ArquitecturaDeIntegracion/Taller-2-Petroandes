@@ -1,0 +1,22 @@
+{
+  "relation_id": "reemplaza:926a7657825eda9c8609baf854e5a5ec1ebfd52c6d7ac7b718e24faa73605052",
+  "tipo": "reemplaza",
+  "desde": {
+    "doc_id": "PRO-HSE-003",
+    "version_documental": "4"
+  },
+  "hacia": {
+    "doc_id": "PRO-HSE-003",
+    "version_documental": "3"
+  },
+  "evidencia": {
+    "fuente": {
+      "doc_id": "PRO-HSE-003",
+      "version_documental": "4"
+    },
+    "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+    "section_id": "encabezado",
+    "pagina": 1,
+    "cita": "Reemplaza a PRO-HSE-003 v3"
+  }
+}

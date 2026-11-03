@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/check_f4.py",
+    "--audit",
+    "reports/portable/f4-20261101/audit",
+    "--output",
+    "reports/portable/f4-20261101/closure"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T23:58:25.639242+00:00",
+  "elapsed_seconds": 17.058656228000473,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

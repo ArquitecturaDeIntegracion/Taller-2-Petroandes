@@ -1,0 +1,26 @@
+{
+  "generation_id": "15ca08a0-c114-548d-8aaf-249e24211178",
+  "perfil": "laboratorio",
+  "governance_revision": 1,
+  "published_fragments": 0,
+  "eligible_documents": 0,
+  "reused": false,
+  "collection": "e5small_es_1_0_0_r1_15ca08a0c114_63971236",
+  "catalog_summary": {
+    "perfil": "laboratorio",
+    "governance_revision": 1,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "decisiones_registradas": 0,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 1
+  },
+  "index_ref": {
+    "base": "artifacts",
+    "path": "indexes/laboratorio"
+  }
+}

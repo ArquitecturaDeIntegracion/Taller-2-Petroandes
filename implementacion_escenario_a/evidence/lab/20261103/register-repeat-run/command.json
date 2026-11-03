@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/certify_lab.py",
+    "--request",
+    "config/admin/lab-20261103/request/request.json",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/registration-repeat"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:14:58.206759+00:00",
+  "elapsed_seconds": 2.9101387390037416,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "recorded_utc": "2026-11-01T19:53:16.435885+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/check_f0.py",
+    "--output",
+    "evidence/f0/closure.json"
+  ],
+  "status": "passed",
+  "phase_F0_complete": true,
+  "checks": [
+    {
+      "check": "inventory_sources_and_19_pairs",
+      "passed": true
+    },
+    {
+      "check": "original_registered_sources_unchanged",
+      "passed": true
+    },
+    {
+      "check": "19_readable_pdfs_and_bytes_preserved",
+      "passed": true
+    },
+    {
+      "check": "isolated_environment_and_hardware_recorded",
+      "passed": true
+    },
+    {
+      "check": "lock_digest",
+      "passed": true
+    },
+    {
+      "check": "installed_environment_matches_lock",
+      "passed": true
+    },
+    {
+      "check": "pip_check",
+      "passed": true
+    },
+    {
+      "check": "qdrant_persistence_prefilter_and_single_owner",
+      "passed": true
+    },
+    {
+      "check": "e5_real_model_pooling_and_offline_reload",
+      "passed": true
+    },
+    {
+      "check": "laya_real_multilingual_and_offline_reload",
+      "passed": true
+    },
+    {
+      "check": "laya_noul_positive_real_repeat",
+      "passed": true
+    },
+    {
+      "check": "laya_noul_negative_real_repeat",
+      "passed": true
+    },
+    {
+      "check": "laya_choice_positive_real_repeat",
+      "passed": true
+    },
+    {
+      "check": "laya_choice_negative_real_repeat",
+      "passed": true
+    },
+    {
+      "check": "real_inspector_stdio_list_and_call",
+      "passed": true
+    }
+  ],
+  "academic_approvals_created": 0,
+  "application_complete": false,
+  "next_phase": "F1 contratos y revisión académica"
+}

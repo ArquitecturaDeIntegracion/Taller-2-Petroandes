@@ -1,0 +1,22 @@
+{
+  "observation_id": "ba479576cb81164d93bcbc4be51a862d87740c12024aeae1e2ef957099b400f2",
+  "documento": {
+    "doc_id": "PRO-MED-007",
+    "version_documental": "1"
+  },
+  "pdf_sha256": "89ace1f864c362231321892541fddf7ca834cd933573a1e9ad566b00c9973955",
+  "estado": "excluido",
+  "fundamento": "Sustitución o derogación expresa: Reemplaza a PRO-MED-007 v1",
+  "fuentes": [
+    {
+      "fuente": {
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2"
+      },
+      "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+      "section_id": "encabezado",
+      "pagina": 1,
+      "cita": "Reemplaza a PRO-MED-007 v1"
+    }
+  ]
+}

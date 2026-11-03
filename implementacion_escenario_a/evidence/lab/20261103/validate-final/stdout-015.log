@@ -1,0 +1,120 @@
+ 13 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/events-001.jsonl
+ 52 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/summary.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/01.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/02.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/03.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/04.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/05.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/06.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/07.json
+ 37 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/08.json
+ 37 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/09.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/10.json
+ 39 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/11.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration-repeat/decisions/12.json
+ 20 líneas  reports/portable/lab-certificacion-20261103/stale-index-denied/command.json
+ 15 líneas  reports/portable/lab-certificacion-20261103/stale-index-denied/stderr-001.log
+ 18 líneas  reports/portable/lab-certificacion-20261103/state-before-run/command.json
+ 53 líneas  reports/portable/lab-certificacion-20261103/state-before-run/stdout-001.log
+ 23 líneas  reports/portable/lab-certificacion-20261103/tests-before-apply/command.json
+  2 líneas  reports/portable/lab-certificacion-20261103/tests-before-apply/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/tests-full/command.json
+  4 líneas  reports/portable/lab-certificacion-20261103/tests-full/stdout-001.log
+ 28 líneas  reports/portable/lab-certificacion-20261103/validate-start/command.json
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-001.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-002.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-003.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-004.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-005.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-006.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-007.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-008.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-009.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-010.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-011.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-012.log
+160 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-013.log
+ 65 líneas  reports/portable/lab-certificacion-20261103/validate-start/stdout-014.log
+ 26 líneas  reports/portable/mcp/list/command.json
+  3 líneas  reports/portable/mcp/list/stderr-001.log
+ 29 líneas  reports/portable/mcp-host/summary.json
+ 29 líneas  reports/portable/mcp-host/call/command.json
+  4 líneas  reports/portable/mcp-host/call/stderr-001.log
+  1 líneas  reports/portable/mcp-host/call/stdout-001.log
+ 27 líneas  reports/portable/mcp-host/list/command.json
+  3 líneas  reports/portable/mcp-host/list/stderr-001.log
+  1 líneas  reports/portable/mcp-host/list/stdout-001.log
+ 27 líneas  reports/portable/revision-propuestas-20261101/command.json
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-001.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-002.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-003.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-004.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-005.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-006.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-007.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-008.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-009.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-010.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-011.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-012.log
+ 13 líneas  reports/portable/revision-propuestas-20261101/stdout-013.log
+ 21 líneas  reports/portable/tests-final/command.json
+  2 líneas  reports/portable/tests-final/stdout-001.log
+ 16 líneas  reports/portable/validate-delivery/command.json
+160 líneas  reports/portable/validate-delivery/stdout-001.log
+ 51 líneas  reports/portable/validate-delivery/stdout-002.log
+ 16 líneas  reports/portable/validate-final/command.json
+160 líneas  reports/portable/validate-final/stdout-001.log
+ 46 líneas  reports/portable/validate-final/stdout-002.log
+  7 líneas  tests/conftest.py
+ 45 líneas  tests/f2_helpers.py
+ 31 líneas  tests/f4_helpers.py
+121 líneas  tests/test_contracts.py
+ 46 líneas  tests/test_f2_baseline.py
+105 líneas  tests/test_f2_catalog.py
+ 32 líneas  tests/test_f2_cli.py
+130 líneas  tests/test_f2_governance.py
+ 71 líneas  tests/test_f3_chunk.py
+ 41 líneas  tests/test_f3_critical.py
+ 60 líneas  tests/test_f3_extraction.py
+ 36 líneas  tests/test_f3_quarantine.py
+ 42 líneas  tests/test_f3_staging.py
+ 86 líneas  tests/test_f4_integrity.py
+150 líneas  tests/test_f4_publication.py
+ 38 líneas  tests/test_json_schemas.py
+133 líneas  tests/test_lab_administration.py
+ 78 líneas  tests/test_portability.py
+ 58 líneas  tools/certify_lab.py
+106 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 55 líneas  tools/check_f2.py
+133 líneas  tools/check_f3.py
+ 77 líneas  tools/check_f4.py
+ 65 líneas  tools/check_lab_index.py
+107 líneas  tools/check_lab_state.py
+ 70 líneas  tools/check_portability.py
+110 líneas  tools/debug_smoke.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 73 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+100 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+ 81 líneas  tools/f4.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+ 66 líneas  tools/prepare_lab_request.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+ 46 líneas  tools/review_lab_case_dependencies.py
+103 líneas  tools/validate_agent.py
+
+OK: 2357 archivos textuales; máximo 195 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

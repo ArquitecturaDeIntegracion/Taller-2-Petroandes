@@ -1,0 +1,26 @@
+{
+  "generation_id": "1589c208-0450-5b25-b58c-d61373aa340d",
+  "perfil": "baseline",
+  "governance_revision": 1,
+  "published_fragments": 0,
+  "eligible_documents": 0,
+  "reused": true,
+  "collection": "e5small_es_1_0_0_r1_1589c2080450_40dd8686",
+  "catalog_summary": {
+    "perfil": "baseline",
+    "governance_revision": 1,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "decisiones_registradas": 0,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 1
+  },
+  "index_ref": {
+    "base": "artifacts",
+    "path": "indexes/baseline"
+  }
+}

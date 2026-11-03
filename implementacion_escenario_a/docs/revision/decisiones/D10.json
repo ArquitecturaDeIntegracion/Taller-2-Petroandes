@@ -1,0 +1,60 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D10",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-SEG-009",
+    "version_documental": "1",
+    "titulo": "Reporte de eventos de pérdida de producto",
+    "emisor_segun_pdf": "Gerencia de Seguridad Física",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-SEG-009_v1.pdf",
+      "doc_id": "PRO-SEG-009",
+      "version_documental": "1",
+      "pdf_sha256": "0e8fb04a5e8e1b33490efb77240ee65cdd79786697f70b1fdceaa4194518341f",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "excluido",
+  "evidencia_corpus": {
+    "conclusion": "PRO-SEG-015 v1 reemplaza íntegramente PRO-SEG-009 v1 y cambia el código.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "1",
+        "extracto_verificado": "Este procedimiento reemplaza íntegramente el PRO-SEG-009 v1"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_excluido",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Seguridad Física",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "No conservar plazos antiguos como vigentes ni resolver la relación comparando solo versión."
+  },
+  "decision_pendiente_del_estudiante": "¿Confirmas excluir el código antiguo aunque ambos documentos sean v1?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

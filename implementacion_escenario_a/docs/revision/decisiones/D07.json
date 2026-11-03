@@ -1,0 +1,60 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D07",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-OPE-012",
+    "version_documental": "2",
+    "titulo": "Atención de anomalías de presión en tramos de oleoducto",
+    "emisor_segun_pdf": "Centro de Control de Operaciones",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v2.pdf",
+      "doc_id": "PRO-OPE-012",
+      "version_documental": "2",
+      "pdf_sha256": "029355b2af202bf2178d1c732a7014d6db0f7f0ca55919554d0aa4249234e8e8",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "excluido",
+  "evidencia_corpus": {
+    "conclusion": "V3 reemplaza íntegramente umbrales y ventanas de v2.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "Los umbrales y las ventanas de esta versión reemplazan íntegramente los de la versión anterior."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_excluido",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Centro de Control de Operaciones",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "Conservar como antecedente excluido; ninguna lectura operativa habilitada."
+  },
+  "decision_pendiente_del_estudiante": "¿Confirmas excluir v2 y evitar que 1.200 psi/30 minutos sustituya 1.100 psi/15 minutos en los casos de v3?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

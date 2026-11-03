@@ -1,0 +1,34 @@
+{
+  "request_id": "LAB-CABALLERO-20261103",
+  "perfil": "laboratorio",
+  "simulacion_academica": true,
+  "revisor_humano": "Jonnathan Caballero",
+  "autorizacion": {
+    "base": "app",
+    "path": "config/admin/lab-20261103/authorization.md",
+    "sha256": "5797484f4064abc072ca7d5c5bdec87217a363fc8bc39ed369e250b6a867323f"
+  },
+  "ambito": {
+    "tipo": "general",
+    "identificador": "corpus_revision"
+  },
+  "grupos": [
+    "LAB_REVISION"
+  ],
+  "effective_to": "2026-12-01T00:00:00-05:00",
+  "expected_revision": 1,
+  "document_files": [
+    "01.json",
+    "02.json",
+    "03.json",
+    "04.json",
+    "05.json",
+    "06.json",
+    "07.json",
+    "08.json",
+    "09.json",
+    "10.json",
+    "11.json",
+    "12.json"
+  ]
+}

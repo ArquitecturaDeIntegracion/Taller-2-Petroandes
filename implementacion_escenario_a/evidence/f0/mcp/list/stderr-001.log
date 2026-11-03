@@ -1,0 +1,1 @@
+{"error":{"code":"error","message":"--catalog and --config are mutually exclusive. --catalog is the writable catalog; --config is a read-only session file."}}

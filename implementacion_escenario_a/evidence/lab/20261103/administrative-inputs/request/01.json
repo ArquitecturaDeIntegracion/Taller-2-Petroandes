@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-HSE-003",
+  "version_documental": "4",
+  "rol_area_simulado": "Vicepresidencia HSE",
+  "usos": [
+    "instruccion_operativa",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Conservar secuencia y condiciones; no ejecutar intervenciones reales."
+  ]
+}

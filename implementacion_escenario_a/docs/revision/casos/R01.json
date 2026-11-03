@@ -1,0 +1,100 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R01",
+  "particion_propuesta": "reserva",
+  "titulo": "Incertidumbre frente a tolerancia",
+  "pregunta": "¿Son equivalentes el 0,3 % de RES-CREG-0043-2024 y el 0,5 % de PRO-MED-007 v2?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D13",
+      "D06"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "0,3 %: incertidumbre combinada máxima del sistema de medición en transferencia de custodia.",
+      "0,5 %: tolerancia de conciliación del volumen recibido; mide un concepto diferente.",
+      "La resolución del caso es ficticia; no afirmar obligaciones legales reales."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D05",
+      "D14"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Validar las dos magnitudes, su contexto y las dos citas; no aceptar solo coincidencia numérica.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

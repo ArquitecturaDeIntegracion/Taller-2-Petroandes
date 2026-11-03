@@ -1,0 +1,23 @@
+{
+  "doc_id": "COM-PRV-0134",
+  "version_documental": null,
+  "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+  "pdf_uri": "project:corpus/pdf/05_comunicaciones/COM-PRV-0134.pdf",
+  "tipo": "comunicacion",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 0,
+  "filas": 0,
+  "max_tokens_entrada": 148,
+  "fuera_objetivo": 5,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 155,
+    "md_sha256": "6dbdf626bc72d789d545dca7cba29a8f3aaaaaef8e1fe29450bda559e553662a",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

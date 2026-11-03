@@ -1,0 +1,11 @@
+{
+  "observation_id": "b73bc6f2b68342aac9197f300173985f5ccc45970ca9514c454be480bf5756f2",
+  "documento": {
+    "doc_id": "PRO-SEG-015",
+    "version_documental": "1"
+  },
+  "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

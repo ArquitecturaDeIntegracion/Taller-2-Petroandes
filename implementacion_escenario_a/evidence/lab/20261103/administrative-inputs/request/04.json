@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-OPE-021",
+  "version_documental": "1",
+  "rol_area_simulado": "Centro de Control de Operaciones",
+  "usos": [
+    "instruccion_operativa",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Conservar prerrequisitos, secuencia y reglas de aborto."
+  ]
+}

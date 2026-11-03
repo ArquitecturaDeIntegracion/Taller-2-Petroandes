@@ -1,0 +1,81 @@
+{
+  "evidence_schema_version": 2,
+  "generation_id": "dc29d4e4-00b4-52e6-b646-1c17cb3f1cf2",
+  "perfil": "laboratorio",
+  "governance_revision": 1,
+  "parser_version": "pypdf-layout-es-1.0.1",
+  "partition": "structural-es-1.0.0",
+  "embedding_bundle": "e5small-es-1.0.0",
+  "input_format": "e5passage-es-1.0.0",
+  "context_policy": {
+    "version": "conditions-es-1.0.0",
+    "secuencia": [
+      "condiciones previas",
+      "principio",
+      "abortar"
+    ],
+    "recomendacion": [
+      "alcance",
+      "condiciones de aplicación"
+    ]
+  },
+  "tokenizer_revision": "fd1525a9fd15316a2d503bf26ab031a61d056e98",
+  "tokenizer_sha256": {
+    "tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+    "special_tokens_map.json": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+    "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+  },
+  "documentos": 19,
+  "preparados": 19,
+  "rechazados": 0,
+  "fragmentos": 92,
+  "padres": 92,
+  "por_tipo": {
+    "manual": 3,
+    "procedimiento": 8,
+    "resolucion": 3,
+    "acta": 2,
+    "comunicacion": 2,
+    "ficha": 1
+  },
+  "max_tokens_entrada": 291,
+  "publication_state": "staging_no_autorizado",
+  "index_revision": null,
+  "document_reports": [
+    "document-01/report.json",
+    "document-02/report.json",
+    "document-03/report.json",
+    "document-04/report.json",
+    "document-05/report.json",
+    "document-06/report.json",
+    "document-07/report.json",
+    "document-08/report.json",
+    "document-09/report.json",
+    "document-10/report.json",
+    "document-11/report.json",
+    "document-12/report.json",
+    "document-13/report.json",
+    "document-14/report.json",
+    "document-15/report.json",
+    "document-16/report.json",
+    "document-17/report.json",
+    "document-18/report.json",
+    "document-19/report.json"
+  ],
+  "stage_ref": {
+    "base": "artifacts",
+    "path": "ingest/laboratorio/dc29d4e4-00b4-52e6-b646-1c17cb3f1cf2"
+  },
+  "stage_reused": false,
+  "fragment_files": [
+    "fragments-001.jsonl"
+  ],
+  "parent_files": [
+    "parents-001.jsonl"
+  ],
+  "file_sha256": {
+    "fragments-001.jsonl": "c099e9482539354c172e50169754137677f2a1b3be6eb08f2b2f3492922732cd",
+    "parents-001.jsonl": "a5a2f9cca7f52e1af3617e182b1fd16271ef23fd2e2ebaefd7bf6ecab73380a3"
+  }
+}

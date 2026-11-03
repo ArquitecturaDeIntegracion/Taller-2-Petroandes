@@ -1,0 +1,117 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A05",
+  "particion_propuesta": "ajuste",
+  "titulo": "MAOP y alarma son conceptos distintos",
+  "pregunta": "Para Ayacucho–Coveñas, compara el MAOP del manual con el umbral y ventana del procedimiento de anomalías.",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D02",
+      "D08"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "MAN-OPE-001 v3 declara MAOP de diseño 1.250 psi; no es umbral de alarma.",
+      "PRO-OPE-012 v3 declara caída por debajo de 1.100 psi durante 15 minutos para anomalía.",
+      "No atribuir 1.240 psi de P-101 al tramo."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D07"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Aceptar o dejar pendiente el supuesto de lectura del manual; revisar que cada cifra tenga su propia cita.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

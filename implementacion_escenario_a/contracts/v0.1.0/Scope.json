@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Un alcance explícito: no interpretar campos ausentes como acceso universal.",
+  "properties": {
+    "tipo": {
+      "enum": [
+        "activo",
+        "tramo",
+        "general"
+      ],
+      "title": "Tipo",
+      "type": "string"
+    },
+    "identificador": {
+      "minLength": 1,
+      "title": "Identificador",
+      "type": "string"
+    }
+  },
+  "required": [
+    "tipo",
+    "identificador"
+  ],
+  "title": "Scope",
+  "type": "object"
+}

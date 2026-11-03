@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\jcjca\OneDrive\Documentos\ChatGPT\Taller 2 Arquitecura de Integración\implementacion_escenario_a\tools\f0_mcp.py", line 62, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\jcjca\OneDrive\Documentos\ChatGPT\Taller 2 Arquitecura de Integración\implementacion_escenario_a\tools\f0_mcp.py", line 41, in main
+    raise RuntimeError(f"Inspector falló: consultar {destination / 'list'}")
+RuntimeError: Inspector falló: consultar C:\Users\jcjca\OneDrive\Documentos\ChatGPT\Taller 2 Arquitecura de Integración\implementacion_escenario_a\evidence\f0\mcp\list

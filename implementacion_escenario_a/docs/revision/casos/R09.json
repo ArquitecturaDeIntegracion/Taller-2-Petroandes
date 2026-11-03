@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R09",
+  "particion_propuesta": "reserva",
+  "titulo": "Revocación con vector conservado",
+  "pregunta": "Tras revocar la autorización, ¿cuál es el umbral de presión declarado por PRO-OPE-012 v3?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D08"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": [
+      "En una copia aislada, publicar una generación autorizada para D08 y comprobar recuperación previa.",
+      "Registrar después una revocación con revisión posterior a la autorización y anterior al reloj de consulta.",
+      "Conservar vector/texto y registrar candidato competitivo, filtro, acceso directo y contexto padre."
+    ]
+  },
+  "oracle_propuesto": {
+    "estado": "abstencion",
+    "motivo_abstencion": "sin_evidencia_autorizada",
+    "criterios_semanticos": [
+      "La revocación posterior prevalece; excluir PRO-OPE-012 v3 antes de puntuar.",
+      "El vector y texto anteriores deben seguir presentes en la copia para que el control sea demostrativo.",
+      "Obtención directa y expansión de padres también deben denegar; no usar v2 excluida."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D07"
+    ],
+    "acceso_directo_esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    },
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Confirmar publicación previa real, vector retenido y trazas de cada ruta. Integración pendiente de F5/F7/F10.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D06",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-MED-007",
+    "version_documental": "2",
+    "titulo": "Conciliación volumétrica de tramos de transporte",
+    "emisor_segun_pdf": "Gerencia de Medición",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+      "doc_id": "PRO-MED-007",
+      "version_documental": "2",
+      "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Declara tolerancia de conciliación 0,5 %, cierre al quinto día hábil y cifra oficial solo en sistema de balance.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "extracto_verificado": "ningún otro sistema está autorizado para producir la cifra oficial del período."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "0,5 % del volumen recibido"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Medición",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "Describir el método no autoriza calcular la cifra oficial ni acceder a sistemas de balance."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas consultar el método y los criterios como texto de laboratorio, sin producir balances oficiales ni confundir incertidumbre metrológica?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

@@ -1,0 +1,4 @@
+104 líneas  tools\validate_agent.py
+
+OK: 161 archivos textuales; máximo 185 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

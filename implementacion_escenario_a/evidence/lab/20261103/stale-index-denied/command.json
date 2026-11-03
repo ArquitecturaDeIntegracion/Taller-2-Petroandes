@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f4.py",
+    "inspect",
+    "--profile",
+    "laboratorio",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/stale-inspect.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:13:16.859141+00:00",
+  "elapsed_seconds": 25.759840517996054,
+  "exit_code": 1,
+  "output_files": [
+    "stderr-001.log"
+  ]
+}

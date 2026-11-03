@@ -1,0 +1,16 @@
+{
+  "tipo": "verificacion_tecnica_de_propuestas",
+  "status": "passed",
+  "documentos": 19,
+  "casos": 24,
+  "documentos_cubiertos_en_casos_o_prohibiciones": 19,
+  "ajuste": 8,
+  "reserva": 16,
+  "aprobaciones_registradas": 0,
+  "casos_ejecutados": 0,
+  "autorizaciones_aplicadas": 0,
+  "fuentes_y_evidencia_previa_hashes_intactos": 790,
+  "hashes_fichas": 43,
+  "max_lineas_archivo_paquete": 147,
+  "alcance": "Integridad editorial, referencias y controles de no aprobación; no evaluación del recuperador."
+}

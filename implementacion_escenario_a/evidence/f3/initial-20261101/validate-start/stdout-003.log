@@ -1,0 +1,160 @@
+ 50 líneas  reports/portable/docker-manual-20261101-170930/laya-choice_positive.json
+ 42 líneas  reports/portable/docker-manual-20261101-170930/laya-noul_negative.json
+ 42 líneas  reports/portable/docker-manual-20261101-170930/laya-noul_positive.json
+ 88 líneas  reports/portable/docker-manual-20261101-170930/laya.json
+ 45 líneas  reports/portable/docker-manual-20261101-170930/storage.json
+111 líneas  reports/portable/docker-manual-20261101-170930/summary.json
+ 22 líneas  reports/portable/docker-manual-20261101-170930/closure/command.json
+ 80 líneas  reports/portable/docker-manual-20261101-170930/closure/stdout-001.log
+ 15 líneas  reports/portable/docker-manual-20261101-170930/compose/command.json
+ 22 líneas  reports/portable/docker-manual-20261101-170930/corpus/command.json
+135 líneas  reports/portable/docker-manual-20261101-170930/corpus/stdout-001.log
+ 22 líneas  reports/portable/docker-manual-20261101-170930/debug/command.json
+ 22 líneas  reports/portable/docker-manual-20261101-170930/debug/stdout-001.log
+ 22 líneas  reports/portable/docker-manual-20261101-170930/dev-preflight/command.json
+ 90 líneas  reports/portable/docker-manual-20261101-170930/dev-preflight/stdout-001.log
+ 28 líneas  reports/portable/docker-manual-20261101-170930/dev-tests/command.json
+  2 líneas  reports/portable/docker-manual-20261101-170930/dev-tests/stdout-001.log
+ 25 líneas  reports/portable/docker-manual-20261101-170930/e5/command.json
+  2 líneas  reports/portable/docker-manual-20261101-170930/e5/stderr-001.log
+ 78 líneas  reports/portable/docker-manual-20261101-170930/e5/stdout-001.log
+ 15 líneas  reports/portable/docker-manual-20261101-170930/engine/command.json
+ 27 líneas  reports/portable/docker-manual-20261101-170930/engine/stdout-001.log
+ 23 líneas  reports/portable/docker-manual-20261101-170930/environment/command.json
+ 49 líneas  reports/portable/docker-manual-20261101-170930/environment/stdout-001.log
+ 23 líneas  reports/portable/docker-manual-20261101-170930/freeze-linux/command.json
+ 78 líneas  reports/portable/docker-manual-20261101-170930/freeze-linux/stdout-001.log
+ 19 líneas  reports/portable/docker-manual-20261101-170930/image/command.json
+  1 líneas  reports/portable/docker-manual-20261101-170930/image/stdout-001.log
+ 26 líneas  reports/portable/docker-manual-20261101-170930/laya/command.json
+  1 líneas  reports/portable/docker-manual-20261101-170930/laya/stderr-001.log
+160 líneas  reports/portable/docker-manual-20261101-170930/laya/stdout-001.log
+112 líneas  reports/portable/docker-manual-20261101-170930/laya/stdout-002.log
+ 22 líneas  reports/portable/docker-manual-20261101-170930/mcp/command.json
+ 29 líneas  reports/portable/docker-manual-20261101-170930/mcp/stdout-001.log
+ 29 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/summary.json
+ 29 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/call/command.json
+  4 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/call/stderr-001.log
+  1 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/call/stdout-001.log
+ 27 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/list/command.json
+  3 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/list/stderr-001.log
+  1 líneas  reports/portable/docker-manual-20261101-170930/mcp-transcript/list/stdout-001.log
+ 22 líneas  reports/portable/docker-manual-20261101-170930/pip-check/command.json
+  1 líneas  reports/portable/docker-manual-20261101-170930/pip-check/stdout-001.log
+ 20 líneas  reports/portable/docker-manual-20261101-170930/preflight/command.json
+ 90 líneas  reports/portable/docker-manual-20261101-170930/preflight/stdout-001.log
+ 23 líneas  reports/portable/docker-manual-20261101-170930/storage/command.json
+ 45 líneas  reports/portable/docker-manual-20261101-170930/storage/stdout-001.log
+ 26 líneas  reports/portable/docker-manual-20261101-170930/tests/command.json
+  2 líneas  reports/portable/docker-manual-20261101-170930/tests/stdout-001.log
+ 23 líneas  reports/portable/docker-manual-20261101-170930/validate-agent/command.json
+160 líneas  reports/portable/docker-manual-20261101-170930/validate-agent/stdout-001.log
+160 líneas  reports/portable/docker-manual-20261101-170930/validate-agent/stdout-002.log
+160 líneas  reports/portable/docker-manual-20261101-170930/validate-agent/stdout-003.log
+ 19 líneas  reports/portable/docker-manual-20261101-170930/validate-agent/stdout-004.log
+ 22 líneas  reports/portable/docker-validacion-20261101/debug-dev.json
+ 22 líneas  reports/portable/docker-validacion-20261101/debug-windows-regression.json
+ 20 líneas  reports/portable/docker-validacion-20261101/build/command.json
+  6 líneas  reports/portable/docker-validacion-20261101/build/stderr-001.log
+ 35 líneas  reports/portable/docker-validacion-20261101/build/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/build-2/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/build-2/stderr-001.log
+160 líneas  reports/portable/docker-validacion-20261101/build-2/stdout-001.log
+160 líneas  reports/portable/docker-validacion-20261101/build-2/stdout-002.log
+160 líneas  reports/portable/docker-validacion-20261101/build-2/stdout-003.log
+ 60 líneas  reports/portable/docker-validacion-20261101/build-2/stdout-004.log
+ 20 líneas  reports/portable/docker-validacion-20261101/build-comprobado/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/build-comprobado/stderr-001.log
+103 líneas  reports/portable/docker-validacion-20261101/build-comprobado/stdout-001.log
+ 20 líneas  reports/portable/docker-validacion-20261101/build-debug-corregido/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/build-debug-corregido/stderr-001.log
+104 líneas  reports/portable/docker-validacion-20261101/build-debug-corregido/stdout-001.log
+ 20 líneas  reports/portable/docker-validacion-20261101/build-estado-actualizado/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/build-estado-actualizado/stderr-001.log
+103 líneas  reports/portable/docker-validacion-20261101/build-estado-actualizado/stdout-001.log
+ 20 líneas  reports/portable/docker-validacion-20261101/build-final/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/build-final/stderr-001.log
+100 líneas  reports/portable/docker-validacion-20261101/build-final/stdout-001.log
+135 líneas  reports/portable/docker-validacion-20261101/checks/corpus.json
+ 49 líneas  reports/portable/docker-validacion-20261101/checks/environment.json
+ 45 líneas  reports/portable/docker-validacion-20261101/checks/storage.json
+ 97 líneas  reports/portable/docker-validacion-20261101/checks/summary.json
+ 15 líneas  reports/portable/docker-validacion-20261101/checks/compose/command.json
+ 22 líneas  reports/portable/docker-validacion-20261101/checks/corpus/command.json
+135 líneas  reports/portable/docker-validacion-20261101/checks/corpus/stdout-001.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks/debug/command.json
+ 16 líneas  reports/portable/docker-validacion-20261101/checks/debug/stderr-001.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks/dev-preflight/command.json
+ 90 líneas  reports/portable/docker-validacion-20261101/checks/dev-preflight/stdout-001.log
+ 28 líneas  reports/portable/docker-validacion-20261101/checks/dev-tests/command.json
+  2 líneas  reports/portable/docker-validacion-20261101/checks/dev-tests/stdout-001.log
+ 15 líneas  reports/portable/docker-validacion-20261101/checks/engine/command.json
+ 27 líneas  reports/portable/docker-validacion-20261101/checks/engine/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks/environment/command.json
+ 49 líneas  reports/portable/docker-validacion-20261101/checks/environment/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks/freeze-linux/command.json
+ 78 líneas  reports/portable/docker-validacion-20261101/checks/freeze-linux/stdout-001.log
+ 19 líneas  reports/portable/docker-validacion-20261101/checks/image/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/checks/image/stdout-001.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks/mcp/command.json
+ 29 líneas  reports/portable/docker-validacion-20261101/checks/mcp/stdout-001.log
+ 29 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/summary.json
+ 29 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/call/command.json
+  4 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/call/stderr-001.log
+  1 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/call/stdout-001.log
+ 27 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/list/command.json
+  3 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/list/stderr-001.log
+  1 líneas  reports/portable/docker-validacion-20261101/checks/mcp-transcript/list/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks/pip-check/command.json
+  6 líneas  reports/portable/docker-validacion-20261101/checks/pip-check/stderr-001.log
+  1 líneas  reports/portable/docker-validacion-20261101/checks/pip-check/stdout-001.log
+ 20 líneas  reports/portable/docker-validacion-20261101/checks/preflight/command.json
+ 90 líneas  reports/portable/docker-validacion-20261101/checks/preflight/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks/storage/command.json
+ 45 líneas  reports/portable/docker-validacion-20261101/checks/storage/stdout-001.log
+ 26 líneas  reports/portable/docker-validacion-20261101/checks/tests/command.json
+  2 líneas  reports/portable/docker-validacion-20261101/checks/tests/stdout-001.log
+ 21 líneas  reports/portable/docker-validacion-20261101/checks/validate-agent/command.json
+160 líneas  reports/portable/docker-validacion-20261101/checks/validate-agent/stdout-001.log
+ 85 líneas  reports/portable/docker-validacion-20261101/checks/validate-agent/stdout-002.log
+ 80 líneas  reports/portable/docker-validacion-20261101/checks-final/closure.json
+135 líneas  reports/portable/docker-validacion-20261101/checks-final/corpus.json
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/debug.json
+ 78 líneas  reports/portable/docker-validacion-20261101/checks-final/e5.json
+ 49 líneas  reports/portable/docker-validacion-20261101/checks-final/environment.json
+ 50 líneas  reports/portable/docker-validacion-20261101/checks-final/laya-choice_negative.json
+ 50 líneas  reports/portable/docker-validacion-20261101/checks-final/laya-choice_positive.json
+ 42 líneas  reports/portable/docker-validacion-20261101/checks-final/laya-noul_negative.json
+ 42 líneas  reports/portable/docker-validacion-20261101/checks-final/laya-noul_positive.json
+ 88 líneas  reports/portable/docker-validacion-20261101/checks-final/laya.json
+ 45 líneas  reports/portable/docker-validacion-20261101/checks-final/storage.json
+117 líneas  reports/portable/docker-validacion-20261101/checks-final/summary.json
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/closure/command.json
+ 80 líneas  reports/portable/docker-validacion-20261101/checks-final/closure/stdout-001.log
+ 15 líneas  reports/portable/docker-validacion-20261101/checks-final/compose/command.json
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/corpus/command.json
+135 líneas  reports/portable/docker-validacion-20261101/checks-final/corpus/stdout-001.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/debug/command.json
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/debug/stdout-001.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/dev-preflight/command.json
+ 90 líneas  reports/portable/docker-validacion-20261101/checks-final/dev-preflight/stdout-001.log
+ 28 líneas  reports/portable/docker-validacion-20261101/checks-final/dev-tests/command.json
+  2 líneas  reports/portable/docker-validacion-20261101/checks-final/dev-tests/stdout-001.log
+ 25 líneas  reports/portable/docker-validacion-20261101/checks-final/e5/command.json
+  2 líneas  reports/portable/docker-validacion-20261101/checks-final/e5/stderr-001.log
+ 78 líneas  reports/portable/docker-validacion-20261101/checks-final/e5/stdout-001.log
+ 15 líneas  reports/portable/docker-validacion-20261101/checks-final/engine/command.json
+ 27 líneas  reports/portable/docker-validacion-20261101/checks-final/engine/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks-final/environment/command.json
+ 49 líneas  reports/portable/docker-validacion-20261101/checks-final/environment/stdout-001.log
+ 23 líneas  reports/portable/docker-validacion-20261101/checks-final/freeze-linux/command.json
+ 78 líneas  reports/portable/docker-validacion-20261101/checks-final/freeze-linux/stdout-001.log
+ 19 líneas  reports/portable/docker-validacion-20261101/checks-final/image/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/checks-final/image/stdout-001.log
+ 26 líneas  reports/portable/docker-validacion-20261101/checks-final/laya/command.json
+  1 líneas  reports/portable/docker-validacion-20261101/checks-final/laya/stderr-001.log
+160 líneas  reports/portable/docker-validacion-20261101/checks-final/laya/stdout-001.log
+112 líneas  reports/portable/docker-validacion-20261101/checks-final/laya/stdout-002.log
+ 22 líneas  reports/portable/docker-validacion-20261101/checks-final/mcp/command.json
+ 29 líneas  reports/portable/docker-validacion-20261101/checks-final/mcp/stdout-001.log
+ 29 líneas  reports/portable/docker-validacion-20261101/checks-final/mcp-transcript/summary.json

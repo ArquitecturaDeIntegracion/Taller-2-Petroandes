@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "tools/render_f3_review.py",
+    "--output-dir",
+    "reports/portable/f3-20261101/render-recorded"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T22:43:35.908757+00:00",
+  "elapsed_seconds": 6.319513300000835,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

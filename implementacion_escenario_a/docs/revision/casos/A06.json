@@ -1,0 +1,97 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A06",
+  "particion_propuesta": "ajuste",
+  "titulo": "Diseño y alarma de P-101",
+  "pregunta": "¿Cuáles son la presión de descarga de diseño y el límite de alarma declarados para P-101?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D19"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "En FIC-ACT-P101 v2, diseño: 1.180 psi; alarma: 1.240 psi.",
+      "Son especificaciones de P-101 en Ayacucho; no presión actual ni parámetros de un tramo."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "fila Presión de descarga"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "fila Presión de descarga"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar columnas, unidades, tag y diferencia frente a telemetría.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

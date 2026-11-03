@@ -1,0 +1,80 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R04",
+  "particion_propuesta": "reserva",
+  "titulo": "Acta con aprobación condicionada",
+  "pregunta": "¿La aprobación del acta de julio de 2025 hacía inmediatamente exigibles los nuevos umbrales?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D15"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "El acta aprueba la propuesta y tramitar la actualización del procedimiento.",
+      "§4.2 indica que los nuevos valores no son exigibles hasta emisión y publicación de la versión actualizada.",
+      "No afirmar que la sola sesión del comité modificó la operación."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+        "doc_id": "ACTA-CTO-2025-07",
+        "version_documental": null,
+        "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+        "pagina": 1,
+        "section_id": "4",
+        "localizador_pdf": "§§4.1 y 4.2"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+        "doc_id": "ACTA-CTO-2025-07",
+        "version_documental": null,
+        "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+        "pagina": 1,
+        "section_id": "4",
+        "localizador_pdf": "§§4.1 y 4.2"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar la condición completa y mantener juntos aprobación y límite de exigibilidad.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

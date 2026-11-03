@@ -1,0 +1,13 @@
+# Dependencias directas. El bloqueo reproducible es requirements.lock (pip freeze --all).
+# Transformers 4 conserva la API usada en esta primera comprobación de laya/E5.
+qdrant-client
+sentence-transformers<6
+transformers<5
+torch
+pypdf
+pydantic
+rank-bm25
+mcp<2
+laya
+pytest
+psutil

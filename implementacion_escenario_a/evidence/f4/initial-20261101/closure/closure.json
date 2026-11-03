@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "scope": "F4 técnica; no certificaciones ni herramientas finales",
+  "audit_vectors": 92,
+  "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+  "profiles": [
+    {
+      "perfil": "baseline",
+      "generation_id": "1589c208-0450-5b25-b58c-d61373aa340d",
+      "revision_gobierno": 1,
+      "published_fragments": 0,
+      "dense_points": 0,
+      "catalog_summary": {
+        "perfil": "baseline",
+        "governance_revision": 1,
+        "documentos": 19,
+        "clasificacion": {
+          "pendiente": 15,
+          "excluido": 4,
+          "certificado": 0
+        },
+        "decisiones_registradas": 0,
+        "conflictos_abiertos": 0,
+        "eventos_pendientes": 1
+      },
+      "exported_sha256": {
+        "catalog.sqlite3": "a86a08053229268104914f2b2106a5e2d3a149c44f76ef7146a7e99eee4a77c3",
+        "lexical.sqlite3": "32d9224e61af82d736f528778cf06ace5fef3f1ddc989147f34530b2f2e4a582",
+        "manifest.json": "b1c814650c71a8933cb2ce0badfecf9c9037a4529dc2207ba1a60248c3f1467b",
+        "publications.sqlite3": "83370bbd6f478d1213dc335259ad8b95aa6509b2dd913d2456312c1eb7fe13b7",
+        "receipt.json": "74c3b03fb0b49e9ef4c9cbcec3b38142f157791cc1cd57db57e7bb2e3bd9154e"
+      }
+    },
+    {
+      "perfil": "laboratorio",
+      "generation_id": "15ca08a0-c114-548d-8aaf-249e24211178",
+      "revision_gobierno": 1,
+      "published_fragments": 0,
+      "dense_points": 0,
+      "catalog_summary": {
+        "perfil": "laboratorio",
+        "governance_revision": 1,
+        "documentos": 19,
+        "clasificacion": {
+          "pendiente": 15,
+          "excluido": 4,
+          "certificado": 0
+        },
+        "decisiones_registradas": 0,
+        "conflictos_abiertos": 0,
+        "eventos_pendientes": 1
+      },
+      "exported_sha256": {
+        "catalog.sqlite3": "ebc68b743888a92bb1c78fc00dd8018ca3242e57d375fc3d0734a3e469433f0d",
+        "lexical.sqlite3": "724209eb2ce6931a7426504a24d228e4499a3d122e50c4786b505e8888f164c0",
+        "manifest.json": "0e6a15f9644800ddf3a67663e57152351877d694ac8eeb1ec0b097d85e324c95",
+        "publications.sqlite3": "31a0e2eb1c4486823f47145111afb1fa3c0011c996c68555dabff438a14adc8a",
+        "receipt.json": "3179666e0a9ad9b310c19fa67ec539cb8504825e7e1d35af765a3605487214a4"
+      }
+    }
+  ],
+  "academic_review_pending": true,
+  "reconstruction": "Reingerir PDF y publicar; no usar snapshots nativos Qdrant local"
+}

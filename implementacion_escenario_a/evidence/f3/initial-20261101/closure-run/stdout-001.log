@@ -1,0 +1,63 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-01T22:48:20.918851+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/check_f3.py",
+    "--baseline",
+    "reports/portable/f3-20261101/baseline-release",
+    "--repeat",
+    "reports/portable/f3-20261101/baseline-repeat",
+    "--laboratorio",
+    "reports/portable/f3-20261101/laboratorio-release",
+    "--render-dir",
+    "reports/portable/f3-20261101/render-recorded",
+    "--output",
+    "reports/portable/f3-20261101/closure.json"
+  ],
+  "status": "passed",
+  "phase_F3_technical_complete": true,
+  "profiles": [
+    {
+      "perfil": "baseline",
+      "generation_id": "cd67dbf6-5beb-570b-b66c-c882f4512111",
+      "documentos_preparados": 19,
+      "fragmentos": 92,
+      "padres": 92,
+      "tablas": 15,
+      "filas": 62,
+      "max_tokens_entrada": 291,
+      "excepciones_objetivo": {
+        "seccion_breve": 88,
+        "en_objetivo": 4
+      },
+      "anexo_conservado": true,
+      "gobierno_sin_cambios": true
+    },
+    {
+      "perfil": "laboratorio",
+      "generation_id": "dc29d4e4-00b4-52e6-b646-1c17cb3f1cf2",
+      "documentos_preparados": 19,
+      "fragmentos": 92,
+      "padres": 92,
+      "tablas": 15,
+      "filas": 62,
+      "max_tokens_entrada": 291,
+      "excepciones_objetivo": {
+        "seccion_breve": 88,
+        "en_objetivo": 4
+      },
+      "anexo_conservado": true,
+      "gobierno_sin_cambios": true
+    }
+  ],
+  "reingesta_identica_sin_duplicados": true,
+  "fuentes_host_y_docker_coinciden": true,
+  "renderings_verificados": 19,
+  "visual_review": "Revisión técnica del agente documentada por separado; no certificación académica",
+  "certificaciones_humanas_creadas": 0,
+  "indices_activados": 0
+}

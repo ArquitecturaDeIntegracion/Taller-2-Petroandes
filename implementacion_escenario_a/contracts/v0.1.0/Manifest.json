@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "generation_id": {
+      "minLength": 1,
+      "title": "Generation Id",
+      "type": "string"
+    },
+    "perfil": {
+      "enum": [
+        "baseline",
+        "laboratorio"
+      ],
+      "title": "Perfil",
+      "type": "string"
+    },
+    "revision_gobierno": {
+      "minimum": 0,
+      "title": "Revision Gobierno",
+      "type": "integer"
+    },
+    "particion": {
+      "const": "structural-es-1.0.0",
+      "title": "Particion",
+      "type": "string"
+    },
+    "bundle": {
+      "const": "e5small-es-1.0.0",
+      "title": "Bundle",
+      "type": "string"
+    },
+    "dimension": {
+      "const": 384,
+      "title": "Dimension",
+      "type": "integer"
+    },
+    "distancia": {
+      "const": "cosine",
+      "title": "Distancia",
+      "type": "string"
+    },
+    "catalogo_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Catalogo Sha256",
+      "type": "string"
+    },
+    "proyeccion_densa_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Proyeccion Densa Sha256",
+      "type": "string"
+    },
+    "proyeccion_lexica_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Proyeccion Lexica Sha256",
+      "type": "string"
+    },
+    "fragmentos": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Fragmentos",
+      "type": "array"
+    }
+  },
+  "required": [
+    "generation_id",
+    "perfil",
+    "revision_gobierno",
+    "particion",
+    "bundle",
+    "dimension",
+    "distancia",
+    "catalogo_sha256",
+    "proyeccion_densa_sha256",
+    "proyeccion_lexica_sha256",
+    "fragmentos"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

@@ -1,0 +1,11 @@
+{
+  "observation_id": "153b7386816742005bafbf90504713b08ed2bfe891c871fe942e08393ee3123c",
+  "documento": {
+    "doc_id": "MAN-MTO-002",
+    "version_documental": "1"
+  },
+  "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

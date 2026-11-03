@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"estado\": \"ok\",\n  \"fase\": \"F0\",\n  \"origen\": \"prueba_sintetica\"\n}"}],"structuredContent":{"estado":"ok","fase":"F0","origen":"prueba_sintetica"},"isError":false}}

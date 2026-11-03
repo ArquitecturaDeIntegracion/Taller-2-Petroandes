@@ -1,0 +1,23 @@
+{
+  "doc_id": "PRO-SEG-015",
+  "version_documental": "1",
+  "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+  "tipo": "procedimiento",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 6,
+  "fragmentos": 6,
+  "tablas": 1,
+  "filas": 5,
+  "max_tokens_entrada": 162,
+  "fuera_objetivo": 6,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 234,
+    "md_sha256": "8714baaabf714433d25be091fe3c2a395c744b3a9331471233feb4d3785565f8",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f4.py",
+    "inspect",
+    "--profile",
+    "baseline",
+    "--output",
+    "reports/portable/f4-20261101/baseline-reopen.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T23:53:55.790648+00:00",
+  "elapsed_seconds": 17.23072418799893,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

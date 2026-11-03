@@ -1,0 +1,160 @@
+Usage: inspector-cli [options] [target...]
+
+Arguments:
+  target                            Command and arguments or URL of the MCP
+                                    server (or use --config and --server)
+
+Options:
+  -V, --version                     Print the Inspector version
+  --catalog <path>                  Writable catalog file (created if missing;
+                                    default: ~/.mcp-inspector/mcp.json, or
+                                    MCP_CATALOG_PATH)
+  --config <path>                   Read-only session config file (served as-is,
+                                    never written or seeded; errors if absent)
+  --server <name>                   Server name from config/catalog file
+  --rename <name>                   New name for the entry (servers/edit only)
+  -e <env>                          Environment variables for the server
+                                    (KEY=VALUE) (default: {})
+  --method <method>                 Method to invoke
+  --tool-name <toolName>            Tool name (for tools/call method)
+  --tool-arg <pairs...>             Tool argument as key=value pair (default:
+                                    {})
+  --uri <uri>                       URI of the resource (resources/read,
+                                    resources/directory/read) or of the skill
+                                    (skills/get)
+  --cursor <cursor>                 Opaque pagination cursor (for
+                                    resources/directory/read; pass back the
+                                    nextCursor from the previous page).
+  --prompt-name <promptName>        Name of the prompt (for prompts/get method)
+  --prompt-args <pairs...>          Prompt arguments as key=value pairs
+                                    (default: {})
+  --log-level <level>               Logging level (for logging/setLevel method)
+  --cwd <path>                      Working directory for stdio server process
+  --transport <type>                Transport type (sse, http, or stdio).
+                                    Auto-detected from URL: /mcp → http, /sse →
+                                    sse, commands → stdio
+  --server-url <url>                Server URL for SSE/HTTP transport
+  --header <headers...>             HTTP headers as "HeaderName: Value" pairs
+                                    (for HTTP/SSE transports) (default: {})
+  --metadata <pairs...>             General metadata as key=value pairs (applied
+                                    to all methods) (default: {})
+  --tool-metadata <pairs...>        Tool-specific metadata as key=value pairs
+                                    (for tools/call method only) (default: {})
+  --app-info                        Probe the tool's MCP App UI metadata
+                                    (resourceUri, csp, permissions, domain) and
+                                    emit it as one JSON line; exit 2 when the
+                                    tool has no app. Use with --method
+                                    tools/call --tool-name <name> (the tool
+                                    itself is not invoked) or --method
+                                    tools/list (one NDJSON line per tool).
+  --advertise-apps                  Advertise the MCP Apps UI extension
+                                    (io.modelcontextprotocol/ui) at initialize.
+                                    Off by default because the CLI cannot render
+                                    an App; set it when a server only exposes
+                                    its App tools to a client that claims App
+                                    support, e.g. for an --app-info probe.
+  --strict                          Report tool-schema portability problems in
+                                    full (path, issue, suggested fix) on stderr,
+                                    and exit 6 if any is error-severity. Use
+                                    with --method tools/list. Without it, a
+                                    one-line count is printed instead.
+  --verify                          Run the SEP-2640 conformance and digest
+                                    checks over the skills returned, emit one
+                                    JSON report per skill on stdout, and exit 7
+                                    if any fails or 8 if any could not be fully
+                                    checked within the read bounds. Use with
+                                    --method skills/list or --method skills/get.
+  --require-digests                 With --verify: exit 9 when a skill
+                                    advertises no digests (resources:
+                                    "dynamic"), instead of reporting it as
+                                    unverifiable and exiting 0.
+  --load                            Load-test one tool: call it repeatedly and
+                                    concurrently, then print a latency and
+                                    error-rate summary instead of a result. Use
+                                    with --method tools/call --tool-name <name>.
+                                    Bounded by --load-duration (default 10s)
+                                    and/or --load-requests.
+  --load-concurrency <n>            With --load: most calls in flight at once
+                                    (positive integer; default 10).
+  --load-connections <n>            With --load: spread the calls over this many
+                                    independent connections (sessions) to an
+                                    HTTP or SSE server, opened before timing
+                                    starts (positive integer, at most
+                                    --load-concurrency; default 1).
+  --load-duration <sec>             With --load: stop starting calls after this
+                                    many seconds; in-flight calls still finish
+                                    (default 10 when --load-requests is not
+                                    set).
+  --load-requests <n>               With --load: stop after starting this many
+                                    calls (positive integer).
+  --load-rate <n>                   With --load: start at most this many calls
+                                    per second, spread evenly (positive number;
+                                    default unlimited).
+  --load-max-error-rate <fraction>  With --load: exit 10
+                                    (load_error_rate_exceeded) when the share of
+                                    failed calls is above this value, after
+                                    printing the summary (0 to 1; 0 fails on any
+                                    failed call).
+  --load-max-p99 <ms>               With --load: exit 10 (load_p99_exceeded)
+                                    when the p99 latency is above this many
+                                    milliseconds, or when no call completed,
+                                    after printing the summary (positive
+                                    number).
+  --connect-timeout <ms>            Connection timeout in ms (default 15000 for
+                                    ad-hoc --server-url / target invocations; 0
+                                    = no timeout).
+  --protocol-era <era>              Protocol era to negotiate: legacy, auto, or
+                                    modern. Overrides the file-level protocolEra
+                                    for --catalog/--config runs; ad-hoc
+                                    --server-url / target runs otherwise default
+                                    to legacy.
+  --skill-catalog-max-skills <n>    Skills catalog budget for --verify: the most
+                                    skills one run reads (positive integer;
+                                    default 256). Overrides the server's
+                                    skillCatalogMaxSkills in the catalog/config
+                                    file.
+  --skill-catalog-max-bytes <n>     Skills catalog budget for --verify: the most
+                                    bytes one run reads across all skills
+                                    (positive integer; default 67108864, 64
+                                    MiB). Overrides the server's
+                                    skillCatalogMaxBytes in the catalog/config
+                                    file.
+  --format <format>                 Output format: text (default;
+                                    pretty-printed) or json (one JSON object on
+                                    stdout, no banners).
+  -q, --quiet                       Suppress everything except the result
+                                    payload on stdout (or the error envelope on
+                                    stderr): status lines, warnings, advisory
+                                    summaries, and a stdio server's own stderr.
+                                    Interactive OAuth prompts still appear when
+                                    a login is needed.
+  --output <path>                   Write the result to this file instead of
+                                    stdout (the parent directory must exist; an
+                                    existing file is replaced).
+  --output-format <format>          Encoding of the --output file: json
+                                    (default; the whole result, pretty-printed)
+                                    or raw (the result's text, or the decoded
+                                    bytes of a single image/audio/blob block).
+                                    raw needs --method tools/call or
+                                    resources/read.
+  --tool-args-json <json>           Tool arguments as a single JSON object (e.g.
+                                    '{"zip":"10001"}'). Values are passed
+                                    verbatim — no key=value coercion. Mutually
+                                    exclusive with --tool-arg.
+  --client-config <path>            Install-level client config (default:
+                                    ~/.mcp-inspector/storage/client.json, or
+                                    MCP_CLIENT_CONFIG_PATH)
+  --client-id <id>                  OAuth client ID (static client) for HTTP
+                                    servers
+  --client-secret <secret>          OAuth client secret (for confidential
+                                    clients)
+  --client-metadata-url <url>       OAuth Client ID Metadata Document URL (CIMD)
+                                    for HTTP servers
+  --callback-url <url>              OAuth redirect/callback listener URL; must
+                                    be loopback (default:
+                                    http://127.0.0.1:6276/oauth/callback, or
+                                    MCP_OAUTH_CALLBACK_URL)
+  --use-stored-auth                 Read the OAuth access token for --server-url
+                                    from the OAuth state file (written by the
+                                    web inspector) and inject it as
+                                    Authorization: Bearer.

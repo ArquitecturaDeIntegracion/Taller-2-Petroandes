@@ -1,0 +1,15 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "tools/preflight.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:02:04.175747+00:00",
+  "elapsed_seconds": 3.862305800008471,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

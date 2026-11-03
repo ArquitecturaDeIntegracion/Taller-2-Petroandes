@@ -1,0 +1,13 @@
+{
+  "generation_id": "1589c208-0450-5b25-b58c-d61373aa340d",
+  "perfil": "baseline",
+  "revision_gobierno": 1,
+  "particion": "structural-es-1.0.0",
+  "bundle": "e5small-es-1.0.0",
+  "dimension": 384,
+  "distancia": "cosine",
+  "catalogo_sha256": "a86a08053229268104914f2b2106a5e2d3a149c44f76ef7146a7e99eee4a77c3",
+  "proyeccion_densa_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "proyeccion_lexica_sha256": "32d9224e61af82d736f528778cf06ace5fef3f1ddc989147f34530b2f2e4a582",
+  "fragmentos": []
+}

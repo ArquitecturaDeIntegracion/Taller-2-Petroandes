@@ -1,0 +1,72 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R11",
+  "particion_propuesta": "reserva",
+  "titulo": "Límite temporal exclusivo",
+  "pregunta": "Obtén la sección 2 de FIC-ACT-P101 v2 al finalizar el intervalo autorizado del fixture.",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-12-01T00:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D19"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "denegado",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "En effective_to exacto, el intervalo [inicio, fin) ya venció: no devolver partes ni citas.",
+      "La fecha controlada se inyecta solo en el reloj de pruebas; no añadir un selector de fecha al MCP."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    },
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar zona horaria, igualdad con fecha fin y que no se manipule el reloj del servicio operativo.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

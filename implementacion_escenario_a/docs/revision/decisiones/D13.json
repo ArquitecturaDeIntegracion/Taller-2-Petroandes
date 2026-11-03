@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D13",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "RES-CREG-0043-2024",
+    "version_documental": null,
+    "titulo": "Resolución 0043 de 2024 — Condiciones de medición para la transferencia de custodia",
+    "emisor_segun_pdf": "Gerencia de Cumplimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+      "doc_id": "RES-CREG-0043-2024",
+      "version_documental": null,
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Resolución ficticia: incertidumbre 0,3 %, verificación 30/60 días y derogación íntegra de 0112.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-2",
+        "extracto_verificado": "cero coma tres por ciento (0,3 %)."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-6",
+        "extracto_verificado": "deroga en su integridad la Resolución 0112 de 2021."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Cumplimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "Publicación no está acreditada por emisión. No equivale a certificación regulatoria ni a norma colombiana real."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura normativa ficticia bajo publicación simulada explícita, manteniendo separados incertidumbre y tolerancia?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

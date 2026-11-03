@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "consulta": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Consulta",
+      "type": "string"
+    },
+    "top_k": {
+      "default": 5,
+      "maximum": 10,
+      "minimum": 1,
+      "title": "Top K",
+      "type": "integer"
+    },
+    "filtros": {
+      "anyOf": [
+        {
+          "$ref": "SearchFilters.json"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "consulta"
+  ],
+  "title": "SearchQuery",
+  "type": "object"
+}

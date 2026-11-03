@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-OPE-012",
+  "version_documental": "3",
+  "rol_area_simulado": "Centro de Control de Operaciones",
+  "usos": [
+    "instruccion_operativa",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Conservar tramo, umbral, ventana y condiciones; no extrapolar a otro tramo."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A04",
+  "particion_propuesta": "ajuste",
+  "titulo": "Conciliación y cifra oficial",
+  "pregunta": "Según PRO-MED-007 v2, ¿qué tolerancia y plazo de cierre se declaran y qué sistema produce la cifra oficial?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D06"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Tolerancia 0,5 % del volumen recibido; cierre al quinto día hábil del mes siguiente.",
+      "El cálculo es determinista en el sistema de balance volumétrico; otro sistema no produce la cifra oficial."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "§2.2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "tabla de criterios"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "§2.2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "tabla de criterios"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D05"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Contrastar valor/unidad y no convertir esta explicación en un cálculo o acceso real a balances.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

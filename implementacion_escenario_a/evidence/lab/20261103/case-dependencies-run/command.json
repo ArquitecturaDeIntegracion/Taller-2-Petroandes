@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "tools/review_lab_case_dependencies.py",
+    "--request",
+    "config/admin/lab-20261103/request/request.json",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/case-dependencies"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:12:39.366275+00:00",
+  "elapsed_seconds": 1.7837024000036763,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

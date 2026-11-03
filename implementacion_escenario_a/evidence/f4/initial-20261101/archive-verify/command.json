@@ -1,0 +1,16 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-c",
+    "import hashlib,json; from pathlib import Path; base=Path(\"evidence/f4/initial-20261101\"); hashes=json.loads((base/\"implementation-sha256.json\").read_text()); assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==h for p,h in hashes.items()); a=json.loads((base/\"audit/summary.json\").read_text()); assert all(hashlib.sha256((base/\"audit\"/p).read_bytes()).hexdigest()==h for p,h in a[\"sha256\"].items()); c=json.loads((base/\"closure/closure.json\").read_text()); assert all(hashlib.sha256((base/\"closure\"/r[\"perfil\"]/p).read_bytes()).hexdigest()==h for r in c[\"profiles\"] for p,h in r[\"exported_sha256\"].items()); assert json.loads((base/\"tests-final/command.json\").read_text())[\"exit_code\"]==0; assert json.loads((base/\"validate-final/command.json\").read_text())[\"exit_code\"]==0; print(\"PASS: 22 implementation hashes, audit, SQLite exports, tests and final validation\")"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-02T00:02:50.398372+00:00",
+  "elapsed_seconds": 0.2952106000011554,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

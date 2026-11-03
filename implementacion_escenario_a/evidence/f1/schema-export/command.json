@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "tools/export_contracts.py",
+    "--output-dir",
+    "contracts/v0.1.0"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:51:18.803197+00:00",
+  "elapsed_seconds": 0.7463388999999552,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

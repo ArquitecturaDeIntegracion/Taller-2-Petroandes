@@ -1,0 +1,160 @@
+  5 líneas  evidence\f3\initial-20261101\laboratorio-release\document-10\sections-001.jsonl
+ 71 líneas  evidence\f3\initial-20261101\laboratorio-release\document-11\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-11\report.json
+  6 líneas  evidence\f3\initial-20261101\laboratorio-release\document-11\sections-001.jsonl
+ 71 líneas  evidence\f3\initial-20261101\laboratorio-release\document-12\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-12\report.json
+  6 líneas  evidence\f3\initial-20261101\laboratorio-release\document-12\sections-001.jsonl
+ 75 líneas  evidence\f3\initial-20261101\laboratorio-release\document-13\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-13\report.json
+  6 líneas  evidence\f3\initial-20261101\laboratorio-release\document-13\sections-001.jsonl
+ 81 líneas  evidence\f3\initial-20261101\laboratorio-release\document-14\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-14\report.json
+  5 líneas  evidence\f3\initial-20261101\laboratorio-release\document-14\sections-001.jsonl
+ 67 líneas  evidence\f3\initial-20261101\laboratorio-release\document-15\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-15\report.json
+  5 líneas  evidence\f3\initial-20261101\laboratorio-release\document-15\sections-001.jsonl
+ 74 líneas  evidence\f3\initial-20261101\laboratorio-release\document-16\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-16\report.json
+  4 líneas  evidence\f3\initial-20261101\laboratorio-release\document-16\sections-001.jsonl
+ 82 líneas  evidence\f3\initial-20261101\laboratorio-release\document-17\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-17\report.json
+  4 líneas  evidence\f3\initial-20261101\laboratorio-release\document-17\sections-001.jsonl
+ 73 líneas  evidence\f3\initial-20261101\laboratorio-release\document-18\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-18\report.json
+  5 líneas  evidence\f3\initial-20261101\laboratorio-release\document-18\sections-001.jsonl
+ 76 líneas  evidence\f3\initial-20261101\laboratorio-release\document-19\layout-page-001-part-001.txt
+ 23 líneas  evidence\f3\initial-20261101\laboratorio-release\document-19\report.json
+  4 líneas  evidence\f3\initial-20261101\laboratorio-release\document-19\sections-001.jsonl
+ 19 líneas  evidence\f3\initial-20261101\plan\command.json
+  2 líneas  evidence\f3\initial-20261101\plan\stderr-001.log
+ 26 líneas  evidence\f3\initial-20261101\plan\stdout-001.log
+ 15 líneas  evidence\f3\initial-20261101\preflight-start\command.json
+ 90 líneas  evidence\f3\initial-20261101\preflight-start\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline\command.json
+ 68 líneas  evidence\f3\initial-20261101\prepare-baseline\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline-final\command.json
+ 17 líneas  evidence\f3\initial-20261101\prepare-baseline-final\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline-reingest-final\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-baseline-reingest-final\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline-release\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-baseline-release\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline-repeat\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-baseline-repeat\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-baseline-verified\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-baseline-verified\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-laboratorio\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-laboratorio\stdout-001.log
+ 20 líneas  evidence\f3\initial-20261101\prepare-laboratorio-release\command.json
+ 81 líneas  evidence\f3\initial-20261101\prepare-laboratorio-release\stdout-001.log
+153 líneas  evidence\f3\initial-20261101\render-recorded\render-manifest.json
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-01\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-01\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-02\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-02\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-03\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-03\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-04\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-04\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-05\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-05\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-06\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-06\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-07\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-07\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-08\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-08\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-09\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-09\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-10\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-10\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-11\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-11\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-12\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-12\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-13\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-13\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-14\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-14\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-15\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-15\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-16\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-16\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-17\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-17\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-18\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-18\stderr-001.log
+ 20 líneas  evidence\f3\initial-20261101\render-recorded\command-19\command.json
+  2 líneas  evidence\f3\initial-20261101\render-recorded\command-19\stderr-001.log
+ 19 líneas  evidence\f3\initial-20261101\render-run\command.json
+153 líneas  evidence\f3\initial-20261101\render-run\stdout-001.log
+ 45 líneas  evidence\f3\initial-20261101\stage-backups\baseline\manifest.json
+ 45 líneas  evidence\f3\initial-20261101\stage-backups\laboratorio\manifest.json
+ 21 líneas  evidence\f3\initial-20261101\tests-final\command.json
+  3 líneas  evidence\f3\initial-20261101\tests-final\stdout-001.log
+ 21 líneas  evidence\f3\initial-20261101\tests-full-first\command.json
+  3 líneas  evidence\f3\initial-20261101\tests-full-first\stdout-001.log
+ 26 líneas  evidence\f3\initial-20261101\validate-final\command.json
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-001.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-002.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-003.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-004.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-005.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-006.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-007.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-008.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-009.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-010.log
+160 líneas  evidence\f3\initial-20261101\validate-final\stdout-011.log
+ 96 líneas  evidence\f3\initial-20261101\validate-final\stdout-012.log
+ 19 líneas  evidence\f3\initial-20261101\validate-start\command.json
+160 líneas  evidence\f3\initial-20261101\validate-start\stdout-001.log
+160 líneas  evidence\f3\initial-20261101\validate-start\stdout-002.log
+160 líneas  evidence\f3\initial-20261101\validate-start\stdout-003.log
+160 líneas  evidence\f3\initial-20261101\validate-start\stdout-004.log
+ 58 líneas  evidence\f3\initial-20261101\validate-start\stdout-005.log
+ 38 líneas  evidence\f4\initial-20261101\README.md
+ 56 líneas  evidence\f4\initial-20261101\baseline-reopen.json
+ 26 líneas  evidence\f4\initial-20261101\baseline-repeat.json
+ 26 líneas  evidence\f4\initial-20261101\baseline.json
+ 24 líneas  evidence\f4\initial-20261101\implementation-sha256.json
+ 26 líneas  evidence\f4\initial-20261101\laboratorio-repeat.json
+ 26 líneas  evidence\f4\initial-20261101\laboratorio.json
+ 16 líneas  evidence\f4\initial-20261101\archive-verify\command.json
+  1 líneas  evidence\f4\initial-20261101\archive-verify\stdout-001.log
+117 líneas  evidence\f4\initial-20261101\audit\batches.json
+ 33 líneas  evidence\f4\initial-20261101\audit\bundle.json
+ 92 líneas  evidence\f4\initial-20261101\audit\rows.jsonl
+ 25 líneas  evidence\f4\initial-20261101\audit\summary.json
+ 20 líneas  evidence\f4\initial-20261101\audit-run\command.json
+ 25 líneas  evidence\f4\initial-20261101\audit-run\stdout-001.log
+ 20 líneas  evidence\f4\initial-20261101\baseline-reopen-run\command.json
+ 56 líneas  evidence\f4\initial-20261101\baseline-reopen-run\stdout-001.log
+ 22 líneas  evidence\f4\initial-20261101\baseline-repeat-run\command.json
+ 26 líneas  evidence\f4\initial-20261101\baseline-repeat-run\stdout-001.log
+ 22 líneas  evidence\f4\initial-20261101\baseline-run\command.json
+ 26 líneas  evidence\f4\initial-20261101\baseline-run\stdout-001.log
+ 64 líneas  evidence\f4\initial-20261101\closure\closure.json
+ 13 líneas  evidence\f4\initial-20261101\closure\baseline\manifest.json
+ 24 líneas  evidence\f4\initial-20261101\closure\baseline\receipt.json
+ 13 líneas  evidence\f4\initial-20261101\closure\laboratorio\manifest.json
+ 24 líneas  evidence\f4\initial-20261101\closure\laboratorio\receipt.json
+ 19 líneas  evidence\f4\initial-20261101\closure-run\command.json
+ 64 líneas  evidence\f4\initial-20261101\closure-run\stdout-001.log
+ 22 líneas  evidence\f4\initial-20261101\laboratorio-repeat-run\command.json
+ 26 líneas  evidence\f4\initial-20261101\laboratorio-repeat-run\stdout-001.log
+ 22 líneas  evidence\f4\initial-20261101\laboratorio-run\command.json
+ 26 líneas  evidence\f4\initial-20261101\laboratorio-run\stdout-001.log
+ 19 líneas  evidence\f4\initial-20261101\plan\command.json
+  2 líneas  evidence\f4\initial-20261101\plan\stderr-001.log
+ 28 líneas  evidence\f4\initial-20261101\plan\stdout-001.log
+ 15 líneas  evidence\f4\initial-20261101\preflight-start\command.json
+ 90 líneas  evidence\f4\initial-20261101\preflight-start\stdout-001.log
+ 19 líneas  evidence\f4\initial-20261101\tests-final\command.json
+  3 líneas  evidence\f4\initial-20261101\tests-final\stdout-001.log
+ 19 líneas  evidence\f4\initial-20261101\tests-full\command.json
+  3 líneas  evidence\f4\initial-20261101\tests-full\stdout-001.log
+ 18 líneas  evidence\f4\initial-20261101\tests-initial\command.json
+  8 líneas  evidence\f4\initial-20261101\tests-initial\stdout-001.log
+ 28 líneas  evidence\f4\initial-20261101\validate-final\command.json
+160 líneas  evidence\f4\initial-20261101\validate-final\stdout-001.log

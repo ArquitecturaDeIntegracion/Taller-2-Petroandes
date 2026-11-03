@@ -1,0 +1,23 @@
+{
+  "doc_id": "MAN-OPE-001",
+  "version_documental": "3",
+  "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+  "pdf_uri": "project:corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+  "tipo": "manual",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 1,
+  "filas": 4,
+  "max_tokens_entrada": 255,
+  "fuera_objetivo": 4,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 323,
+    "md_sha256": "d8c54e1648af1876295ca2f8b491b2051bdcc0ff1eb563080196cf857c7f15f4",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

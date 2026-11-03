@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R02",
+  "particion_propuesta": "reserva",
+  "titulo": "Derogación en el cuerpo de la norma",
+  "pregunta": "¿Qué documento del corpus declara la derogación íntegra de RES-CREG-0112-2021?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D13"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "El artículo 6 de RES-CREG-0043-2024 declara la derogación íntegra de la resolución 0112 de 2021.",
+      "El mismo artículo condiciona la vigencia a la publicación. No identificar emisión con publicación ni inventar una fecha."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-6"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-6"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D14"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar derogación, condición de publicación y conservación del antecedente excluido; no consultar normas reales.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

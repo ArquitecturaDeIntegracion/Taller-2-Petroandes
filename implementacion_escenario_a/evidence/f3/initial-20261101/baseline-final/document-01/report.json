@@ -1,0 +1,23 @@
+{
+  "doc_id": "MAN-MTO-002",
+  "version_documental": "1",
+  "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+  "pdf_uri": "project:corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+  "tipo": "manual",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 2,
+  "filas": 8,
+  "max_tokens_entrada": 217,
+  "fuera_objetivo": 5,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 184,
+    "md_sha256": "776467fa5ee76780bee662ecddd6bf211ce2b60fc27aab2d597f5ab82b728d36",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

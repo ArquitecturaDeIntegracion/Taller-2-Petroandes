@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "tools/f0.py",
+    "e5",
+    "--output",
+    "evidence/f0/e5-online.json"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:43:14.050355+00:00",
+  "elapsed_seconds": 64.6780332000003,
+  "exit_code": 1,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "${APP_ROOT}/tools/f4.py", line 81, in <module>
+    main()
+  File "${APP_ROOT}/tools/f4.py", line 71, in main
+    manifest, receipt = publisher.active()
+                        ^^^^^^^^^^^^^^^^^^
+  File "${APP_ROOT}/petroandes/index/publication.py", line 97, in active
+    with governance_fence(self.policy, key["revision_gobierno"]) as current:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "${APP_ROOT}/petroandes/index/publication.py", line 47, in governance_fence
+    raise IndexUnavailable("Gobierno cambió durante la preparación")
+petroandes.index.common.IndexUnavailable: Gobierno cambió durante la preparación

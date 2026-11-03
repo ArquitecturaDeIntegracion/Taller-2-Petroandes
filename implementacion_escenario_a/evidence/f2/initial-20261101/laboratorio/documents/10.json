@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-SEG-009",
+  "version_documental": "1",
+  "pdf_sha256": "0e8fb04a5e8e1b33490efb77240ee65cdd79786697f70b1fdceaa4194518341f",
+  "contrato": "corpus_documental_petroandes/1.0.0",
+  "tipo": "procedimiento",
+  "titulo": "Reporte de eventos de pérdida de producto",
+  "emisor": "Gerencia de Seguridad Física",
+  "fecha_emision": "2019-07-04",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-SEG-009_v1.pdf",
+  "paginas": 1
+}

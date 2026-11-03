@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\Users\\jcjca\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\inspector\\node_modules\\@modelcontextprotocol\\inspector\\clients\\launcher\\build\\index.js",
+    "--cli",
+    "--config",
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\inspector-state\\f0.json",
+    "--server",
+    "f0",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "comprobar_entorno"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:57:33.318848+00:00",
+  "elapsed_seconds": 2.0421077999999397,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

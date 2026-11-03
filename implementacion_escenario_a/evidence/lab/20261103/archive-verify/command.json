@@ -1,0 +1,18 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "-c",
+    "import json,hashlib; from pathlib import Path; base=Path(\"evidence/lab/20261103\"); read=lambda path:json.loads(path.read_text(encoding=\"utf-8\")); expected=read(base/\"implementation-sha256.json\"); assert all(hashlib.sha256(Path(name).read_bytes()).hexdigest()==value for name,value in expected.items()); registration=read(base/\"registration/summary.json\"); assert all(hashlib.sha256((base/\"registration\"/name).read_bytes()).hexdigest()==value for name,value in registration[\"backup_sha256\"].items()); index=read(base/\"index-closure/summary.json\"); assert all(hashlib.sha256((base/\"index-closure\"/name).read_bytes()).hexdigest()==value for name,value in index[\"sha256\"].items()); assert read(base/\"tests-full/command.json\")[\"exit_code\"]==0; assert read(base/\"validate-final/command.json\")[\"exit_code\"]==0; print(\"PASS: 28 implementation/input hashes, catalog/index exports, tests and final validation\")"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:25:32.960754+00:00",
+  "elapsed_seconds": 0.23411640000995249,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

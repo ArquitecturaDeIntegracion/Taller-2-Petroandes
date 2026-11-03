@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "${APP_ROOT}/petroandes/extract/__main__.py", line 19, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "${APP_ROOT}/petroandes/extract/__main__.py", line 13, in main
+    result = ingest(args.profile, args.output_dir)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${APP_ROOT}/petroandes/extract/pipeline.py", line 73, in ingest
+    stage, reused = store_generation(stage_manifest, fragments, parents)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${APP_ROOT}/petroandes/extract/staging.py", line 65, in store_generation
+    verify_existing(target, manifest, records, parents)
+  File "${APP_ROOT}/petroandes/extract/staging.py", line 35, in verify_existing
+    raise ExtractionReview("Generación existente no coincide; no sobrescribir")
+petroandes.extract.models.ExtractionReview: Generación existente no coincide; no sobrescribir

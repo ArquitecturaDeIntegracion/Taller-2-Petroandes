@@ -1,0 +1,23 @@
+{
+  "doc_id": "FIC-ACT-P101",
+  "version_documental": "2",
+  "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+  "pdf_uri": "project:corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+  "tipo": "ficha",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 4,
+  "fragmentos": 4,
+  "tablas": 3,
+  "filas": 12,
+  "max_tokens_entrada": 130,
+  "fuera_objetivo": 4,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 142,
+    "md_sha256": "0f4d019a9641fe9a8c1cac1f0856db5b1271051b1e179a2e3a551ef12d4d4d50",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

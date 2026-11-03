@@ -1,0 +1,7 @@
+# Configuración nativa local para Codex CLI y extensión de VS Code.
+# El modelo se hereda del cliente o de la configuración superior.
+# El nivel depende del modelo, del cliente y de las políticas efectivas.
+model_reasoning_effort = "high"
+
+# No se cambian permisos, sandbox, proveedores, claves ni configuración global.
+# config.json es un manifiesto del paquete; no reemplaza este archivo.

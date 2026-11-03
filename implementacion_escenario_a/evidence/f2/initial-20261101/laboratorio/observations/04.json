@@ -1,0 +1,11 @@
+{
+  "observation_id": "926a7657825eda9c8609baf854e5a5ec1ebfd52c6d7ac7b718e24faa73605052",
+  "documento": {
+    "doc_id": "PRO-HSE-003",
+    "version_documental": "4"
+  },
+  "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

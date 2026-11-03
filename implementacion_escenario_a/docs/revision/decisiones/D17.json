@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D17",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "COM-PRV-0098",
+    "version_documental": null,
+    "titulo": "Boletín técnico del fabricante — actuadores de válvula serie VX",
+    "emisor_segun_pdf": "Gerencia de Integridad y Mantenimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+      "doc_id": "COM-PRV-0098",
+      "version_documental": null,
+      "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Recomienda lubricar cada cuatro meses los actuadores afectados; incorporar exige actualizar el manual.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "asunto",
+        "extracto_verificado": "actuadores de la serie VX fabricados antes de 2019"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "alcance",
+        "extracto_verificado": "Esta recomendación del fabricante no modifica los planes de mantenimiento del operador."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Integridad y Mantenimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No se acreditó que cada actuador instalado pertenezca al lote afectado. No extender a todas las válvulas."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura de la recomendación para VL-AC-014/VL-AC-061 sin adoptarla como plan interno?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/read_source.py",
+    "plan",
+    "--section",
+    "F2 Gobierno"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T21:26:37.399191+00:00",
+  "elapsed_seconds": 0.6334908519997953,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

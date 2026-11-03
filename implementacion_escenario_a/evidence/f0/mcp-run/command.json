@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "tools/f0_mcp.py",
+    "--output-dir",
+    "evidence/f0/mcp"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:42:00.313827+00:00",
+  "elapsed_seconds": 1.864211200000227,
+  "exit_code": 1,
+  "output_files": [
+    "stderr-001.log"
+  ]
+}

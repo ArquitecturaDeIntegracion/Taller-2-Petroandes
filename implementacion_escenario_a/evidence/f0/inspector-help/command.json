@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    ".venv/inspector/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--help"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:38:11.844981+00:00",
+  "elapsed_seconds": 0.017721700000038254,
+  "exit_code": 126,
+  "output_files": [
+    "stderr-001.log"
+  ]
+}

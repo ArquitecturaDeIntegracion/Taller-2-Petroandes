@@ -1,0 +1,60 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D14",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "RES-CREG-0112-2021",
+    "version_documental": null,
+    "titulo": "Resolución 0112 de 2021 — Condiciones de medición para la transferencia de custodia",
+    "emisor_segun_pdf": "Gerencia de Cumplimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/03_normativa/RES-CREG-0112-2021.pdf",
+      "doc_id": "RES-CREG-0112-2021",
+      "version_documental": null,
+      "pdf_sha256": "9daa12ee5b9fcb5b5b59cceabea80c69966ff0f3dc6c3ca78c9a57dd9ce7a7d2",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "excluido",
+  "evidencia_corpus": {
+    "conclusion": "El artículo 6 de 0043-2024 contiene la derogación íntegra de 0112-2021.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "pagina": 1,
+        "section_id": "articulo-6",
+        "extracto_verificado": "deroga en su integridad la Resolución 0112 de 2021."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_excluido",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Cumplimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "Preservar el PDF para auditoría; no habilitar 0,5 % o 90 días como norma actual. No inventar fecha de publicación."
+  },
+  "decision_pendiente_del_estudiante": "¿Confirmas conservar su exclusión en el baseline, haciendo explícita la condición de publicación de la norma sucesora?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

@@ -1,0 +1,57 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-01T21:39:38.831112+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/check_f2.py",
+    "--evidence-dir",
+    "evidence/f2/initial-20261101",
+    "--output",
+    "reports/portable/f2-20261101/persisted-archive.json"
+  ],
+  "status": "passed",
+  "profiles": [
+    {
+      "perfil": "baseline",
+      "governance_revision": 1,
+      "documentos": 19,
+      "clasificacion": {
+        "pendiente": 15,
+        "excluido": 4,
+        "certificado": 0
+      },
+      "decisiones_registradas": 0,
+      "conflictos_abiertos": 0,
+      "eventos_pendientes": 1,
+      "elegibles": 0,
+      "accesos_directos_denegados": 19,
+      "hashes_pdf_conservados": 19,
+      "backup_verificado": true
+    },
+    {
+      "perfil": "laboratorio",
+      "governance_revision": 1,
+      "documentos": 19,
+      "clasificacion": {
+        "pendiente": 15,
+        "excluido": 4,
+        "certificado": 0
+      },
+      "decisiones_registradas": 0,
+      "conflictos_abiertos": 0,
+      "eventos_pendientes": 1,
+      "elegibles": 0,
+      "accesos_directos_denegados": 19,
+      "hashes_pdf_conservados": 19,
+      "backup_verificado": true
+    }
+  ],
+  "technical_F2_initialization_verified": true,
+  "academic_review_pending": true,
+  "certificaciones_humanas_creadas": 0,
+  "phase_F2_complete": false,
+  "scope": "Catálogo y política F2; no acredita índices, recuperación ni herramientas F7"
+}

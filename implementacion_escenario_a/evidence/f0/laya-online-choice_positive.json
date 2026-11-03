@@ -1,0 +1,47 @@
+{
+  "recorded_utc": "2026-11-01T19:48:45.543789+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0.py",
+    "laya",
+    "--output",
+    "evidence/f0/laya-online.json"
+  ],
+  "synthetic_case": {
+    "id": "choice_positive",
+    "state": "Pregunta: ¿De qué color es la puerta? Fragmento: La puerta es azul.",
+    "question": {
+      "type": "choice",
+      "instructions": "¿El fragmento responde a la pregunta indicada?",
+      "criteria": {
+        "pertinente": "Sí responde",
+        "no_pertinente": "No responde"
+      }
+    },
+    "expected": "pertinente"
+  },
+  "sequence_tokens": 49,
+  "truncation": {
+    "state_tokens": 19,
+    "state_tokens_used": 19,
+    "state_tokens_dropped": 0,
+    "truncated": false
+  },
+  "inference_seconds": 0.27723650000007183,
+  "answer": {
+    "type": "choice",
+    "choice": "pertinente",
+    "probabilities": {
+      "pertinente": 0.7114,
+      "no_pertinente": 0.2886
+    },
+    "confidence": 0.1331,
+    "answer_confidence": 0.7114,
+    "action": {
+      "act_probability": 1.0
+    }
+  },
+  "matches_synthetic_expectation": true
+}

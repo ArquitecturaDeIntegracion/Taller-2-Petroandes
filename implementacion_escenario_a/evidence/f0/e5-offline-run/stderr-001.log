@@ -1,0 +1,2 @@
+Returning existing local_dir `C:\Users\jcjca\OneDrive\Documentos\ChatGPT\Taller 2 Arquitecura de Integración\implementacion_escenario_a\.venv\model-files\e5-fd1525a9fd15316a2d503bf26ab031a61d056e98` as remote repo cannot be accessed in `snapshot_download` (None).
+Token indices sequence length is longer than the specified maximum sequence length for this model (2005 > 448). Running this sequence through the model will result in indexing errors

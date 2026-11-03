@@ -1,0 +1,138 @@
+..F.....F..F..........                                                   [100%]
+=================================== FAILURES ===================================
+_____ test_real_pdf_sections_and_ordered_lexical_contrast[MAN-OPE-004_v2] ______
+
+path = PosixPath('${PROJECT_ROOT}/corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf')
+
+    @pytest.mark.parametrize("path", PDFS, ids=lambda path: path.stem)
+    def test_real_pdf_sections_and_ordered_lexical_contrast(path):
+>       doc, sections, extraction = extract_pdf(path)
+                                    ^^^^^^^^^^^^^^^^^
+
+tests/test_f3_extraction.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+petroandes/extract/pdf.py:65: in extract_pdf
+    sections = sections_from_layout(layouts, document.tipo)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+petroandes/extract/pdf.py:45: in sections_from_layout
+    sections.append(Section(key, title, blocks(lines)))
+                                        ^^^^^^^^^^^^^
+petroandes/extract/tables.py:76: in blocks
+    table, cursor = read_table(lines, cursor)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+lines = [Line(page=1, number=24, text=' 3.1 El operador verifica al inicio de cada turno la integridad de los sellos, la vigen... transporte y,'), Line(page=1, number=28, text=' como mínimo, una vez al mes.'), Line(page=1, number=29, text=''), ...]
+start = 6
+
+    def read_table(lines, start):
+        header_line = lines[start]
+        header_cells = cells(header_line)
+        if len(header_cells) < 2:
+            raise ExtractionReview("Tabla sin columnas identificables")
+        anchors, headers = zip(*header_cells)
+        rows, traces, row, trace = [], [], [""] * len(headers), []
+    
+        def flush():
+            nonlocal row, trace
+            if trace:
+                if not all(row):
+                    raise ExtractionReview("Fila con columnas vacías; requiere contraste visual")
+                rows.append(tuple(row))
+                traces.append(tuple(trace))
+                row, trace = [""] * len(headers), []
+    
+        cursor = start + 1
+        while cursor < len(lines):
+            line = lines[cursor]
+            if not line.text.strip():
+                flush()
+                cursor += 1
+                continue
+            pieces = cells(line)
+            if not trace and len(pieces) < 2:
+                break
+            assigned = []
+            for position, text in pieces:
+                column = min(range(len(anchors)), key=lambda i: abs(anchors[i] - position))
+                if abs(anchors[column] - position) > 5 or column in assigned:
+                    raise ExtractionReview("Alineación de tabla ambigua; no reasignar columnas")
+                assigned.append(column)
+                row[column] = " ".join(filter(None, (row[column], text)))
+            trace.append(line)
+            cursor += 1
+        flush()
+        if not rows:
+>           raise ExtractionReview("Tabla detectada sin filas completas")
+E           petroandes.extract.models.ExtractionReview: Tabla detectada sin filas completas
+
+petroandes/extract/tables.py:52: ExtractionReview
+_____ test_real_pdf_sections_and_ordered_lexical_contrast[PRO-OPE-021_v1] ______
+
+path = PosixPath('${PROJECT_ROOT}/corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf')
+
+    @pytest.mark.parametrize("path", PDFS, ids=lambda path: path.stem)
+    def test_real_pdf_sections_and_ordered_lexical_contrast(path):
+>       doc, sections, extraction = extract_pdf(path)
+                                    ^^^^^^^^^^^^^^^^^
+
+tests/test_f3_extraction.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+petroandes/extract/pdf.py:65: in extract_pdf
+    sections = sections_from_layout(layouts, document.tipo)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+petroandes/extract/pdf.py:45: in sections_from_layout
+    sections.append(Section(key, title, blocks(lines)))
+                                        ^^^^^^^^^^^^^
+petroandes/extract/tables.py:76: in blocks
+    table, cursor = read_table(lines, cursor)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+petroandes/extract/tables.py:35: in read_table
+    flush()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def flush():
+        nonlocal row, trace
+        if trace:
+            if not all(row):
+>               raise ExtractionReview("Fila con columnas vacías; requiere contraste visual")
+E               petroandes.extract.models.ExtractionReview: Fila con columnas vacías; requiere contraste visual
+
+petroandes/extract/tables.py:26: ExtractionReview
+____ test_real_pdf_sections_and_ordered_lexical_contrast[RES-ANH-0471-2023] ____
+
+path = PosixPath('${PROJECT_ROOT}/corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf')
+
+    @pytest.mark.parametrize("path", PDFS, ids=lambda path: path.stem)
+    def test_real_pdf_sections_and_ordered_lexical_contrast(path):
+        doc, sections, extraction = extract_pdf(path)
+        md = PROJECT_ROOT / "corpus/md" / path.relative_to(PROJECT_ROOT / "corpus/pdf").with_suffix(".md")
+>       result = compare_markdown(sections, md)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_f3_extraction.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+sections = (Section(section_id='articulo-1', title='Artículo 1. Objeto', blocks=(Block(kind='prosa', text='La presente resolución...n.', lines=(Line(page=1, number=34, text=' La presente resolución rige a partir de su publicación.'),), table=None),)))
+markdown_path = PosixPath('${PROJECT_ROOT}/corpus/md/03_normativa/RES-ANH-0471-2023.md')
+
+    def compare_markdown(sections, markdown_path):
+        data = markdown_path.read_bytes()
+        markdown = data.decode("utf-8-sig")
+        body = re.search(r"^##\s+", markdown, re.M)
+        if not body:
+            raise ExtractionReview("Markdown de contraste sin cuerpo identificable")
+        expected, actual = lexical_tokens(markdown[body.start():]), lexical_tokens(pdf_body(sections))
+        if expected != actual:
+            matcher = difflib.SequenceMatcher(a=expected, b=actual, autojunk=False)
+            differences = [{"operation": tag, "md": expected[i:j], "pdf": actual[k:l]}
+                           for tag, i, j, k, l in matcher.get_opcodes() if tag != "equal"]
+>           raise ExtractionReview("Diferencia PDF/Markdown: " + repr(differences[:3]))
+E           petroandes.extract.models.ExtractionReview: Diferencia PDF/Markdown: [{'operation': 'delete', 'md': ['considerando', 'que', 'corresponde', 'a', 'la', 'autoridad', 'sectorial', 'establecer', 'las', 'condiciones', 'de', 'reporte', 'de', 'las', 'pérdidas', 'de', 'hidrocarburos', 'ocurridas', 'en', 'la', 'infraestructura', 'de', 'transporte', 'con', 'el', 'fin', 'de', 'disponer', 'de', 'información', 'comparable', 'entre', 'operadores'], 'pdf': []}]
+
+petroandes/extract/contrast.py:31: ExtractionReview
+=========================== short test summary info ============================
+FAILED tests/test_f3_extraction.py::test_real_pdf_sections_and_ordered_lexical_contrast[MAN-OPE-004_v2]
+FAILED tests/test_f3_extraction.py::test_real_pdf_sections_and_ordered_lexical_contrast[PRO-OPE-021_v1]
+FAILED tests/test_f3_extraction.py::test_real_pdf_sections_and_ordered_lexical_contrast[RES-ANH-0471-2023]
+3 failed, 19 passed in 2.27s

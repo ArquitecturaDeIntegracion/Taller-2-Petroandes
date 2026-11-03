@@ -1,0 +1,28 @@
+0435 ### F10 Consolidación, propagación, revocación y reindexación
+0436 
+0437 **Objetivo:** demostrar que los índices siguen al gobierno y que los cambios no reintroducen fuentes excluidas.
+0438 
+0439 **Actividades**
+0440 
+0441 - [ ] F10.1 Implementar una carga inicial completa como **consolidación**, con manifiesto de documentos, decisiones, fragmentos y bundle.
+0442 - [ ] F10.2 Implementar comandos de cambio y aplicación de eventos como **propagación** de laboratorio. Registrar evento y decisión juntos en SQLite, con consumidor idempotente y registro de errores y reintentos acotados.
+0443 - [ ] F10.3 Procesar aprobación, revocación, vencimiento, cambio de permisos, sustitución y modificación de contenido. Un cambio de archivo genera revisión pendiente, no aprobación.
+0444 - [ ] F10.4 Denegar una fuente revocada desde el catálogo en la siguiente solicitud, aunque sus vectores sigan presentes. Preferir lectura del catálogo por solicitud para evitar una caché adicional en esta versión.
+0445 - [ ] F10.5 Preparar una generación nueva de índices y activar un manifiesto común. Simular un fallo entre catálogo y Qdrant y demostrar que una revisión incompleta no se consulta.
+0446 - [ ] F10.6 Repetir un evento y entregar otro antiguo: no duplicar fragmentos ni volver a un estado de autorización anterior. Reconciliar conteos, IDs y revisiones.
+0447 - [ ] F10.7 Ejecutar una reindexación controlada ante cambio de bundle o partición: nueva colección, comparación con referencia, activación coordinada y reversión técnica. Toda reversión respeta las revocaciones actuales.
+0448 - [ ] F10.8 Medir tiempos desde el commit de la decisión hasta su efecto. Ensayar una revocación durante una consulta y confirmar la revalidación final.
+0449 - [ ] F10.9 Documentar la simplificación respecto a 3.1: actualización bajo demanda en el laboratorio; sondeo y reconciliación automática quedan descritos si no se implementan. No afirmar cumplimiento continuo de sus frecuencias.
+0450 
+0451 **Validaciones de salida**
+0452 
+0453 - [ ] Cargas y eventos repetidos son idempotentes; los cambios de metadatos sin cambio de texto no recalculan embeddings innecesariamente.
+0454 - [ ] Revocación, vencimiento y cambio de permisos afectan búsqueda, expansión de contexto y obtención directa sin esperar una reindexación.
+0455 - [ ] Un hash cambiado invalida la certificación anterior. La nueva revisión queda pendiente hasta decisión explícita.
+0456 - [ ] Un rollback no rehabilita un documento revocado. Un fallo de sincronía no activa un índice parcial.
+0457 - [ ] Se comparan observaciones con los objetivos de 3.1: actualización aprobada p95 ≤ 15 minutos, revocación ≤ 60 segundos y consulta caliente p95 ≤ 3 segundos. Separar el tiempo humano de certificar y declarar tamaño de muestra y hardware.
+0458 
+0459 **Evidencia:** trazas de eventos y tiempos, pruebas de fallo y recuperación, manifiestos antes/después y procedimiento de reconstrucción. Los ensayos se realizan sobre copias derivadas; no se modifica el corpus original.
+0460 
+0461 Para una copia de recuperación local, cerrar el cliente y copiar de forma coherente los datos derivados y su manifiesto, o reconstruirlos desde PDF. Restaurar una proyección antigua no restaura autorizaciones antiguas: el registro de gobierno vigente sigue prevaleciendo.
+0462 

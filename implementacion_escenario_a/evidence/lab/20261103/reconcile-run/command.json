@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f4.py",
+    "publish",
+    "--profile",
+    "laboratorio",
+    "--stage",
+    "evidence/f3/initial-20261101/laboratorio-release/manifest.json",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/reconciled.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:14:58.192411+00:00",
+  "elapsed_seconds": 18.99086977999832,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

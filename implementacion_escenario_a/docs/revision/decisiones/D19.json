@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D19",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "FIC-ACT-P101",
+    "version_documental": "2",
+    "titulo": "Ficha técnica del activo — bomba principal P-101, estación Ayacucho",
+    "emisor_segun_pdf": "Gerencia de Integridad y Mantenimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+      "doc_id": "FIC-ACT-P101",
+      "version_documental": "2",
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "P-101: descarga de diseño 1.180 psi y alarma 1.240 psi; son datos del activo, no del tramo.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "extracto_verificado": "1.180 psi"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "extracto_verificado": "1.240 psi"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Integridad y Mantenimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No atribuir estos límites a otro activo/tramo ni inferir presión actual de la bomba."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas consulta descriptiva de especificaciones y columnas de P-101, sin tratarlas como telemetría?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

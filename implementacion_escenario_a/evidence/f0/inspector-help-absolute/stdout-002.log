@@ -1,0 +1,33 @@
+  --stored-auth-only                Never start interactive OAuth; use the
+                                    shared store if present, otherwise fail with
+                                    auth_required. Preferred for
+                                    CI/non-interactive runs. No-op when the
+                                    server does not require auth.
+  --relogin                         Delete stored OAuth for this server URL from
+                                    the shared store before connect (HTTP/SSE
+                                    URL keys only); interactive login runs only
+                                    if the server requires auth. Rejected for
+                                    stdio (no URL-keyed store entry)
+  --no-revoke                       Requires --relogin. Skips the RFC 7009
+                                    revocation request that would otherwise end
+                                    the grant at the authorization server when
+                                    the local state is deleted. Also skipped
+                                    when the server entry sets
+                                    oauth.revokeOnClear to false.
+  --wait-for-auth <sec>             Poll the OAuth state file until a token for
+                                    --server-url appears (or the timeout
+                                    elapses), then proceed as if
+                                    --use-stored-auth were set. Use after
+                                    handing off to a human to complete OAuth in
+                                    a browser.
+  --list-stored-auth                Print the server URLs that have a stored
+                                    OAuth token (one JSON object on stdout) and
+                                    exit. No server connection is made.
+  --print-handoff                   Print a JSON handoff block (deepLink,
+                                    portForwardCmd, oauthStatePath, apiToken)
+                                    for --server-url and exit. No server
+                                    connection is made.
+  --completion <shell>              Print a shell completion script (bash, zsh,
+                                    fish) on stdout and exit. No server
+                                    connection is made.
+  -h, --help                        display help for command

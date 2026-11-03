@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D02",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "MAN-OPE-001",
+    "version_documental": "3",
+    "titulo": "Manual de operación de estaciones de bombeo",
+    "emisor_segun_pdf": "Vicepresidencia de Transporte — Operaciones",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+      "doc_id": "MAN-OPE-001",
+      "version_documental": "3",
+      "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "MAOP de Ayacucho–Coveñas: 1.250 psi; el propio manual distingue diseño y alarma.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "1",
+        "extracto_verificado": "Este manual describe parámetros de diseño del sistema."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "no deben utilizarse como umbrales de alarma operativa."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Vicepresidencia de Transporte — Operaciones",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "MAOP no equivale a umbral de alarma, permiso operativo ni certificación actual de integridad."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura de parámetros declarados, con la distinción diseño/alarma y sin presumir que no sea el manual retirado?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

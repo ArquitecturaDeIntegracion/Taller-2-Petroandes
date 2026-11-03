@@ -1,0 +1,76 @@
+ ANDESTRANSPORTE S.A.S.
+ Arranque en frío de unidades de bombeo
+
+  Código                     PRO-OPE-021                                     Versión                    1
+
+  Fecha de emisión           2023-05-30                                      Tipo                       Procedimiento operativo
+  Área emisora               Centro de Control de Operaciones                Activo / alcance           Unidades de bombeo principal
+
+
+ 1. Objeto
+ Establecer la secuencia de arranque de una unidad de bombeo tras parada superior a setenta y dos horas.
+
+ 2. Condiciones previas
+     Autorización del Centro de Control registrada en el libro de novedades.
+     Ausencia de permisos de trabajo activos sobre la unidad.
+     Verificación de niveles de aceite y de temperatura de cojinetes.
+     Línea de succión presurizada y válvula de descarga en posición de arranque.
+
+ 3. Secuencia
+
+  Paso                                             Acción                                           Criterio de avance
+
+  1                                                Presurización gradual de la línea de             Presión estable durante 10 minutos
+                                                   succión
+
+  2                                                Arranque del sistema de lubricación              Presión de aceite dentro de rango
+
+  3                                                Arranque del motor en vacío                      Vibración por debajo del límite de
+                                                                                                    alarma
+
+  4                                                Apertura progresiva de la válvula de             Incremento de caudal sin golpe de
+                                                   descarga                                         ariete
+
+  5                                                Estabilización en punto de operación             Presión y caudal estables durante 30
+                                                                                                    minutos
+
+
+ 4. Abortar el arranque
+ Cualquier desviación de los criterios de avance obliga a detener la secuencia y a reportar al Centro de Control
+ antes de reintentar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                            Página 1

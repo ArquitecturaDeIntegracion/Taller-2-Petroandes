@@ -1,0 +1,28 @@
+0263 ### F4 Embeddings y publicación del índice Qdrant
+0264 
+0265 **Objetivo:** construir una proyección semántica consistente con los fragmentos y el gobierno.
+0266 
+0267 **Actividades**
+0268 
+0269 - [ ] F4.1 Materializar el bundle E5: revisión del modelo y tokenizador, prefijos, pooling, normalización, dimensión, versiones de bibliotecas y hashes calculados de archivos.
+0270 - [ ] F4.2 Usar `query:` para preguntas y `passage:` para fragmentos, también en español; vectores de 384 dimensiones, promedio con máscara, normalización L2 y similitud coseno, conforme al ADR 04.
+0271 - [ ] F4.3 Crear la colección con nombre asociado a revisión y bundle. Adjuntar payload de identidad y revisión necesario para filtrar y recuperar procedencia.
+0272 - [ ] F4.4 Generar vectores por lotes pequeños en CPU; medir consumo y tiempo reales antes de ampliar el lote.
+0273 - [ ] F4.5 Publicar solamente el subconjunto autorizado del perfil seleccionado. Mantener el inventario completo en el catálogo y en el repositorio de auditoría; no exigir que 19 documentos estén habilitados para consulta.
+0274 - [ ] F4.6 Preparar índice y manifiesto en una revisión nueva, comprobar integridad y activar la revisión solo cuando ambas ramas estén listas.
+0275 - [ ] F4.7 Usar una única instancia propietaria del almacenamiento Qdrant local. No abrir la misma ruta desde el servidor MCP y otro proceso de evaluación simultáneamente; ejecutar por turnos o consultar al servidor por MCP.
+0276 
+0277 En modo local, la publicación de nuevas colecciones debe ejecutarse dentro del proceso propietario o con el servidor detenido; el cambio de gobierno en SQLite puede seguir siendo independiente. No planificar copias de seguridad con APIs de snapshots nativos de Qdrant local: usar reconstrucción desde fuentes o una copia coherente con el cliente cerrado. [Implementación oficial de Qdrant local](https://raw.githubusercontent.com/qdrant/qdrant-client/master/qdrant_client/local/qdrant_local.py).
+0278 
+0279 La ficha oficial de E5 declara los prefijos, dimensión y longitud máxima de 512 tokens. El límite de 448 definido en el contrato deja margen y debe comprobarse sobre la representación efectiva. [Ficha oficial E5](https://huggingface.co/intfloat/multilingual-e5-small).
+0280 
+0281 **Validaciones de salida**
+0282 
+0283 - [ ] Dimensión, valores finitos, normalización y número de vectores coinciden con el manifiesto publicado.
+0284 - [ ] Preguntas y fragmentos usan el mismo bundle; una discrepancia bloquea la consulta aunque ambos vectores tengan 384 dimensiones.
+0285 - [ ] Reiniciar el proceso conserva datos. Una carga repetida no duplica puntos.
+0286 - [ ] Catálogo, fragmentos, payload e índice activo corresponden a la misma revisión.
+0287 - [ ] No se activa una revisión incompleta ni se reutiliza una certificación para contenido cambiado.
+0288 
+0289 **Evidencia:** manifiesto de índice, conteos, prueba de persistencia e idempotencia e informe breve de consumo.
+0290 

@@ -1,0 +1,23 @@
+{
+  "doc_id": "PRO-HSE-003",
+  "version_documental": "4",
+  "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+  "tipo": "procedimiento",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 0,
+  "filas": 0,
+  "max_tokens_entrada": 175,
+  "fuera_objetivo": 5,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 144,
+    "md_sha256": "4e28ff333f00e01962d61ea59ff378416eaed8eb0dbc1c9ad79df90ebf7b5c0d",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

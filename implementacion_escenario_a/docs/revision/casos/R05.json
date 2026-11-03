@@ -1,0 +1,68 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R05",
+  "particion_propuesta": "reserva",
+  "titulo": "Manual retirado sin identificar",
+  "pregunta": "¿Cuál es el código exacto del manual que dejó de aplicarse según el acta de noviembre?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D16"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "abstencion",
+    "motivo_abstencion": "evidencia_insuficiente",
+    "criterios_semanticos": [
+      "El acta no identifica el código. No atribuir el retiro a MAN-OPE-004 ni a otro manual.",
+      "La abstención no devuelve evidencia ni afirmaciones, conforme al contrato actual."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "§3.3"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Verificar que no se complete el vacío con una suposición; fuente solo para justificar el esperado de revisión.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

@@ -1,0 +1,26 @@
+0237 ### F3 Extracción PDF, partición e inyección de metadatos
+0238 
+0239 **Objetivo:** producir fragmentos que conserven el significado y la procedencia de los documentos.
+0240 
+0241 **Actividades**
+0242 
+0243 - [ ] F3.1 Calcular SHA-256 de cada PDF y construir el manifiesto de los 19 documentos lógicos.
+0244 - [ ] F3.2 Extraer texto por página desde PDF; contrastar contra Markdown únicamente para detectar errores. Revisar los 19 documentos, con especial atención a tablas, cifras, unidades y negaciones.
+0245 - [ ] F3.3 Definir reglas de cabeceras, secciones y tablas por tipo documental. Si pypdf no preserva una tabla, evaluar una extracción alternativa o una corrección estructural trazable al PDF; documentar el cambio.
+0246 - [ ] F3.4 Implementar partición estructural: secciones de manual; criterios y secuencias de procedimientos; artículos regulatorios; decisiones y condiciones de actas; recomendaciones y condiciones de comunicaciones; especificaciones vinculadas al activo en fichas.
+0247 - [ ] F3.5 Mantener juntas condición y consecuencia; repetir título, unidades y cabecera de tablas divididas; no partir filas ni mezclar columnas, activos o tramos.
+0248 - [ ] F3.6 Aplicar el objetivo de 250–350 tokens, máximo 448 para el texto completo de embedding, contando prefijo y contexto, con el tokenizador fijado. En prosa, solape máximo de 40 tokens dentro de la sección; tablas repiten cabecera.
+0249 - [ ] F3.7 Añadir identidad, ubicación, ámbito, gobierno, acceso, relaciones y versiones técnicas del contrato de 3.1. Derivar IDs estables de documento, versión o emisión, hash y ubicación; adaptar a UUID válido para Qdrant.
+0250 - [ ] F3.8 Conservar `parent_id`, orden y partes para reconstruir secuencias. Separar e identificar el anexo de COM-PRV-0134, sin borrarlo ni alterar el PDF.
+0251 - [ ] F3.9 Separar extracciones defectuosas para revisión, con motivo explícito. No publicarlas como evidencia autorizada.
+0252 
+0253 **Validaciones de salida**
+0254 
+0255 - [ ] Cada fragmento remite a un PDF, hash, sección y páginas reales. Todos los documentos constan como procesados o rechazados con causa.
+0256 - [ ] El texto realmente enviado al modelo respeta el límite; no se depende de truncamiento silencioso.
+0257 - [ ] Permanecen completas las condiciones del acta de julio y las filas que permiten distinguir MAOP, alarmas, P-101, incertidumbre y tolerancia.
+0258 - [ ] Las instrucciones maliciosas permanecen en el material derivado de auditoría con su marca de contenido no confiable.
+0259 - [ ] Una segunda extracción con la misma configuración no crea identidades adicionales ni pierde procedencia.
+0260 
+0261 **Evidencia:** manifiesto, fragmentos JSONL, informe de extracción, conteos por tipo y muestras contrastadas con PDF.
+0262 

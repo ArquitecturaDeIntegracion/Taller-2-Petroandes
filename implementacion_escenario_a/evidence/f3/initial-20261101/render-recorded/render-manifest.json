@@ -1,0 +1,153 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-01T22:43:42.148033+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/render_f3_review.py",
+    "--output-dir",
+    "reports/portable/f3-20261101/render-recorded"
+  ],
+  "operation": "read_only_pdf_render",
+  "pages": 19,
+  "dpi": 105,
+  "renderings": [
+    {
+      "pdf": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+      "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+      "png": "MAN-MTO-002_v1.png",
+      "png_sha256": "2104d851dc7939718c3c51309af26c5060456b437b22d442457808343cfbd480",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+      "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+      "png": "MAN-OPE-001_v3.png",
+      "png_sha256": "fb43d22a5234497ebef044d99c76f2dd86181abb228e21d86ede2e3439c58369",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+      "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+      "png": "MAN-OPE-004_v2.png",
+      "png_sha256": "41d9312ffbfbfe3f53a681c5bf3cd0b8d4553493c698039dca379a3cc2ddcf09",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+      "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+      "png": "PRO-HSE-003_v4.png",
+      "png_sha256": "0ce7ed843fde900e147f8e93c6b5c5254751bd87d3a4ef1ad1d468a9cf20ceb4",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-MED-007_v1.pdf",
+      "pdf_sha256": "89ace1f864c362231321892541fddf7ca834cd933573a1e9ad566b00c9973955",
+      "png": "PRO-MED-007_v1.png",
+      "png_sha256": "1eaac28ed001cb26357f706374700db8b0625d1d173f63745ec2bd74e18656c8",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+      "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+      "png": "PRO-MED-007_v2.png",
+      "png_sha256": "9765f9b1e43db2e0a76f622fa80ad1d073daee05b9598c38921c28fc94de392a",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-OPE-012_v2.pdf",
+      "pdf_sha256": "029355b2af202bf2178d1c732a7014d6db0f7f0ca55919554d0aa4249234e8e8",
+      "png": "PRO-OPE-012_v2.png",
+      "png_sha256": "46727b64604d48d68a92879e951e023a1b4fddc46b2afdf4a96f0aeccccb37c4",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+      "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+      "png": "PRO-OPE-012_v3.png",
+      "png_sha256": "3cbee4d6bfc90166d03de82b39a6f2c91dfea2cadb302794f94011bf50ed11d9",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+      "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+      "png": "PRO-OPE-021_v1.png",
+      "png_sha256": "0b01c5149447bef319a998160f7b6b1098fd0a78da13b96665f6e868cf2936f8",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-SEG-009_v1.pdf",
+      "pdf_sha256": "0e8fb04a5e8e1b33490efb77240ee65cdd79786697f70b1fdceaa4194518341f",
+      "png": "PRO-SEG-009_v1.png",
+      "png_sha256": "3cc0a55d519e88f894450350861d948067fedf55ed08a60593dd5dd212ceb3d1",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+      "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+      "png": "PRO-SEG-015_v1.png",
+      "png_sha256": "d38d28fa9d0977def6c0056e4c81f46eb2667f8cc83ab3d422cf2cf1be636e9d",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+      "png": "RES-ANH-0471-2023.png",
+      "png_sha256": "fb2c3bed191fd271041f75fb223b4a42493a340f2e88ffa58a6e9b31716dea1f",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+      "png": "RES-CREG-0043-2024.png",
+      "png_sha256": "c1cf41d66a28f4de462acd72847565ede1f3a4c0b39aa96ea913b95a77ec6a27",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/03_normativa/RES-CREG-0112-2021.pdf",
+      "pdf_sha256": "9daa12ee5b9fcb5b5b59cceabea80c69966ff0f3dc6c3ca78c9a57dd9ce7a7d2",
+      "png": "RES-CREG-0112-2021.png",
+      "png_sha256": "a6e8525793c15bfb45b0713702a4d2574fe1259f6db714c9e3163f08b9d7836f",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+      "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+      "png": "ACTA-CTO-2025-07.png",
+      "png_sha256": "43be5f305f18141e973ba62028fdd7704973774e8bdac1d55be6f90850249edb",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+      "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+      "png": "ACTA-CTO-2025-11.png",
+      "png_sha256": "00c652097099d11ece9f52a13c70cc23ca2447fab82843e597a09c7bd24dba34",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+      "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+      "png": "COM-PRV-0098.png",
+      "png_sha256": "25125257739ce439e7409dacf6e8b1c5fe17298149132ca07d8a1fd16e24f909",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/05_comunicaciones/COM-PRV-0134.pdf",
+      "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+      "png": "COM-PRV-0134.png",
+      "png_sha256": "b94892e9d92a2502cd01a2fac1be44850991c629d7ac4c8a2a7fae05b1486399",
+      "renderer_warning_lines": 2
+    },
+    {
+      "pdf": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+      "png": "FIC-ACT-P101_v2.png",
+      "png_sha256": "776bc6315ad7c74c6305f4713a28e5a4d4946bc773c4ccee02fd54ea83cdd085",
+      "renderer_warning_lines": 2
+    }
+  ],
+  "visual_inspection_required": true,
+  "source_pdfs_modified": false
+}

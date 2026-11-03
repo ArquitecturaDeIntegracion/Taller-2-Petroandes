@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D08",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-OPE-012",
+    "version_documental": "3",
+    "titulo": "Atención de anomalías de presión en tramos de oleoducto",
+    "emisor_segun_pdf": "Centro de Control de Operaciones",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+      "doc_id": "PRO-OPE-012",
+      "version_documental": "3",
+      "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "V3 declara 1.100 psi/15 minutos para Ayacucho–Coveñas y sospecha por concurrencia con diferencia de balance.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "superior a la tolerancia establecida en el procedimiento de conciliación volumétrica vigente."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "fue emitida y se encuentra en aplicación."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Centro de Control de Operaciones",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No inferir fecha exacta de publicación; no confundir caída por debajo del umbral con exceso sobre MAOP."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura de v3 con sus condiciones y reemplazo, distinguiendo la corroboración del acta de una certificación real?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

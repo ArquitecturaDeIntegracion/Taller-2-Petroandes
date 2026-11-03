@@ -1,0 +1,11 @@
+{
+  "observation_id": "928c8a10bac73a9f6f579a686e614b0f4daa5fecc10e9d0f76b028d0df276e72",
+  "documento": {
+    "doc_id": "PRO-MED-007",
+    "version_documental": "2"
+  },
+  "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

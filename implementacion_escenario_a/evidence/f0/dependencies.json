@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-11-01T19:42:49.406378+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/freeze_environment.py",
+    "--output",
+    "evidence/f0/dependencies.json"
+  ],
+  "status": "passed",
+  "pip_check": "No broken requirements found.",
+  "python_lock": "requirements.lock",
+  "distributions": 75,
+  "python_lock_sha256": "a56ac82f343a8b1f6fd6c3bca718ba7250c557d950db981dedf4edb39c0c5415",
+  "inspector_lock": "evidence\\f0\\inspector-lock.zip",
+  "inspector_lock_sha256": "26a21bbee018716f8e45083870d35574931e65f66fe86d7d6b16dc4826f7c0d3",
+  "python_lock_mechanism": "pip freeze --all; instalar con pip -r requirements.lock",
+  "inspector_lock_mechanism": "pnpm 11.25.0; herramienta Node independiente"
+}

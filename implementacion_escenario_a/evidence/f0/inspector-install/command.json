@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:/Users/jcjca/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+    "C:/Users/jcjca/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/bin/pnpm.mjs",
+    "--dir",
+    ".venv/inspector",
+    "--store-dir",
+    "../pnpm-store",
+    "add",
+    "--ignore-scripts",
+    "--save-exact",
+    "@modelcontextprotocol/inspector@2.13.0"
+  ],
+  "cwd": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a",
+  "started_utc": "2026-11-01T19:35:24.961160+00:00",
+  "elapsed_seconds": 53.002280000000155,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

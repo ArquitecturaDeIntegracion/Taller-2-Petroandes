@@ -1,0 +1,11 @@
+{
+  "observation_id": "ee8fabdd60e9964676cdc48dbabcb5114b5c4743401cd27427a7c67a1a3bde0c",
+  "documento": {
+    "doc_id": "COM-PRV-0098",
+    "version_documental": null
+  },
+  "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

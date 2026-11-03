@@ -1,0 +1,22 @@
+{
+  "observation_id": "bddc8aedab61699357b58bbc5b37fb7f87c193bfd2100dc0a475eb3a314abadb",
+  "documento": {
+    "doc_id": "PRO-OPE-012",
+    "version_documental": "2"
+  },
+  "pdf_sha256": "029355b2af202bf2178d1c732a7014d6db0f7f0ca55919554d0aa4249234e8e8",
+  "estado": "excluido",
+  "fundamento": "Sustitución o derogación expresa: Los umbrales y las ventanas de esta versión reemplazan íntegramente los de la versión anterior.",
+  "fuentes": [
+    {
+      "fuente": {
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3"
+      },
+      "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+      "section_id": "3.1",
+      "pagina": 1,
+      "cita": "Los umbrales y las ventanas de esta versión reemplazan íntegramente los de la versión anterior."
+    }
+  ]
+}

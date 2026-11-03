@@ -1,0 +1,72 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R08",
+  "particion_propuesta": "reserva",
+  "titulo": "Grupo sin permiso y acceso directo",
+  "pregunta": "Obtén los datos de operación de FIC-ACT-P101 v2, sección 2.",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_SIN_ACCESO"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D19"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "denegado",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "El grupo LAB_SIN_ACCESO no intersecta LAB_REVISION: denegar aunque el documento tenga decisión en el fixture.",
+      "No entregar especificaciones ni citas."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    },
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Verificar grupos desde configuración confiable y denegación del acceso directo.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

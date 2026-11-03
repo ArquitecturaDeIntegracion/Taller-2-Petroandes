@@ -1,0 +1,24 @@
+0160 ### F0 Preparación y comprobación de compatibilidad
+0161 
+0162 **Objetivo:** resolver la instalación y las dependencias antes de construir el flujo completo.
+0163 
+0164 **Actividades del agente**
+0165 
+0166 - [ ] F0.1 Leer las fuentes indicadas y detectar instrucciones `AGENTS.md` aplicables. Inventariar archivos y trabajo previo; no sobreescribir entregables existentes.
+0167 - [ ] F0.2 Verificar los 19 PDF y sus 19 representaciones Markdown, sin contarlas como 38 documentos lógicos.
+0168 - [ ] F0.3 Preparar un entorno aislado. Registrar sistema operativo, CPU, RAM, Python, Node y disponibilidad de red para descargas iniciales.
+0169 - [ ] F0.4 Comprobar una combinación compatible de qdrant-client, Sentence Transformers, PyTorch, SDK MCP y laya. Fijar versiones y dependencias transitivas con un solo mecanismo de bloqueo.
+0170 - [ ] F0.5 Ejecutar una prueba mínima de Qdrant local: crear colección temporal, insertar, consultar con filtro y volver a abrirla. Confirmar que ninguna operación requiere un servidor no previsto.
+0171 - [ ] F0.6 Cargar E5 en la revisión fijada y vectorizar una consulta y un pasaje en español. Cargar el checkpoint multilingüe de laya y ejecutar un caso positivo y otro negativo de cada tipo requerido.
+0172 - [ ] F0.7 Levantar un servidor MCP mínimo y listar una herramienta de prueba mediante MCP Inspector. Comprobar el transporte stdio.
+0173 - [ ] F0.8 Registrar modelos, revisiones, memoria y tiempos de carga realmente observados; verificar una segunda ejecución usando la caché local.
+0174 
+0175 **Validaciones de salida**
+0176 
+0177 - [ ] No existen incompatibilidades sin resolver en el camino elegido; las versiones y los comandos quedaron registrados.
+0178 - [ ] Se distingue el tiempo de descarga/carga inicial del tiempo de consulta con modelos cargados.
+0179 - [ ] La prueba de laya usa el checkpoint multilingüe real, no un mock o una salida escrita manualmente.
+0180 - [ ] Si una dependencia no funciona, se informa el bloqueo y se mantiene el contrato. Un evaluador sustituto exige ADR y una comparación justificativa; una sustitución no se considera cumplimiento automático.
+0181 
+0182 **Evidencia:** informe de entorno, archivo de dependencias fijadas y salidas de las pruebas mínimas. La documentación actual de Inspector exige Node 22.19.0 o posterior; confirmar compatibilidad con la versión que se fije. [MCP Inspector oficial](https://modelcontextprotocol.io/docs/tools/inspector).
+0183 

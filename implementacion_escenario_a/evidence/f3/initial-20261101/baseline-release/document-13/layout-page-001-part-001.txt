@@ -1,0 +1,75 @@
+ COMISIÓN REGULADORA (ENTIDAD FICTICIA DEL CASO)
+ Resolución 0043 de 2024 — Condiciones de medición para la
+ transferencia de custodia
+
+  Código                   RES-CREG-0043-2024                            Versión                  —
+
+  Fecha de emisión         2024-07-19                                    Tipo                     Resolución regulatoria (ficticia)
+  Área emisora             Gerencia de Cumplimiento                      Activo / alcance         Operadores de transporte
+
+
+ Artículo 1. Objeto
+ Establecer las condiciones técnicas mínimas de los sistemas de medición utilizados en los puntos de transferencia
+ de custodia y los requisitos de trazabilidad metrológica asociados.
+
+ Artículo 2. Incertidumbre máxima admisible
+ La incertidumbre combinada del sistema de medición en los puntos de transferencia de custodia no excederá del
+ cero coma tres por ciento (0,3 %).
+
+ Artículo 3. Verificación
+ Los operadores verificarán el factor de cada medidor con periodicidad no superior a treinta días calendario para los
+ puntos de salida a buque, y de sesenta días calendario para los demás puntos.
+
+ Artículo 4. Trazabilidad
+ Los patrones utilizados en la verificación contarán con trazabilidad documentada a patrones nacionales o
+ internacionales reconocidos.
+
+ Artículo 5. Reporte de desviaciones
+ Las desviaciones que superen el límite del artículo 2 se reportarán dentro de los cinco días hábiles siguientes a su
+ detección.
+
+ Artículo 6. Derogatorias y vigencia
+ La presente resolución rige a partir de su publicación y deroga en su integridad la Resolución 0112 de 2021.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                    Página 1

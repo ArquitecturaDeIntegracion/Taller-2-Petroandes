@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "tipo": {
+      "anyOf": [
+        {
+          "enum": [
+            "manual",
+            "procedimiento",
+            "resolucion",
+            "acta",
+            "comunicacion",
+            "ficha"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Tipo"
+    },
+    "activo": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Activo"
+    },
+    "tramo": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Tramo"
+    }
+  },
+  "title": "SearchFilters",
+  "type": "object"
+}

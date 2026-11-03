@@ -1,0 +1,25 @@
+{
+  "purpose": "auditoria_no_consultable_no_autoriza_corpus",
+  "stage": "cd67dbf6-5beb-570b-b66c-c882f4512111",
+  "count": 92,
+  "dimension": 384,
+  "finite": true,
+  "norm_min": 0.9999999403953552,
+  "norm_max": 1.0000001192092896,
+  "batch_size": 4,
+  "encoding_seconds": 8.898186055999759,
+  "model_load_seconds": 3.4791023770012544,
+  "manual_pooling_max_delta": 6.51925802230835e-08,
+  "memory": {
+    "process_rss_bytes": 1289363456,
+    "process_peak_wset_bytes": null,
+    "system_total_bytes": 8049598464,
+    "system_available_bytes": 6224850944
+  },
+  "sha256": {
+    "vectors.npy": "f008622891a68ea9d989c1080b89634e63c85ae353bc611ddd06dbc6b9280d9a",
+    "rows.jsonl": "9614f116dbd75ab31a36b186c8ade81ab446c4580283b77b43a56af66394e246",
+    "bundle.json": "b1d0f9f10bc2ad7a6f7ba99a14e4294f64dca03cd31ab3bb8eac438f78e31e9d",
+    "batches.json": "6ec9386638a2917434e4fd9b984bdd38a3849bec523d6c62d06aa76ec126df7d"
+  }
+}

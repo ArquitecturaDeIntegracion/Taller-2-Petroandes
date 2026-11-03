@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "laboratorio": {
+    "perfil": "laboratorio",
+    "governance_revision": 13,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 3,
+      "excluido": 4,
+      "certificado": 12
+    },
+    "decisiones_registradas": 12,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 13
+  },
+  "eligible_by_use": {
+    "evidencia_historica": [
+      "RES-CREG-0043-2024",
+      "PRO-OPE-021",
+      "PRO-OPE-012",
+      "FIC-ACT-P101",
+      "PRO-HSE-003",
+      "COM-PRV-0098",
+      "RES-ANH-0471-2023",
+      "PRO-MED-007",
+      "PRO-SEG-015",
+      "ACTA-CTO-2025-11",
+      "ACTA-CTO-2025-07",
+      "COM-PRV-0134"
+    ],
+    "instruccion_operativa": [
+      "PRO-OPE-021",
+      "PRO-OPE-012",
+      "PRO-HSE-003",
+      "PRO-MED-007",
+      "PRO-SEG-015"
+    ],
+    "referencia_normativa": [
+      "RES-CREG-0043-2024",
+      "RES-ANH-0471-2023"
+    ],
+    "recomendacion": [
+      "COM-PRV-0098",
+      "COM-PRV-0134"
+    ],
+    "inspeccion_no_confiable": [
+      "COM-PRV-0134"
+    ],
+    "especificacion_activo": [
+      "FIC-ACT-P101"
+    ],
+    "limite_diseno": []
+  },
+  "reviewed_at": "2026-11-03T00:12:31.781997-05:00",
+  "historical_snapshots": [
+    {
+      "perfil": "baseline",
+      "sha256": "e448eccdd72a9ee56af881ab60522af8865d6bc5683d6ff7f4a3670b9c0d7a6d",
+      "revision": 1
+    },
+    {
+      "perfil": "laboratorio",
+      "sha256": "7e77871721533ab166f7f9bb5ad17cd30afd3b600cc56d3a3677afad6cd76b28",
+      "revision": 1
+    }
+  ],
+  "baseline_byte_identical": true,
+  "service_context_unchanged": true,
+  "case_files_unchanged": true,
+  "service_eligible_documents": 0,
+  "period_boundaries_denied": true,
+  "cases_approved": 0
+}

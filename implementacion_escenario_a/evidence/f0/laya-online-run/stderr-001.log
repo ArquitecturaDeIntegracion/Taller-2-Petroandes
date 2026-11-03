@@ -1,0 +1,9 @@
+
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+Fetching 5 files:  20%|██        | 1/5 [00:00<00:00,  4.38it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+
+Fetching 5 files:  60%|██████    | 3/5 [00:00<00:00,  7.16it/s]
+Fetching 5 files:  80%|████████  | 4/5 [00:20<00:05,  5.01s/it]
+Fetching 5 files: 100%|██████████| 5/5 [01:00<00:00, 12.17s/it]
+Fetching 5 files: 100%|██████████| 5/5 [01:00<00:00, 12.18s/it]

@@ -1,0 +1,21 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "petroandes.catalog",
+    "init",
+    "--profile",
+    "baseline",
+    "--evidence-dir",
+    "reports/portable/f2-20261101/baseline"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T21:34:49.233641+00:00",
+  "elapsed_seconds": 3.0234399870000743,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,160 @@
+ 21 líneas  reports/portable/f3-20261101/tests-full-first/command.json
+  3 líneas  reports/portable/f3-20261101/tests-full-first/stdout-001.log
+ 26 líneas  reports/portable/f3-20261101/validate-final/command.json
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-001.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-002.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-003.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-004.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-005.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-006.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-007.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-008.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-009.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-010.log
+160 líneas  reports/portable/f3-20261101/validate-final/stdout-011.log
+ 96 líneas  reports/portable/f3-20261101/validate-final/stdout-012.log
+ 19 líneas  reports/portable/f3-20261101/validate-start/command.json
+160 líneas  reports/portable/f3-20261101/validate-start/stdout-001.log
+160 líneas  reports/portable/f3-20261101/validate-start/stdout-002.log
+160 líneas  reports/portable/f3-20261101/validate-start/stdout-003.log
+160 líneas  reports/portable/f3-20261101/validate-start/stdout-004.log
+ 58 líneas  reports/portable/f3-20261101/validate-start/stdout-005.log
+ 56 líneas  reports/portable/f4-20261101/baseline-reopen.json
+ 26 líneas  reports/portable/f4-20261101/baseline-repeat.json
+ 26 líneas  reports/portable/f4-20261101/baseline.json
+ 26 líneas  reports/portable/f4-20261101/laboratorio-repeat.json
+ 26 líneas  reports/portable/f4-20261101/laboratorio.json
+117 líneas  reports/portable/f4-20261101/audit/batches.json
+ 33 líneas  reports/portable/f4-20261101/audit/bundle.json
+ 92 líneas  reports/portable/f4-20261101/audit/rows.jsonl
+ 25 líneas  reports/portable/f4-20261101/audit/summary.json
+ 20 líneas  reports/portable/f4-20261101/audit-run/command.json
+ 25 líneas  reports/portable/f4-20261101/audit-run/stdout-001.log
+ 20 líneas  reports/portable/f4-20261101/baseline-reopen-run/command.json
+ 56 líneas  reports/portable/f4-20261101/baseline-reopen-run/stdout-001.log
+ 22 líneas  reports/portable/f4-20261101/baseline-repeat-run/command.json
+ 26 líneas  reports/portable/f4-20261101/baseline-repeat-run/stdout-001.log
+ 22 líneas  reports/portable/f4-20261101/baseline-run/command.json
+ 26 líneas  reports/portable/f4-20261101/baseline-run/stdout-001.log
+ 64 líneas  reports/portable/f4-20261101/closure/closure.json
+ 13 líneas  reports/portable/f4-20261101/closure/baseline/manifest.json
+ 24 líneas  reports/portable/f4-20261101/closure/baseline/receipt.json
+ 13 líneas  reports/portable/f4-20261101/closure/laboratorio/manifest.json
+ 24 líneas  reports/portable/f4-20261101/closure/laboratorio/receipt.json
+ 19 líneas  reports/portable/f4-20261101/closure-run/command.json
+ 64 líneas  reports/portable/f4-20261101/closure-run/stdout-001.log
+ 22 líneas  reports/portable/f4-20261101/laboratorio-repeat-run/command.json
+ 26 líneas  reports/portable/f4-20261101/laboratorio-repeat-run/stdout-001.log
+ 22 líneas  reports/portable/f4-20261101/laboratorio-run/command.json
+ 26 líneas  reports/portable/f4-20261101/laboratorio-run/stdout-001.log
+ 19 líneas  reports/portable/f4-20261101/plan/command.json
+  2 líneas  reports/portable/f4-20261101/plan/stderr-001.log
+ 28 líneas  reports/portable/f4-20261101/plan/stdout-001.log
+ 15 líneas  reports/portable/f4-20261101/preflight-start/command.json
+ 90 líneas  reports/portable/f4-20261101/preflight-start/stdout-001.log
+ 19 líneas  reports/portable/f4-20261101/tests-final/command.json
+  3 líneas  reports/portable/f4-20261101/tests-final/stdout-001.log
+ 19 líneas  reports/portable/f4-20261101/tests-full/command.json
+  3 líneas  reports/portable/f4-20261101/tests-full/stdout-001.log
+ 18 líneas  reports/portable/f4-20261101/tests-initial/command.json
+  8 líneas  reports/portable/f4-20261101/tests-initial/stdout-001.log
+ 28 líneas  reports/portable/f4-20261101/validate-after-archive/command.json
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-001.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-002.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-003.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-004.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-005.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-006.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-007.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-008.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-009.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-010.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-011.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-012.log
+160 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-013.log
+ 24 líneas  reports/portable/f4-20261101/validate-after-archive/stdout-014.log
+ 28 líneas  reports/portable/f4-20261101/validate-final/command.json
+  3 líneas  reports/portable/f4-20261101/validate-final/stderr-001.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-001.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-002.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-003.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-004.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-005.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-006.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-007.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-008.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-009.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-010.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-011.log
+160 líneas  reports/portable/f4-20261101/validate-final/stdout-012.log
+151 líneas  reports/portable/f4-20261101/validate-final/stdout-013.log
+ 27 líneas  reports/portable/f4-20261101/validate-start/command.json
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-001.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-002.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-003.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-004.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-005.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-006.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-007.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-008.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-009.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-010.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-011.log
+160 líneas  reports/portable/f4-20261101/validate-start/stdout-012.log
+ 32 líneas  reports/portable/f4-20261101/validate-start/stdout-013.log
+ 64 líneas  reports/portable/f4-manual-20261101-210513/closure.json
+ 13 líneas  reports/portable/f4-manual-20261101-210513/baseline/manifest.json
+ 24 líneas  reports/portable/f4-manual-20261101-210513/baseline/receipt.json
+ 13 líneas  reports/portable/f4-manual-20261101-210513/laboratorio/manifest.json
+ 24 líneas  reports/portable/f4-manual-20261101-210513/laboratorio/receipt.json
+ 26 líneas  reports/portable/lab-certificacion-20261103/reconciled.json
+ 73 líneas  reports/portable/lab-certificacion-20261103/state-after.json
+ 53 líneas  reports/portable/lab-certificacion-20261103/state-before.json
+ 73 líneas  reports/portable/lab-certificacion-20261103/state-final.json
+ 24 líneas  reports/portable/lab-certificacion-20261103/case-dependencies/dependencies-001.jsonl
+ 12 líneas  reports/portable/lab-certificacion-20261103/case-dependencies/summary.json
+ 19 líneas  reports/portable/lab-certificacion-20261103/case-dependencies-run/command.json
+ 12 líneas  reports/portable/lab-certificacion-20261103/case-dependencies-run/stdout-001.log
+ 24 líneas  reports/portable/lab-certificacion-20261103/check-current-run/command.json
+ 73 líneas  reports/portable/lab-certificacion-20261103/check-current-run/stdout-001.log
+ 24 líneas  reports/portable/lab-certificacion-20261103/check-final-state-run/command.json
+ 73 líneas  reports/portable/lab-certificacion-20261103/check-final-state-run/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/check-index-run/command.json
+ 31 líneas  reports/portable/lab-certificacion-20261103/check-index-run/stdout-001.log
+ 15 líneas  reports/portable/lab-certificacion-20261103/docker-preflight/command.json
+ 90 líneas  reports/portable/lab-certificacion-20261103/docker-preflight/stdout-001.log
+ 13 líneas  reports/portable/lab-certificacion-20261103/index-closure/manifest.json
+ 24 líneas  reports/portable/lab-certificacion-20261103/index-closure/receipt.json
+ 31 líneas  reports/portable/lab-certificacion-20261103/index-closure/summary.json
+ 19 líneas  reports/portable/lab-certificacion-20261103/plan-f10/command.json
+  2 líneas  reports/portable/lab-certificacion-20261103/plan-f10/stderr-001.log
+ 28 líneas  reports/portable/lab-certificacion-20261103/plan-f10/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/plan-f2/command.json
+  2 líneas  reports/portable/lab-certificacion-20261103/plan-f2/stderr-001.log
+ 25 líneas  reports/portable/lab-certificacion-20261103/plan-f2/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/plan-f4/command.json
+  2 líneas  reports/portable/lab-certificacion-20261103/plan-f4/stderr-001.log
+ 28 líneas  reports/portable/lab-certificacion-20261103/plan-f4/stdout-001.log
+ 15 líneas  reports/portable/lab-certificacion-20261103/preflight-start/command.json
+ 90 líneas  reports/portable/lab-certificacion-20261103/preflight-start/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/prepare-request/command.json
+ 22 líneas  reports/portable/lab-certificacion-20261103/reconcile-run/command.json
+ 26 líneas  reports/portable/lab-certificacion-20261103/reconcile-run/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/register-repeat-run/command.json
+ 52 líneas  reports/portable/lab-certificacion-20261103/register-repeat-run/stdout-001.log
+ 19 líneas  reports/portable/lab-certificacion-20261103/register-run/command.json
+ 52 líneas  reports/portable/lab-certificacion-20261103/register-run/stdout-001.log
+ 13 líneas  reports/portable/lab-certificacion-20261103/registration/events-001.jsonl
+ 52 líneas  reports/portable/lab-certificacion-20261103/registration/summary.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/01.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/02.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/03.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/04.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/05.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/06.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/07.json
+ 37 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/08.json
+ 37 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/09.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/10.json
+ 39 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/11.json
+ 38 líneas  reports/portable/lab-certificacion-20261103/registration/decisions/12.json

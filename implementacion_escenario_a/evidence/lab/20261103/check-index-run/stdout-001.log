@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "perfil": "laboratorio",
+  "governance_revision": 13,
+  "generation_id": "6f15a7db-f573-5a87-ad86-1dd8383d8d85",
+  "collection": "e5small_es_1_0_0_r13_6f15a7dbf573_2a52d6e9",
+  "fragments": 0,
+  "dense_points": 0,
+  "idempotent": true,
+  "service_context_unchanged": true,
+  "service_context": {
+    "identidad": "servicio-educativo-local",
+    "grupos": [
+      "lectores-educativos"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "lectura-documental-educativa"
+    },
+    "uso": "recomendacion"
+  },
+  "reason": "Ámbito/grupo del servicio distintos del permiso de revisión; no ampliar acceso",
+  "outbox_events_pending": 13,
+  "sha256": {
+    "catalog.sqlite3": "bc1622db943cc8f764a9092c6b5e06d4a445358ad831c48e23aa11266bfeda32",
+    "lexical.sqlite3": "114410b56adee2248826cebe08c792075288dcea22e18b398f6b3293a5db1fab",
+    "manifest.json": "b680a90377e74841915bcd23e5726aa8f0257fed4d3551b854708f35f9874437",
+    "publications.sqlite3": "c14ae21d5855a3b28c8af71287e13585e1e123455dbc31939a473f0b30d5b388",
+    "receipt.json": "77df83f105ddfcf4d080968166737e6a64733bd1d9345cb0bc22a25c0c61e699"
+  }
+}

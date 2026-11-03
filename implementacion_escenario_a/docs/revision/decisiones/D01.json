@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D01",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "MAN-MTO-002",
+    "version_documental": "1",
+    "titulo": "Manual de mantenimiento de válvulas de línea",
+    "emisor_segun_pdf": "Gerencia de Integridad y Mantenimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+      "doc_id": "MAN-MTO-002",
+      "version_documental": "1",
+      "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "El manual declara lubricación semestral y exige bloqueo/etiquetado y autorización previa del Centro de Control.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+        "doc_id": "MAN-MTO-002",
+        "version_documental": "1",
+        "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "Lubricación de sellos"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+        "doc_id": "MAN-MTO-002",
+        "version_documental": "1",
+        "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+        "pagina": 1,
+        "section_id": "4",
+        "extracto_verificado": "sin autorización del Centro de Control."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Integridad y Mantenimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No autorizar mantenimiento real. La publicación del proveedor no actualiza este manual."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas su lectura descriptiva en el laboratorio, conservando la incertidumbre sobre el manual retirado y sin sustituir el período por la recomendación del proveedor?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

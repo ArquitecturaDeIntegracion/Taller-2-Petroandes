@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/validate_agent.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T22:25:36.241634+00:00",
+  "elapsed_seconds": 15.238267938999343,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stdout-002.log",
+    "stdout-003.log",
+    "stdout-004.log",
+    "stdout-005.log"
+  ]
+}

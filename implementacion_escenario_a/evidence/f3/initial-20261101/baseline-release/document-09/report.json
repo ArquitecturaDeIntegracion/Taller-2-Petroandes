@@ -1,0 +1,23 @@
+{
+  "doc_id": "PRO-OPE-021",
+  "version_documental": "1",
+  "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+  "tipo": "procedimiento",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 4,
+  "fragmentos": 4,
+  "tablas": 1,
+  "filas": 5,
+  "max_tokens_entrada": 291,
+  "fuera_objetivo": 3,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 164,
+    "md_sha256": "7ca6fca2ac4e36c4804b0dd5cf0a1e701ff9549018aa1a2a09afd9550046633e",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

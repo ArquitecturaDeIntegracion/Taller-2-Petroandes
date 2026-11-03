@@ -1,0 +1,12 @@
+{
+  "doc_id": "COM-PRV-0098",
+  "version_documental": null,
+  "rol_area_simulado": "Gerencia de Integridad y Mantenimiento",
+  "usos": [
+    "recomendacion",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Recomendación; no modifica el plan interno de mantenimiento."
+  ]
+}

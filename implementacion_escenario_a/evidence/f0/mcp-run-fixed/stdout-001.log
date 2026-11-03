@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-11-01T19:42:49.994308+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0_mcp.py",
+    "--output-dir",
+    "evidence/f0/mcp-fixed"
+  ],
+  "status": "passed",
+  "inspector_version": "2.13.0",
+  "node": "C:\\Users\\jcjca\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+  "sdk_protocol_era": "legacy",
+  "transport": "stdio",
+  "listed_tools": [
+    "comprobar_entorno"
+  ],
+  "call_result": {
+    "estado": "ok",
+    "fase": "F0",
+    "origen": "prueba_sintetica"
+  },
+  "list_seconds": 4.8379402999999,
+  "call_seconds": 3.4444797000001017,
+  "scope": "F0 servidor mínimo; no acredita las dos herramientas finales de F7"
+}

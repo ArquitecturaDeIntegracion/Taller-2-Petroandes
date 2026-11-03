@@ -1,0 +1,22 @@
+{
+  "relation_id": "reemplaza:bcdc9f023c57fb63e011c300468262a50fc56aaa24e2dbf8b9a49fde9768b4b7",
+  "tipo": "reemplaza",
+  "desde": {
+    "doc_id": "FIC-ACT-P101",
+    "version_documental": "2"
+  },
+  "hacia": {
+    "doc_id": "FIC-ACT-P101",
+    "version_documental": "1"
+  },
+  "evidencia": {
+    "fuente": {
+      "doc_id": "FIC-ACT-P101",
+      "version_documental": "2"
+    },
+    "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+    "section_id": "encabezado",
+    "pagina": 1,
+    "cita": "Reemplaza a FIC-ACT-P101 v1"
+  }
+}

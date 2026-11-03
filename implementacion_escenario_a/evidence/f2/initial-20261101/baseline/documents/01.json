@@ -1,0 +1,12 @@
+{
+  "doc_id": "MAN-MTO-002",
+  "version_documental": "1",
+  "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+  "contrato": "corpus_documental_petroandes/1.0.0",
+  "tipo": "manual",
+  "titulo": "Manual de mantenimiento de válvulas de línea",
+  "emisor": "Gerencia de Integridad y Mantenimiento",
+  "fecha_emision": "2023-11-09",
+  "pdf_uri": "project:corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+  "paginas": 1
+}

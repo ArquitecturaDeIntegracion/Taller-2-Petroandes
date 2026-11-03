@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "request_digest": "ead6c293e0ba72e13ba704814e745834a9b543f866cdb822693c53e68fd8302b",
+  "reused": false,
+  "reviewed_at": "2026-11-03T00:12:31.781997-05:00",
+  "effective_to_exclusive": "2026-12-01T00:00:00-05:00",
+  "before": {
+    "perfil": "laboratorio",
+    "governance_revision": 1,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "decisiones_registradas": 0,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 1
+  },
+  "after": {
+    "perfil": "laboratorio",
+    "governance_revision": 13,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 3,
+      "excluido": 4,
+      "certificado": 12
+    },
+    "decisiones_registradas": 12,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 13
+  },
+  "baseline": {
+    "perfil": "baseline",
+    "governance_revision": 1,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "decisiones_registradas": 0,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 1
+  },
+  "baseline_unchanged_sha256": "ce4575d13137e6a8d0cad27a6cf920a7dde8fddae74997e756acee59f113c1ed",
+  "backup_sha256": {
+    "baseline-before.sqlite3": "e448eccdd72a9ee56af881ab60522af8865d6bc5683d6ff7f4a3670b9c0d7a6d",
+    "laboratorio-after.sqlite3": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+    "laboratorio-before.sqlite3": "7e77871721533ab166f7f9bb5ad17cd30afd3b600cc56d3a3677afad6cd76b28"
+  }
+}

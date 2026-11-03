@@ -1,0 +1,12 @@
+{
+  "doc_id": "FIC-ACT-P101",
+  "version_documental": "2",
+  "rol_area_simulado": "Gerencia de Integridad y Mantenimiento",
+  "usos": [
+    "especificacion_activo",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Especificación de P-101; no representa telemetría ni límites del tramo."
+  ]
+}

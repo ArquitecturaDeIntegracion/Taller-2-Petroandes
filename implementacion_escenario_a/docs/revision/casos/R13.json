@@ -1,0 +1,132 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "R13",
+  "particion_propuesta": "reserva",
+  "titulo": "Secuencia de arranque con condiciones",
+  "pregunta": "Según PRO-OPE-021 v1, ¿qué requiere un arranque tras más de 72 horas de parada y qué ocurre si falla un criterio?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D09"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Prerrequisitos: autorización registrada del Centro de Control, ausencia de permisos activos, niveles de aceite/temperatura y succión presurizada con descarga en posición de arranque.",
+      "Cinco pasos: presurizar succión (estable 10 min); lubricación (aceite en rango); motor en vacío (vibración bajo alarma); abrir descarga (sin golpe de ariete); estabilizar presión/caudal 30 min.",
+      "Ante desviación, detener y reportar al Centro de Control antes de reintentar. No inferir permiso real de arranque."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar secuencia, dos duraciones distintas y conservación de las condiciones de aborto.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

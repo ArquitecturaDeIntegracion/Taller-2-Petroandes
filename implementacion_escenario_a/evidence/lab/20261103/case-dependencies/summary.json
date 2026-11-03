@@ -1,0 +1,12 @@
+{
+  "cases": 24,
+  "human_review_pending": 24,
+  "missing_certification_cases": [
+    "A05",
+    "A07"
+  ],
+  "approved_cases": 0,
+  "executed_cases": 0,
+  "frozen_cases": 0,
+  "method": "Solo metadatos de dependencias; no se aprueban ni reescriben respuestas esperadas"
+}

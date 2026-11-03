@@ -1,0 +1,22 @@
+{
+  "relation_id": "reemplaza:214bddcc99c8bc531a189f50c31fe9c6748a64e2afef5cf33fca33b972d9b527",
+  "tipo": "reemplaza",
+  "desde": {
+    "doc_id": "MAN-OPE-004",
+    "version_documental": "2"
+  },
+  "hacia": {
+    "doc_id": "MAN-OPE-004",
+    "version_documental": "1"
+  },
+  "evidencia": {
+    "fuente": {
+      "doc_id": "MAN-OPE-004",
+      "version_documental": "2"
+    },
+    "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+    "section_id": "encabezado",
+    "pagina": 1,
+    "cita": "Reemplaza a MAN-OPE-004 v1"
+  }
+}

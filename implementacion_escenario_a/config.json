@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "agent_id": "petroandes-escenario-a",
+  "display_name": "Arquitecto implementador de PetroAndes",
+  "language": "es",
+  "created_at": "2026-11-01",
+  "purpose": "Desarrollar la parte práctica 3.2 de ARTI 4212",
+  "scope": "Prototipo educativo local",
+  "instructions": "AGENTS.md",
+  "startup_prompt": "INICIO.md",
+  "native_config": ".codex/config.toml",
+  "skills_root": ".agents/skills",
+  "knowledge_index": "knowledge/00-indice.md",
+  "source_registry": "knowledge/sources.json",
+  "state_file": "docs/estado.md",
+  "model": {
+    "name": null,
+    "selection": "Heredado de Codex o del selector de VS Code",
+    "reasoning_effort_default": "high",
+    "note": "Los ajustes efectivos dependen del cliente, el modelo y la política"
+  },
+  "limits": {
+    "max_lines_per_text_file": 200,
+    "default_source_excerpt_lines": 160
+  },
+  "skills": [
+    "petroandes-desarrollo",
+    "petroandes-recuperacion-mcp",
+    "petroandes-evaluacion"
+  ],
+  "tools": {
+    "validate_agent": "tools/validate_agent.py",
+    "preflight": "tools/preflight.py",
+    "read_source": "tools/read_source.py"
+  },
+  "application_status": "No implementada por este paquete",
+  "next_phase": "F0",
+  "runtime_agent_required": false,
+  "api_key_required_by_helpers": false,
+  "codex_native_json_config": false
+}

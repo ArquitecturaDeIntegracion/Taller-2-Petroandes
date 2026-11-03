@@ -1,0 +1,15 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/preflight.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T23:41:26.467748+00:00",
+  "elapsed_seconds": 1.6342829999994137,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

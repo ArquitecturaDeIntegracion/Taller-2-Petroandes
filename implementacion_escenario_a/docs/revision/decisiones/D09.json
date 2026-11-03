@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D09",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-OPE-021",
+    "version_documental": "1",
+    "titulo": "Arranque en frío de unidades de bombeo",
+    "emisor_segun_pdf": "Centro de Control de Operaciones",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+      "doc_id": "PRO-OPE-021",
+      "version_documental": "1",
+      "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Arranque en frío tras parada superior a 72 horas: cinco pasos, condiciones previas y regla de aborto.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "1",
+        "extracto_verificado": "parada superior a setenta y dos horas."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "4",
+        "extracto_verificado": "antes de reintentar."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Centro de Control de Operaciones",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "Tabla de pasos debe conservar acción y criterio; no supone autorización de arranque real."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas usar el procedimiento completo en el caso de arranque, sin omitir prerrequisitos ni regla de aborto?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

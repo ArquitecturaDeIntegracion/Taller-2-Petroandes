@@ -1,0 +1,69 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D15",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "ACTA-CTO-2025-07",
+    "version_documental": null,
+    "titulo": "Acta del Comité Técnico Operativo — sesión de julio de 2025",
+    "emisor_segun_pdf": "Comité Técnico Operativo",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+      "doc_id": "ACTA-CTO-2025-07",
+      "version_documental": null,
+      "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "El comité aprueba ajustes, pero §4.2 condiciona exigibilidad a emisión y publicación del procedimiento actualizado.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+        "doc_id": "ACTA-CTO-2025-07",
+        "version_documental": null,
+        "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+        "pagina": 1,
+        "section_id": "4",
+        "extracto_verificado": "los nuevos valores no son exigibles hasta la emisión y publicación de la versión actualizada del procedimiento."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Comité Técnico Operativo",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "El acta no sustituye el procedimiento ni demuestra la fecha efectiva de publicación."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura como evidencia histórica, sin convertir el acta en instrucción operativa inmediata?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

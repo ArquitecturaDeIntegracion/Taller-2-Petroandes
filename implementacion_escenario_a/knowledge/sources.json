@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-11-01",
+  "project_root_relative_to_agent": "..",
+  "corpus_pdf": "corpus/pdf",
+  "corpus_md": "corpus/md",
+  "expected_logical_documents": 19,
+  "sources": [
+    {
+      "id": "plan",
+      "path": "plan_trabajo_alternativa_1_escenario_a.md",
+      "format": "md",
+      "sha256": "6cf311ad0b4c47496bb8866d8b69cb12616059802e82e3d2a6a235581b32bdef"
+    },
+    {
+      "id": "actividad",
+      "path": "Contenido de la Actividad.docx",
+      "format": "docx",
+      "sha256": "9f18fd389fc16ba68fea8cc813fb075ce5d1d7a59a085005b39f1ddbb8262bd1"
+    },
+    {
+      "id": "teoria",
+      "path": "output/doc/Escenario_A_3_1_Analisis_y_Diseno_PetroAndes.docx",
+      "format": "docx",
+      "sha256": "a28a6efccbec92f448b6bafbb52e7cf4613b4dbeb5325268ede5631ee1dc29e5"
+    },
+    {
+      "id": "alternativas",
+      "path": "output/doc/Informe_Ejecutivo_Alternativas_3_2_PetroAndes.docx",
+      "format": "docx",
+      "sha256": "497812ee70456141f98cd8a992b23db267f070446f07d374224b83025b29ec30"
+    },
+    {
+      "id": "asignatura",
+      "path": "contexto_arquitectura_integracion.md",
+      "format": "md",
+      "sha256": "2a7ff336ab298c5e5f72a53a8d7c1326b5dd984dd03c10b71f23802ad3ea5f1a"
+    },
+    {
+      "id": "caso",
+      "path": "ARTI4212_Caso_PetroAndes.md",
+      "format": "md",
+      "sha256": "28f32dbc631013eebd32ea14a13d6f8f9d860dea00f1e86b68202d755df4bd5d"
+    },
+    {
+      "id": "leeme",
+      "path": "corpus/LEEME.md",
+      "format": "md",
+      "sha256": "4cf74e796021724bea2830483fc1df0c33de850baa7aa1979cbbf9472f5299b4"
+    }
+  ]
+}

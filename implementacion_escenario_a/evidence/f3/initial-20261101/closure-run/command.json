@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/check_f3.py",
+    "--baseline",
+    "reports/portable/f3-20261101/baseline-release",
+    "--repeat",
+    "reports/portable/f3-20261101/baseline-repeat",
+    "--laboratorio",
+    "reports/portable/f3-20261101/laboratorio-release",
+    "--render-dir",
+    "reports/portable/f3-20261101/render-recorded",
+    "--output",
+    "reports/portable/f3-20261101/closure.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T22:48:10.482268+00:00",
+  "elapsed_seconds": 11.957877519999784,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "texto": {
+      "minLength": 1,
+      "title": "Texto",
+      "type": "string"
+    },
+    "citas": {
+      "items": {
+        "$ref": "Citation.json"
+      },
+      "minItems": 1,
+      "title": "Citas",
+      "type": "array"
+    }
+  },
+  "required": [
+    "texto",
+    "citas"
+  ],
+  "title": "Claim",
+  "type": "object"
+}

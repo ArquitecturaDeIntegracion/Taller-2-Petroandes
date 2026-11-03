@@ -1,0 +1,23 @@
+{
+  "doc_id": "ACTA-CTO-2025-07",
+  "version_documental": null,
+  "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+  "pdf_uri": "project:corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf",
+  "tipo": "acta",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 1,
+  "filas": 3,
+  "max_tokens_entrada": 210,
+  "fuera_objetivo": 5,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 269,
+    "md_sha256": "e08aa5936f9c1660649b77f8af8d8547d4834b050d28c2296389f9edf3b10f65",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

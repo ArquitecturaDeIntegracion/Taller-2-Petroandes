@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-SEG-015",
+  "version_documental": "1",
+  "rol_area_simulado": "Gerencia de Seguridad Física",
+  "usos": [
+    "instruccion_operativa",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Preservar destinatarios, responsables y plazos; no realizar envíos."
+  ]
+}

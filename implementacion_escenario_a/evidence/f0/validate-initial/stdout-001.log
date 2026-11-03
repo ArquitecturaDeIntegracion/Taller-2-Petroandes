@@ -1,0 +1,32 @@
+ 42 líneas  .agents\skills\petroandes-desarrollo\SKILL.md
+ 42 líneas  .agents\skills\petroandes-evaluacion\SKILL.md
+ 40 líneas  .agents\skills\petroandes-recuperacion-mcp\SKILL.md
+  7 líneas  .codex\config.toml
+ 12 líneas  .gitignore
+ 72 líneas  AGENTS.md
+ 41 líneas  config.json
+ 25 líneas  docs\estado.md
+ 34 líneas  docs\verificacion.md
+ 21 líneas  evidence\f0\inspector-install\command.json
+ 57 líneas  evidence\f0\inspector-install\stdout-001.log
+ 20 líneas  INICIO.md
+ 39 líneas  knowledge\00-indice.md
+ 93 líneas  knowledge\01-contexto.md
+109 líneas  knowledge\02-gobierno.md
+ 62 líneas  knowledge\03-arquitectura.md
+ 50 líneas  knowledge\04-mcp.md
+ 63 líneas  knowledge\05-calidad.md
+ 52 líneas  knowledge\sources.json
+ 79 líneas  README.md
+ 60 líneas  tools\f0.py
+ 72 líneas  tools\f0_common.py
+ 73 líneas  tools\f0_e5.py
+ 14 líneas  tools\f0_mcp_server.py
+ 78 líneas  tools\f0_storage.py
+104 líneas  tools\preflight.py
+ 85 líneas  tools\read_source.py
+ 59 líneas  tools\record_command.py
+104 líneas  tools\validate_agent.py
+
+OK: 29 archivos textuales; máximo 109 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

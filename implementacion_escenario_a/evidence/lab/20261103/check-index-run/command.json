@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/check_lab_index.py",
+    "--stage",
+    "evidence/f3/initial-20261101/laboratorio-release/manifest.json",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/index-closure"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:16:38.037901+00:00",
+  "elapsed_seconds": 22.020705094000732,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

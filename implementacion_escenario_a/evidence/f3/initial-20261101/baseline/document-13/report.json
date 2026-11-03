@@ -1,0 +1,23 @@
+{
+  "doc_id": "RES-CREG-0043-2024",
+  "version_documental": null,
+  "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+  "pdf_uri": "project:corpus/pdf/03_normativa/RES-CREG-0043-2024.pdf",
+  "tipo": "resolucion",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 6,
+  "fragmentos": 6,
+  "tablas": 0,
+  "filas": 0,
+  "max_tokens_entrada": 98,
+  "fuera_objetivo": 6,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 160,
+    "md_sha256": "97daf1a9cc83361070e69f47ee8eca46f4f6b5441d04d8e6e7d9d80198523d03",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

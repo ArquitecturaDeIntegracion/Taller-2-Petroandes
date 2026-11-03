@@ -1,0 +1,37 @@
+{
+  "decision": {
+    "doc_id": "ACTA-CTO-2025-07",
+    "version_documental": null,
+    "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+    "decision_id": "a2085695-7e8a-51e0-879b-42600bde2ff7",
+    "perfil": "laboratorio",
+    "simulacion_academica": true,
+    "estado": "certificado",
+    "evidencia": [
+      "app:config/admin/lab-20261103/authorization.md#sha256=5797484f4064abc072ca7d5c5bdec87217a363fc8bc39ed369e250b6a867323f",
+      "project:corpus/pdf/04_actas/ACTA-CTO-2025-07.pdf#sha256=3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b"
+    ],
+    "autoridad": "SIMULACIÓN ACADÉMICA: rol de Comité Técnico Operativo",
+    "revisor_humano": "Jonnathan Caballero",
+    "revisado_en": "2026-11-03T00:12:31.781997-05:00",
+    "effective_from": "2026-11-03T00:12:31.781997-05:00",
+    "effective_to": "2026-12-01T00:00:00-05:00",
+    "intervalo_abierto_expreso": false,
+    "ambitos": [
+      {
+        "tipo": "general",
+        "identificador": "corpus_revision"
+      }
+    ],
+    "usos": [
+      "evidencia_historica"
+    ],
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "revision_gobierno": 9
+  },
+  "supuesto": "Confirmación individual por el rol del área competente Comité Técnico Operativo, supuesto académico expresamente autorizado por Jonnathan Caballero. No identifica ni acredita una autoridad real de PetroAndes. Autenticidad verificada únicamente dentro de esta simulación académica. Evidencia histórica; no habilita cambios operativos por sí sola.",
+  "autenticidad": "verificada",
+  "contenido_no_confiable": true
+}

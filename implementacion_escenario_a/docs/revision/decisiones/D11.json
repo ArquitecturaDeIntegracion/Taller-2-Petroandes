@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D11",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-SEG-015",
+    "version_documental": "1",
+    "titulo": "Reporte y atención de eventos de hurto de hidrocarburos",
+    "emisor_segun_pdf": "Gerencia de Seguridad Física",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+      "doc_id": "PRO-SEG-015",
+      "version_documental": "1",
+      "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Declara reemplazo integral, aviso a dos áreas en 2 horas y autoridad competente en 24 horas.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "1",
+        "extracto_verificado": "el cual queda sin efecto a partir de la fecha de emisión del presente documento."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "24 horas desde la detección"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Seguridad Física",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No enviar reportes reales ni usar los antiguos plazos de 12/24/72 horas como régimen de este documento."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura de plazos y responsables preservando la remisión al regulador según norma aplicable?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

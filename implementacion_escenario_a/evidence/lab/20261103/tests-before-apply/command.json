@@ -1,0 +1,23 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_lab_administration.py",
+    "tests/test_f2_catalog.py",
+    "tests/test_f2_governance.py",
+    "tests/test_f4_publication.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:10:07.619940+00:00",
+  "elapsed_seconds": 67.2321126320021,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

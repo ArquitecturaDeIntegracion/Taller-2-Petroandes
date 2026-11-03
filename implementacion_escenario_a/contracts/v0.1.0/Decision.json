@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "doc_id": {
+      "minLength": 1,
+      "title": "Doc Id",
+      "type": "string"
+    },
+    "version_documental": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Version Documental"
+    },
+    "pdf_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Pdf Sha256",
+      "type": "string"
+    },
+    "decision_id": {
+      "minLength": 1,
+      "title": "Decision Id",
+      "type": "string"
+    },
+    "perfil": {
+      "enum": [
+        "baseline",
+        "laboratorio"
+      ],
+      "title": "Perfil",
+      "type": "string"
+    },
+    "simulacion_academica": {
+      "title": "Simulacion Academica",
+      "type": "boolean"
+    },
+    "estado": {
+      "enum": [
+        "pendiente",
+        "certificado",
+        "excluido"
+      ],
+      "title": "Estado",
+      "type": "string"
+    },
+    "evidencia": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidencia",
+      "type": "array"
+    },
+    "autoridad": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Autoridad"
+    },
+    "revisor_humano": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Revisor Humano"
+    },
+    "revisado_en": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Revisado En"
+    },
+    "effective_from": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective From"
+    },
+    "effective_to": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective To"
+    },
+    "intervalo_abierto_expreso": {
+      "default": false,
+      "title": "Intervalo Abierto Expreso",
+      "type": "boolean"
+    },
+    "ambitos": {
+      "default": [],
+      "items": {
+        "$ref": "Scope.json"
+      },
+      "title": "Ambitos",
+      "type": "array"
+    },
+    "usos": {
+      "default": [],
+      "items": {
+        "enum": [
+          "instruccion_operativa",
+          "limite_diseno",
+          "especificacion_activo",
+          "referencia_normativa",
+          "evidencia_historica",
+          "recomendacion",
+          "inspeccion_no_confiable"
+        ],
+        "type": "string"
+      },
+      "title": "Usos",
+      "type": "array"
+    },
+    "grupos": {
+      "default": [],
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Grupos",
+      "type": "array"
+    },
+    "revision_gobierno": {
+      "minimum": 0,
+      "title": "Revision Gobierno",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "doc_id",
+    "version_documental",
+    "pdf_sha256",
+    "decision_id",
+    "perfil",
+    "simulacion_academica",
+    "estado",
+    "evidencia",
+    "revision_gobierno"
+  ],
+  "title": "Decision",
+  "type": "object"
+}

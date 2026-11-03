@@ -1,0 +1,47 @@
+{
+  "recorded_utc": "2026-11-01T19:37:31.354696+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0.py",
+    "environment",
+    "--output",
+    "evidence/f0/environment.json"
+  ],
+  "status": "observed",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) Ultra 7 155U",
+  "physical_cores": 12,
+  "logical_cores": 14,
+  "memory": {
+    "process_rss_bytes": 30240768,
+    "process_peak_wset_bytes": 31035392,
+    "system_total_bytes": 16619384832,
+    "system_available_bytes": 1599827968
+  },
+  "node": {
+    "executable": "C:\\Users\\jcjca\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+    "version": "v24.22.1"
+  },
+  "packages": {
+    "pypdf": "6.21.4",
+    "pydantic": null,
+    "qdrant-client": null,
+    "sentence-transformers": null,
+    "torch": null,
+    "transformers": null,
+    "rank-bm25": "0.2.2",
+    "mcp": null,
+    "laya": null,
+    "pytest": "9.2.0",
+    "psutil": "7.2.2"
+  },
+  "network": "Ver resultados separados de descargas",
+  "isolated": true,
+  "global_configuration_changed": false,
+  "probe": "environment",
+  "offline_requested": false,
+  "total_seconds": 0.8765696000000389,
+  "phase_F0_complete": false
+}

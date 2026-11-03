@@ -1,0 +1,25 @@
+0212 ### F2 Gobierno documental y catálogo SQLite
+0213 
+0214 **Objetivo:** hacer que la vigencia y los permisos sean decisiones externas al texto y compartidas por todas las consultas.
+0215 
+0216 **Actividades**
+0217 
+0218 - [ ] F2.1 Cargar la clasificación inicial de 3.1: **cuatro excluidos y quince pendientes**. Las cuatro exclusiones son PRO-MED-007 v1, PRO-OPE-012 v2, PRO-SEG-009 v1 y RES-CREG-0112-2021. Registrar el fundamento específico de cada una.
+0219 - [ ] F2.2 Mantener separadas la evidencia obtenida del corpus y las certificaciones académicas simuladas. Cada decisión del laboratorio identifica responsable del grupo, rol de área emisora, supuesto, evidencia, hash, uso autorizado, ámbito e intervalo.
+0220 - [ ] F2.3 No certificar en bloque los quince pendientes ni inferir vigencia por versión máxima. El corpus no identifica el manual que dejó de aplicarse; conservar esa incertidumbre en el perfil base y en sus casos esperados.
+0221 - [ ] F2.4 Crear catálogos e índices separados para `baseline` y `laboratorio`. No permitir cambiar el perfil ni concederse grupos mediante parámetros de una herramienta MCP.
+0222 - [ ] F2.5 Implementar una función común de elegibilidad: decisión válida para el hash, estado certificado, período efectivo, ámbito, uso y permisos compatibles, sin conflicto pendiente.
+0223 - [ ] F2.6 Separar autenticidad, fuerza operativa y seguridad. Una comunicación certificada como recomendación no modifica un procedimiento interno; un anexo sospechoso no adquiere privilegios por ser recuperable.
+0224 - [ ] F2.7 Representar reemplazos, derogatorias y cambios de código como relaciones. Almacenar versiones ausentes como `null`, mostrándolas como `sin versión`; no inventar `v1`.
+0225 - [ ] F2.8 Registrar revisiones de gobierno y eventos pendientes en una transacción SQLite. Un cambio de autorización aumenta `governance_revision` y conserva el historial.
+0226 
+0227 **Validaciones de salida**
+0228 
+0229 - [ ] Pendientes, excluidos, vencidos, decisiones para otro hash y accesos fuera de ámbito producen conjunto elegible vacío o restringido antes de buscar.
+0230 - [ ] `effective_to = null` solo se acepta si la decisión aprueba un intervalo abierto; no representa una fecha desconocida.
+0231 - [ ] Una fecha de consulta controlada solo se inyecta en pruebas. La herramienta operativa usa el reloj del servicio y no ofrece un selector histórico para recuperar revisiones excluidas.
+0232 - [ ] La falta de catálogo o una revisión incoherente causa indisponibilidad o abstención; no amplía acceso.
+0233 - [ ] Dos fuentes operativas incompatibles para el mismo ámbito no se resuelven eligiendo la más similar.
+0234 
+0235 **Evidencia:** catálogo inicial, decisiones académicas revisadas, pruebas de elegibilidad y trazas de revisiones. Si falta una validación humana, conservar el estado pendiente y continuar el trabajo técnico con datos de prueba claramente separados.
+0236 

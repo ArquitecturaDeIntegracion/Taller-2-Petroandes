@@ -1,0 +1,12 @@
+{
+  "doc_id": "MAN-OPE-004",
+  "version_documental": "2",
+  "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+  "contrato": "corpus_documental_petroandes/1.0.0",
+  "tipo": "manual",
+  "titulo": "Manual de operación del sistema de medición y transferencia de custodia",
+  "emisor": "Gerencia de Medición",
+  "fecha_emision": "2022-08-30",
+  "pdf_uri": "project:corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+  "paginas": 1
+}

@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D16",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "ACTA-CTO-2025-11",
+    "version_documental": null,
+    "titulo": "Acta del Comité Técnico Operativo — sesión de noviembre de 2025",
+    "emisor_segun_pdf": "Comité Técnico Operativo",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+      "doc_id": "ACTA-CTO-2025-11",
+      "version_documental": null,
+      "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Consta aplicación del procedimiento actualizado, listado maestro inconsistente y certificación por área emisora.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "en al menos un caso, un manual dejó de aplicarse"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "4",
+        "extracto_verificado": "será certificada por el área emisora a solicitud del interesado."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Comité Técnico Operativo",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No marca automáticamente vigentes los otros documentos ni sustituye decisiones individuales del área."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas lectura histórica conservando como desconocida la identidad del manual retirado?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

@@ -1,0 +1,11 @@
+{
+  "observation_id": "5c259b073849f123bc83909c7ef97ff459f5d5c6671a3c25e39c624b7f62ef01",
+  "documento": {
+    "doc_id": "ACTA-CTO-2025-07",
+    "version_documental": null
+  },
+  "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/check_lab_state.py",
+    "after",
+    "--initial",
+    "reports/portable/lab-certificacion-20261103/state-before.json",
+    "--registration",
+    "reports/portable/lab-certificacion-20261103/registration/summary.json",
+    "--request",
+    "config/admin/lab-20261103/request/request.json",
+    "--output",
+    "reports/portable/lab-certificacion-20261103/state-after.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:12:55.825943+00:00",
+  "elapsed_seconds": 2.955327732001024,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

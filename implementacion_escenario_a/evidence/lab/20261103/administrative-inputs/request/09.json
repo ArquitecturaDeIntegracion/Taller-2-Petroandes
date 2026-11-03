@@ -1,0 +1,11 @@
+{
+  "doc_id": "ACTA-CTO-2025-11",
+  "version_documental": null,
+  "rol_area_simulado": "Comité Técnico Operativo",
+  "usos": [
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Evidencia histórica y fundamento documental del gobierno; no identifica el manual retirado ni certifica otros documentos."
+  ]
+}

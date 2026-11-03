@@ -1,0 +1,133 @@
+{
+  "recorded_utc": "2026-11-01T19:50:35.618899+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0_corpus.py",
+    "--output",
+    "evidence/f0/corpus.json"
+  ],
+  "status": "passed",
+  "logical_documents": 19,
+  "operation": "read_only_pdf_structure_and_hashes",
+  "documents": [
+    {
+      "pdf": "corpus\\pdf\\01_manuales\\MAN-MTO-002_v1.pdf",
+      "pages": 1,
+      "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+      "md_sha256": "776467fa5ee76780bee662ecddd6bf211ce2b60fc27aab2d597f5ab82b728d36"
+    },
+    {
+      "pdf": "corpus\\pdf\\01_manuales\\MAN-OPE-001_v3.pdf",
+      "pages": 1,
+      "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+      "md_sha256": "d8c54e1648af1876295ca2f8b491b2051bdcc0ff1eb563080196cf857c7f15f4"
+    },
+    {
+      "pdf": "corpus\\pdf\\01_manuales\\MAN-OPE-004_v2.pdf",
+      "pages": 1,
+      "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+      "md_sha256": "7fb446776f43df27afd7ad3256ec9c67df6caae0f1ac9c80468c80590543b9f1"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-HSE-003_v4.pdf",
+      "pages": 1,
+      "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+      "md_sha256": "4e28ff333f00e01962d61ea59ff378416eaed8eb0dbc1c9ad79df90ebf7b5c0d"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-MED-007_v1.pdf",
+      "pages": 1,
+      "pdf_sha256": "89ace1f864c362231321892541fddf7ca834cd933573a1e9ad566b00c9973955",
+      "md_sha256": "2358e2245b9be5be987147c3c448bb095d67de3dd0cfc533ca41097ca37f146e"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-MED-007_v2.pdf",
+      "pages": 1,
+      "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+      "md_sha256": "fd5a46d7c46ad50f60d4c38a2eba52e2e3357dca31b476d328433a89f8df26cc"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-OPE-012_v2.pdf",
+      "pages": 1,
+      "pdf_sha256": "029355b2af202bf2178d1c732a7014d6db0f7f0ca55919554d0aa4249234e8e8",
+      "md_sha256": "def5d8d96b64de7a8275150684d4be5ab56082b67fb810edc23f43d30dc696f3"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-OPE-012_v3.pdf",
+      "pages": 1,
+      "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+      "md_sha256": "944ac18546b34038adaef5c2e67a458b87d98cecf34f217468b85fb7cb82a1f9"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-OPE-021_v1.pdf",
+      "pages": 1,
+      "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+      "md_sha256": "7ca6fca2ac4e36c4804b0dd5cf0a1e701ff9549018aa1a2a09afd9550046633e"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-SEG-009_v1.pdf",
+      "pages": 1,
+      "pdf_sha256": "0e8fb04a5e8e1b33490efb77240ee65cdd79786697f70b1fdceaa4194518341f",
+      "md_sha256": "c6968e44e349eb5f3f1e933ef4adfac29477068f88277f610c8c811a31d75ebf"
+    },
+    {
+      "pdf": "corpus\\pdf\\02_procedimientos\\PRO-SEG-015_v1.pdf",
+      "pages": 1,
+      "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+      "md_sha256": "8714baaabf714433d25be091fe3c2a395c744b3a9331471233feb4d3785565f8"
+    },
+    {
+      "pdf": "corpus\\pdf\\03_normativa\\RES-ANH-0471-2023.pdf",
+      "pages": 1,
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+      "md_sha256": "c338ce04ba518e4bb5d80cda7058a9145ebcb6b6e817b76b213bb13fd06a3349"
+    },
+    {
+      "pdf": "corpus\\pdf\\03_normativa\\RES-CREG-0043-2024.pdf",
+      "pages": 1,
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+      "md_sha256": "97daf1a9cc83361070e69f47ee8eca46f4f6b5441d04d8e6e7d9d80198523d03"
+    },
+    {
+      "pdf": "corpus\\pdf\\03_normativa\\RES-CREG-0112-2021.pdf",
+      "pages": 1,
+      "pdf_sha256": "9daa12ee5b9fcb5b5b59cceabea80c69966ff0f3dc6c3ca78c9a57dd9ce7a7d2",
+      "md_sha256": "f0e98235b687e7d75a4d930952d7d7fc89404109de3bef34bc37e7f553796acb"
+    },
+    {
+      "pdf": "corpus\\pdf\\04_actas\\ACTA-CTO-2025-07.pdf",
+      "pages": 1,
+      "pdf_sha256": "3b0e914ad12f006857e91e73989f3404249d641be0591da556f994ed8a63ba1b",
+      "md_sha256": "e08aa5936f9c1660649b77f8af8d8547d4834b050d28c2296389f9edf3b10f65"
+    },
+    {
+      "pdf": "corpus\\pdf\\04_actas\\ACTA-CTO-2025-11.pdf",
+      "pages": 1,
+      "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+      "md_sha256": "bc217d1b3dbdbb3b890a4527628cbd82db6baa5533a19d3485ce0c4b101e178c"
+    },
+    {
+      "pdf": "corpus\\pdf\\05_comunicaciones\\COM-PRV-0098.pdf",
+      "pages": 1,
+      "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+      "md_sha256": "93648ed526948f5dede963dc4240dc6c682259699b78c7d5f7aab427e5301531"
+    },
+    {
+      "pdf": "corpus\\pdf\\05_comunicaciones\\COM-PRV-0134.pdf",
+      "pages": 1,
+      "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+      "md_sha256": "6dbdf626bc72d789d545dca7cba29a8f3aaaaaef8e1fe29450bda559e553662a"
+    },
+    {
+      "pdf": "corpus\\pdf\\06_fichas\\FIC-ACT-P101_v2.pdf",
+      "pages": 1,
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+      "md_sha256": "0f4d019a9641fe9a8c1cac1f0856db5b1271051b1e179a2e3a551ef12d4d4d50"
+    }
+  ],
+  "content_equivalence_claimed": false,
+  "governance_decisions_created": 0,
+  "scope": "F0 legibilidad e inventario; extracción estructural corresponde a F3"
+}

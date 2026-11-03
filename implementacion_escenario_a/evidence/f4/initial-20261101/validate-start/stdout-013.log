@@ -1,0 +1,32 @@
+ 60 líneas  tests/test_f3_extraction.py
+ 36 líneas  tests/test_f3_quarantine.py
+ 42 líneas  tests/test_f3_staging.py
+ 38 líneas  tests/test_json_schemas.py
+ 78 líneas  tests/test_portability.py
+106 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 55 líneas  tools/check_f2.py
+133 líneas  tools/check_f3.py
+ 70 líneas  tools/check_portability.py
+110 líneas  tools/debug_smoke.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 73 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+100 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+103 líneas  tools/validate_agent.py
+
+OK: 1949 archivos textuales; máximo 194 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

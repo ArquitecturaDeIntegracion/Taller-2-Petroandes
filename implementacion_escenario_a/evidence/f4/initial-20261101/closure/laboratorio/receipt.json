@@ -1,0 +1,24 @@
+{
+  "key": {
+    "stage": "dc29d4e4-00b4-52e6-b646-1c17cb3f1cf2",
+    "perfil": "laboratorio",
+    "revision_gobierno": 1,
+    "context": {
+      "identidad": "servicio-educativo-local",
+      "grupos": [
+        "lectores-educativos"
+      ],
+      "ambito": {
+        "tipo": "general",
+        "identificador": "lectura-documental-educativa"
+      },
+      "uso": "recomendacion"
+    },
+    "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+    "lexical_version": "bm25-codes-es-1.0.0",
+    "records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "generation_id": "15ca08a0-c114-548d-8aaf-249e24211178"
+  },
+  "collection": "e5small_es_1_0_0_r1_15ca08a0c114_63971236",
+  "manifest_sha256": "0e6a15f9644800ddf3a67663e57152351877d694ac8eeb1ec0b097d85e324c95"
+}

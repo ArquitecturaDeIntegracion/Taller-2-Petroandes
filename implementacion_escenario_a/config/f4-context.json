@@ -1,0 +1,9 @@
+{
+  "identidad": "servicio-educativo-local",
+  "grupos": ["lectores-educativos"],
+  "ambito": {
+    "tipo": "general",
+    "identificador": "lectura-documental-educativa"
+  },
+  "uso": "recomendacion"
+}

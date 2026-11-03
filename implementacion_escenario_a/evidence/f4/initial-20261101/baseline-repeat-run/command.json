@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f4.py",
+    "publish",
+    "--profile",
+    "baseline",
+    "--stage",
+    "evidence/f3/initial-20261101/baseline-repeat/manifest.json",
+    "--output",
+    "reports/portable/f4-20261101/baseline-repeat.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T23:55:26.406190+00:00",
+  "elapsed_seconds": 19.48697349000031,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

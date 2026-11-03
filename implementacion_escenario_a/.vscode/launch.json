@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PetroAndes: inventario local",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/preflight.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "PetroAndes: pruebas",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-q", "-p", "no:cacheprovider", "--basetemp", "artifacts/pytest-debug"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "PetroAndes: adjuntar Docker",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {"host": "127.0.0.1", "port": 5678},
+      "pathMappings": [
+        {"localRoot": "${workspaceFolder}", "remoteRoot": "/workspace/implementacion_escenario_a"}
+      ],
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "doc_id": "PRO-MED-007",
+  "version_documental": "2",
+  "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+  "tipo": "procedimiento",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 4,
+  "fragmentos": 4,
+  "tablas": 1,
+  "filas": 5,
+  "max_tokens_entrada": 205,
+  "fuera_objetivo": 4,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 251,
+    "md_sha256": "fd5a46d7c46ad50f60d4c38a2eba52e2e3357dca31b476d328433a89f8df26cc",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "pendiente",
+  "publicado": false
+}

@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-11-01T19:49:57.413659+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0.py",
+    "laya",
+    "--offline",
+    "--output",
+    "evidence/f0/laya-offline.json"
+  ],
+  "synthetic_case": {
+    "id": "noul_negative",
+    "state": "El informe de prueba registra el color azul.",
+    "question": {
+      "type": "noul",
+      "instructions": "¿La evidencia afirma que el color registrado es rojo?"
+    },
+    "expected": false
+  },
+  "sequence_tokens": 46,
+  "truncation": {
+    "state_tokens": 9,
+    "state_tokens_used": 9,
+    "state_tokens_dropped": 0,
+    "truncated": false
+  },
+  "inference_seconds": 0.28885010000021794,
+  "answer": {
+    "type": "noul",
+    "noul": 0.008,
+    "confidence": 0.992,
+    "answer_confidence": 0.992,
+    "action": {
+      "act_probability": 1.0
+    }
+  },
+  "matches_synthetic_expectation": true
+}

@@ -1,0 +1,160 @@
+  7 líneas  .env.example
+ 17 líneas  .gitignore
+ 82 líneas  AGENTS.md
+ 23 líneas  Dockerfile
+ 17 líneas  Dockerfile.dockerignore
+ 24 líneas  INICIO.md
+194 líneas  README.md
+ 35 líneas  compose.yaml
+ 41 líneas  config.json
+ 16 líneas  pyproject.toml
+  3 líneas  requirements-dev.lock
+ 76 líneas  requirements-portable.lock
+ 13 líneas  requirements.in
+ 75 líneas  requirements.lock
+ 42 líneas  .agents/skills/petroandes-desarrollo/SKILL.md
+ 42 líneas  .agents/skills/petroandes-evaluacion/SKILL.md
+ 40 líneas  .agents/skills/petroandes-recuperacion-mcp/SKILL.md
+  7 líneas  .codex/config.toml
+ 33 líneas  .vscode/launch.json
+ 15 líneas  config/embedding-bundle.json
+ 53 líneas  contracts/v0.1.0/Citation.json
+ 25 líneas  contracts/v0.1.0/Claim.json
+185 líneas  contracts/v0.1.0/Decision.json
+ 84 líneas  contracts/v0.1.0/Document.json
+127 líneas  contracts/v0.1.0/Fragment.json
+ 61 líneas  contracts/v0.1.0/FragmentQuery.json
+ 86 líneas  contracts/v0.1.0/FragmentResponse.json
+ 82 líneas  contracts/v0.1.0/Manifest.json
+ 27 líneas  contracts/v0.1.0/Scope.json
+ 54 líneas  contracts/v0.1.0/SearchFilters.json
+ 35 líneas  contracts/v0.1.0/SearchQuery.json
+106 líneas  contracts/v0.1.0/SearchResponse.json
+ 56 líneas  docs/adr-0005-entorno-f0.md
+ 56 líneas  docs/adr-0006-portabilidad.md
+ 57 líneas  docs/adr-0007-extraccion-estructural.md
+ 55 líneas  docs/contratos.md
+ 91 líneas  docs/docker-validacion.md
+161 líneas  docs/estado.md
+100 líneas  docs/f0-compatibilidad.md
+103 líneas  docs/f2-gobierno.md
+110 líneas  docs/f3-ingesta.md
+ 36 líneas  docs/f3-revision-visual.md
+ 59 líneas  docs/resumen-portabilidad.md
+ 53 líneas  docs/revision-academica.md
+ 28 líneas  docs/trazabilidad.md
+ 34 líneas  docs/verificacion.md
+125 líneas  docs/revision/README.md
+146 líneas  docs/revision/casos-ajuste.md
+143 líneas  docs/revision/casos-reserva-1.md
+147 líneas  docs/revision/casos-reserva-2.md
+115 líneas  docs/revision/manifest.json
+ 51 líneas  docs/revision/matriz-casos.md
+ 67 líneas  docs/revision/matriz-documental.md
+ 16 líneas  docs/revision/verificacion.json
+ 65 líneas  docs/revision/casos/A01.json
+ 81 líneas  docs/revision/casos/A02.json
+118 líneas  docs/revision/casos/A03.json
+101 líneas  docs/revision/casos/A04.json
+117 líneas  docs/revision/casos/A05.json
+ 97 líneas  docs/revision/casos/A06.json
+117 líneas  docs/revision/casos/A07.json
+114 líneas  docs/revision/casos/A08.json
+100 líneas  docs/revision/casos/R01.json
+ 79 líneas  docs/revision/casos/R02.json
+ 80 líneas  docs/revision/casos/R03.json
+ 80 líneas  docs/revision/casos/R04.json
+ 68 líneas  docs/revision/casos/R05.json
+ 70 líneas  docs/revision/casos/R06.json
+ 67 líneas  docs/revision/casos/R07.json
+ 72 líneas  docs/revision/casos/R08.json
+ 79 líneas  docs/revision/casos/R09.json
+ 73 líneas  docs/revision/casos/R10.json
+ 72 líneas  docs/revision/casos/R11.json
+ 82 líneas  docs/revision/casos/R12.json
+132 líneas  docs/revision/casos/R13.json
+ 68 líneas  docs/revision/casos/R14.json
+ 96 líneas  docs/revision/casos/R15.json
+ 79 líneas  docs/revision/casos/R16.json
+ 79 líneas  docs/revision/decisiones/D01.json
+ 79 líneas  docs/revision/decisiones/D02.json
+ 70 líneas  docs/revision/decisiones/D03.json
+ 79 líneas  docs/revision/decisiones/D04.json
+ 60 líneas  docs/revision/decisiones/D05.json
+ 79 líneas  docs/revision/decisiones/D06.json
+ 60 líneas  docs/revision/decisiones/D07.json
+ 79 líneas  docs/revision/decisiones/D08.json
+ 79 líneas  docs/revision/decisiones/D09.json
+ 60 líneas  docs/revision/decisiones/D10.json
+ 79 líneas  docs/revision/decisiones/D11.json
+ 79 líneas  docs/revision/decisiones/D12.json
+ 79 líneas  docs/revision/decisiones/D13.json
+ 60 líneas  docs/revision/decisiones/D14.json
+ 69 líneas  docs/revision/decisiones/D15.json
+ 79 líneas  docs/revision/decisiones/D16.json
+ 79 líneas  docs/revision/decisiones/D17.json
+ 80 líneas  docs/revision/decisiones/D18.json
+ 79 líneas  docs/revision/decisiones/D19.json
+ 78 líneas  evidence/f0/closure-final.json
+ 78 líneas  evidence/f0/closure.json
+133 líneas  evidence/f0/corpus.json
+ 20 líneas  evidence/f0/dependencies.json
+ 71 líneas  evidence/f0/e5-materialized.json
+ 73 líneas  evidence/f0/e5-offline-timing.json
+ 72 líneas  evidence/f0/e5-offline.json
+ 67 líneas  evidence/f0/e5-online.json
+113 líneas  evidence/f0/e5-sandbox.json
+ 47 líneas  evidence/f0/environment-final.json
+ 47 líneas  evidence/f0/environment.json
+ 48 líneas  evidence/f0/laya-offline-choice_negative.json
+ 48 líneas  evidence/f0/laya-offline-choice_positive.json
+ 40 líneas  evidence/f0/laya-offline-noul_negative.json
+ 40 líneas  evidence/f0/laya-offline-noul_positive.json
+ 82 líneas  evidence/f0/laya-offline.json
+ 47 líneas  evidence/f0/laya-online-choice_negative.json
+ 47 líneas  evidence/f0/laya-online-choice_positive.json
+ 39 líneas  evidence/f0/laya-online-noul_negative.json
+ 39 líneas  evidence/f0/laya-online-noul_positive.json
+ 80 líneas  evidence/f0/laya-online.json
+ 43 líneas  evidence/f0/storage-fixed.json
+ 49 líneas  evidence/f0/storage.json
+ 17 líneas  evidence/f0/closure-final-run/command.json
+ 78 líneas  evidence/f0/closure-final-run/stdout-001.log
+ 17 líneas  evidence/f0/closure-run/command.json
+ 78 líneas  evidence/f0/closure-run/stdout-001.log
+ 17 líneas  evidence/f0/corpus-run/command.json
+133 líneas  evidence/f0/corpus-run/stdout-001.log
+ 19 líneas  evidence/f0/e5-materialized-run/command.json
+  5 líneas  evidence/f0/e5-materialized-run/stderr-001.log
+ 71 líneas  evidence/f0/e5-materialized-run/stdout-001.log
+ 20 líneas  evidence/f0/e5-offline-run/command.json
+  2 líneas  evidence/f0/e5-offline-run/stderr-001.log
+ 72 líneas  evidence/f0/e5-offline-run/stdout-001.log
+ 20 líneas  evidence/f0/e5-offline-timing-run/command.json
+  2 líneas  evidence/f0/e5-offline-timing-run/stderr-001.log
+ 73 líneas  evidence/f0/e5-offline-timing-run/stdout-001.log
+ 19 líneas  evidence/f0/e5-online-run/command.json
+ 10 líneas  evidence/f0/e5-online-run/stderr-001.log
+ 67 líneas  evidence/f0/e5-online-run/stdout-001.log
+ 15 líneas  evidence/f0/inspector-help/command.json
+  1 líneas  evidence/f0/inspector-help/stderr-001.log
+ 16 líneas  evidence/f0/inspector-help-absolute/command.json
+160 líneas  evidence/f0/inspector-help-absolute/stdout-001.log
+ 33 líneas  evidence/f0/inspector-help-absolute/stdout-002.log
+ 21 líneas  evidence/f0/inspector-install/command.json
+ 57 líneas  evidence/f0/inspector-install/stdout-001.log
+ 21 líneas  evidence/f0/laya-offline-run/command.json
+  1 líneas  evidence/f0/laya-offline-run/stderr-001.log
+160 líneas  evidence/f0/laya-offline-run/stdout-001.log
+ 98 líneas  evidence/f0/laya-offline-run/stdout-002.log
+ 20 líneas  evidence/f0/laya-online-run/command.json
+  9 líneas  evidence/f0/laya-online-run/stderr-001.log
+160 líneas  evidence/f0/laya-online-run/stdout-001.log
+ 92 líneas  evidence/f0/laya-online-run/stdout-002.log
+ 24 líneas  evidence/f0/mcp/list/command.json
+  1 líneas  evidence/f0/mcp/list/stderr-001.log
+ 27 líneas  evidence/f0/mcp-fixed/summary.json
+ 27 líneas  evidence/f0/mcp-fixed/call/command.json
+  8 líneas  evidence/f0/mcp-fixed/call/stderr-001.log
+  1 líneas  evidence/f0/mcp-fixed/call/stdout-001.log
+ 25 líneas  evidence/f0/mcp-fixed/list/command.json

@@ -1,0 +1,35 @@
+name: petroandes-educativo
+services:
+  project: &project
+    image: petroandes-educativo:local
+    build:
+      context: ..
+      dockerfile: implementacion_escenario_a/Dockerfile
+    working_dir: /workspace/implementacion_escenario_a
+    environment:
+      PETROANDES_CACHE_DIR: .cache
+      PETROANDES_MODELS_DIR: .cache/models
+      PETROANDES_INSPECTOR_DIR: /opt/inspector
+    volumes:
+      - model-cache:/workspace/implementacion_escenario_a/.cache
+      - artifacts:/workspace/implementacion_escenario_a/artifacts
+      - ./reports/portable:/workspace/implementacion_escenario_a/reports/portable
+    command: ["tools/preflight.py"]
+  dev:
+    <<: *project
+    profiles: ["dev"]
+    volumes: &source-volumes
+      - .:/workspace/implementacion_escenario_a:ro
+      - model-cache:/workspace/implementacion_escenario_a/.cache
+      - artifacts:/workspace/implementacion_escenario_a/artifacts
+      - ./reports/portable:/workspace/implementacion_escenario_a/reports/portable
+  debug:
+    <<: *project
+    profiles: ["debug"]
+    ports:
+      - "127.0.0.1:5678:5678"
+    volumes: *source-volumes
+    command: ["-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "tools/preflight.py"]
+volumes:
+  model-cache:
+  artifacts:

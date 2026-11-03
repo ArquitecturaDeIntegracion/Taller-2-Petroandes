@@ -1,0 +1,117 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A07",
+  "particion_propuesta": "ajuste",
+  "titulo": "Proveedor y plan interno",
+  "pregunta": "¿La recomendación de lubricar cada cuatro meses cambia por sí sola el plan semestral del manual?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D01",
+      "D17"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "MAN-MTO-002 v1 declara lubricación semestral.",
+      "COM-PRV-0098 recomienda cuatro meses para actuadores VX afectados fabricados antes de 2019.",
+      "El boletín no modifica el plan del operador; incorporar la recomendación requiere actualizar el manual."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+        "doc_id": "MAN-MTO-002",
+        "version_documental": "1",
+        "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "asunto",
+        "localizador_pdf": "Antecedente y Recomendación"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "alcance"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf",
+        "doc_id": "MAN-MTO-002",
+        "version_documental": "1",
+        "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "asunto",
+        "localizador_pdf": "Antecedente y Recomendación"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/05_comunicaciones/COM-PRV-0098.pdf",
+        "doc_id": "COM-PRV-0098",
+        "version_documental": null,
+        "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477",
+        "pagina": 1,
+        "section_id": "alcance"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar el supuesto del manual, lote/alcance del proveedor y que recomendación no sea mandato.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

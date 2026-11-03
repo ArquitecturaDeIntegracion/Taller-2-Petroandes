@@ -1,0 +1,79 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D12",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "RES-ANH-0471-2023",
+    "version_documental": null,
+    "titulo": "Resolución 0471 de 2023 — Reporte de pérdidas de hidrocarburos en el transporte",
+    "emisor_segun_pdf": "Gerencia de Cumplimiento",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+      "doc_id": "RES-ANH-0471-2023",
+      "version_documental": null,
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Resolución ficticia: reporte mensual en quince días calendario; soportes cinco años; rige desde publicación.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+        "doc_id": "RES-ANH-0471-2023",
+        "version_documental": null,
+        "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+        "pagina": 1,
+        "section_id": "articulo-2",
+        "extracto_verificado": "dentro de los quince días calendario siguientes al cierre del mes reportado."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+        "doc_id": "RES-ANH-0471-2023",
+        "version_documental": null,
+        "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+        "pagina": 1,
+        "section_id": "articulo-5",
+        "extracto_verificado": "rige a partir de su publicación."
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "considerar_certificacion_limitada_de_laboratorio",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [
+      "evidencia_historica"
+    ],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [
+      "LAB_REVISION"
+    ],
+    "periodo_a_revisar": {
+      "effective_from_propuesto": "2026-11-01T00:00:00-05:00",
+      "effective_to_propuesto": "2026-12-01T00:00:00-05:00",
+      "intervalo_abierto_expreso": false,
+      "naturaleza": "Ventana sintética de prueba; no acredita publicación ni vigencia real"
+    },
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Cumplimiento",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": "Solo si el revisor lo acepta: el rol emisor simulado confirma autenticidad y lectura descriptiva de este hash durante la ventana sintética. No prueba vigencia real, publicación ni ausencia de retiro tácito.",
+    "restriccion": "No es derecho real. Cumplimiento representaría a la autoridad del caso; falta constancia real de publicación."
+  },
+  "decision_pendiente_del_estudiante": "¿Aceptas una hipótesis explícita de publicación para el laboratorio, sin usar la fecha de emisión como prueba de publicación?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

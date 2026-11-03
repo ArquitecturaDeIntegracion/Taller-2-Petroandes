@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-11-01T19:49:57.901973+00:00",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+  "command": [
+    "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\.venv\\Scripts\\python.exe",
+    "tools/f0.py",
+    "laya",
+    "--offline",
+    "--output",
+    "evidence/f0/laya-offline.json"
+  ],
+  "synthetic_case": {
+    "id": "choice_negative",
+    "state": "Pregunta: ¿De qué color es la puerta? Fragmento: La factura vence el martes.",
+    "question": {
+      "type": "choice",
+      "instructions": "¿El fragmento responde a la pregunta indicada?",
+      "criteria": {
+        "pertinente": "Sí responde",
+        "no_pertinente": "No responde"
+      }
+    },
+    "expected": "no_pertinente"
+  },
+  "sequence_tokens": 50,
+  "truncation": {
+    "state_tokens": 20,
+    "state_tokens_used": 20,
+    "state_tokens_dropped": 0,
+    "truncated": false
+  },
+  "inference_seconds": 0.27887579999969603,
+  "answer": {
+    "type": "choice",
+    "choice": "no_pertinente",
+    "probabilities": {
+      "pertinente": 0.0153,
+      "no_pertinente": 0.9847
+    },
+    "confidence": 0.8857,
+    "answer_confidence": 0.9847,
+    "action": {
+      "act_probability": 1.0
+    }
+  },
+  "matches_synthetic_expectation": true
+}

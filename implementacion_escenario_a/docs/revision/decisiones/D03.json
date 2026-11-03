@@ -1,0 +1,70 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D03",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "MAN-OPE-004",
+    "version_documental": "2",
+    "titulo": "Manual de operación del sistema de medición y transferencia de custodia",
+    "emisor_segun_pdf": "Gerencia de Medición",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+      "doc_id": "MAN-OPE-004",
+      "version_documental": "2",
+      "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Declara verificación mensual como mínimo; el acta de noviembre informa un manual retirado sin identificarlo.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+        "doc_id": "MAN-OPE-004",
+        "version_documental": "2",
+        "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "como mínimo, una vez al mes."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "un manual dejó de aplicarse por decisión del área"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_pendiente",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Medición",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "No identificar este documento como retirado ni como vigente; no autorizarlo por ser v2."
+  },
+  "decision_pendiente_del_estudiante": "Propuesta: mantener pendiente. ¿Qué confirmación individual del área emisora permitiría resolver su uso sin adivinar el manual retirado?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

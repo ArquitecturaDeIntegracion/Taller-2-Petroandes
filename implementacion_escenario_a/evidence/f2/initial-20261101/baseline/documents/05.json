@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-MED-007",
+  "version_documental": "1",
+  "pdf_sha256": "89ace1f864c362231321892541fddf7ca834cd933573a1e9ad566b00c9973955",
+  "contrato": "corpus_documental_petroandes/1.0.0",
+  "tipo": "procedimiento",
+  "titulo": "Conciliación volumétrica de tramos de transporte",
+  "emisor": "Gerencia de Medición",
+  "fecha_emision": "2020-03-11",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-MED-007_v1.pdf",
+  "paginas": 1
+}

@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "tools/prepare_lab_request.py",
+    "--reviewer",
+    "Jonnathan Caballero",
+    "--authorization",
+    "config/admin/lab-20261103/authorization.md",
+    "--destination",
+    "config/admin/lab-20261103/request"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-03T05:07:33.113404+00:00",
+  "elapsed_seconds": 0.5642006999987643,
+  "exit_code": 0,
+  "output_files": []
+}

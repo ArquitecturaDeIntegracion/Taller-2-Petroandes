@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "${USER_HOME}\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.EXE",
+    "-singlefile",
+    "-r",
+    "105",
+    "-png",
+    "${PROJECT_ROOT}\\corpus\\pdf\\03_normativa\\RES-CREG-0112-2021.pdf",
+    "${APP_ROOT}\\reports\\portable\\f3-20261101\\render-recorded\\RES-CREG-0112-2021"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T22:43:40.456509+00:00",
+  "elapsed_seconds": 0.2035407999992458,
+  "exit_code": 0,
+  "output_files": [
+    "stderr-001.log"
+  ]
+}

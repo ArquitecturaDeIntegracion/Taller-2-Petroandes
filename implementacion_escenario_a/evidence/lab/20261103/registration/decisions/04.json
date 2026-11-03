@@ -1,0 +1,38 @@
+{
+  "decision": {
+    "doc_id": "PRO-OPE-021",
+    "version_documental": "1",
+    "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+    "decision_id": "bd8ac5df-2a0c-5c82-9438-f72ba8e10a06",
+    "perfil": "laboratorio",
+    "simulacion_academica": true,
+    "estado": "certificado",
+    "evidencia": [
+      "app:config/admin/lab-20261103/authorization.md#sha256=5797484f4064abc072ca7d5c5bdec87217a363fc8bc39ed369e250b6a867323f",
+      "project:corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf#sha256=fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891"
+    ],
+    "autoridad": "SIMULACIÓN ACADÉMICA: rol de Centro de Control de Operaciones",
+    "revisor_humano": "Jonnathan Caballero",
+    "revisado_en": "2026-11-03T00:12:31.781997-05:00",
+    "effective_from": "2026-11-03T00:12:31.781997-05:00",
+    "effective_to": "2026-12-01T00:00:00-05:00",
+    "intervalo_abierto_expreso": false,
+    "ambitos": [
+      {
+        "tipo": "general",
+        "identificador": "corpus_revision"
+      }
+    ],
+    "usos": [
+      "instruccion_operativa",
+      "evidencia_historica"
+    ],
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "revision_gobierno": 5
+  },
+  "supuesto": "Confirmación individual por el rol del área competente Centro de Control de Operaciones, supuesto académico expresamente autorizado por Jonnathan Caballero. No identifica ni acredita una autoridad real de PetroAndes. Autenticidad verificada únicamente dentro de esta simulación académica. Conservar prerrequisitos, secuencia y reglas de aborto.",
+  "autenticidad": "verificada",
+  "contenido_no_confiable": true
+}

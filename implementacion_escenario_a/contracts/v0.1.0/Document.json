@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "doc_id": {
+      "minLength": 1,
+      "title": "Doc Id",
+      "type": "string"
+    },
+    "version_documental": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Version Documental"
+    },
+    "pdf_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Pdf Sha256",
+      "type": "string"
+    },
+    "contrato": {
+      "const": "corpus_documental_petroandes/1.0.0",
+      "default": "corpus_documental_petroandes/1.0.0",
+      "title": "Contrato",
+      "type": "string"
+    },
+    "tipo": {
+      "enum": [
+        "manual",
+        "procedimiento",
+        "resolucion",
+        "acta",
+        "comunicacion",
+        "ficha"
+      ],
+      "title": "Tipo",
+      "type": "string"
+    },
+    "titulo": {
+      "minLength": 1,
+      "title": "Titulo",
+      "type": "string"
+    },
+    "emisor": {
+      "minLength": 1,
+      "title": "Emisor",
+      "type": "string"
+    },
+    "fecha_emision": {
+      "format": "date",
+      "title": "Fecha Emision",
+      "type": "string"
+    },
+    "pdf_uri": {
+      "minLength": 1,
+      "title": "Pdf Uri",
+      "type": "string"
+    },
+    "paginas": {
+      "minimum": 1,
+      "title": "Paginas",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "doc_id",
+    "version_documental",
+    "pdf_sha256",
+    "tipo",
+    "titulo",
+    "emisor",
+    "fecha_emision",
+    "pdf_uri",
+    "paginas"
+  ],
+  "title": "Document",
+  "type": "object"
+}

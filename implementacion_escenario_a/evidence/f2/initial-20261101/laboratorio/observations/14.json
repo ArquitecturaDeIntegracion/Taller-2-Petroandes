@@ -1,0 +1,22 @@
+{
+  "observation_id": "6c94fbf33e127834fbdd9d4b977198496a8c634791aca0588965ab793f2f3c90",
+  "documento": {
+    "doc_id": "RES-CREG-0112-2021",
+    "version_documental": null
+  },
+  "pdf_sha256": "9daa12ee5b9fcb5b5b59cceabea80c69966ff0f3dc6c3ca78c9a57dd9ce7a7d2",
+  "estado": "excluido",
+  "fundamento": "Sustitución o derogación expresa: La presente resolución rige a partir de su publicación y deroga en su integridad la Resolución 0112 de 2021.",
+  "fuentes": [
+    {
+      "fuente": {
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null
+      },
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+      "section_id": "articulo-6",
+      "pagina": 1,
+      "cita": "La presente resolución rige a partir de su publicación y deroga en su integridad la Resolución 0112 de 2021."
+    }
+  ]
+}

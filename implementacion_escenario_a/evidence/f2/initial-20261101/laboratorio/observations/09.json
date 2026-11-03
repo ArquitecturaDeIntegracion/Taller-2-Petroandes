@@ -1,0 +1,11 @@
+{
+  "observation_id": "45f59755618ba5451eece31a7ab24ad0d846caf7545692e67c4def74302f80c4",
+  "documento": {
+    "doc_id": "PRO-OPE-021",
+    "version_documental": "1"
+  },
+  "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+  "estado": "pendiente",
+  "fundamento": "Falta certificación del área; no inferir vigencia ni identificar el manual retirado.",
+  "fuentes": []
+}

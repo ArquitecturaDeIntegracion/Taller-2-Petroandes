@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "estado": {
+      "enum": [
+        "respondida",
+        "abstencion",
+        "error"
+      ],
+      "title": "Estado",
+      "type": "string"
+    },
+    "correlation_id": {
+      "format": "uuid",
+      "title": "Correlation Id",
+      "type": "string"
+    },
+    "generation_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Generation Id"
+    },
+    "revision_gobierno": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Revision Gobierno"
+    },
+    "afirmaciones": {
+      "default": [],
+      "items": {
+        "$ref": "Claim.json"
+      },
+      "title": "Afirmaciones",
+      "type": "array"
+    },
+    "evidencia": {
+      "default": [],
+      "items": {
+        "$ref": "Fragment.json"
+      },
+      "title": "Evidencia",
+      "type": "array"
+    },
+    "motivo_abstencion": {
+      "anyOf": [
+        {
+          "enum": [
+            "sin_evidencia_autorizada",
+            "evidencia_insuficiente",
+            "ambito_ambiguo",
+            "conflicto_documental",
+            "fuera_del_corpus",
+            "gobierno_cambio"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Motivo Abstencion"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "enum": [
+            "evidencia_no_autorizada",
+            "referencia_ambigua",
+            "indice_no_listo",
+            "servicio_no_disponible"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error"
+    }
+  },
+  "required": [
+    "estado",
+    "correlation_id",
+    "generation_id",
+    "revision_gobierno"
+  ],
+  "title": "SearchResponse",
+  "type": "object"
+}

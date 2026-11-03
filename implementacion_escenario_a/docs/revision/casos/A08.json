@@ -1,0 +1,114 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A08",
+  "particion_propuesta": "ajuste",
+  "titulo": "Secuencia y excepción de bloqueo",
+  "pregunta": "Según PRO-HSE-003 v4, ¿qué secuencia precede una intervención y puede un tercero retirar un bloqueo?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D04"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Identificar fuentes; notificar; parar ordenadamente; aislar/bloquear; disipar energía; verificar energía cero por ejecutante; colocar etiqueta individual.",
+      "Cada persona retira su propia etiqueta/candado. Tercero: autorización escrita del responsable de instalación y registro del motivo.",
+      "La explicación del documento no concede permiso de intervención."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-HSE-003_v4.pdf",
+        "doc_id": "PRO-HSE-003",
+        "version_documental": "4",
+        "pdf_sha256": "0c44c79079d0d52a68944ebc50380505d31bcbe7968ec905c5c69cf70d3f8f47",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Comprobar orden completo, quién verifica energía cero y requisitos de la excepción.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

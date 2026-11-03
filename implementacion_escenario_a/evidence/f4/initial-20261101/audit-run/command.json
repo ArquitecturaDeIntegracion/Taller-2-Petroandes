@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f4.py",
+    "audit",
+    "--stage",
+    "evidence/f3/initial-20261101/baseline-repeat/manifest.json",
+    "--output",
+    "reports/portable/f4-20261101/audit"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-01T23:51:50.305847+00:00",
+  "elapsed_seconds": 30.858083457000248,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

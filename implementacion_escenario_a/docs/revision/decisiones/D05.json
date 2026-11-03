@@ -1,0 +1,60 @@
+{
+  "tipo_registro": "propuesta_documental_no_ejecutable",
+  "id": "D05",
+  "schema_version": "revision/1.0.0",
+  "documento": {
+    "doc_id": "PRO-MED-007",
+    "version_documental": "1",
+    "titulo": "Conciliación volumétrica de tramos de transporte",
+    "emisor_segun_pdf": "Gerencia de Medición",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v1.pdf",
+      "doc_id": "PRO-MED-007",
+      "version_documental": "1",
+      "pdf_sha256": "89ace1f864c362231321892541fddf7ca834cd933573a1e9ad566b00c9973955",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "excluido",
+  "evidencia_corpus": {
+    "conclusion": "La cabecera de v2 declara reemplazo de v1.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "encabezado",
+        "extracto_verificado": "PRO-MED-007 v1"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_excluido",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Medición",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "Conservar v1 para auditoría; sin propuesta de habilitación en laboratorio."
+  },
+  "decision_pendiente_del_estudiante": "¿Confirmas la exclusión documental sustentada en la cabecera de v2 y que 0,8 % no sea respuesta operativa?",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "aplicada_al_catalogo": false
+}

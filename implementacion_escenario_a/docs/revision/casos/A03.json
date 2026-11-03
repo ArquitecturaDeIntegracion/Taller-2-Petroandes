@@ -1,0 +1,118 @@
+{
+  "tipo_registro": "caso_referencia_propuesto_no_ejecutado",
+  "schema_version": "revision/1.0.0",
+  "case_id": "A03",
+  "particion_propuesta": "ajuste",
+  "titulo": "Cambio de código y plazos de reporte",
+  "pregunta": "¿Qué documento reemplaza PRO-SEG-009 v1 y qué plazos declara el corpus para avisar a Seguridad Física, Operaciones, autoridad competente y regulador sectorial?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D11",
+      "D12"
+    ],
+    "regla": "No ejecutar como caso de éxito hasta revisión humana y materialización en una copia aislada de laboratorio.",
+    "fixture_base": "Crear copia de catálogo, decisiones y generación. No mutar baseline, laboratorio persistido ni corpus original.",
+    "modificaciones_sinteticas": []
+  },
+  "oracle_propuesto": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "PRO-SEG-015 v1 reemplaza íntegramente PRO-SEG-009 v1 aunque ambos sean v1.",
+      "Centro de Control avisa a Seguridad Física y Jefatura de Operaciones en 2 horas desde la detección.",
+      "Seguridad Física reporta a autoridad competente en 24 horas; no confundir con plazo del regulador.",
+      "RES-ANH-0471-2023, art. 2: reporte mensual consolidado al regulador dentro de 15 días calendario siguientes al cierre del mes; no confundir con 24 horas a autoridad competente."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+        "doc_id": "RES-ANH-0471-2023",
+        "version_documental": null,
+        "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+        "pagina": 1,
+        "section_id": "articulo-2"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-SEG-015_v1.pdf",
+        "doc_id": "PRO-SEG-015",
+        "version_documental": "1",
+        "pdf_sha256": "5e8561a96efca3ed5e6346c875cc6161290c7d412946692497bf2687f1cab006",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/03_normativa/RES-ANH-0471-2023.pdf",
+        "doc_id": "RES-ANH-0471-2023",
+        "version_documental": null,
+        "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907",
+        "pagina": 1,
+        "section_id": "articulo-2"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D10"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "que_debes_revisar": "Revisar código completo, plazo, destinatario y responsable por fila.",
+  "revision_humana": {
+    "estado": "pendiente_revision",
+    "decision_humana": null,
+    "revisor": null,
+    "fecha": null,
+    "comentario": null
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": false
+}

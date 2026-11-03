@@ -1,0 +1,36 @@
+ 21 líneas  reports/portable/tests-final/command.json
+  2 líneas  reports/portable/tests-final/stdout-001.log
+ 16 líneas  reports/portable/validate-delivery/command.json
+160 líneas  reports/portable/validate-delivery/stdout-001.log
+ 51 líneas  reports/portable/validate-delivery/stdout-002.log
+ 16 líneas  reports/portable/validate-final/command.json
+160 líneas  reports/portable/validate-final/stdout-001.log
+ 46 líneas  reports/portable/validate-final/stdout-002.log
+  7 líneas  tests/conftest.py
+121 líneas  tests/test_contracts.py
+ 38 líneas  tests/test_json_schemas.py
+ 78 líneas  tests/test_portability.py
+106 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 70 líneas  tools/check_portability.py
+110 líneas  tools/debug_smoke.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 73 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+100 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+103 líneas  tools/validate_agent.py
+
+OK: 353 archivos textuales; máximo 193 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

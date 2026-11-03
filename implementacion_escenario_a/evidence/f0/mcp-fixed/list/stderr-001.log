@@ -1,0 +1,7 @@
+
+[mcp-inspector] The OS keychain is not available, so secrets will be kept in: File (unencrypted) at C:\Users\jcjca\.mcp-inspector\secrets.json — fell back from the OS keychain.
+[mcp-inspector] Keychain error: Failed to enumerate credentials Error { code: HRESULT(0x80070520), message: "A specified logon session does not exist. It may already have been terminated." }
+[mcp-inspector] Set MCP_INSPECTOR_SECRET_STORE=keyring|file|memory to choose explicitly.
+[mcp-inspector] Secrets are stored unencrypted (file mode 0600). Set MCP_INSPECTOR_SECRET_KEY or MCP_INSPECTOR_SECRET_KEY_FILE to encrypt them.
+[mcp-inspector] How the secret store is chosen, and how to secure it: https://github.com/modelcontextprotocol/inspector/blob/main/docs/secret-storage.md
+Processing request of type ListToolsRequest

@@ -1,0 +1,12 @@
+{
+  "doc_id": "PRO-OPE-012",
+  "version_documental": "3",
+  "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+  "contrato": "corpus_documental_petroandes/1.0.0",
+  "tipo": "procedimiento",
+  "titulo": "Atención de anomalías de presión en tramos de oleoducto",
+  "emisor": "Centro de Control de Operaciones",
+  "fecha_emision": "2025-09-01",
+  "pdf_uri": "project:corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+  "paginas": 1
+}

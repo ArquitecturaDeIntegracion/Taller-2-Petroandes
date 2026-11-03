@@ -1,0 +1,23 @@
+{
+  "doc_id": "RES-CREG-0112-2021",
+  "version_documental": null,
+  "pdf_sha256": "9daa12ee5b9fcb5b5b59cceabea80c69966ff0f3dc6c3ca78c9a57dd9ce7a7d2",
+  "pdf_uri": "project:corpus/pdf/03_normativa/RES-CREG-0112-2021.pdf",
+  "tipo": "resolucion",
+  "status": "preparado",
+  "paginas": 1,
+  "secciones": 5,
+  "fragmentos": 5,
+  "tablas": 0,
+  "filas": 0,
+  "max_tokens_entrada": 93,
+  "fuera_objetivo": 5,
+  "contraste": {
+    "status": "coincide_lexico_ordenado",
+    "tokens_contrastados": 106,
+    "md_sha256": "f0e98235b687e7d75a4d930952d7d7fc89404109de3bef34bc37e7f553796acb",
+    "markdown_usado_como_ingesta": false
+  },
+  "gobierno": "excluido",
+  "publicado": false
+}

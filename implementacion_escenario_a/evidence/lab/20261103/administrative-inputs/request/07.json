@@ -1,0 +1,12 @@
+{
+  "doc_id": "RES-CREG-0043-2024",
+  "version_documental": null,
+  "rol_area_simulado": "Gerencia de Cumplimiento",
+  "usos": [
+    "referencia_normativa",
+    "evidencia_historica"
+  ],
+  "restricciones": [
+    "Resolución ficticia: publicación y aplicabilidad asumidas solo en el intervalo del laboratorio; no se inventa fecha histórica de publicación ni se confunde incertidumbre con tolerancia."
+  ]
+}
