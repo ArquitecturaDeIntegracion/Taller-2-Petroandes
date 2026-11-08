@@ -36,9 +36,10 @@ class Retriever:
     def __init__(self, root, policy, encoder):
         self.root, self.policy, self.encoder = root.resolve(), policy, encoder
 
-    def search(self, query):
+    def search(self, query, *, compose=None):
         def retrieve(view, records, trace, measure):
             owner, manifest, collection, folder = view
+            authorized = records
             records = filter_records(records, query.filtros)
             if not records:
                 trace["prefiltro_fragmentos"] = 0
@@ -71,10 +72,12 @@ class Retriever:
             trace["seleccionados"] = selected
             if not selected:
                 return abstention("evidencia_insuficiente")
+            if compose is not None:
+                return measure("composicion", lambda: compose(selected, authorized, folder, trace))
             return {"estado": "recuperada", "evidencia": [records[key][0].model_dump(mode="json") for key in selected],
                     "citas": [citation(records[key][0]) for key in selected]}
 
-        return self._run("buscar", retrieve, search=True)
+        return self._run("responder" if compose is not None else "buscar", retrieve, search=True)
 
     def obtain(self, query):
         return self._parts("obtener", lambda records: direct_parts(query, records))
@@ -107,8 +110,8 @@ class Retriever:
                 trace["tiempos_ms"][stage] = (perf_counter() - start) * 1000
 
         def changed():
-            trace.pop("candidatos", None)
-            trace.pop("seleccionados", None)
+            for key in ("candidatos", "seleccionados", "unidades", "descartados_seguridad"):
+                trace.pop(key, None)
             return abstention("gobierno_cambio") if search else denied()
 
         def revalidate(eligibility, result):
@@ -143,6 +146,9 @@ class Retriever:
         if result["estado"] in ("error", "denegado", "abstencion"):
             trace.pop("candidatos", None)
             trace.pop("seleccionados", None)
+            trace.pop("unidades", None)
+        if result["estado"] == "error":
+            trace.pop("descartados_seguridad", None)
         trace["tiempos_ms"]["total"] = (perf_counter() - started) * 1000
         result = identity | result
         if not search:

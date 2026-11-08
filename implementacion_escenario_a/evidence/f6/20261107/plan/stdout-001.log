@@ -1,0 +1,23 @@
+0320 ### F6 Composición extractiva y abstención
+0321 
+0322 **Objetivo:** responder solamente con evidencia autorizada que realmente trate la pregunta.
+0323 
+0324 **Actividades**
+0325 
+0326 - [ ] F6.1 Definir una unidad de respuesta como pasaje o grupo de filas con citas a documento, versión y sección. Conservar cifras, unidades, negaciones y condiciones.
+0327 - [ ] F6.2 Definir reglas de selección y suficiencia por tipo de consulta. Calibrarlas con los casos de ajuste, sin escribir respuestas específicas para las preguntas de reserva.
+0328 - [ ] F6.3 Implementar una plantilla determinista con evidencia y citas por afirmación. Las frases de servicio describen estados, no incorporan hechos operativos externos.
+0329 - [ ] F6.4 Abstenerse ante ausencia de fuente autorizada, ambigüedad, conflicto, información insuficiente o pregunta que requiere inferencia no sustentada.
+0330 - [ ] F6.5 Evitar convertir recomendaciones de proveedor, actas históricas o límites de diseño en instrucciones operativas. Mantener el uso autorizado en la selección.
+0331 - [ ] F6.6 Excluir las instrucciones dirigidas al procesador de la respuesta operativa, conservándolas en la traza de auditoría para F9.
+0332 
+0333 **Validaciones de salida**
+0334 
+0335 - [ ] Toda afirmación tiene cita verificable; documentos sin versión muestran `sin versión`.
+0336 - [ ] El pasaje citado corresponde al texto fuente y a su ámbito. Copia exacta de una sección equivocada se considera fallo de relevancia.
+0337 - [ ] Las secuencias se entregan completas cuando se requieren; los recortes no eliminan condiciones.
+0338 - [ ] Una consulta sin evidencia produce una abstención explícita, no una respuesta del conocimiento general del asistente.
+0339 - [ ] La composición no invoca modelos generativos, herramientas de acción, correo ni balances externos.
+0340 
+0341 **Evidencia:** ejemplos positivos, negativos y ambiguos, con trazabilidad entre pregunta, fragmento y unidad de respuesta.
+0342 

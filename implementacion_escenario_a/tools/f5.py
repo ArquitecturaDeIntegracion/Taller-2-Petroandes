@@ -1,4 +1,4 @@
-"""Consulta local F5. El operador selecciona el despliegue, con contexto fijo F4."""
+"""Consulta local. El operador selecciona el despliegue, con contexto fijo F4."""
 import argparse
 import json
 import sys
@@ -9,6 +9,7 @@ from pydantic import ValidationError
 from f0_common import configure_cache
 from petroandes.catalog.api import Catalog
 from petroandes.catalog.store import CatalogUnavailable, index_directory, profile_path
+from petroandes.compose import answer
 from petroandes.contracts.queries import FragmentQuery, SearchQuery
 from petroandes.embeddings.encoder import E5Encoder
 from petroandes.governance.eligibility import EligibilityService
@@ -22,13 +23,14 @@ def parse_command(argv=None):
     parser.add_argument("--profile", required=True, choices=("baseline", "laboratorio"))
     operations = parser.add_subparsers(dest="operation", required=True)
 
-    search = operations.add_parser("buscar", argument_default=argparse.SUPPRESS)
-    search.add_argument("query", nargs="?", help="Objeto JSON conforme al contrato F1")
-    search.add_argument("--consulta")
-    search.add_argument("--top-k", type=int)
-    search.add_argument("--tipo")
-    search.add_argument("--activo")
-    search.add_argument("--tramo")
+    for name, help_text in (("buscar", "Recupera candidatos F5"), ("responder", "Compone extractos citados F6")):
+        search = operations.add_parser(name, help=help_text, argument_default=argparse.SUPPRESS)
+        search.add_argument("query", nargs="?", help="Objeto JSON conforme al contrato F1")
+        search.add_argument("--consulta")
+        search.add_argument("--top-k", type=int)
+        search.add_argument("--tipo")
+        search.add_argument("--activo")
+        search.add_argument("--tramo")
 
     direct = operations.add_parser("obtener", argument_default=argparse.SUPPRESS)
     direct.add_argument("query", nargs="?", help="Objeto JSON conforme al contrato F1")
@@ -49,8 +51,8 @@ def parse_command(argv=None):
     payload = fields.pop("query", None)
     if payload is not None and fields:
         parser.error("Usa un argumento JSON o las opciones de la operación")
-    contract = SearchQuery if operation == "buscar" else FragmentQuery
-    if operation == "buscar":
+    contract = FragmentQuery if operation == "obtener" else SearchQuery
+    if contract is SearchQuery:
         filters = {key: fields.pop(key) for key in ("tipo", "activo", "tramo") if key in fields}
         if filters:
             fields["filtros"] = filters
@@ -73,7 +75,8 @@ def main():
             (APP_ROOT / "config/f4-context.json").read_text(encoding="utf-8"))
         with Catalog.open(profile_path(profile), profile, read_only=True) as catalog:
             service = Retriever(index_directory(profile), EligibilityService(catalog, context), E5Encoder())
-            dispatch = {"buscar": service.search, "obtener": service.obtain, "expandir": service.expand}
+            dispatch = {"buscar": service.search, "obtener": service.obtain, "expandir": service.expand,
+                        "responder": lambda request: answer(service, request)}
             report = dispatch[operation](query)
     except (CatalogUnavailable, OSError, RuntimeError, ValueError) as exc:
         print(f"servicio_no_disponible ({type(exc).__name__})", file=sys.stderr)

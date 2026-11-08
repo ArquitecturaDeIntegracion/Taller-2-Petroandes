@@ -1,0 +1,12 @@
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+ 66 líneas  tools/prepare_lab_request.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+ 46 líneas  tools/review_lab_case_dependencies.py
+103 líneas  tools/validate_agent.py
+
+OK: 2526 archivos textuales; máximo 196 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

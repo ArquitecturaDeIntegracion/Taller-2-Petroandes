@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f5.py",
+    "--profile",
+    "baseline",
+    "responder",
+    "--consulta",
+    "Umbral y ventana de anomalía de presión en Caucasia-Coveñas"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:15:29.648123+00:00",
+  "elapsed_seconds": 28.034891069000878,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

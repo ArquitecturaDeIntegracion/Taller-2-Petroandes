@@ -1,0 +1,24 @@
+{
+  "resultado": {
+    "estado": "abstencion",
+    "correlation_id": "cbbb0293-2527-4db9-9b61-e65bb5adfa11",
+    "generation_id": null,
+    "revision_gobierno": 1,
+    "afirmaciones": [],
+    "evidencia": [],
+    "motivo_abstencion": "sin_evidencia_autorizada",
+    "error": null
+  },
+  "traza": {
+    "correlation_id": "cbbb0293-2527-4db9-9b61-e65bb5adfa11",
+    "generation_id": null,
+    "revision_gobierno": 1,
+    "operacion": "responder",
+    "tiempos_ms": {
+      "gobierno": 667.162505997112,
+      "revalidacion": 2.793593997921562,
+      "total": 671.2805349998234
+    }
+  },
+  "texto": "Consulta sin respuesta (sin_evidencia_autorizada)."
+}

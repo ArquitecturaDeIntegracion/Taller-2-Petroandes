@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/read_source.py",
+    "plan",
+    "--section",
+    "F6 Composición extractiva y abstención"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:15:33.816004+00:00",
+  "elapsed_seconds": 0.7257989870013262,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

@@ -1,0 +1,102 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 508B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.66kB 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#3 DONE 1.2s
+
+#4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#4 DONE 1.2s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [stage-1  1/12] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#6 resolve docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df 0.1s done
+#6 DONE 0.1s
+
+#7 [inspector 1/3] FROM docker.io/library/node:22-bookworm-slim@sha256:5ec23b7c622b00547753bc6ffd78085dd868a68aeb41c8e0a1418f033e13d96d
+#7 resolve docker.io/library/node:22-bookworm-slim@sha256:5ec23b7c622b00547753bc6ffd78085dd868a68aeb41c8e0a1418f033e13d96d 0.1s done
+#7 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 63.42kB 0.1s
+#5 transferring context: 223.66kB 0.5s done
+#5 DONE 0.6s
+
+#8 [stage-1  4/12] COPY --from=inspector /usr/local/bin/node /usr/local/bin/node
+#8 CACHED
+
+#9 [stage-1  5/12] COPY --from=inspector /opt/inspector /opt/inspector
+#9 CACHED
+
+#10 [inspector 2/3] WORKDIR /opt/inspector
+#10 CACHED
+
+#11 [stage-1  6/12] COPY implementacion_escenario_a/requirements-portable.lock implementacion_escenario_a/requirements-dev.lock ./
+#11 CACHED
+
+#12 [stage-1  8/12] COPY corpus/ /workspace/corpus/
+#12 CACHED
+
+#13 [stage-1  2/12] WORKDIR /workspace/implementacion_escenario_a
+#13 CACHED
+
+#14 [stage-1  3/12] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates libstdc++6 libgomp1     && rm -rf /var/lib/apt/lists/*
+#14 CACHED
+
+#15 [stage-1  7/12] RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch==2.15.0     && pip install --no-cache-dir -r requirements-dev.lock && pip check
+#15 CACHED
+
+#16 [inspector 3/3] RUN npm init -y && npm install --save-exact @modelcontextprotocol/inspector@2.13.0
+#16 CACHED
+
+#17 [stage-1  9/12] COPY output/doc/ /workspace/output/doc/
+#17 CACHED
+
+#18 [stage-1 10/12] COPY [Contenido de la Actividad.docx, ARTI4212_Caso_PetroAndes.pdf, ARTI4212_Caso_PetroAndes.md, contexto_arquitectura_integracion.md, plan_trabajo_alternativa_1_escenario_a.md, /workspace/]
+#18 CACHED
+
+#19 [stage-1 11/12] COPY implementacion_escenario_a/ ./
+#19 DONE 1.8s
+
+#20 [stage-1 12/12] RUN pip install --no-deps --no-build-isolation -e .
+#20 4.222 Obtaining file:///workspace/implementacion_escenario_a
+#20 4.231   Checking if build backend supports build_editable: started
+#20 5.351   Checking if build backend supports build_editable: finished with status 'done'
+#20 5.359   Preparing editable metadata (pyproject.toml): started
+#20 6.663   Preparing editable metadata (pyproject.toml): finished with status 'done'
+#20 6.675 Building wheels for collected packages: petroandes-educativo
+#20 6.681   Building editable for petroandes-educativo (pyproject.toml): started
+#20 7.959   Building editable for petroandes-educativo (pyproject.toml): finished with status 'done'
+#20 7.964   Created wheel for petroandes-educativo: filename=petroandes_educativo-0.1.0-0.editable-py3-none-any.whl size=2883 sha256=5280d860da95f39407e0feff39f40875afbc35c1fa908b363b18f18fc4b00163
+#20 7.965   Stored in directory: /tmp/pip-ephem-wheel-cache-klgfv5lt/wheels/0f/b3/db/8badd6e83296a1cb9ba9e11d5b2f34eb53eb35f2718595644c
+#20 7.975 Successfully built petroandes-educativo
+#20 7.975 Installing collected packages: petroandes-educativo
+#20 8.037 Successfully installed petroandes-educativo-0.1.0
+#20 8.038 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#20 8.587 
+#20 8.587 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#20 8.587 [notice] To update, run: pip install --upgrade pip
+#20 DONE 8.8s
+
+#21 exporting to image
+#21 exporting layers
+#21 exporting layers 1.5s done
+#21 exporting manifest sha256:fffc30631d495fe9aa639cd1296302c67164a97998fc4b2fe4fe3af29730a18a 0.0s done
+#21 exporting config sha256:d98f436d0b4ca759544a433dc5c1b17dee42b7d12f9a088e13aeee1fc64d47d7 0.1s done
+#21 exporting attestation manifest sha256:5401811b5ecba84ff85ef241cfba8427855db117b3634c11ffa329cb4dd4678c
+#21 exporting attestation manifest sha256:5401811b5ecba84ff85ef241cfba8427855db117b3634c11ffa329cb4dd4678c 0.1s done
+#21 exporting manifest list sha256:20140eac6bcc2559710122eee5f77960ef3718195656362a2eeff1b8ad4f4ffc
+#21 exporting manifest list sha256:20140eac6bcc2559710122eee5f77960ef3718195656362a2eeff1b8ad4f4ffc 0.0s done
+#21 naming to docker.io/library/petroandes-educativo:local done
+#21 unpacking to docker.io/library/petroandes-educativo:local
+#21 unpacking to docker.io/library/petroandes-educativo:local 0.9s done
+#21 DONE 2.8s
+
+#22 resolving provenance for metadata file
+#22 DONE 0.1s

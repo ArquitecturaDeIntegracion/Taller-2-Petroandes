@@ -42,7 +42,7 @@ def filter_records(records, filters):
     return result
 
 
-def exact_matches(text, records):
+def query_codes(text):
     words = tokens(normalized(text))
     identities = {}
     standalone = False
@@ -60,12 +60,20 @@ def exact_matches(text, records):
         if index == 0:
             standalone = len(words) == 1 or (version is not None and len(words) == 2 + version_label)
         identities.setdefault(code, set()).add(version)
+    return identities, standalone
+
+
+def version_key(version):
+    value = normalized(version) if version else None
+    return value.removeprefix("v") if value and VERSION.fullmatch(value) else value
+
+
+def exact_matches(text, records):
+    identities, standalone = query_codes(text)
     result = set()
     for key, (fragment, record) in records.items():
         versions = identities.get(normalized(fragment.doc_id), ())
-        version = normalized(fragment.version_documental) if fragment.version_documental else None
-        if version and VERSION.fullmatch(version):
-            version = version.removeprefix("v")
+        version = version_key(fragment.version_documental)
         tags = record["metadata"].get("semantica_observada", {}).get("activo_tags_observados", ())
         if None in versions or version in versions or any(
                 None in identities.get(normalized(tag), ()) for tag in tags):

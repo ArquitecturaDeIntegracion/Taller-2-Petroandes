@@ -1,0 +1,23 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-s",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "${TMPDIR}/petroandes-f6-targeted",
+    "tests/test_f6_compose.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:15:25.758455+00:00",
+  "elapsed_seconds": 57.127838419997715,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

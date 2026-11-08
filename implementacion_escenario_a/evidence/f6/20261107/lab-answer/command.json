@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f5.py",
+    "--profile",
+    "laboratorio",
+    "responder",
+    "--consulta",
+    "Presión de descarga y límite de alarma de P-101"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:16:04.484888+00:00",
+  "elapsed_seconds": 28.832240324998565,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

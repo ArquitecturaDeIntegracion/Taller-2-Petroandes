@@ -1,0 +1,16 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-c",
+    "import subprocess, sys; run = subprocess.run([sys.executable, \"tools/validate_agent.py\"], text=True, capture_output=True); print(\"\\n\".join(run.stdout.splitlines()[-12:])); print(run.stderr, end=\"\", file=sys.stderr); sys.exit(run.returncode)"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:17:48.007085+00:00",
+  "elapsed_seconds": 206.8985980960024,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f5.py",
+    "--profile",
+    "laboratorio",
+    "obtener",
+    "--doc-id",
+    "FIC-ACT-P101",
+    "--version",
+    "2",
+    "--seccion",
+    "2"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T01:16:37.003098+00:00",
+  "elapsed_seconds": 22.734675403000438,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}
