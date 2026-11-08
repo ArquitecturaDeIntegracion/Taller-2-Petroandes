@@ -14,6 +14,10 @@ class BundleMismatch(ValueError):
     pass
 
 
+class InputTooLong(ValueError):
+    pass
+
+
 @dataclass(frozen=True)
 class EncodedQuery:
     bundle_fingerprint: str
@@ -82,7 +86,7 @@ class E5Encoder:
         if any(not text.startswith(prefix) for text in inputs):
             raise ValueError("Prefijo incorrecto para el tipo de entrada E5")
         if any(self.tokenizer.count(text) > 448 for text in inputs):
-            raise ValueError("Entrada E5 excedida; no truncar")
+            raise InputTooLong("Entrada E5 excedida; no truncar")
         parts = []
         for index in range(0, len(inputs), self.batch_size):
             batch = inputs[index:index + self.batch_size]

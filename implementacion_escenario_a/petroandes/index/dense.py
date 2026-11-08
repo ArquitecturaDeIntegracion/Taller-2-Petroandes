@@ -9,7 +9,12 @@ from .common import IndexUnavailable, digest
 
 class DenseOwner:
     def __init__(self, path):
-        self.client = QdrantClient(path=str(path))
+        self.path = str(path)
+        self.client = QdrantClient(path=self.path)
+
+    def reopen(self):
+        self.close()
+        self.client = QdrantClient(path=self.path)
 
     def create(self, generation, revision):
         name = f"e5small_es_1_0_0_r{revision}_{generation.replace('-', '')[:12]}_{uuid4().hex[:8]}"
@@ -69,4 +74,6 @@ class DenseOwner:
                                         limit=limit).points
 
     def close(self):
-        self.client.close()
+        if self.client is not None:
+            self.client.close()
+            self.client = None

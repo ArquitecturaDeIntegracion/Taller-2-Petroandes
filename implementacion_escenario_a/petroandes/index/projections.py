@@ -61,13 +61,20 @@ def verify_projection(path, ids, identity):
                 raise IndexUnavailable("Padres ajenos al subconjunto publicado")
 
 
-def lexical_search(path, text, eligible_ids, limit=5):
+def lexical_search(path, text, eligible_ids, limit=5, *, exact_ids=()):
+    if not eligible_ids:
+        return []
     with closing(sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True)) as db:
+        db.execute("CREATE TEMP TABLE eligible(chunk_id TEXT PRIMARY KEY)")
+        db.executemany("INSERT INTO eligible VALUES (?)", ((key,) for key in sorted(eligible_ids)))
         rows = [(key, json.loads(payload)) for key, payload in db.execute(
-            "SELECT chunk_id,payload FROM fragments ORDER BY chunk_id") if key in eligible_ids]
+            "SELECT chunk_id,payload FROM fragments JOIN eligible USING(chunk_id) ORDER BY chunk_id")]
     if not rows:
         return []
     query = tokens(text)
+    query_set = set(query)
+    exact_ids = set(exact_ids)
     scores = BM25Okapi([row[1] for row in rows]).get_scores(query)
-    hits = [(key, float(score)) for (key, words), score in zip(rows, scores) if set(query).intersection(words)]
-    return sorted(hits, key=lambda row: (-row[1], row[0]))[:limit]
+    hits = [(key, float(score)) for (key, words), score in zip(rows, scores)
+            if key in exact_ids or query_set.intersection(words)]
+    return sorted(hits, key=lambda row: (row[0] not in exact_ids, -row[1], row[0]))[:limit]

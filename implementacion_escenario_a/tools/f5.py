@@ -1,0 +1,86 @@
+"""Consulta local F5. El operador selecciona el despliegue, con contexto fijo F4."""
+import argparse
+import json
+import sys
+from uuid import UUID
+
+from pydantic import ValidationError
+
+from f0_common import configure_cache
+from petroandes.catalog.api import Catalog
+from petroandes.catalog.store import CatalogUnavailable, index_directory, profile_path
+from petroandes.contracts.queries import FragmentQuery, SearchQuery
+from petroandes.embeddings.encoder import E5Encoder
+from petroandes.governance.eligibility import EligibilityService
+from petroandes.governance.models import ServiceContext
+from petroandes.paths import APP_ROOT
+from petroandes.retrieve import Retriever
+
+
+def parse_command(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--profile", required=True, choices=("baseline", "laboratorio"))
+    operations = parser.add_subparsers(dest="operation", required=True)
+
+    search = operations.add_parser("buscar", argument_default=argparse.SUPPRESS)
+    search.add_argument("query", nargs="?", help="Objeto JSON conforme al contrato F1")
+    search.add_argument("--consulta")
+    search.add_argument("--top-k", type=int)
+    search.add_argument("--tipo")
+    search.add_argument("--activo")
+    search.add_argument("--tramo")
+
+    direct = operations.add_parser("obtener", argument_default=argparse.SUPPRESS)
+    direct.add_argument("query", nargs="?", help="Objeto JSON conforme al contrato F1")
+    direct.add_argument("--doc-id")
+    version = direct.add_mutually_exclusive_group()
+    version.add_argument("--version", dest="version_documental")
+    version.add_argument("--sin-version", dest="version_documental", action="store_const", const=None)
+    direct.add_argument("--seccion", dest="section_id")
+    direct.add_argument("--parte", type=int)
+    direct.add_argument("--pdf-sha256")
+
+    operations.add_parser("expandir").add_argument("chunk_id", type=UUID)
+    fields = vars(parser.parse_args(argv))
+    profile, operation = fields.pop("profile"), fields.pop("operation")
+    if operation == "expandir":
+        return profile, operation, str(fields["chunk_id"])
+
+    payload = fields.pop("query", None)
+    if payload is not None and fields:
+        parser.error("Usa un argumento JSON o las opciones de la operación")
+    contract = SearchQuery if operation == "buscar" else FragmentQuery
+    if operation == "buscar":
+        filters = {key: fields.pop(key) for key in ("tipo", "activo", "tramo") if key in fields}
+        if filters:
+            fields["filtros"] = filters
+    try:
+        query = contract.model_validate_json(payload) if payload is not None else contract.model_validate(fields)
+    except ValidationError as exc:
+        errors = exc.errors(include_input=False, include_context=False, include_url=False)
+        if any(item["type"] == "json_invalid" for item in errors):
+            parser.error(f"JSON no válido. En PowerShell usa las opciones de {operation} --help")
+        details = [".".join(map(str, item["loc"])) + " (" + item["msg"] + ")" for item in errors]
+        parser.error("Consulta inválida. Revisa " + ", ".join(details))
+    return profile, operation, query
+
+
+def main():
+    profile, operation, query = parse_command()
+    configure_cache(offline=True)
+    try:
+        context = ServiceContext.model_validate_json(
+            (APP_ROOT / "config/f4-context.json").read_text(encoding="utf-8"))
+        with Catalog.open(profile_path(profile), profile, read_only=True) as catalog:
+            service = Retriever(index_directory(profile), EligibilityService(catalog, context), E5Encoder())
+            dispatch = {"buscar": service.search, "obtener": service.obtain, "expandir": service.expand}
+            report = dispatch[operation](query)
+    except (CatalogUnavailable, OSError, RuntimeError, ValueError) as exc:
+        print(f"servicio_no_disponible ({type(exc).__name__})", file=sys.stderr)
+        return 1
+    print(json.dumps(report, ensure_ascii=True, indent=2))
+    return int(report["resultado"]["estado"] == "error")
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

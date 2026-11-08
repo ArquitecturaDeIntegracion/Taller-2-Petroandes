@@ -1,0 +1,20 @@
+{
+  "resultado": {
+    "correlation_id": "7859387a-f89b-4f7b-8400-fa5541795b9c",
+    "generation_id": null,
+    "revision_gobierno": 13,
+    "estado": "abstencion",
+    "motivo_abstencion": "sin_evidencia_autorizada"
+  },
+  "traza": {
+    "correlation_id": "7859387a-f89b-4f7b-8400-fa5541795b9c",
+    "generation_id": null,
+    "revision_gobierno": 13,
+    "operacion": "buscar",
+    "tiempos_ms": {
+      "gobierno": 10.778322000987828,
+      "revalidacion": 1.794276999135036,
+      "total": 12.669428000663174
+    }
+  }
+}

@@ -1,0 +1,72 @@
+F
+=================================== FAILURES ===================================
+______________ test_certified_corpus_in_historical_review_context ______________
+
+tmp_path = PosixPath('${TMPDIR}/petroandes-f5-corpus/test_certified_corpus_in_histo0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7c4692f96660>
+
+    def test_certified_corpus_in_historical_review_context(tmp_path, monkeypatch):
+        registration = APP_ROOT / "evidence/lab/20261103/registration"
+        request = json.loads((APP_ROOT / "config/admin/lab-20261103/request/request.json").read_text(encoding="utf-8"))
+        receipt = json.loads((registration / "summary.json").read_text(encoding="utf-8"))
+        reviewed_at = datetime.fromisoformat(receipt["reviewed_at"])
+        catalog_path = tmp_path / "review.sqlite3"
+        copyfile(registration / "laboratorio-after.sqlite3", catalog_path)
+        monkeypatch.setattr(pipeline, "profile_path", lambda _: catalog_path)
+        for module in (pipeline, staging, stage):
+            monkeypatch.setattr(module, "ARTIFACTS_DIR", tmp_path)
+        prepared = pipeline.ingest("laboratorio", tmp_path / "f3")
+        assert prepared["preparados"] == 19 and prepared["fragmentos"] == 92
+        encoder = E5Encoder()
+        source = stage.load_stage(tmp_path / "f3/manifest.json", encoder.tokenizer)
+        context = ServiceContext(identidad="ensayo-historico-f5", grupos=frozenset(request["grupos"]),
+                                 ambito=request["ambito"], uso="evidencia_historica")
+        root = tmp_path / "index"
+        fragments = {row["fragment"]["chunk_id"]: row["fragment"] for row in source.records}
+        with Catalog.open(catalog_path, "laboratorio") as catalog:
+            policy = EligibilityService(catalog, context, clock=lambda: reviewed_at)
+            with Publisher(root, policy, encoder) as publisher:
+                publication = publisher.publish(source)
+            assert publication["eligible_documents"] == 12 and publication["governance_revision"] == 13
+            with Publisher(root, policy, encoder) as publisher:
+>               manifest, _ = publisher.active()
+                              ^^^^^^^^^^^^^^^^^^
+
+tests/test_f5_corpus.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+petroandes/index/publication.py:99: in active
+    manifest = verify(folder, receipt, self.owner, self.encoder.fingerprint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+folder = PosixPath('${TMPDIR}/petroandes-f5-corpus/test_certified_corpus_in_histo0/index/generations/73b998fc-fade-5f51-b197-48c130f5f037')
+receipt = {'collection': 'e5small_es_1_0_0_r13_73b998fcfade_95250e15', 'key': {'bundle_fingerprint': '401ce6aa6beb0bf6aea0341169...n': 'bm25-codes-es-1.0.0', ...}, 'manifest_sha256': '409a7186b6156aa65f9666a52397cc4cb446f9edf84f036d08fd0a917b61fde6'}
+owner = <petroandes.index.dense.DenseOwner object at 0x7c46457304a0>
+fingerprint = '401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956'
+
+    def verify(folder, receipt, owner, fingerprint):
+        if file_digest(folder / "manifest.json") != receipt["manifest_sha256"]:
+            raise IndexUnavailable("Manifiesto de publicación alterado")
+        manifest = Manifest.model_validate_json((folder / "manifest.json").read_text(encoding="utf-8"))
+        key = receipt["key"]
+        if (key["bundle_fingerprint"] != fingerprint or manifest.generation_id != key["generation_id"]
+                or manifest.perfil != key["perfil"] or manifest.revision_gobierno != key["revision_gobierno"]):
+            raise IndexUnavailable("Generación de otro perfil/revisión/bundle")
+        ids = manifest.fragmentos
+        ident = identity(manifest.generation_id, manifest.perfil, manifest.revision_gobierno, fingerprint)
+        for name, expected in (("catalog", manifest.catalogo_sha256), ("lexical", manifest.proyeccion_lexica_sha256)):
+            path = folder / f"{name}.sqlite3"
+            if file_digest(path) != expected:
+                raise IndexUnavailable("Proyección SQLite alterada o parcial")
+            verify_projection(path, ids, ident)
+        actual = owner.verify(receipt["collection"], ids, manifest.generation_id,
+                              manifest.revision_gobierno, fingerprint)
+        if actual != manifest.proyeccion_densa_sha256:
+>           raise IndexUnavailable("Proyección Qdrant alterada")
+E           petroandes.index.common.IndexUnavailable: Proyección Qdrant alterada
+
+petroandes/index/generation.py:72: IndexUnavailable
+=========================== short test summary info ============================
+FAILED tests/test_f5_corpus.py::test_certified_corpus_in_historical_review_context
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed in 27.83s

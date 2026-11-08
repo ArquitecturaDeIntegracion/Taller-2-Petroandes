@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-xqs",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "${TMPDIR}/petroandes-f5-corpus",
+    "tests/test_f5_corpus.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-07T23:52:08.237780+00:00",
+  "elapsed_seconds": 31.746052836999297,
+  "exit_code": 1,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

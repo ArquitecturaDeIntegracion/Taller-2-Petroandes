@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "tools/f5.py",
+    "--profile",
+    "baseline",
+    "buscar",
+    "{\"consulta\":\"PRO-SEG-015\",\"top_k\":3}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-07T23:49:03.671056+00:00",
+  "elapsed_seconds": 21.2595312859994,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

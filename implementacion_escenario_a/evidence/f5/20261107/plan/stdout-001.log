@@ -1,0 +1,29 @@
+0291 ### F5 Recuperación híbrida y acceso directo
+0292 
+0293 **Objetivo:** recuperar evidencia pertinente sin permitir que el ranking decida la autoridad.
+0294 
+0295 **Actividades**
+0296 
+0297 - [ ] F5.1 Resolver identidad de prueba, finalidad y ámbito desde configuración confiable; consultar el registro vigente y obtener IDs elegibles para la revisión activa.
+0298 - [ ] F5.2 Si el conjunto es vacío, abstenerse sin buscar globalmente. Construir el filtro Qdrant y aplicarlo en la propia consulta vectorial.
+0299 - [ ] F5.3 Construir la rama léxica exclusivamente con los fragmentos elegibles: tokenización documentada, BM25 y coincidencia exacta de códigos completos. Preservar guiones, año y versión; declarar alias sin confundir identidades.
+0300 - [ ] F5.4 Fusionar rankings por RRF, deduplicar y devolver los primeros resultados. Registrar top-k, parámetros, desempates y versión de tokenización; no mezclar scores heterogéneos sin una regla explícita.
+0301 - [ ] F5.5 Recuperar contexto padre o partes contiguas cuando la evidencia lo requiera, aplicando de nuevo el mismo conjunto autorizado y conservando orden y citas.
+0302 - [ ] F5.6 Implementar la obtención directa por documento, versión y sección mediante la misma política. Si hay varias emisiones sin versión, exigir desambiguación; nunca seleccionar la más reciente de forma implícita.
+0303 - [ ] F5.7 Revalidar la revisión de gobierno antes de entregar la respuesta. Si cambia, repetir de forma acotada o abstenerse; esto complementa el prefiltro.
+0304 - [ ] F5.8 Registrar IDs candidatos por rama, revisión, método de fusión, evidencia seleccionada y tiempos por etapa con un `correlation_id`.
+0305 
+0306 El filtro de Qdrant es parte de la operación de búsqueda, no una limpieza posterior de resultados. [Filtros de Qdrant](https://qdrant.tech/documentation/search/filtering/). `rank-bm25` requiere definir el preprocesamiento de corpus y consulta; fijar esa transformación como parte del comportamiento reproducible. [Repositorio de rank-bm25](https://github.com/dorianbrown/rank_bm25).
+0307 
+0308 **Validaciones de salida**
+0309 
+0310 - [ ] Una fuente excluida artificialmente muy similar nunca entra en candidatos autorizados. Inspeccionar la llamada real con filtro, además de comprobar el resultado.
+0311 - [ ] La prueba no pasa por ausencia de datos: publicar primero una fuente autorizada del laboratorio, revocarla y conservar su vector y texto en las proyecciones. Verificar desde el almacén de prueba que siguen presentes y son candidatos competitivos; después demostrar su exclusión por cada ruta pública. Reutilizar el ensayo de F10.4 sin crear una herramienta MCP que eluda permisos.
+0312 - [ ] El mismo documento queda excluido de la rama vectorial, BM25, coincidencia exacta, expansión de contexto y acceso directo.
+0313 - [ ] Los códigos PRO-SEG-015, RES-CREG-0043-2024 y P-101 se distinguen de otros códigos y versiones.
+0314 - [ ] Una pregunta reformulada recupera evidencia sin depender de coincidencia textual total.
+0315 - [ ] La coincidencia con un código antiguo no provoca una cita al antecedente excluido. La respuesta puede abstenerse o usar una relación de reemplazo autorizada y explícita.
+0316 - [ ] La ausencia de resultados, errores de índice y cambios de gobierno durante la consulta tienen salidas controladas.
+0317 
+0318 **Evidencia:** trazas de ambas ramas y acceso directo, pruebas negativas y comparación de recuperación semántica, léxica e híbrida sobre los casos de ajuste.
+0319 

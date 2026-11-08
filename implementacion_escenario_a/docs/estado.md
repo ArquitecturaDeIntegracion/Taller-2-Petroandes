@@ -1,18 +1,43 @@
 # Estado de reanudación
 
-Actualizado: 2026-11-03, America/Bogota. Responsable técnico: Codex.
+Actualizado: 2026-11-07, America/Bogota. Responsable técnico: Codex.
 
 ## Tarea activa
 
-- **F4 técnica implementada y verificada en Docker `dev`**: E5 y publicación
-  coherente de fragmentos, Qdrant y rama léxica, con manifiestos persistentes.
-- Próximo incremento técnico independiente: **F5, recuperación híbrida gobernada**.
+- **F5 implementada** con recuperación gobernada E5/Qdrant y BM25, códigos
+  exactos, RRF, obtención directa, expansión y revalidación.
+- Próximo incremento técnico independiente: **F6, composición extractiva y abstención**.
 - Doce certificaciones simuladas autorizadas por Jonnathan Caballero aplicadas
   individualmente a laboratorio. No se aprobaron casos ni los tres manuales.
 - Baseline: cuatro excluidos, quince pendientes, cero certificados, revisión 1.
 - Laboratorio: cuatro excluidos, tres pendientes, doce certificados, revisión 13.
   Su índice sigue vacío por contexto del servicio distinto del permiso aprobado.
 - El servicio final y las dos herramientas MCP aún no están implementados.
+
+## Recuperación F5, 2026-11-07
+
+[Diseño y alcance](f5-recuperacion.md) ·
+[Guía de validación y resultados esperados](validacion-dev-hasta-f5.md) ·
+[Evidencia en Docker dev](../evidence/f5/20261107/).
+
+**156 pruebas aprobadas en Docker `dev`**, incluidas las 11 de F5.
+
+La CLI acepta opciones por campo en PowerShell. En modo heredado, el shell
+elimina las comillas internas del argumento JSON antes de entregarlo a Docker.
+Se probaron los tres comandos actualizados de la guía en Windows PowerShell 5.1
+con el perfil `dev`. Las dos búsquedas se abstuvieron y la obtención fue denegada.
+
+La CLI consulta el contexto de despliegue de F4. En baseline (revisión 1) y
+laboratorio (revisión 13), la búsqueda se abstuvo por falta de evidencia
+autorizada y el acceso directo a FIC-ACT-P101 fue denegado en laboratorio.
+La prueba histórica separada reingirió 19 PDF, reabrió 58 fragmentos de
+12 documentos en revisión 13 y recuperó los códigos y la consulta reformulada.
+La revocación sintética conservó vector y texto, y las rutas de F5 cerraron acceso.
+
+La prueba de corpus detectó que el cliente local Qdrant normaliza al insertar
+y carga los valores persistidos al reabrir. Para las publicaciones no vacías
+la huella se calcula después de reabrir y se versiona la clave de generación.
+La corrección se registra en el [ADR-0008](adr-0008-publicacion-f4.md).
 
 ## Incorporación administrativa, 2026-11-03
 
@@ -110,6 +135,7 @@ incluidos bloqueos resueltos y enlaces. No se reescribieron los entregables del 
 | F3 | Verificada técnicamente: [19 PDF, 92 fragmentos/padres](f3-ingesta.md), 120 pruebas históricas |
 | F4.1–F4.4 | Verificadas: bundle E5 real, vectores, payload, CPU y consumo observado |
 | F4.5–F4.7 | Verificadas técnicamente: subconjunto autorizado, activación íntegra, propietario único |
+| F5 | Recuperación y acceso directo con controles técnicos; ajuste con casos humanos pendiente |
 
 Los recibos `command.json` conservan ejecutable, argumentos, cwd, tiempos,
 salida y código observado. Logs divididos en partes de 160 líneas.
@@ -118,7 +144,6 @@ No cambiaron dependencias, configuración global ni originales registrados.
 
 ## Bloqueos reales y límites
 
-- Sin bloqueo técnico actual observado para F4 en esta máquina y este contenedor.
 - Docker requiere acceso al motor fuera del sandbox; se ejecutó con autorización.
 - Faltan revisión humana de los tres manuales y esperados finales. Las doce
   decisiones autorizadas ya están registradas; no acreditan autoridad empresarial real.
@@ -128,18 +153,15 @@ No cambiaron dependencias, configuración global ni originales registrados.
 - Inspector solo verificó el servidor mínimo F0; herramientas finales pendientes F7.
 - No se afirma reproducción limpia F11, compatibilidad de otra máquina ni SLO.
 - Python del PATH sigue siendo shim pyenv; usar `.venv/Scripts/python.exe` en host
-  o el entrypoint Python del contenedor. No hay repositorio Git en esta raíz.
+  o el entrypoint Python del contenedor. Git se resuelve desde la raíz del taller.
+- El selector exige hash ante varias emisiones elegibles del mismo código y
+  versión. F2 conserva una sola huella activa por esa identidad, por lo que la
+  coexistencia se probó en el selector y sigue pendiente a nivel de catálogo.
 
 ## Próximo paso técnico
 
-Usar `petroandes-recuperacion-mcp`, leer F5 con `tools/read_source.py` y desarrollar
-búsqueda densa + BM25 y códigos exactos con elegibilidad previa en ambas ramas,
-RRF, relaciones y revalidación antes de devolver. El contexto del servicio es
-interno: no aceptar perfil, grupos o fecha concedidos por una llamada MCP.
-Reutilizar `index/`, `EligibilityService`, los manifiestos y los inputs F3 exactos.
-Mantener un único propietario Qdrant; ejecutar CLI/evaluador por turnos.
-La composición extractiva y abstenciones corresponden a F6; Inspector real a F7.
-Para publicar para otro contexto, configurar ese servicio explícitamente y volver
-a publicar; no ampliar grupos desde MCP. Continuar sin importar esperados ni
-decisiones adicionales no revisados. Los controles F2/F4 históricos describen sus
-snapshots iniciales; usar las comprobaciones de este incremento para el estado actual.
+Usar `petroandes-recuperacion-mcp`, leer F6 con `tools/read_source.py` y reutilizar
+`Retriever` para componer afirmaciones extractivas con citas por afirmación.
+Definir suficiencia, abstenciones y controles por ámbito. La calibración
+depende de los casos de ajuste revisados. La conexión MCP y su verificación
+con Inspector corresponden a F7. Mantener un único propietario de Qdrant.

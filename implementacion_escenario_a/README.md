@@ -2,8 +2,8 @@
 
 Python, Qdrant y módulos pequeños para la parte 3.2 de ARTI 4212.
 F0 se comprobó en Windows y Docker; F1 tiene contratos iniciales, F2 tiene catálogos
-y gobierno; F3 prepara PDF y F4 publica índices gobernados, validados en `dev`.
-Consulta [estado](docs/estado.md), [F3](docs/f3-ingesta.md) y [F4](docs/f4-indices.md).
+y gobierno; F3 prepara PDF, F4 publica índices y F5 recupera evidencia gobernada.
+Consulta el [estado](docs/estado.md) y la [guía de validación en Docker dev](docs/validacion-dev-hasta-f5.md).
 Laboratorio: [doce certificaciones simuladas registradas](docs/certificacion-laboratorio-20261103.md).
 
 ## Qué copiar o subir al repositorio

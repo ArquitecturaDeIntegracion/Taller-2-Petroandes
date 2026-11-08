@@ -1,0 +1,13 @@
+{
+  "perfil": "laboratorio",
+  "governance_revision": 13,
+  "documentos": 19,
+  "clasificacion": {
+    "pendiente": 3,
+    "excluido": 4,
+    "certificado": 12
+  },
+  "decisiones_registradas": 12,
+  "conflictos_abiertos": 0,
+  "eventos_pendientes": 13
+}

@@ -71,6 +71,8 @@ class Publisher:
             "revision_gobierno": eligibility.revision, "context": context_data(self.policy.context),
             "bundle_fingerprint": self.encoder.fingerprint, "lexical_version": LEXICAL_VERSION,
             "records_sha256": digest([record_digest(item) for item in records])}
+        if records:
+            key["dense_digest_version"] = "qdrant-local-reopened-1"
         key["generation_id"] = generation_id(key)
         receipt, reused = prepare(self.root, self.owner, self.encoder, records, stage.parents, key,
                                   [item["embedding_input"] for item in records])

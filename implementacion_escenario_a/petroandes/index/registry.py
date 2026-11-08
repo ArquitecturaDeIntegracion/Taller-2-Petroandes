@@ -6,7 +6,10 @@ from .common import IndexUnavailable
 
 
 class Registry:
-    def __init__(self, path):
+    def __init__(self, path, *, read_only=False):
+        if read_only:
+            self.db = sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, isolation_level=None)
+            return
         self.db = sqlite3.connect(path, isolation_level=None)
         self.db.executescript("""
             CREATE TABLE IF NOT EXISTS generations(id TEXT PRIMARY KEY,receipt TEXT NOT NULL);

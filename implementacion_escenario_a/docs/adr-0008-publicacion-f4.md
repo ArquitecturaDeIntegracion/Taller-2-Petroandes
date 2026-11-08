@@ -60,3 +60,17 @@ temporales separados; no importan propuestas académicas al gobierno real.
 La integridad no sustituye la elegibilidad: F5 deberá derivar IDs desde el registro,
 filtrar antes de ambas búsquedas y revalidar antes de devolver resultados.
 Este incremento no publica herramientas MCP ni concede autorizaciones operativas.
+
+## Enmienda de F5, 2026-11-07
+
+La prueba con 58 fragmentos autorizados reprodujo una diferencia en la huella
+de Qdrant al reabrir la colección. El cliente local normaliza los vectores en
+memoria al insertar y al abrir vuelve a cargar los valores persistidos.
+La publicación no vacía ahora cierra y reabre su propietario antes de calcular
+la huella y activar el puntero. Conserva la comprobación exacta de integridad.
+Si otro proceso toma el bloqueo durante la reapertura, la publicación falla
+antes de activar su puntero.
+
+Las nuevas generaciones con puntos incluyen `dense_digest_version` en su clave
+para republicar con otra identidad cuando exista una huella antigua. Las
+generaciones vacías conservan su clave, pues su huella ya es reproducible.

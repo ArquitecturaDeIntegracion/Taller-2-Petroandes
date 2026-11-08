@@ -30,6 +30,9 @@ def prepare(root, owner, encoder, records, parents, key, inputs):
     collection = owner.create(generation, key["revision_gobierno"])
     vectors = encoder.encode_passages(inputs)
     owner.upsert(collection, records, vectors, generation, key["revision_gobierno"], encoder.fingerprint)
+    if records:
+        # Qdrant local normaliza al insertar, pero al reabrir carga el vector persistido.
+        owner.reopen()
     ids = sorted(item["fragment"]["chunk_id"] for item in records)
     dense_hash = owner.verify(collection, ids, generation, key["revision_gobierno"], encoder.fingerprint)
     ident = identity(generation, key["perfil"], key["revision_gobierno"], encoder.fingerprint)
