@@ -1,0 +1,160 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T18:32:41.505688+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f8_evaluate.py",
+    "--output-dir",
+    "reports/portable/f8-tecnico-20261108-132941"
+  ],
+  "caso": {
+    "id": "T03",
+    "contexto": "historico",
+    "herramienta": "buscar_documentos",
+    "entrada": {
+      "consulta": "Presión de descarga documentada de P-101.",
+      "top_k": 5,
+      "filtros": {
+        "tipo": "ficha",
+        "activo": "P-101"
+      }
+    },
+    "esperado": {
+      "estado": "respondida"
+    },
+    "secciones": [
+      [
+        "FIC-ACT-P101",
+        "2",
+        "2"
+      ]
+    ],
+    "literales": [
+      "1.180 psi",
+      "1.240 psi"
+    ]
+  },
+  "perfil": "laboratorio",
+  "contexto_servicio": {
+    "identidad": "ensayo-historico",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica"
+  },
+  "instante_evaluacion": "2026-11-03T00:12:31.781997-05:00",
+  "estado_observado": "respondida",
+  "revision_gobierno": 13,
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "paridad_mcp": true,
+  "ms_mcp_desde_lanzamiento": 28688.78348099679,
+  "esperaba_abstencion": false,
+  "resultado_esperado": true,
+  "secciones_citadas_esperadas": true,
+  "literales_esperados": true,
+  "candidatos_elegibles": true,
+  "recall_at_5": {
+    "numerador": 1,
+    "denominador": 1,
+    "valor": 1.0
+  },
+  "anclaje": [
+    {
+      "citas_validas": true,
+      "literal_en_fuente": true,
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 171,
+        "ms": 867.4943070000154,
+        "probabilidad": 0.9963,
+        "positivo": true
+      }
+    }
+  ],
+  "pertinencia": [
+    {
+      "chunk_id": "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "2"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 148,
+        "ms": 576.755249996495,
+        "eleccion": "pertinente",
+        "probabilidades": {
+          "pertinente": 0.8066,
+          "no_pertinente": 0.1934
+        },
+        "positivo": true
+      }
+    },
+    {
+      "chunk_id": "cdada850-4eeb-5090-b792-5bb1d4df471f",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "4"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 82,
+        "ms": 408.7827830007882,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.1387,
+          "no_pertinente": 0.8613
+        },
+        "positivo": false
+      }
+    },
+    {
+      "chunk_id": "13968c26-494d-5313-9c14-1950fc902b52",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "3"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 172,
+        "ms": 612.8095849999227,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.2465,
+          "no_pertinente": 0.7535
+        },
+        "positivo": false
+      }
+    },
+    {
+      "chunk_id": "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "1"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 113,
+        "ms": 413.8394299952779,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.102,
+          "no_pertinente": 0.898
+        },
+        "positivo": false
+      }
+    }
+  ],
+  "desviacion_detectada": false
+}

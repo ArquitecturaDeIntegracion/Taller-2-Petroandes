@@ -1,0 +1,22 @@
+{
+  "resultado": {
+    "estado": "denegado",
+    "correlation_id": "07b16072-0b97-48c1-ab39-18dab8490f11",
+    "generation_id": null,
+    "revision_gobierno": 1,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  },
+  "traza": {
+    "correlation_id": "07b16072-0b97-48c1-ab39-18dab8490f11",
+    "generation_id": null,
+    "revision_gobierno": 1,
+    "operacion": "obtener",
+    "tiempos_ms": {
+      "gobierno": 1.6192580078495666,
+      "revalidacion": 0.8175209950422868,
+      "total": 2.5003969931276515
+    }
+  }
+}

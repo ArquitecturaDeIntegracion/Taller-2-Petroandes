@@ -1,0 +1,48 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T03:42:36.029526+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f11_package.py",
+    "--evidence-dir",
+    "evidence/f11/20261108",
+    "--output-dir",
+    "../output/entrega_tecnica_f11_revision_20261108",
+    "--archive-name",
+    "PetroAndes_Escenario_A_Entrega_Tecnica_F11_Revision_20261108.zip"
+  ],
+  "status": "passed",
+  "zip": "PetroAndes_Escenario_A_Entrega_Tecnica_F11_Revision_20261108.zip",
+  "sha256": "dc1700889865ba198a7e8a7d1c27af653a177c26ebdd94728fb2394adf892a4a",
+  "bytes": 8683667,
+  "archivos_verificados": 2139,
+  "archivos_en_manifiesto": 2125,
+  "copias_con_rutas_portables": 83,
+  "evidencia_incluida": "evidence/f11/20261108",
+  "evaluacion_academica_formal": "pendiente_ejecucion",
+  "revision_academica": {
+    "status": "passed",
+    "alcance": "Integridad, fuentes, partición y contratos",
+    "manifiesto_sha256": "81eb5990565db122c1569f30ccf6ec47c0d8f3460a98decfcf4ea783e6dfd97a",
+    "casos_congelados": {
+      "ajuste": 8,
+      "reserva": 16
+    },
+    "correcciones_aprobadas": [
+      "A02",
+      "A03",
+      "A07",
+      "R09",
+      "R10",
+      "R13",
+      "R16"
+    ],
+    "referencias_pdf_verificadas": 82,
+    "fichas_originales_verificadas": 43,
+    "decisiones_documentales": 3,
+    "casos_ejecutados": 0
+  }
+}

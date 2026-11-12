@@ -1,0 +1,80 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "A01",
+  "titulo": "Baseline sin autorizaciones",
+  "pregunta": "¿Cuál es el umbral y la ventana de alarma de presión de Ayacucho–Coveñas?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "baseline",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar.** El PDF contiene la tabla, pero baseline revisión 1 no tiene decisiones positivas. Debe abstenerse con `sin_evidencia_autorizada` y sin cifras ni citas."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "ajuste",
+  "oracle": {
+    "estado": "abstencion",
+    "motivo_abstencion": "sin_evidencia_autorizada",
+    "criterios_semanticos": [
+      "Con el baseline actual no hay documentos autorizados para responder.",
+      "No mostrar cifras ni fragmentos de los PDF aunque se conozca su texto."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/A01.json",
+    "sha256": "74d22fdd4731e0b1fed1c2bd0e71c5eeb378c90b15548936f3efa100341d2dc0"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "¿Cuál es el umbral y la ventana de alarma de presión de Ayacucho–Coveñas?",
+        "top_k": 5
+      }
+    }
+  ]
+}

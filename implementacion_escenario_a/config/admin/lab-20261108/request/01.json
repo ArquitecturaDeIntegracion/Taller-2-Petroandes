@@ -1,0 +1,7 @@
+{
+  "doc_id": "MAN-MTO-002",
+  "version_documental": "1",
+  "rol_area_simulado": "Gerencia de Integridad y Mantenimiento",
+  "usos": ["evidencia_historica"],
+  "restricciones": ["Lectura descriptiva del plan de mantenimiento, limitada a la simulación académica."]
+}

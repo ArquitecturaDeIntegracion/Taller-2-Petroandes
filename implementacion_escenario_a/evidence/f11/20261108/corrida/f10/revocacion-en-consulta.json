@@ -1,0 +1,48 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:00.590719+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "resultado": {
+    "correlation_id": "42a67a7c-908b-4ad2-bc47-cebbf0597b80",
+    "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+    "revision_gobierno": 13,
+    "estado": "abstencion",
+    "motivo_abstencion": "gobierno_cambio"
+  },
+  "traza": {
+    "correlation_id": "42a67a7c-908b-4ad2-bc47-cebbf0597b80",
+    "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+    "revision_gobierno": 13,
+    "operacion": "buscar",
+    "tiempos_ms": {
+      "gobierno": 0.8882599940989166,
+      "generacion": 65.54858598974533,
+      "catalogo_publicado": 3.6746789992321283,
+      "exacta": 0.09307700383942574,
+      "embedding": 107.44212500867434,
+      "densa": 1.3863810017937794,
+      "lexica": 0.8395629993174225,
+      "fusion": 0.0568249961361289,
+      "revalidacion": 1.2354760110611096,
+      "total": 182.07594199338928
+    },
+    "top_k": 5,
+    "profundidad_rama": 10,
+    "rrf_k": 60,
+    "fusion": "rrf",
+    "tokenizacion": "bm25-codes-es-1.0.0",
+    "codigos": "codes-es-1.0.0",
+    "desempate": "coincidencia_exacta_y_chunk_id",
+    "modo": "codigo_exacto",
+    "prefiltro_fragmentos": 4
+  },
+  "segundos_desde_commit": 0.00487053299730178
+}

@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "petroandes.extract",
+    "--profile",
+    "baseline",
+    "--output-dir",
+    "${TMPDIR}/petroandes-f11-yhhw2nyg/staging"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T00:59:35.551099+00:00",
+  "elapsed_seconds": 27.236749914998654,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

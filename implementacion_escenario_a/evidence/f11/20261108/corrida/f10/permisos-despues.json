@@ -1,0 +1,38 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:09.101421+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "busqueda": {
+    "correlation_id": "ac526eb2-5e72-4eb7-9b3e-e206f2cef3ca",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "estado": "abstencion",
+    "motivo_abstencion": "evidencia_insuficiente"
+  },
+  "directa": {
+    "estado": "denegado",
+    "correlation_id": "b9c7e685-4b29-4914-bae1-9a641156c79a",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  },
+  "expansion": {
+    "estado": "denegado",
+    "correlation_id": "f2c168d3-2b3b-49fa-8a2b-d982e9efa81e",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  }
+}

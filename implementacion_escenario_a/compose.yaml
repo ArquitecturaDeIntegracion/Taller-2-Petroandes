@@ -6,13 +6,14 @@ services:
       context: ..
       dockerfile: implementacion_escenario_a/Dockerfile
     working_dir: /workspace/implementacion_escenario_a
-    environment:
-      PETROANDES_CACHE_DIR: .cache
-      PETROANDES_MODELS_DIR: .cache/models
+    environment: &project-environment
+      PETROANDES_CACHE_DIR: /workspace/petroandes-data/cache
+      PETROANDES_MODELS_DIR: /workspace/petroandes-data/cache/models
+      PETROANDES_ARTIFACTS_DIR: /workspace/petroandes-data/artifacts
       PETROANDES_INSPECTOR_DIR: /opt/inspector
     volumes:
-      - model-cache:/workspace/implementacion_escenario_a/.cache
-      - artifacts:/workspace/implementacion_escenario_a/artifacts
+      - model-cache:/workspace/petroandes-data/cache
+      - artifacts:/workspace/petroandes-data/artifacts
       - ./reports/portable:/workspace/implementacion_escenario_a/reports/portable
     command: ["tools/preflight.py"]
   dev:
@@ -20,8 +21,8 @@ services:
     profiles: ["dev"]
     volumes: &source-volumes
       - .:/workspace/implementacion_escenario_a:ro
-      - model-cache:/workspace/implementacion_escenario_a/.cache
-      - artifacts:/workspace/implementacion_escenario_a/artifacts
+      - model-cache:/workspace/petroandes-data/cache
+      - artifacts:/workspace/petroandes-data/artifacts
       - ./reports/portable:/workspace/implementacion_escenario_a/reports/portable
   debug:
     <<: *project
@@ -30,6 +31,25 @@ services:
       - "127.0.0.1:5678:5678"
     volumes: *source-volumes
     command: ["-m", "debugpy", "--listen", "0.0.0.0:5678", "--wait-for-client", "tools/preflight.py"]
+  inspector-web:
+    <<: *project
+    profiles: ["inspector"]
+    init: true
+    hostname: inspector-web
+    command: ["tools/f7_inspector_web.py"]
+    environment:
+      <<: *project-environment
+      HOST: inspector-web
+      CLIENT_PORT: "6274"
+      ALLOWED_ORIGINS: "http://127.0.0.1:6274,http://localhost:6274"
+      MCP_AUTO_OPEN_ENABLED: "false"
+      MCP_INSPECTOR_SECRET_STORE: memory
+    ports:
+      - "127.0.0.1:6274:6274"
+    networks: [inspector-web]
+    volumes: *source-volumes
 volumes:
   model-cache:
   artifacts:
+networks:
+  inspector-web:

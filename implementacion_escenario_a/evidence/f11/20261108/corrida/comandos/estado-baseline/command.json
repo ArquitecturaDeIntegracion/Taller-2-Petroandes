@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "petroandes.catalog",
+    "status",
+    "--profile",
+    "baseline"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:00:28.996390+00:00",
+  "elapsed_seconds": 2.854208977005328,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

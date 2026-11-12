@@ -1,0 +1,16 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:54:33.972155+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-final-dev-20261108-185328"
+  ],
+  "coleccion": "e5small_es_1_0_0_r13_41befd859a59_a31af176",
+  "puntos_presentes": 58,
+  "chunk_id_revocado": "5c707f27-d5b8-5020-94ea-22d886a09bb2"
+}

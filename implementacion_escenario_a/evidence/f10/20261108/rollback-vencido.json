@@ -1,0 +1,14 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:48:52.352599+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-docker-dev-20261108-184812"
+  ],
+  "motivo": "La reversión contiene evidencia que ya no es elegible"
+}

@@ -1,0 +1,38 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:06.744162+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "busqueda": {
+    "correlation_id": "99bd1e02-722c-4820-ac90-36be280daa98",
+    "generation_id": null,
+    "revision_gobierno": 16,
+    "estado": "abstencion",
+    "motivo_abstencion": "gobierno_cambio"
+  },
+  "directa": {
+    "estado": "denegado",
+    "correlation_id": "bbc29c24-b860-4c83-94dd-b603329fa8fb",
+    "generation_id": null,
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  },
+  "expansion": {
+    "estado": "denegado",
+    "correlation_id": "5d12f9ea-af68-412b-af6f-1ad8149a4f25",
+    "generation_id": null,
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  }
+}

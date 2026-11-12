@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:03.692781+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "status": "passed",
+  "resultado": "evento_ya_confirmado",
+  "revision_evento": 14,
+  "revision_gobierno": 14,
+  "intentos": [],
+  "eventos_confirmados": 0
+}

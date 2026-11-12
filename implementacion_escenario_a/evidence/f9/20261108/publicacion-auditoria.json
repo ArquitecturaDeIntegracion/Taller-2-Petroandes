@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T20:27:34.331235+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_attack.py",
+    "--output-dir",
+    "reports/portable/f9-docker-dev-20261108-152628"
+  ],
+  "generation_id": "16b82e91-4db3-5046-b97b-4fb686178e50",
+  "perfil": "laboratorio",
+  "governance_revision": 13,
+  "published_fragments": 5,
+  "eligible_documents": 1,
+  "reused": false,
+  "collection": "e5small_es_1_0_0_r13_16b82e914db3_d88038bf"
+}

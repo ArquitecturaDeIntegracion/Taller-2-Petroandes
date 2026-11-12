@@ -1,0 +1,32 @@
+0343 ### F7 Servidor MCP y verificación con Inspector
+0344 
+0345 **Objetivo:** exponer la recuperación con contratos completos y demostrar interoperabilidad real.
+0346 
+0347 **Contratos a concretar y versionar**
+0348 
+0349 | Herramienta | Entradas propuestas | Retorno y comportamiento |
+0350 | --- | --- | --- |
+0351 | `buscar_documentos` | `consulta` no vacía, longitud máxima declarada; `top_k` entre 1 y 10; filtros opcionales validados de tipo, activo o tramo | Estado, respuesta extractiva o abstención, evidencia ordenada, citas, revisiones y `correlation_id` |
+0352 | `obtener_fragmento` | `doc_id`, `version_documental` como cadena o null, `section_id`; parte o hash opcional para desambiguar | Fragmento o partes ordenadas, procedencia, citas y marcas de confianza; misma autorización que búsqueda |
+0353 
+0354 No aceptar como entradas autoasignaciones de grupo, perfil de gobierno, vigencia, prioridad ni permisos. La obtención directa puede representar texto no confiable para inspección, claramente etiquetado como datos; no lo transforma en una orden ni en recomendación operativa.
+0355 
+0356 **Actividades**
+0357 
+0358 - [ ] F7.1 Fijar una versión del SDK Python y seguir sus ejemplos compatibles. Publicar nombre, descripción destinada al modelo, JSON Schema de entrada, estructura de salida y catálogo de errores por herramienta.
+0359 - [ ] F7.2 Separar errores de protocolo o esquema de errores de dominio: evidencia no autorizada, referencia ambigua, índice no listo y servicio no disponible. No revelar contenido restringido en mensajes de error.
+0360 - [ ] F7.3 Conectar ambas herramientas al mismo servicio probado en F5 y F6; no duplicar una política de autorización en el adaptador MCP.
+0361 - [ ] F7.4 Reservar stdout para el protocolo. Enviar logs y barras de progreso a stderr o archivos; impedir que la carga de modelos contamine la salida MCP.
+0362 - [ ] F7.5 Probar inicio, negociación, listado de herramientas, llamada exitosa, abstención, acceso directo denegado y parámetros inválidos con **MCP Inspector real**.
+0363 - [ ] F7.6 Guardar comando exacto, versión Inspector y salidas de listado y llamadas. Capturas de interfaz pueden complementar la evidencia estructurada.
+0364 - [ ] F7.7 Probar cierre del proceso y liberación del almacenamiento Qdrant; volver a conectar sin perder datos.
+0365 
+0366 **Validaciones de salida**
+0367 
+0368 - [ ] Ambas herramientas aparecen en Inspector con esquemas completos y generan retornos conformes.
+0369 - [ ] Se observa al menos una llamada positiva y una negativa de cada herramienta.
+0370 - [ ] Citas, filtros y resultados concuerdan con las pruebas por función Python para los mismos parámetros y perfil.
+0371 - [ ] Las pruebas no se reducen a llamar directamente una función ni a utilizar un cliente ficticio llamado Inspector.
+0372 
+0373 **Evidencia:** contratos, transcripciones de Inspector y prueba de conexión de extremo a extremo. Consultar el [SDK MCP Python oficial](https://github.com/modelcontextprotocol/python-sdk) y la [documentación de Inspector](https://modelcontextprotocol.io/docs/tools/inspector).
+0374 

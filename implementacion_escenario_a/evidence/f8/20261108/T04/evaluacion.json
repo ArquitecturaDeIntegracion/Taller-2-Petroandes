@@ -1,0 +1,178 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T18:32:43.981156+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f8_evaluate.py",
+    "--output-dir",
+    "reports/portable/f8-tecnico-20261108-132941"
+  ],
+  "caso": {
+    "id": "T04",
+    "contexto": "historico",
+    "herramienta": "buscar_documentos",
+    "entrada": {
+      "consulta": "Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.",
+      "top_k": 5,
+      "filtros": {
+        "tipo": "resolucion"
+      }
+    },
+    "esperado": {
+      "estado": "respondida"
+    },
+    "secciones": [
+      [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-2"
+      ]
+    ],
+    "literales": [
+      "no excederá",
+      "0,3 %"
+    ]
+  },
+  "perfil": "laboratorio",
+  "contexto_servicio": {
+    "identidad": "ensayo-historico",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica"
+  },
+  "instante_evaluacion": "2026-11-03T00:12:31.781997-05:00",
+  "estado_observado": "respondida",
+  "revision_gobierno": 13,
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "paridad_mcp": true,
+  "ms_mcp_desde_lanzamiento": 25598.74193900032,
+  "esperaba_abstencion": false,
+  "resultado_esperado": true,
+  "secciones_citadas_esperadas": true,
+  "literales_esperados": true,
+  "candidatos_elegibles": true,
+  "recall_at_5": {
+    "numerador": 1,
+    "denominador": 1,
+    "valor": 1.0
+  },
+  "anclaje": [
+    {
+      "citas_validas": true,
+      "literal_en_fuente": true,
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 113,
+        "ms": 384.6644099976402,
+        "probabilidad": 0.995,
+        "positivo": true
+      }
+    }
+  ],
+  "pertinencia": [
+    {
+      "chunk_id": "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-2"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 103,
+        "ms": 416.6702699949383,
+        "eleccion": "pertinente",
+        "probabilidades": {
+          "pertinente": 0.5122,
+          "no_pertinente": 0.4878
+        },
+        "positivo": true
+      }
+    },
+    {
+      "chunk_id": "3685ab04-4611-53c4-9f85-7558344b3e6d",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-5"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 99,
+        "ms": 352.5346999958856,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.0422,
+          "no_pertinente": 0.9578
+        },
+        "positivo": false
+      }
+    },
+    {
+      "chunk_id": "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-6"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 103,
+        "ms": 461.40648100117687,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.0263,
+          "no_pertinente": 0.9737
+        },
+        "positivo": false
+      }
+    },
+    {
+      "chunk_id": "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-1"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 104,
+        "ms": 369.5967509993352,
+        "eleccion": "pertinente",
+        "probabilidades": {
+          "pertinente": 0.5887,
+          "no_pertinente": 0.4113
+        },
+        "positivo": true
+      }
+    },
+    {
+      "chunk_id": "53321bbb-4bd2-5d55-a5f3-219a17bd5907",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-3"
+      ],
+      "laya": {
+        "estado": "evaluado",
+        "tokens": 110,
+        "ms": 466.9375110024703,
+        "eleccion": "no_pertinente",
+        "probabilidades": {
+          "pertinente": 0.2657,
+          "no_pertinente": 0.7343
+        },
+        "positivo": false
+      }
+    }
+  ],
+  "desviacion_detectada": false
+}

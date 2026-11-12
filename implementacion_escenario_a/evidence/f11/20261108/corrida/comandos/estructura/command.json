@@ -1,0 +1,35 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/validate_agent.py"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T00:54:38.290024+00:00",
+  "elapsed_seconds": 243.8674522079964,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stdout-002.log",
+    "stdout-003.log",
+    "stdout-004.log",
+    "stdout-005.log",
+    "stdout-006.log",
+    "stdout-007.log",
+    "stdout-008.log",
+    "stdout-009.log",
+    "stdout-010.log",
+    "stdout-011.log",
+    "stdout-012.log",
+    "stdout-013.log",
+    "stdout-014.log",
+    "stdout-015.log",
+    "stdout-016.log",
+    "stdout-017.log",
+    "stdout-018.log",
+    "stdout-019.log",
+    "stdout-020.log",
+    "stdout-021.log"
+  ]
+}

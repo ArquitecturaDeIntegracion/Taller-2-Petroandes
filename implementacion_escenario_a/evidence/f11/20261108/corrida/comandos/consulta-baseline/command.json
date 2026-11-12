@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f5.py",
+    "--profile",
+    "baseline",
+    "responder",
+    "--consulta",
+    "Presión de descarga de P-101",
+    "--top-k",
+    "5"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:00:31.921760+00:00",
+  "elapsed_seconds": 24.402943998997216,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

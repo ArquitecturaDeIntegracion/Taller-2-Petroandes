@@ -1,0 +1,107 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T18:31:50.075135+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f8-tecnico-20261108-132941",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-yy857rau/captura.json"
+  ],
+  "candidatos": [
+    {
+      "chunk_id": "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-2"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "3685ab04-4611-53c4-9f85-7558344b3e6d",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-5"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "53321bbb-4bd2-5d55-a5f3-219a17bd5907",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-3"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-1"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-6"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "e3e7596e-ab2a-544a-9255-efc608e43bd6",
+      "seccion": [
+        "RES-CREG-0043-2024",
+        null,
+        "articulo-4"
+      ],
+      "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93"
+    },
+    {
+      "chunk_id": "1fba9eb2-7671-5c18-bb2c-cfe79f43bda6",
+      "seccion": [
+        "RES-ANH-0471-2023",
+        null,
+        "articulo-4"
+      ],
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907"
+    },
+    {
+      "chunk_id": "200d5348-9e59-5be7-b4ad-4ddf87bbe7ce",
+      "seccion": [
+        "RES-ANH-0471-2023",
+        null,
+        "articulo-1"
+      ],
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907"
+    },
+    {
+      "chunk_id": "2a27296c-b0fd-5ca6-b0ba-394ab068838f",
+      "seccion": [
+        "RES-ANH-0471-2023",
+        null,
+        "considerando"
+      ],
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907"
+    },
+    {
+      "chunk_id": "3ddb5119-09ff-5b87-b6ee-9c7ed5b76faa",
+      "seccion": [
+        "RES-ANH-0471-2023",
+        null,
+        "articulo-3"
+      ],
+      "pdf_sha256": "27ca31134ebe8026b5a9d0182bae928e62b4a80417e91e76b4c35eeec030f907"
+    }
+  ]
+}

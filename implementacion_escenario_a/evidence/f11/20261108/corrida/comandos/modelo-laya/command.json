@@ -1,0 +1,21 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f0.py",
+    "laya",
+    "--offline",
+    "--output",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/modelos/laya.json"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T00:59:00.457565+00:00",
+  "elapsed_seconds": 31.47548005200224,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stdout-002.log",
+    "stderr-001.log"
+  ]
+}

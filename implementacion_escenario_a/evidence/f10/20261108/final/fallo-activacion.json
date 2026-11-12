@@ -1,0 +1,39 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:54:36.411498+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-final-dev-20261108-185328"
+  ],
+  "status": "failed",
+  "resultado": "reintentos_agotados",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 2.0997468499990646
+    },
+    {
+      "intento": 2,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 0.14969512898824178
+    },
+    {
+      "intento": 3,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 0.14029799800482579
+    }
+  ],
+  "eventos_confirmados": 0
+}

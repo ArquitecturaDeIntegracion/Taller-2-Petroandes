@@ -1,0 +1,70 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:22.743678+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "status": "passed",
+  "resultado": "publicacion_verificada",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "confirmado",
+      "segundos": 8.81378342199605
+    }
+  ],
+  "publicacion": {
+    "generation_id": "bd71d0e9-07a5-569c-862a-a841df08d818",
+    "perfil": "laboratorio",
+    "governance_revision": 17,
+    "published_fragments": 48,
+    "eligible_documents": 10,
+    "reused": false,
+    "collection": "e5small_es_1_0_0_r17_bd71d0e907a5_808c590b"
+  },
+  "recibo": {
+    "collection": "e5small_es_1_0_0_r17_bd71d0e907a5_808c590b",
+    "key": {
+      "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+      "context": {
+        "ambito": {
+          "identificador": "corpus_revision",
+          "tipo": "general"
+        },
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "identidad": "ensayo-historico",
+        "uso": "evidencia_historica"
+      },
+      "dense_digest_version": "qdrant-local-reopened-1",
+      "generation_id": "bd71d0e9-07a5-569c-862a-a841df08d818",
+      "lexical_version": "bm25-codes-es-1.0.0",
+      "perfil": "laboratorio",
+      "records_sha256": "992980ecb6c006640517b0aa9bdf815c85be8f3dd5c866fbd417b5ab9df3c108",
+      "reindex": "reconstruccion-f10",
+      "revision_gobierno": 17,
+      "stage": "99bf2575-d54a-520e-9688-49d472fe4b23"
+    },
+    "manifest_sha256": "227d250a2ce47b46b652981f5770a16f16c6168a8ef194a5caf1a87fcc63c6cc"
+  },
+  "comparacion": {
+    "referencia": "688a9860-938a-57bc-9c03-77e9ec0d057a",
+    "candidata": "bd71d0e9-07a5-569c-862a-a841df08d818",
+    "fragmentos_referencia": 48,
+    "fragmentos_candidata": 48,
+    "entradas_identicas": 48,
+    "max_delta_vectores": 5.960464477539063e-08,
+    "ids_anadidos": 0,
+    "ids_retirados": 0
+  },
+  "vectores_reutilizados": 0,
+  "vectores_calculados": 48,
+  "eventos_confirmados": 0
+}

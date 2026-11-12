@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "${APP_ROOT}/pyproject.toml",
+    "${APP_ROOT}/tests"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:01:19.196312+00:00",
+  "elapsed_seconds": 188.39397731699864,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

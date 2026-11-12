@@ -1,0 +1,116 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "A04",
+  "titulo": "Conciliación y cifra oficial",
+  "pregunta": "Según PRO-MED-007 v2, ¿qué tolerancia y plazo de cierre se declaran y qué sistema produce la cifra oficial?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D06"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar.** PRO-MED-007 v2 §§2–3: 0,5 % del volumen recibido, quinto día hábil del mes siguiente, y el sistema de balance volumétrico es el único autorizado para producir la cifra oficial. Se pide identificar el sistema, no obtener una cifra."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "ajuste",
+  "oracle": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Tolerancia 0,5 % del volumen recibido; cierre al quinto día hábil del mes siguiente.",
+      "El cálculo es determinista en el sistema de balance volumétrico; otro sistema no produce la cifra oficial."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "§2.2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "tabla de criterios"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "§2.2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "tabla de criterios"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D05"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/A04.json",
+    "sha256": "1773b6670275b0d7a02ca365b955a54f657a2e096b76c9243139c7414fe13a0e"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "Según PRO-MED-007 v2, ¿qué tolerancia y plazo de cierre se declaran y qué sistema produce la cifra oficial?",
+        "top_k": 5
+      }
+    }
+  ]
+}

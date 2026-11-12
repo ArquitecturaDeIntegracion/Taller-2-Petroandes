@@ -1,0 +1,145 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:16:43.723853+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f11_check.py",
+    "--output-dir",
+    "reports/portable/f11-final-dev-20261108-195433"
+  ],
+  "status": "passed",
+  "cwd": "${TMPDIR}",
+  "artefactos_inicialmente_ausentes": true,
+  "etapas": {
+    "dependencias": {
+      "exit_code": 0,
+      "segundos": 1.6191335390030872,
+      "recibo": "comandos/dependencias/command.json"
+    },
+    "estructura": {
+      "exit_code": 0,
+      "segundos": 243.8674522079964,
+      "recibo": "comandos/estructura/command.json"
+    },
+    "preflight": {
+      "exit_code": 0,
+      "segundos": 1.0317234730027849,
+      "recibo": "comandos/preflight/command.json"
+    },
+    "modelo-e5": {
+      "exit_code": 0,
+      "segundos": 17.067029468002147,
+      "recibo": "comandos/modelo-e5/command.json"
+    },
+    "modelo-laya": {
+      "exit_code": 0,
+      "segundos": 31.47548005200224,
+      "recibo": "comandos/modelo-laya/command.json"
+    },
+    "catalogo-baseline": {
+      "exit_code": 0,
+      "segundos": 3.512218378004036,
+      "recibo": "comandos/catalogo-baseline/command.json"
+    },
+    "ingesta-pdf": {
+      "exit_code": 0,
+      "segundos": 27.236749914998654,
+      "recibo": "comandos/ingesta-pdf/command.json"
+    },
+    "consolidacion-baseline": {
+      "exit_code": 0,
+      "segundos": 26.121409900995786,
+      "recibo": "comandos/consolidacion-baseline/command.json"
+    },
+    "estado-baseline": {
+      "exit_code": 0,
+      "segundos": 2.854208977005328,
+      "recibo": "comandos/estado-baseline/command.json"
+    },
+    "consulta-baseline": {
+      "exit_code": 0,
+      "segundos": 24.402943998997216,
+      "recibo": "comandos/consulta-baseline/command.json"
+    },
+    "directa-excluida": {
+      "exit_code": 0,
+      "segundos": 22.775366604008013,
+      "recibo": "comandos/directa-excluida/command.json"
+    },
+    "regresion": {
+      "exit_code": 0,
+      "segundos": 188.39397731699864,
+      "recibo": "comandos/regresion/command.json"
+    },
+    "f7": {
+      "exit_code": 0,
+      "segundos": 262.65438802300196,
+      "recibo": "comandos/f7/command.json"
+    },
+    "f8": {
+      "exit_code": 0,
+      "segundos": 158.5762942779984,
+      "recibo": "comandos/f8/command.json"
+    },
+    "f9": {
+      "exit_code": 0,
+      "segundos": 118.355498496996,
+      "recibo": "comandos/f9/command.json"
+    },
+    "f10": {
+      "exit_code": 0,
+      "segundos": 58.50754478300223,
+      "recibo": "comandos/f10/command.json"
+    }
+  },
+  "inventario": {
+    "pdf": 19,
+    "markdown": 19,
+    "fuentes_verificadas": 7
+  },
+  "baseline": {
+    "revision": 1,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "fragmentos_extraidos": 92,
+    "fragmentos_publicados": 0,
+    "eventos_pendientes": 0,
+    "consulta": "abstencion",
+    "directa_excluida": "denegado"
+  },
+  "laboratorio": {
+    "inspector": "2.13.0",
+    "herramientas": [
+      "buscar_documentos",
+      "obtener_fragmento"
+    ],
+    "proyeccion_reabierta": 58,
+    "casos_diagnosticos": 4,
+    "evaluacion_diagnostica": "f8/summary.json",
+    "ataque": "f9/summary.json",
+    "propagacion": "f10/summary.json",
+    "revision_final_ensayo_f10": 17
+  },
+  "evaluacion_formal": {
+    "ejecutada": false,
+    "casos_formales_ejecutados": 0,
+    "minimo_reserva": 15,
+    "casos_por_estado": {
+      "ajuste/pendiente_revision": 8,
+      "reserva/pendiente_revision": 16
+    },
+    "propuestas_congeladas": 0,
+    "sha256_manifiesto_propuestas": "62d259d5d6d288c35455c9a67b9fea8b7ed0e63093530d357506e972643d5ccb",
+    "archivos": [
+      "casos-academicos-001.jsonl"
+    ]
+  },
+  "inventario_entrega": "entrega/summary.json",
+  "originales_verificados_sin_cambios": 45
+}

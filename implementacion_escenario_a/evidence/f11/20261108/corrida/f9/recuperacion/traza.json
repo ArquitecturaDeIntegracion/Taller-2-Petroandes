@@ -1,0 +1,76 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:12:11.967089+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f9"
+  ],
+  "correlation_id": "7d777f35-2142-4fcf-9eb3-aa1a3c81d33e",
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "revision_gobierno": 13,
+  "operacion": "buscar",
+  "tiempos_ms": {
+    "gobierno": 1.71363000117708,
+    "generacion": 81.44136899500154,
+    "catalogo_publicado": 8.156088006217033,
+    "exacta": 0.1359570014756173,
+    "embedding": 38.226913995458744,
+    "densa": 3.930384002160281,
+    "lexica": 3.6459319962887093,
+    "fusion": 0.26354799047112465,
+    "revalidacion": 1.752506010234356,
+    "total": 141.37755300907884
+  },
+  "top_k": 5,
+  "profundidad_rama": 10,
+  "rrf_k": 60,
+  "fusion": "rrf",
+  "tokenizacion": "bm25-codes-es-1.0.0",
+  "codigos": "codes-es-1.0.0",
+  "desempate": "coincidencia_exacta_y_chunk_id",
+  "modo": "texto",
+  "prefiltro_fragmentos": 9,
+  "candidatos": {
+    "densa": [
+      "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+      "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+      "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+      "2504320e-9c0c-5871-92dd-425a6e41d9c8",
+      "8164fe95-9daf-5a10-b246-6240a6f126bc",
+      "a5830c8a-cd4d-58cb-a991-529b908d61d1",
+      "dc23e984-6de3-59b3-9b91-c4413ee077be",
+      "639b56d3-c245-5565-abfe-76433c36195a",
+      "894b5508-c8c6-5b6c-b0f9-e34b1b3542e8"
+    ],
+    "lexica": [
+      "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+      "8164fe95-9daf-5a10-b246-6240a6f126bc",
+      "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+      "2504320e-9c0c-5871-92dd-425a6e41d9c8",
+      "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+      "a5830c8a-cd4d-58cb-a991-529b908d61d1",
+      "894b5508-c8c6-5b6c-b0f9-e34b1b3542e8",
+      "639b56d3-c245-5565-abfe-76433c36195a",
+      "dc23e984-6de3-59b3-9b91-c4413ee077be"
+    ],
+    "exacta": [
+      "2504320e-9c0c-5871-92dd-425a6e41d9c8",
+      "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+      "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+      "8164fe95-9daf-5a10-b246-6240a6f126bc",
+      "8bf6f5e9-6a73-58ed-adce-c809554ba5e0"
+    ]
+  },
+  "seleccionados": [
+    "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+    "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+    "8164fe95-9daf-5a10-b246-6240a6f126bc",
+    "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+    "2504320e-9c0c-5871-92dd-425a6e41d9c8"
+  ]
+}

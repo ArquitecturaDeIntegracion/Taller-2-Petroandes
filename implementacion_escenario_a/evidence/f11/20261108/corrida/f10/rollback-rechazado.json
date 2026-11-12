@@ -1,0 +1,16 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:03.794083+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "motivo": "Gobierno cambió durante la preparación",
+  "activa": "0f284bc6-d9b2-5391-a02b-460ed1205bc3"
+}

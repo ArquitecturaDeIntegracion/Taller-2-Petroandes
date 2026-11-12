@@ -1,7 +1,16 @@
 # Guía de revisión: decisiones documentales y casos de referencia
 
+La [revisión confirmada del 8 de noviembre](20261108-confirmada/autorizacion.md)
+registra las decisiones vigentes para este trabajo académico. Consulta la
+[matriz congelada](20261108-confirmada/matriz.md) y su
+[manifiesto](20261108-confirmada/manifest.json). Lo que sigue describe la
+propuesta original y conserva su estado en la fecha de preparación.
+
 Preparado: 2026-11-01. Estado: **propuesta pendiente de revisión humana**.
 Este paquete no registra tu aprobación, no concede permisos y no modifica catálogos.
+
+El [contraste técnico del 8 de noviembre](contraste-tecnico-20261108.md)
+deja la recomendación por caso y manual lista para revisión del grupo.
 
 ## Por dónde empezar
 
@@ -114,10 +123,11 @@ sin decisión lo que no hayas examinado. Ningún caso debe marcarse aprobado por
 
 Tras tu revisión se preparará una versión revisada de los casos y, si autorizas la
 aplicación de decisiones concretas, su incorporación controlada solo a laboratorio.
-La CLI administrativa actual ofrece inicialización y estado; no se implementó aquí
-un importador ni se ejecutaron escrituras de gobierno. No cargar estos JSON como
-certificaciones ni modificar SQLite manualmente para eliminar el pendiente.
-El desarrollo técnico independiente de F4 puede continuar mientras revisas.
+Las fichas de esta carpeta son propuestas editoriales. Los comandos de
+[operación F10](../f10-operacion.md) trabajan con decisiones documentales
+estructuradas. Las doce certificaciones simuladas ya registradas se detallan
+en su [informe](../certificacion-laboratorio-20261103.md). La revisión de los
+esperados de los casos sigue pendiente en [F11](../f11-resultados.md).
 
 Esta revisión del grupo es parte del diseño educativo del proyecto. El enunciado
 pide declarar regla y fuente de autoridad; no establece aquí un trámite de firma

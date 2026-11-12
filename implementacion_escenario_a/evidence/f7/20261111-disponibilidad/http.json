@@ -1,0 +1,8 @@
+{
+  "fecha": "2026-11-11",
+  "zona": "America/Bogota",
+  "url": "http://127.0.0.1:6274/",
+  "http_status": 200,
+  "contenedor": "petroandes-educativo-inspector-web-1",
+  "estado_docker_observado": "en ejecución"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "imagen": "sha256:6776db09026d891b168c2a415a40c00c563def1ebfca8d30e6840b07715743b4",
+  "antes": {
+    "python": 77,
+    "npm": 120,
+    "python_sha256": "7d9a1adf8f6add9882b8f7a0a6e42036b67d271e2c5dfae2fa6449847d1a00fc",
+    "npm_sha256": "b9ce04799b5156c4f790fd0801841c2f0265fa7845a2a10966ab156792b4b256",
+    "npm_lock_sha256": "341d65231562a6603b4e75520093039b920938f1014c77af04cf9c74baeafcdf"
+  },
+  "despues": {
+    "python": 77,
+    "npm": 123,
+    "python_sha256": "7d9a1adf8f6add9882b8f7a0a6e42036b67d271e2c5dfae2fa6449847d1a00fc",
+    "npm_sha256": "c09c88fd251b6fc1721c744d938dfe0777f8c699053c15ec9fc093644cfba545",
+    "npm_lock_sha256": "341d65231562a6603b4e75520093039b920938f1014c77af04cf9c74baeafcdf"
+  },
+  "lock_coincide_con_archivo": true
+}

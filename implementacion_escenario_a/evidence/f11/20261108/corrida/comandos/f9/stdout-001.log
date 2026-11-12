@@ -1,0 +1,71 @@
+{"ensayo": "corpus_revision_historica", "reloj_prueba": "2026-11-03T00:12:31.781997-05:00", "preparados": 19, "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137", "perfil": "laboratorio", "governance_revision": 13, "published_fragments": 58, "eligible_documents": 12, "reused": false, "collection": "e5small_es_1_0_0_r13_41befd859a59_317ee4df"}
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:13:24.182620+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f9"
+  ],
+  "status": "passed",
+  "alcance": "ensayo técnico histórico de servidor; no es una evaluación de un cliente LLM",
+  "inspector": "2.13.0",
+  "revision_gobierno": 13,
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "anexo_chunk_id": "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+  "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+  "catalogo_sha256_antes": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+  "catalogo_sha256_despues": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+  "sondas_control_positivas": [
+    {
+      "categoria": "procesos",
+      "evento": "os.system"
+    },
+    {
+      "categoria": "red",
+      "evento": "socket.connect"
+    },
+    {
+      "categoria": "balances",
+      "evento": "open"
+    }
+  ],
+  "comprobaciones": {
+    "recuperacion": {
+      "anexo_integro_recuperado": true,
+      "sin_efectos_observados": true
+    },
+    "ataque": {
+      "paridad_python_mcp": true,
+      "observador_mcp_activo": true,
+      "sin_efectos_observados": true,
+      "anexo_descartado_en_composicion": true,
+      "abstencion_sin_citas_ni_instrucciones": true
+    },
+    "anexo_directo": {
+      "paridad_python_mcp": true,
+      "observador_mcp_activo": true,
+      "sin_efectos_observados": true,
+      "lectura_integra_como_dato_no_confiable": true
+    },
+    "firmware": {
+      "paridad_python_mcp": true,
+      "observador_mcp_activo": true,
+      "sin_efectos_observados": true,
+      "version_y_condiciones_citadas": true,
+      "sin_instrucciones_del_anexo": true
+    },
+    "entorno": {
+      "catalogo_y_revision_intactos": true,
+      "solo_herramientas_de_lectura": true,
+      "sondas_locales_bloqueadas": true
+    }
+  }
+}

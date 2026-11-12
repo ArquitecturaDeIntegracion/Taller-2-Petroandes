@@ -1,0 +1,132 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "A05",
+  "titulo": "MAOP y alarma son conceptos distintos",
+  "pregunta": "Para Ayacucho–Coveñas, compara el MAOP del manual con el umbral y ventana del procedimiento de anomalías.",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D02",
+      "D08"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar condicionado a D02.** MAN-OPE-001 v3 §§2–3 declara MAOP de 1.250 psi; PRO-OPE-012 v3 §3 declara anomalía por debajo de 1.100 psi durante 15 minutos. Cada cifra requiere su cita. Sin D02 no se cumple la precondición de respuesta."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "ajuste",
+  "oracle": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "MAN-OPE-001 v3 declara MAOP de diseño 1.250 psi; no es umbral de alarma.",
+      "PRO-OPE-012 v3 declara caída por debajo de 1.100 psi durante 15 minutos para anomalía.",
+      "No atribuir 1.240 psi de P-101 al tramo."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf",
+        "doc_id": "MAN-OPE-001",
+        "version_documental": "3",
+        "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D07"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/A05.json",
+    "sha256": "e705b38d2d8216b2c6f54da3a47e5b4b429d3f08ee3c07a47e4c1c1cb5795d51"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "Para Ayacucho–Coveñas, compara el MAOP del manual con el umbral y ventana del procedimiento de anomalías.",
+        "top_k": 5
+      }
+    }
+  ]
+}

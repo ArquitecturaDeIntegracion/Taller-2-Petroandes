@@ -1,0 +1,53 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T18:31:20.899774+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f8-tecnico-20261108-132941",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-yy857rau/captura.json"
+  ],
+  "candidatos": [
+    {
+      "chunk_id": "13968c26-494d-5313-9c14-1950fc902b52",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "3"
+      ],
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a"
+    },
+    {
+      "chunk_id": "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "2"
+      ],
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a"
+    },
+    {
+      "chunk_id": "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "1"
+      ],
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a"
+    },
+    {
+      "chunk_id": "cdada850-4eeb-5090-b792-5bb1d4df471f",
+      "seccion": [
+        "FIC-ACT-P101",
+        "2",
+        "4"
+      ],
+      "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
 Fuente: diseño 3.1, plan F1/F7 y conocimiento curado. Se conserva el contrato
 del corpus 1.0.0. Esta versión inicial implementa estructura; no otorga autoridad.
 
+La implementación y las respuestas de protocolo se documentan en [F7 MCP](f7-mcp.md).
+
 ## Modelos y límites
 
 - [Documentos](../petroandes/contracts/documents.py): documento, decisión,

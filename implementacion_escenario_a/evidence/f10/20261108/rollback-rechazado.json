@@ -1,0 +1,16 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:48:55.662272+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-docker-dev-20261108-184812"
+  ],
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "motivo": "Gobierno cambió durante la preparación",
+  "activa": "0f284bc6-d9b2-5391-a02b-460ed1205bc3"
+}

@@ -1,0 +1,64 @@
+ ANDESTRANSPORTE S.A.S.
+ Manual de operación del sistema de medición y transferencia de
+ custodia
+
+  Código                   MAN-OPE-004                                    Versión                  2
+
+  Fecha de emisión         2022-08-30                                     Tipo                     Manual de operación
+  Área emisora             Gerencia de Medición                           Activo / alcance         Sistemas de medición — todas las
+                                                                                                   estaciones
+  Reemplaza a              MAN-OPE-004 v1
+
+
+ 1. Objeto
+ Describir la operación de los patines de medición y de los sistemas de transferencia de custodia instalados en los
+ puntos de entrega y recibo del sistema de transporte.
+
+ 2. Componentes del sistema de medición
+    Medidores de desplazamiento positivo y de ultrasonido en los puntos de transferencia.
+    Computadores de flujo que calculan volumen corregido a condiciones estándar.
+    Probadores (provers) para verificación periódica del factor del medidor.
+    Sistema de muestreo automático para determinación de calidad.
+
+ 3. Operación normal
+ 3.1 El operador verifica al inicio de cada turno la integridad de los sellos, la vigencia de la calibración de cada
+ medidor y la ausencia de alarmas activas en el computador de flujo.
+
+ 3.2 La verificación del factor del medidor se ejecuta con la periodicidad establecida en el contrato de transporte y,
+ como mínimo, una vez al mes.
+
+  Punto de medición                  Tipo de medidor                    Periodicidad de                    Incertidumbre declarada
+                                                                        verificación
+
+  Ayacucho — entrada                 Ultrasonido                        Mensual                            ±0,25 %
+
+  Coveñas — salida a buque           Desplazamiento positivo            Quincenal                          ±0,15 %
+
+  Caucasia — entrada                 Ultrasonido                        Mensual                            ±0,30 %
+
+  Porvenir — salida                  Coriolis                           Mensual                            ±0,20 %
+
+
+ 4. Novedades y desviaciones
+ Toda desviación observada en la verificación se reporta a la Gerencia de Medición dentro del turno en que se
+ detecta, y se registra en el acta de medición correspondiente.
+
+ 5. Conciliación
+ La conciliación de los volúmenes entregados y recibidos se ejecuta conforme al procedimiento de conciliación
+ volumétrica aplicable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                      Página 1

@@ -1,0 +1,37 @@
+{
+  "case_id": "A07",
+  "perfil": "laboratorio",
+  "reloj_simulado": "2026-11-15T12:00:00-05:00",
+  "catalogo": "catalog.sqlite3",
+  "contextos": {
+    "principal": {
+      "config": {
+        "identidad": "lector_laboratorio_propuesto",
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "ambito": {
+          "tipo": "general",
+          "identificador": "corpus_revision"
+        },
+        "uso": "evidencia_historica"
+      },
+      "ruta_indice_relativa": "index/principal"
+    }
+  },
+  "autorizaciones": {
+    "D01": {
+      "id": "b9283956-c4d7-5a14-908d-76bc9c393c5a",
+      "revision_fuente": 14,
+      "revision_local": 2,
+      "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f"
+    },
+    "D17": {
+      "id": "49593fb4-cbb7-50dc-8501-287bed13917a",
+      "revision_fuente": 11,
+      "revision_local": 3,
+      "pdf_sha256": "ab23fb2787c45b1988d7434e12e99ec11751c09645141a7c5d7aa42871d95477"
+    }
+  },
+  "preparacion_adicional": {}
+}

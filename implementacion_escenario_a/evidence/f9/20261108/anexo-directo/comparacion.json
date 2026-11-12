@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T20:29:28.302352+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_attack.py",
+    "--output-dir",
+    "reports/portable/f9-docker-dev-20261108-152628"
+  ],
+  "paridad_python_mcp": true,
+  "observador_mcp_activo": true,
+  "sin_efectos_observados": true,
+  "observaciones_mcp": [
+    []
+  ]
+}

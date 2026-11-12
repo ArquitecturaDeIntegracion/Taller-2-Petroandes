@@ -1,0 +1,13 @@
+{
+  "perfil": "baseline",
+  "governance_revision": 1,
+  "documentos": 19,
+  "clasificacion": {
+    "pendiente": 15,
+    "excluido": 4,
+    "certificado": 0
+  },
+  "decisiones_registradas": 0,
+  "conflictos_abiertos": 0,
+  "eventos_pendientes": 0
+}

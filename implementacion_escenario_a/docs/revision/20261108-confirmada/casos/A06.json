@@ -1,0 +1,112 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "A06",
+  "titulo": "Diseño y alarma de P-101",
+  "pregunta": "¿Cuáles son la presión de descarga de diseño y el límite de alarma declarados para P-101?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D19"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar.** FIC-ACT-P101 v2 §§1–2 distingue P-101 en Estación Ayacucho, presión de descarga de diseño de 1.180 psi y límite de alarma de 1.240 psi; no son telemetría ni valores del tramo."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "ajuste",
+  "oracle": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "En FIC-ACT-P101 v2, diseño: 1.180 psi; alarma: 1.240 psi.",
+      "Son especificaciones de P-101 en Ayacucho; no presión actual ni parámetros de un tramo."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "fila Presión de descarga"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/06_fichas/FIC-ACT-P101_v2.pdf",
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "fila Presión de descarga"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/A06.json",
+    "sha256": "3de32b15c68e068d44e3c731ae01747a4c9bfff0029b33f70794c95835b7bbf7"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "¿Cuáles son la presión de descarga de diseño y el límite de alarma declarados para P-101?",
+        "top_k": 5
+      }
+    }
+  ]
+}

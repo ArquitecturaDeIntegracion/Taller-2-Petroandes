@@ -1,0 +1,96 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "A02",
+  "titulo": "Umbral de presión y reemplazo",
+  "pregunta": "Según PRO-OPE-012 v3, ¿por debajo de qué umbral y durante cuánto tiempo debe mantenerse la presión de Ayacucho–Coveñas para que se considere una anomalía? ¿Qué nivel de alarma le corresponde?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D08"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_con_correcciones",
+    "justificacion": "**Corregir pregunta.** PRO-OPE-012 v3 §3 documenta una presión sostenida por debajo de 1.100 psi durante 15 minutos, nivel Alta. La cifra es un umbral absoluto, no el tamaño de la caída; v2 declaraba 1.200 psi/30 minutos. Ver texto propuesto abajo."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "ajuste",
+  "oracle": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Caída sostenida por debajo de 1.100 psi durante 15 minutos; nivel Alta.",
+      "Los umbrales y ventanas de v3 reemplazan íntegramente los anteriores; no usar 1.200 psi/30 minutos de v2."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "§3.1 y fila Ayacucho–Coveñas"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3",
+        "localizador_pdf": "§3.1 y fila Ayacucho–Coveñas"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D07"
+    ],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/A02.json",
+    "sha256": "2a45cb43e9990a4ec7945c39bbb12a5dc7d019df3ac7c79d38a1797f97444211"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "Según PRO-OPE-012 v3, ¿por debajo de qué umbral y durante cuánto tiempo debe mantenerse la presión de Ayacucho–Coveñas para que se considere una anomalía? ¿Qué nivel de alarma le corresponde?",
+        "top_k": 5
+      }
+    }
+  ]
+}

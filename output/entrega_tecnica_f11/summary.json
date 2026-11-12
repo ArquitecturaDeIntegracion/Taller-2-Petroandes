@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:35:42.441030+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f11_package.py",
+    "--evidence-dir",
+    "evidence/f11/20261108",
+    "--output-dir",
+    "${PROJECT_ROOT}\\output\\entrega_tecnica_f11"
+  ],
+  "status": "passed",
+  "zip": "PetroAndes_Escenario_A_Entrega_Tecnica_F11.zip",
+  "sha256": "264a05a74a7c5537840d8da090a270916b97d01394fb2706083e5f7b9ffbb4e7",
+  "bytes": 8157103,
+  "archivos_verificados": 1971,
+  "archivos_en_manifiesto": 1958,
+  "copias_con_rutas_portables": 83,
+  "evidencia_incluida": "evidence/f11/20261108",
+  "evaluacion_academica_formal": "pendiente_revision_humana"
+}

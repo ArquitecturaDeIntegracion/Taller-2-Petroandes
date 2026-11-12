@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-f7-80bmq9nn/servers.json",
+    "--server",
+    "historico",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "obtener_fragmento",
+    "--tool-args-json",
+    "{\"doc_id\": \"RES-CREG-0043-2024\", \"version_documental\": null, \"section_id\": \"articulo-2\"}"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:06:08.700806+00:00",
+  "elapsed_seconds": 24.35820831899764,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

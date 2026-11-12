@@ -1,0 +1,37 @@
+{
+  "decision": {
+    "doc_id": "MAN-MTO-002",
+    "version_documental": "1",
+    "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+    "decision_id": "b9283956-c4d7-5a14-908d-76bc9c393c5a",
+    "perfil": "laboratorio",
+    "simulacion_academica": true,
+    "estado": "certificado",
+    "evidencia": [
+      "app:docs/revision/20261108-confirmada/autorizacion.md#sha256=e22a9c0ce5baa6630cfd3d77dabe57f4237d405b537a9e05f3fd0605956a0088",
+      "project:corpus/pdf/01_manuales/MAN-MTO-002_v1.pdf#sha256=16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f"
+    ],
+    "autoridad": "SIMULACIÓN ACADÉMICA: rol de Gerencia de Integridad y Mantenimiento",
+    "revisor_humano": "Jonnathan Caballero",
+    "revisado_en": "2026-11-08T22:34:26.021685-05:00",
+    "effective_from": "2026-11-08T22:34:26.021685-05:00",
+    "effective_to": "2026-12-01T00:00:00-05:00",
+    "intervalo_abierto_expreso": false,
+    "ambitos": [
+      {
+        "tipo": "general",
+        "identificador": "corpus_revision"
+      }
+    ],
+    "usos": [
+      "evidencia_historica"
+    ],
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "revision_gobierno": 14
+  },
+  "supuesto": "Confirmación individual por el rol del área competente Gerencia de Integridad y Mantenimiento, supuesto académico expresamente autorizado por Jonnathan Caballero. No identifica ni acredita una autoridad real de PetroAndes. Autenticidad verificada únicamente dentro de esta simulación académica. Lectura descriptiva del plan de mantenimiento, limitada a la simulación académica.",
+  "autenticidad": "verificada",
+  "contenido_no_confiable": true
+}

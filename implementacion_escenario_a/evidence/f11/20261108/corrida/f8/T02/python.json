@@ -1,0 +1,29 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:09:51.055613+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-uzc1h5_9/captura.json"
+  ],
+  "entrada": {
+    "doc_id": "FIC-ACT-P101",
+    "version_documental": "2",
+    "section_id": "2"
+  },
+  "resultado": {
+    "estado": "denegado",
+    "correlation_id": "3f9ee61c-d407-4529-b775-301d5719c2e7",
+    "generation_id": null,
+    "revision_gobierno": 13,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:16:43.648043+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f11_check.py",
+    "--output-dir",
+    "reports/portable/f11-final-dev-20261108-195433"
+  ],
+  "archivos_entrega": {
+    "archivos": 1698,
+    "partes": [
+      "archivos-001.jsonl",
+      "archivos-002.jsonl",
+      "archivos-003.jsonl",
+      "archivos-004.jsonl",
+      "archivos-005.jsonl",
+      "archivos-006.jsonl",
+      "archivos-007.jsonl",
+      "archivos-008.jsonl",
+      "archivos-009.jsonl",
+      "archivos-010.jsonl",
+      "archivos-011.jsonl"
+    ]
+  },
+  "dependencias": {
+    "python": 77,
+    "npm": 120,
+    "python_sin_declaracion": [
+      "petroandes-educativo"
+    ],
+    "npm_sin_declaracion": [],
+    "archivos": [
+      "licencias-python-001.jsonl",
+      "licencias-npm-001.jsonl"
+    ]
+  },
+  "evaluacion_formal": {
+    "ejecutada": false,
+    "casos_formales_ejecutados": 0,
+    "minimo_reserva": 15,
+    "casos_por_estado": {
+      "ajuste/pendiente_revision": 8,
+      "reserva/pendiente_revision": 16
+    },
+    "propuestas_congeladas": 0,
+    "sha256_manifiesto_propuestas": "62d259d5d6d288c35455c9a67b9fea8b7ed0e63093530d357506e972643d5ccb",
+    "archivos": [
+      "casos-academicos-001.jsonl"
+    ]
+  }
+}

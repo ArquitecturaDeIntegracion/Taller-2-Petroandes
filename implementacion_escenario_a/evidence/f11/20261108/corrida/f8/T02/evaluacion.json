@@ -1,0 +1,56 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:11:18.979916+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8"
+  ],
+  "caso": {
+    "id": "T02",
+    "contexto": "habitual",
+    "herramienta": "obtener_fragmento",
+    "entrada": {
+      "doc_id": "FIC-ACT-P101",
+      "version_documental": "2",
+      "section_id": "2"
+    },
+    "esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada"
+    },
+    "secciones": [],
+    "literales": []
+  },
+  "perfil": "laboratorio",
+  "contexto_servicio": {
+    "identidad": "servicio-educativo-local",
+    "grupos": [
+      "lectores-educativos"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "lectura-documental-educativa"
+    },
+    "uso": "recomendacion"
+  },
+  "instante_evaluacion": "2026-11-09T01:10:12.717917+00:00",
+  "estado_observado": "denegado",
+  "revision_gobierno": 13,
+  "generation_id": null,
+  "paridad_mcp": true,
+  "ms_mcp_desde_lanzamiento": 21623.745176999364,
+  "esperaba_abstencion": false,
+  "resultado_esperado": true,
+  "secciones_citadas_esperadas": true,
+  "literales_esperados": true,
+  "candidatos_elegibles": true,
+  "recall_at_5": null,
+  "anclaje": [],
+  "pertinencia": [],
+  "desviacion_detectada": false
+}

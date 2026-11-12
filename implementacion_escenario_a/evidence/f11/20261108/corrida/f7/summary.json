@@ -1,0 +1,36 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:08:47.451098+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f7_inspector.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f7"
+  ],
+  "status": "passed",
+  "inspector": "2.13.0",
+  "sdk_mcp": "1.30.0",
+  "node": "v22.23.4",
+  "transport": "stdio",
+  "protocol_era_inspector": "legacy",
+  "protocol_version_wire": "2025-11-25",
+  "server_info": {
+    "name": "PetroAndes",
+    "version": "0.1.0"
+  },
+  "tools": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "revision_gobierno": 13,
+  "reopened_qdrant_points": 58,
+  "python_parity": true,
+  "inspector_tool_error_exit_code": 5,
+  "clean_stdout": true,
+  "inspector_reconnected": true,
+  "scope": "ensayo histórico temporal y contexto habitual sobre una copia de catálogo"
+}

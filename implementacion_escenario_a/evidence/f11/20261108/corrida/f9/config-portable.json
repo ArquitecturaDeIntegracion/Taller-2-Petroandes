@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "historico": {
+      "command": "python",
+      "args": [
+        "${APP_ROOT}/tools/f9_observe.py",
+        "${TMPDIR}/petroandes-f9-nfphsh02/historico.json"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "auditoria": {
+      "command": "python",
+      "args": [
+        "${APP_ROOT}/tools/f9_observe.py",
+        "${TMPDIR}/petroandes-f9-nfphsh02/auditoria.json"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

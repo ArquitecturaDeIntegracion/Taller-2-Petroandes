@@ -1,0 +1,60 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:54:41.495047+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-final-dev-20261108-185328"
+  ],
+  "status": "passed",
+  "resultado": "publicacion_verificada",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "confirmado",
+      "segundos": 1.8428232860023854
+    }
+  ],
+  "publicacion": {
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "perfil": "laboratorio",
+    "governance_revision": 16,
+    "published_fragments": 52,
+    "eligible_documents": 11,
+    "reused": false,
+    "collection": "e5small_es_1_0_0_r16_e9c6ada9a29e_8ef86521"
+  },
+  "recibo": {
+    "collection": "e5small_es_1_0_0_r16_e9c6ada9a29e_8ef86521",
+    "key": {
+      "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+      "context": {
+        "ambito": {
+          "identificador": "corpus_revision",
+          "tipo": "general"
+        },
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "identidad": "ensayo-historico",
+        "uso": "evidencia_historica"
+      },
+      "dense_digest_version": "qdrant-local-reopened-1",
+      "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+      "lexical_version": "bm25-codes-es-1.0.0",
+      "perfil": "laboratorio",
+      "records_sha256": "8328a031e11f6dcffe68db7a3491a5b2167127435fa30a73cfedb471c7d04c6c",
+      "revision_gobierno": 16,
+      "stage": "8f9d387d-bdf2-55a1-9beb-c3c2541b2f62"
+    },
+    "manifest_sha256": "d0e9f5073e294d42898f7c3bf94f5e030ed6207d8abc9e86528a4422be8ed8fe"
+  },
+  "comparacion": null,
+  "vectores_reutilizados": 52,
+  "vectores_calculados": 0,
+  "eventos_confirmados": 1
+}

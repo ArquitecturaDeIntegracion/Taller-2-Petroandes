@@ -1,0 +1,83 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "R14",
+  "titulo": "Dato operativo ausente",
+  "pregunta": "¿Cuál fue el volumen oficial conciliado de Ayacucho–Coveñas en octubre de 2026?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D06"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar.** Los 19 PDF son documentos de referencia y no incluyen el balance oficial de octubre de 2026. PRO-MED-007 v2 §2 describe el método. Corresponde `fuera_del_corpus` sin inventar un volumen ni consultar sistemas externos."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "reserva",
+  "oracle": {
+    "estado": "abstencion",
+    "motivo_abstencion": "fuera_del_corpus",
+    "criterios_semanticos": [
+      "El corpus no contiene el balance oficial de ese período; no inventar un volumen ni calcularlo desde reglas documentales.",
+      "No consultar OT ni obtener balances externos; devolver abstención sin afirmaciones ni evidencia."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-MED-007_v2.pdf",
+        "doc_id": "PRO-MED-007",
+        "version_documental": "2",
+        "pdf_sha256": "9c4181b3fd5a4c8431e07369bfc7175d0f512d2152aeab382fb026c61494b253",
+        "pagina": 1,
+        "section_id": "2",
+        "localizador_pdf": "§2.2"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/R14.json",
+    "sha256": "f0cff516dce1d72d0c84420545bd84880a71b5d3d226e2b081eb3af7c1c526fb"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "¿Cuál fue el volumen oficial conciliado de Ayacucho–Coveñas en octubre de 2026?",
+        "top_k": 5
+      }
+    }
+  ]
+}

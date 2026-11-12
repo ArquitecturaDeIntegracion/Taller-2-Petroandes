@@ -1,0 +1,17 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-c",
+    "import sys; from pathlib import Path; from tempfile import TemporaryDirectory; sys.path.insert(0,'${APP_ROOT}/tools'); from f7_inspector_client import Inspector,server_entry; from f0_common import write_report; from f11_inventory import license_inventory; t=TemporaryDirectory(); dest=Path('${APP_ROOT}')/sys.argv[1]; dest.mkdir(parents=True,exist_ok=False); inspector=Inspector(Path(t.name),dest); inspector.configure({'baseline':server_entry(sys.executable,['-m','petroandes.mcp_server','--profile','baseline'])}); tools,_=inspector.run('list','baseline'); names={tool['name'] for tool in tools['tools']}; assert names=={'buscar_documentos','obtener_fragmento'}; invalid,_=inspector.run('invalid','baseline',tool='buscar_documentos',arguments={'consulta':'P-101','top_k':0},expected_exit=5); assert invalid['isError'] and invalid['content'][0]['text']=='parametros_invalidos'; write_report(dest/'summary.json',{'status':'passed','inspector':inspector.version,'herramientas':sorted(names),'error_esperado':'parametros_invalidos','licencias':license_inventory(dest)})",
+    "reports/portable/f11-lock-tools-20261108"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:08:06.479923+00:00",
+  "elapsed_seconds": 20.364670134993503,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

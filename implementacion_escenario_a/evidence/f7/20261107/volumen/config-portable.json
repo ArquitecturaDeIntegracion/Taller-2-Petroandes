@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "habitual": {
+      "command": "python",
+      "args": [
+        "-m",
+        "petroandes.mcp_server",
+        "--profile",
+        "laboratorio"
+      ],
+      "cwd": "${TMPDIR}/f7-cwd-k3cqaqkx",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+ PROVEEDOR DE VÁLVULAS (RAZÓN SOCIAL FICTICIA)
+ Boletín técnico del fabricante — actuadores de válvula serie VX
+
+  Código                   COM-PRV-0098                                  Versión                   —
+
+  Fecha de emisión         2024-12-03                                    Tipo                      Comunicación de proveedor
+  Área emisora             Gerencia de Integridad y                      Activo / alcance          Válvulas VL-AC-014, VL-AC-061
+                           Mantenimiento
+
+
+ Asunto
+ Recomendación de mantenimiento preventivo para actuadores serie VX instalados antes de 2019.
+
+ Antecedente
+ Se ha identificado desgaste prematuro del conjunto de sellos en actuadores de la serie VX fabricados antes de
+ 2019, cuando operan en ciclos de apertura parcial frecuentes.
+
+ Recomendación
+    Reducir a cuatro meses la periodicidad de lubricación de sellos en los actuadores afectados.
+    Registrar el par de operación en cada prueba funcional y comparar con la curva de referencia del equipo.
+    Sustituir el conjunto de sellos cuando el par supere en un quince por ciento el valor de referencia.
+
+ Alcance
+ Esta recomendación del fabricante no modifica los planes de mantenimiento del operador. Su incorporación
+ requiere la actualización del manual de mantenimiento aplicable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                     Página 1

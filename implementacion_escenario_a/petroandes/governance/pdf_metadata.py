@@ -1,6 +1,7 @@
 """Metadatos preliminares desde PDF; no es aún la partición estructural de F3."""
 import hashlib
 import re
+from io import BytesIO
 
 from pypdf import PdfReader
 from petroandes.contracts.documents import Document
@@ -20,7 +21,7 @@ def normalize(text):
 def read_document(path):
     path = relative_path(path.relative_to(PROJECT_ROOT).as_posix(), PROJECT_ROOT)
     data = path.read_bytes()
-    reader = PdfReader(path, strict=True)
+    reader = PdfReader(BytesIO(data), strict=True)
     pages = tuple(page.extract_text() or "" for page in reader.pages)
     match = HEADER.search(pages[0])
     if not match:

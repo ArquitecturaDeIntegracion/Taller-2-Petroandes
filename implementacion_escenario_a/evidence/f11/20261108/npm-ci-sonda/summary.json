@@ -1,0 +1,29 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:05:59.112341+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f0_mcp.py",
+    "--output-dir",
+    "reports/portable/f11-lock-mcp-20261108"
+  ],
+  "status": "passed",
+  "inspector_version": "2.13.0",
+  "node": "/usr/local/bin/node",
+  "sdk_protocol_era": "legacy",
+  "transport": "stdio",
+  "listed_tools": [
+    "comprobar_entorno"
+  ],
+  "call_result": {
+    "estado": "ok",
+    "fase": "F0",
+    "origen": "prueba_sintetica"
+  },
+  "list_seconds": 5.14794952601369,
+  "call_seconds": 3.057694276998518,
+  "scope": "F0 servidor mínimo; no acredita las dos herramientas finales de F7"
+}

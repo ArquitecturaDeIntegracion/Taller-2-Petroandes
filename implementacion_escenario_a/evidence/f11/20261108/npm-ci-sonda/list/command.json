@@ -1,0 +1,27 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${APP_ROOT}/.cache/inspector-state/f0.json",
+    "--server",
+    "f0",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/list"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:05:50.859540+00:00",
+  "elapsed_seconds": 5.14794952601369,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

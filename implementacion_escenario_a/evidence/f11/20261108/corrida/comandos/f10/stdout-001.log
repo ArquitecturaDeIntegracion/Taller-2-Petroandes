@@ -1,0 +1,58 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:23.809979+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "status": "passed",
+  "documentos_catalogo": 19,
+  "fragmentos_iniciales": 58,
+  "revision_inicial": 13,
+  "revision_final": 17,
+  "eventos_pendientes": 0,
+  "mediciones": {
+    "consulta_caliente": {
+      "n": 5,
+      "muestras_s": [
+        0.11414385300304275,
+        0.11992669300525449,
+        0.11643740799627267,
+        0.09972007299074903,
+        0.11599531599495094
+      ],
+      "p95_observado_s": 0.11992669300525449,
+      "objetivo_s": 3,
+      "dentro_del_objetivo_en_la_muestra": true
+    },
+    "revocacion": {
+      "n": 1,
+      "muestras_s": [
+        0.00487053299730178
+      ],
+      "p95_observado_s": 0.00487053299730178,
+      "objetivo_s": 60,
+      "dentro_del_objetivo_en_la_muestra": true
+    },
+    "aprobacion": {
+      "n": 1,
+      "muestras_s": [
+        2.8401243569969665
+      ],
+      "p95_observado_s": 2.8401243569969665,
+      "objetivo_s": 900,
+      "dentro_del_objetivo_en_la_muestra": true
+    }
+  },
+  "equipo": {
+    "plataforma": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "cpus_logicas": 14,
+    "ram_bytes": 8049582080
+  },
+  "alcance": "muestras técnicas en Docker, con reindexación del bundle E5 fijado"
+}

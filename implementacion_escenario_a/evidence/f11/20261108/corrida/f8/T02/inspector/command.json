@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-f8-ddmj1ks0/servers.json",
+    "--server",
+    "habitual",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "obtener_fragmento",
+    "--tool-args-json",
+    "{\"doc_id\": \"FIC-ACT-P101\", \"version_documental\": \"2\", \"section_id\": \"2\"}"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:09:51.103865+00:00",
+  "elapsed_seconds": 21.605122480992577,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

@@ -39,5 +39,11 @@ class Registry:
             raise IndexUnavailable("No hay generación activa")
         return json.loads(row[0])
 
+    def registered(self, generation):
+        row = self.db.execute("SELECT receipt FROM generations WHERE id=?", (generation,)).fetchone()
+        if not row:
+            raise IndexUnavailable("Generación no registrada")
+        return json.loads(row[0])
+
     def close(self):
         self.db.close()

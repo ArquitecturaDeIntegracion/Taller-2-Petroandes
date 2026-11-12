@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:01:19.152355+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f11_check.py",
+    "--output-dir",
+    "reports/portable/f11-final-dev-20261108-195433"
+  ],
+  "revision": 1,
+  "clasificacion": {
+    "pendiente": 15,
+    "excluido": 4,
+    "certificado": 0
+  },
+  "fragmentos_extraidos": 92,
+  "fragmentos_publicados": 0,
+  "eventos_pendientes": 0,
+  "consulta": "abstencion",
+  "directa_excluida": "denegado"
+}

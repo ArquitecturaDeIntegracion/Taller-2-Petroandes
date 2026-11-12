@@ -1,0 +1,31 @@
+{
+  "case_id": "R05",
+  "perfil": "laboratorio",
+  "reloj_simulado": "2026-11-15T12:00:00-05:00",
+  "catalogo": "catalog.sqlite3",
+  "contextos": {
+    "principal": {
+      "config": {
+        "identidad": "lector_laboratorio_propuesto",
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "ambito": {
+          "tipo": "general",
+          "identificador": "corpus_revision"
+        },
+        "uso": "evidencia_historica"
+      },
+      "ruta_indice_relativa": "index/principal"
+    }
+  },
+  "autorizaciones": {
+    "D16": {
+      "id": "188a4caf-c698-5bc5-9bb7-1bcdb3ece9c7",
+      "revision_fuente": 10,
+      "revision_local": 2,
+      "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f"
+    }
+  },
+  "preparacion_adicional": {}
+}

@@ -1,0 +1,66 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:10:36.321365+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-uzc1h5_9/captura.json"
+  ],
+  "entrada": {
+    "consulta": "Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.",
+    "top_k": 5,
+    "filtros": {
+      "tipo": "resolucion"
+    }
+  },
+  "resultado": {
+    "estado": "respondida",
+    "correlation_id": "2e3f4acb-bdd4-43d0-9cb5-0049b655187a",
+    "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+    "revision_gobierno": 13,
+    "afirmaciones": [
+      {
+        "texto": "La incertidumbre combinada del sistema de medición en los puntos de transferencia de custodia no excederá del cero coma tres por ciento (0,3 %).",
+        "citas": [
+          {
+            "doc_id": "RES-CREG-0043-2024",
+            "version_documental": null,
+            "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+            "section_id": "articulo-2",
+            "pagina_inicio": 1,
+            "pagina_fin": 1
+          }
+        ]
+      }
+    ],
+    "evidencia": [
+      {
+        "doc_id": "RES-CREG-0043-2024",
+        "version_documental": null,
+        "pdf_sha256": "a54580fe71140308c982f5042e250d42fbfd5436fdf4b669e7474f5731ff7a93",
+        "chunk_id": "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+        "section_id": "articulo-2",
+        "titulo_seccion": "Artículo 2. Incertidumbre máxima admisible",
+        "pagina_inicio": 1,
+        "pagina_fin": 1,
+        "parte": 1,
+        "orden": 1,
+        "parent_id": "9492be91-f3b8-5fbc-9513-312f032234a5",
+        "texto": "La incertidumbre combinada del sistema de medición en los puntos de transferencia de custodia no excederá del cero coma tres por ciento (0,3 %).",
+        "parser_version": "pypdf-layout-es-1.0.1",
+        "particion": "structural-es-1.0.0",
+        "bundle": "e5small-es-1.0.0",
+        "tokens_entrada": 96,
+        "contenido_no_confiable": true
+      }
+    ],
+    "motivo_abstencion": null,
+    "error": null
+  }
+}

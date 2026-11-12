@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "-m",
+    "petroandes.extract",
+    "--profile",
+    "baseline",
+    "--output-dir",
+    "${TMPDIR}/petroandes-entrega-zm4jaj19/staging"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:36:37.211424+00:00",
+  "elapsed_seconds": 18.849661709013162,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

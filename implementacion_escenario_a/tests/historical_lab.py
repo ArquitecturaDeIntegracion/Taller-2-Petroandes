@@ -16,7 +16,7 @@ from petroandes.retrieve import Retriever
 
 
 @contextmanager
-def historical_lab(tmp_path, monkeypatch):
+def historical_workspace(tmp_path, monkeypatch):
     registration = APP_ROOT / "evidence/lab/20261103/registration"
     request = json.loads((APP_ROOT / "config/admin/lab-20261103/request/request.json").read_text(encoding="utf-8"))
     receipt = json.loads((registration / "summary.json").read_text(encoding="utf-8"))
@@ -33,15 +33,20 @@ def historical_lab(tmp_path, monkeypatch):
     context = ServiceContext(identidad="ensayo-historico", grupos=frozenset(request["grupos"]),
                              ambito=request["ambito"], uso="evidencia_historica")
     root = tmp_path / "index"
-    fragments = {row["fragment"]["chunk_id"]: row["fragment"] for row in source.records}
     with Catalog.open(catalog_path, "laboratorio") as catalog:
         policy = EligibilityService(catalog, context, clock=lambda: reviewed_at)
-        with Publisher(root, policy, encoder) as publisher:
+        yield Retriever(root, policy, encoder), source
+
+
+@contextmanager
+def historical_lab(tmp_path, monkeypatch):
+    with historical_workspace(tmp_path, monkeypatch) as (service, source):
+        with Publisher(service.root, service.policy, service.encoder) as publisher:
             publication = publisher.publish(source)
         assert publication["eligible_documents"] == 12 and publication["governance_revision"] == 13
-        with Publisher(root, policy, encoder) as publisher:
+        with Publisher(service.root, service.policy, service.encoder) as publisher:
             manifest, _ = publisher.active()
         assert len(manifest.fragmentos) == publication["published_fragments"] == 58
-        print(json.dumps({"ensayo": "corpus_revision_historica", "reloj_prueba": reviewed_at.isoformat(),
-                          "preparados": prepared["preparados"], **publication}))
-        yield Retriever(root, policy, encoder), fragments
+        print(json.dumps({"ensayo": "corpus_revision_historica", "reloj_prueba": service.policy.clock().isoformat(),
+                          "preparados": source.manifest["preparados"], **publication}))
+        yield service, {row["fragment"]["chunk_id"]: row["fragment"] for row in source.records}

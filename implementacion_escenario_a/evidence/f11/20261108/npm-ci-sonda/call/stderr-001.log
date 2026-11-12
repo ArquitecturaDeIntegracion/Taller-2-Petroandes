@@ -1,0 +1,4 @@
+[mcp-inspector] Secrets are not written anywhere and are lost on exit.
+[mcp-inspector] How the secret store is chosen, and how to secure it: https://github.com/modelcontextprotocol/inspector/blob/main/docs/secret-storage.md
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest

@@ -1,0 +1,17 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:13:27.274426+00:00",
+  "elapsed_seconds": 58.50754478300223,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "historico": {
+      "command": "python",
+      "args": [
+        "${APP_ROOT}/tests/f7_stdio_fixture.py",
+        "${TMPDIR}/petroandes-f7-mwq3yz36/historico.json"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "sin_indice": {
+      "command": "python",
+      "args": [
+        "${APP_ROOT}/tests/f7_stdio_fixture.py",
+        "${TMPDIR}/petroandes-f7-mwq3yz36/sin_indice.json"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "habitual": {
+      "command": "python",
+      "args": [
+        "-m",
+        "petroandes.mcp_server",
+        "--profile",
+        "laboratorio"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PETROANDES_ARTIFACTS_DIR": "${TMPDIR}/petroandes-f7-mwq3yz36/despliegue",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "sin_catalogo": {
+      "command": "python",
+      "args": [
+        "-m",
+        "petroandes.mcp_server",
+        "--profile",
+        "laboratorio"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PETROANDES_ARTIFACTS_DIR": "${TMPDIR}/petroandes-f7-mwq3yz36/sin-catalogo",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

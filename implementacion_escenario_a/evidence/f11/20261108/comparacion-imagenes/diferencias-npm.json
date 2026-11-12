@@ -1,0 +1,26 @@
+[
+  {
+    "path": "node_modules/@napi-rs/keyring-linux-x64-musl",
+    "nombre": "@napi-rs/keyring-linux-x64-musl",
+    "version": "2.1.2",
+    "licencia_declarada": "MIT",
+    "optional": true,
+    "SideIndicator": "=>"
+  },
+  {
+    "path": "node_modules/@rolldown/binding-linux-x64-musl",
+    "nombre": "@rolldown/binding-linux-x64-musl",
+    "version": "1.2.16",
+    "licencia_declarada": "MIT",
+    "optional": true,
+    "SideIndicator": "=>"
+  },
+  {
+    "path": "node_modules/lightningcss-linux-x64-musl",
+    "nombre": "lightningcss-linux-x64-musl",
+    "version": "1.33.0",
+    "licencia_declarada": "MPL-2.0",
+    "optional": true,
+    "SideIndicator": "=>"
+  }
+]

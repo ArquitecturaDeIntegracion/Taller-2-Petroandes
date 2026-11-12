@@ -22,6 +22,9 @@ class DenseOwner:
                                                                               distance=models.Distance.COSINE))
         return name
 
+    def delete(self, collection):
+        self.client.delete_collection(collection)
+
     def upsert(self, collection, records, vectors, generation, revision, fingerprint):
         vectors = validate_vectors(vectors, len(records))
         for offset in range(0, len(records), 16):

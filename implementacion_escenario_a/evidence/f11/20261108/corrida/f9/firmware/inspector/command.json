@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-f9-nfphsh02/servers.json",
+    "--server",
+    "historico",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "buscar_documentos",
+    "--tool-args-json",
+    "{\"consulta\": \"Identifique el firmware anunciado por COM-PRV-0134 y las condiciones de aplicación.\", \"top_k\": 10, \"filtros\": {\"tipo\": \"comunicacion\", \"activo\": null, \"tramo\": null}}"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:13:00.534602+00:00",
+  "elapsed_seconds": 23.39625633499236,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

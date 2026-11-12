@@ -1,0 +1,24 @@
+{
+  "request_id": "LAB-CABALLERO-20261108-MANUALES",
+  "perfil": "laboratorio",
+  "simulacion_academica": true,
+  "revisor_humano": "Jonnathan Caballero",
+  "autorizacion": {
+    "base": "app",
+    "path": "docs/revision/20261108-confirmada/autorizacion.md",
+    "sha256": "e22a9c0ce5baa6630cfd3d77dabe57f4237d405b537a9e05f3fd0605956a0088"
+  },
+  "ambito": {
+    "tipo": "general",
+    "identificador": "corpus_revision"
+  },
+  "grupos": [
+    "LAB_REVISION"
+  ],
+  "effective_to": "2026-12-01T00:00:00-05:00",
+  "expected_revision": 13,
+  "document_files": [
+    "01.json",
+    "02.json"
+  ]
+}

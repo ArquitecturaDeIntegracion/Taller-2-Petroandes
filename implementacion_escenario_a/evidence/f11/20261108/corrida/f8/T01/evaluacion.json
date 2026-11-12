@@ -1,0 +1,55 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:11:18.911482+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8"
+  ],
+  "caso": {
+    "id": "T01",
+    "contexto": "habitual",
+    "herramienta": "buscar_documentos",
+    "entrada": {
+      "consulta": "Presión de descarga documentada de P-101.",
+      "top_k": 5
+    },
+    "esperado": {
+      "estado": "abstencion",
+      "motivo_abstencion": "sin_evidencia_autorizada"
+    },
+    "secciones": [],
+    "literales": []
+  },
+  "perfil": "laboratorio",
+  "contexto_servicio": {
+    "identidad": "servicio-educativo-local",
+    "grupos": [
+      "lectores-educativos"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "lectura-documental-educativa"
+    },
+    "uso": "recomendacion"
+  },
+  "instante_evaluacion": "2026-11-09T01:09:51.036869+00:00",
+  "estado_observado": "abstencion",
+  "revision_gobierno": 13,
+  "generation_id": null,
+  "paridad_mcp": true,
+  "ms_mcp_desde_lanzamiento": 17447.902589992736,
+  "esperaba_abstencion": true,
+  "resultado_esperado": true,
+  "secciones_citadas_esperadas": true,
+  "literales_esperados": true,
+  "candidatos_elegibles": true,
+  "recall_at_5": null,
+  "anclaje": [],
+  "pertinencia": [],
+  "desviacion_detectada": false
+}

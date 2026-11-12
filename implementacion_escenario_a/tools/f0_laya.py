@@ -29,6 +29,10 @@ CASES = [
 ]
 
 
+class LayaPairTooLong(ValueError):
+    pass
+
+
 def check_pair(agent, state, question):
     from laya.common import build_sequence
 
@@ -37,22 +41,27 @@ def check_pair(agent, state, question):
     seq, _, stats = build_sequence(agent.tok, state, internal, max_len=1024,
         head_max_len=256, return_truncation_stats=True)
     if stats["truncated"]:
-        raise ValueError("El par pregunta/evidencia de laya excede 1024 tokens")
+        raise LayaPairTooLong("El par pregunta/evidencia de laya excede 1024 tokens")
     return len(seq), stats
+
+
+def model_snapshot(offline):
+    from huggingface_hub import snapshot_download
+
+    return snapshot_download(MODEL, revision=REVISION, local_files_only=offline,
+        local_dir=MODELS_DIR / f"laya-{REVISION}",
+        allow_patterns=["rl_agent_config.json", "model.safetensors", "encoder/*.json",
+                        "tokenizer/*"])
 
 
 def probe(offline, output):
     import laya
     import torch
-    from huggingface_hub import snapshot_download
 
     torch.set_num_threads(2)
     start_memory = memory()
     start = perf_counter()
-    snapshot = snapshot_download(MODEL, revision=REVISION, local_files_only=offline,
-        local_dir=MODELS_DIR / f"laya-{REVISION}",
-        allow_patterns=["rl_agent_config.json", "model.safetensors", "encoder/*.json",
-                        "tokenizer/*"])
+    snapshot = model_snapshot(offline)
     download_seconds = perf_counter() - start
     original_hashes = hashes(snapshot)
     start = perf_counter()

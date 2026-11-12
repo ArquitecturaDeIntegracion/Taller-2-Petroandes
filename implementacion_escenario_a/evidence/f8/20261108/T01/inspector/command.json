@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-f8-g0_rw822/servers.json",
+    "--server",
+    "habitual",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "buscar_documentos",
+    "--tool-args-json",
+    "{\"consulta\": \"Presión de descarga documentada de P-101.\", \"top_k\": 5}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-08T18:30:30.699355+00:00",
+  "elapsed_seconds": 24.668914130001212,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

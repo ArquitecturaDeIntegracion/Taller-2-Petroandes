@@ -1,0 +1,67 @@
+ ANDESTRANSPORTE S.A.S.
+ Acta del Comité Técnico Operativo — sesión de julio de 2025
+
+  Código                    ACTA-CTO-2025-07                              Versión                   —
+
+  Fecha de emisión          2025-07-24                                    Tipo                      Acta de comité
+  Área emisora              Comité Técnico Operativo                      Activo / alcance          Sistema de transporte
+
+
+ 1. Asistentes
+ Jefatura de Operaciones, Gerencia de Medición, Gerencia de Seguridad Física, Gerencia de Integridad y Jefatura
+ del Centro de Control.
+
+ 2. Orden del día
+    Revisión de los eventos de sustracción del primer semestre.
+    Propuesta de ajuste de los umbrales de alarma de presión.
+    Varios.
+
+ 3. Desarrollo
+ 3.1 La Gerencia de Seguridad Física presenta el consolidado de eventos del primer semestre y señala que, en la
+ mayoría de los casos documentados, la caída de presión asociada a la conexión ilícita se mantuvo por encima del
+ umbral entonces vigente, por lo que no generó alarma.
+
+ 3.2 La Jefatura del Centro de Control propone reducir el umbral del tramo Ayacucho – Coveñas de 1.200 a 1.100
+ psi y acortar la ventana de evaluación de 30 a 15 minutos, con ajustes equivalentes en los demás tramos.
+
+ 3.3 La Gerencia de Integridad advierte que el cambio incrementará el número de alarmas y solicita que se
+ acompañe de la correlación con el balance del tramo para reducir falsos positivos.
+
+ 4. Decisiones
+ 4.1 El Comité aprueba la propuesta del numeral 3.2 e instruye a la Jefatura del Centro de Control para que tramite
+ la actualización del procedimiento PRO-OPE-012.
+
+ 4.2 Se deja constancia de que los nuevos valores no son exigibles hasta la emisión y publicación de la versión
+ actualizada del procedimiento. Hasta entonces rige la versión en vigor.
+
+ 5. Compromisos
+
+  Compromiso                                     Responsable                                    Fecha
+
+  Emitir la versión actualizada de               Jefatura del Centro de Control                 2025-09-30
+  PRO-OPE-012
+
+  Ajustar la configuración del sistema de        Automatización                                 Posterior a la emisión
+  alarmas
+
+  Socializar el cambio con supervisores          Jefatura de Operaciones                        2025-10-15
+  de turno
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Documento sintético de uso académico — ARTI 4212, Universidad de los Andes. Empresas y entidades ficticias; sin validez operativa ni regulatoria.
+                                                                                                                                       Página 1

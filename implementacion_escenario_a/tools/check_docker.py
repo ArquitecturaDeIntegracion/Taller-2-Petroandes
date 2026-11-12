@@ -14,7 +14,8 @@ import json
 import shutil
 from pathlib import Path
 from f0_common import hashes
-source, destination = Path('/seed/models'), Path('.cache/models')
+from project_paths import MODELS_DIR as destination
+source = Path('/seed/models')
 destination.mkdir(parents=True, exist_ok=True)
 copied = []
 for model in source.iterdir():
@@ -66,11 +67,11 @@ def main():
         run("preflight", container + ["tools/preflight.py"])
         run("validate-agent", container + ["tools/validate_agent.py"])
         run("tests", container + ["-m", "pytest", "-q", "-p", "no:cacheprovider",
-                                "--basetemp", "artifacts/pytest-docker-validation"])
+                                "--basetemp", "/tmp/pytest-docker-validation"])
         dev = compose + ["--profile", "dev", "run", "--rm", "--no-deps", "dev"]
         run("dev-preflight", dev + ["tools/preflight.py"])
         run("dev-tests", dev + ["-m", "pytest", "-q", "-p", "no:cacheprovider",
-                               "--basetemp", "artifacts/pytest-dev-validation"])
+                               "--basetemp", "/tmp/pytest-dev-validation"])
         run("storage", container + ["tools/f0.py", "storage", "--output",
                                     f"{args.output_dir}/storage.json"])
         run("corpus", container + ["tools/f0_corpus.py", "--output",

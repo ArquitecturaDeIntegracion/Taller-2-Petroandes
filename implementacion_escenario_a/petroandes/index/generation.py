@@ -17,7 +17,7 @@ def identity(generation, profile, revision, fingerprint):
             "bundle_fingerprint": fingerprint}
 
 
-def prepare(root, owner, encoder, records, parents, key, inputs):
+def prepare(root, owner, encoder, records, parents, key, inputs, *, encode=None):
     generation = key["generation_id"]
     folder = root / "generations" / generation
     if folder.exists():
@@ -27,8 +27,21 @@ def prepare(root, owner, encoder, records, parents, key, inputs):
         verify(folder, receipt, owner, encoder.fingerprint)
         return receipt, True
     folder.parent.mkdir(parents=True, exist_ok=True)
+    vectors = (encode or encoder.encode_passages)(inputs)
     collection = owner.create(generation, key["revision_gobierno"])
-    vectors = encoder.encode_passages(inputs)
+    try:
+        return persist(folder, owner, encoder, records, parents, key, vectors, collection), False
+    except BaseException as error:
+        if not folder.exists():
+            try:
+                owner.delete(collection)
+            except Exception as cleanup_error:
+                error.add_note(f"No se pudo retirar la colección parcial: {cleanup_error}")
+        raise
+
+
+def persist(folder, owner, encoder, records, parents, key, vectors, collection):
+    generation = key["generation_id"]
     owner.upsert(collection, records, vectors, generation, key["revision_gobierno"], encoder.fingerprint)
     if records:
         # Qdrant local normaliza al insertar, pero al reabrir carga el vector persistido.
@@ -51,7 +64,7 @@ def prepare(root, owner, encoder, records, parents, key, inputs):
         write_json(temporary / "receipt.json", receipt)
         verify(temporary, receipt, owner, encoder.fingerprint)
         os.rename(temporary, folder)
-    return receipt, False
+    return receipt
 
 
 def verify(folder, receipt, owner, fingerprint):

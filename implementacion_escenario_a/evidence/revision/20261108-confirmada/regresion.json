@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "entorno": "Docker Compose, perfil dev",
+  "comando": "docker compose --profile dev run --rm -T dev -m pytest -q -p no:cacheprovider tests/test_f2_catalog.py tests/test_f2_governance.py tests/test_f10_substitution.py",
+  "resultado_observado": "30 passed in 12.94s",
+  "casos_academicos_ejecutados": 0
+}

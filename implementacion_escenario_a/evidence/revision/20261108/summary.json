@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "alcance": "Integridad y procedencia, sin ejecutar casos",
+  "fichas_originales_verificadas": 43,
+  "casos_con_fuentes_verificadas": 24,
+  "manuales_verificados": 3,
+  "referencias_comprobadas": 78,
+  "casos_pendientes_de_revision_humana": 24,
+  "casos_ejecutados_en_este_ensayo": 0,
+  "catalogos_modificados": false,
+  "gobierno_archivado": {
+    "perfil": "laboratorio",
+    "revision": 13,
+    "copia_sha256": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+    "certificados": 12,
+    "manuales_sin_certificado": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "dependencias_faltantes": {
+      "A05": [
+        "D02"
+      ],
+      "A07": [
+        "D01"
+      ]
+    },
+    "usos_com_prv_0134": [
+      "recomendacion",
+      "evidencia_historica",
+      "inspeccion_no_confiable"
+    ]
+  }
+}

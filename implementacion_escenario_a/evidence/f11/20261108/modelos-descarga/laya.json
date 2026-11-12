@@ -1,0 +1,87 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T00:51:15.980220+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f0.py",
+    "laya",
+    "--output",
+    "reports/portable/f11-modelos-20261108/laya.json"
+  ],
+  "status": "passed",
+  "snapshot_ref": {
+    "base": "models",
+    "path": "laya-e4e9ddf21a7b1903b7acffd8814ad4307bf63a67"
+  },
+  "model": "convaiinnovations/laya-multilingual",
+  "revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+  "device": "cpu",
+  "backend": "eager",
+  "threads": 2,
+  "download_or_cache_resolution_seconds": 65.61728281900287,
+  "load_seconds": 17.64033752400428,
+  "observations": [
+    {
+      "id": "noul_positive",
+      "evidence": "laya-noul_positive.json",
+      "inference_seconds": 0.4282721289928304,
+      "matches_synthetic_expectation": true
+    },
+    {
+      "id": "noul_negative",
+      "evidence": "laya-noul_negative.json",
+      "inference_seconds": 0.21274834100040607,
+      "matches_synthetic_expectation": true
+    },
+    {
+      "id": "choice_positive",
+      "evidence": "laya-choice_positive.json",
+      "inference_seconds": 0.22006056699319743,
+      "matches_synthetic_expectation": true
+    },
+    {
+      "id": "choice_negative",
+      "evidence": "laya-choice_negative.json",
+      "inference_seconds": 0.30256574500526767,
+      "matches_synthetic_expectation": true
+    }
+  ],
+  "synthetic_disagreements": [],
+  "diagnostic_noul_threshold": 0.5,
+  "calibrated_threshold": null,
+  "overlong_pair_rejected_before_inference": true,
+  "memory_before": {
+    "process_rss_bytes": 233046016,
+    "process_peak_wset_bytes": null,
+    "system_total_bytes": 8049582080,
+    "system_available_bytes": 2792710144
+  },
+  "memory_after": {
+    "process_rss_bytes": 1893183488,
+    "process_peak_wset_bytes": null,
+    "system_total_bytes": 8049582080,
+    "system_available_bytes": 1199968256
+  },
+  "before_load_sha256": {
+    "encoder/config.json": "83f6916d13ef0f556ac461f28308dc2bffa7ebeadee8ec9e2db5812020ea5bb4",
+    "model.safetensors": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "rl_agent_config.json": "25061739243b617ad88d1219ba6f8a9c86c5881ca28df024fa2d9b3b2fcc30c6",
+    "tokenizer/tokenizer.json": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+    "tokenizer/tokenizer_config.json": "424b69444bf7b5809dc2cd2e36d0bd71b8055124dd24274d6db3c655d38205e7"
+  },
+  "effective_sha256": {
+    "encoder/config.json": "83f6916d13ef0f556ac461f28308dc2bffa7ebeadee8ec9e2db5812020ea5bb4",
+    "model.safetensors": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "rl_agent_config.json": "25061739243b617ad88d1219ba6f8a9c86c5881ca28df024fa2d9b3b2fcc30c6",
+    "tokenizer/tokenizer.json": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+    "tokenizer/tokenizer_config.json": "6c6b2d8e3c84ce0e671c129cd6b374b235d6f9863042a5836358d00a89bbb5a1"
+  },
+  "scope": "Compatibilidad sintética; no son los 15 casos ni calibración académica",
+  "probe": "laya",
+  "offline_requested": false,
+  "total_seconds": 89.38775002899638,
+  "phase_F0_complete": false
+}

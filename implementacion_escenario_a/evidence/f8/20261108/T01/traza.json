@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T18:30:30.668837+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f8-tecnico-20261108-132941",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-yy857rau/captura.json"
+  ],
+  "correlation_id": "7ee59efe-a253-4e47-be48-4193366cf817",
+  "generation_id": null,
+  "revision_gobierno": 13,
+  "operacion": "responder",
+  "tiempos_ms": {
+    "gobierno": 3.527680004481226,
+    "revalidacion": 2.1195809968048707,
+    "total": 6.6686689970083535
+  }
+}

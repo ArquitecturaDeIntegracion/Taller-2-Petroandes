@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:53:26.953057+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10.py",
+    "--output-dir",
+    "reports/portable/f10-operacion-20261108-184950/replay-sin-stage",
+    "propagar",
+    "--evento",
+    "1"
+  ],
+  "operacion": "propagar",
+  "perfil": "laboratorio",
+  "status": "passed",
+  "resultado": "evento_ya_confirmado",
+  "revision_evento": 1,
+  "revision_gobierno": 1,
+  "intentos": [],
+  "eventos_confirmados": 0,
+  "archivos_eventos": []
+}

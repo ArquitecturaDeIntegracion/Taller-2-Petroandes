@@ -3,8 +3,11 @@
 Python, Qdrant y módulos pequeños para la parte 3.2 de ARTI 4212.
 F0 se comprobó en Windows y Docker; F1 tiene contratos iniciales, F2 tiene catálogos
 y gobierno; F3 prepara PDF, F4 publica índices, F5 recupera evidencia gobernada
-y F6 compone extractos con citas. Consulta el [estado](docs/estado.md) y la
-[guía de validación en Docker dev](docs/validacion-dev-hasta-f6.md).
+y F6 compone extractos con citas. F7 expone dos herramientas MCP de lectura.
+Consulta el [estado](docs/estado.md) y la [guía integral de validación F11 en Docker dev](docs/validacion-dev-f11.md).
+Los [resultados y pendientes](docs/f11-resultados.md) separan las mediciones de la revisión académica.
+Guías por tema: [evaluación](docs/validacion-dev-f8.md), [ataque](docs/validacion-dev-f9.md) y [actualización](docs/f10-operacion.md).
+Si abriste el ZIP, empieza por la [guía de entrega técnica](docs/entrega-tecnica.md).
 Laboratorio: [doce certificaciones simuladas registradas](docs/certificacion-laboratorio-20261103.md).
 
 ## Qué copiar o subir al repositorio
@@ -121,7 +124,7 @@ Hay una comprobación automatizada del adaptador y de un breakpoint real:
 python tools/debug_smoke.py --output reports/portable/debug-local.json
 ```
 
-Estos perfiles ejecutan herramientas existentes; no hay aún una API final que iniciar.
+Estos perfiles depuran las herramientas locales. Para consultas en un cliente, usa el [servidor MCP](docs/f7-mcp.md).
 
 ## Docker y depuración en contenedor
 

@@ -1,0 +1,41 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T00:51:14.264509+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f0.py",
+    "laya",
+    "--output",
+    "reports/portable/f11-modelos-20261108/laya.json"
+  ],
+  "synthetic_case": {
+    "id": "noul_negative",
+    "state": "El informe de prueba registra el color azul.",
+    "question": {
+      "type": "noul",
+      "instructions": "¿La evidencia afirma que el color registrado es rojo?"
+    },
+    "expected": false
+  },
+  "sequence_tokens": 46,
+  "truncation": {
+    "state_tokens": 9,
+    "state_tokens_used": 9,
+    "state_tokens_dropped": 0,
+    "truncated": false
+  },
+  "inference_seconds": 0.21274834100040607,
+  "answer": {
+    "type": "noul",
+    "noul": 0.008,
+    "confidence": 0.992,
+    "answer_confidence": 0.992,
+    "action": {
+      "act_probability": 1.0
+    }
+  },
+  "matches_synthetic_expectation": true
+}

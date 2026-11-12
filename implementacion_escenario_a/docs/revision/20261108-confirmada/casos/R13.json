@@ -1,0 +1,147 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "R13",
+  "titulo": "Secuencia de arranque con condiciones",
+  "pregunta": "Según PRO-OPE-021 v1, ¿qué requiere un arranque tras más de 72 horas de parada y qué ocurre si falla un criterio?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D09"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_con_correcciones",
+    "justificacion": "**Precisar esperado.** PRO-OPE-021 v1 §§1–4 confirma parada superior a 72 h, condiciones previas, cinco pasos y aborto ante desviación. Exigir criterios exactos de presión de aceite y caudal, además de las dos duraciones."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "reserva",
+  "oracle": {
+    "estado": "respondida",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Aplica tras parada superior a 72 horas. Autorización del Centro de Control registrada en el libro de novedades, sin permisos de trabajo activos, verificar niveles de aceite y temperatura de cojinetes, succión presurizada y válvula de descarga en posición de arranque.",
+      "Succión gradual y presión estable 10 minutos, presión de aceite en rango, motor en vacío con vibración bajo alarma, apertura progresiva con aumento de caudal sin golpe de ariete, presión y caudal estables 30 minutos.",
+      "Ante cualquier desviación detener y reportar al Centro de Control antes de reintentar."
+    ],
+    "evidencia_a_recuperar_y_citar": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "1"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "2"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "3"
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-021_v1.pdf",
+        "doc_id": "PRO-OPE-021",
+        "version_documental": "1",
+        "pdf_sha256": "fa0a3b7947e881fea70de7142a3cb87f3d97cc9143782aeb1fc1441880cfb891",
+        "pagina": 1,
+        "section_id": "4"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": null,
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": true,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/R13.json",
+    "sha256": "ad27e995f08edd383ec90628b543135892e3e5d74f58f58b7567abe0365cdb8a"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "Según PRO-OPE-021 v1, ¿qué requiere un arranque tras más de 72 horas de parada y qué ocurre si falla un criterio?",
+        "top_k": 5
+      }
+    }
+  ]
+}

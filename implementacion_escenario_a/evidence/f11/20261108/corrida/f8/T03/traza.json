@@ -1,0 +1,73 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:10:13.081848+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-uzc1h5_9/captura.json"
+  ],
+  "correlation_id": "c9432d12-6742-4c15-8ea0-82ba84950c00",
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "revision_gobierno": 13,
+  "operacion": "responder",
+  "tiempos_ms": {
+    "gobierno": 1.1032670008717105,
+    "generacion": 266.5621240012115,
+    "catalogo_publicado": 12.236000009579584,
+    "exacta": 0.11915300274267793,
+    "embedding": 40.79415999876801,
+    "densa": 7.590403998619877,
+    "lexica": 1.1920559918507934,
+    "fusion": 0.1197929959744215,
+    "composicion": 2.3968049936229363,
+    "revalidacion": 1.3398709998000413,
+    "total": 334.42751299298834
+  },
+  "top_k": 5,
+  "profundidad_rama": 10,
+  "rrf_k": 60,
+  "fusion": "rrf",
+  "tokenizacion": "bm25-codes-es-1.0.0",
+  "codigos": "codes-es-1.0.0",
+  "desempate": "coincidencia_exacta_y_chunk_id",
+  "modo": "texto",
+  "prefiltro_fragmentos": 4,
+  "candidatos": {
+    "densa": [
+      "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "cdada850-4eeb-5090-b792-5bb1d4df471f",
+      "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c",
+      "13968c26-494d-5313-9c14-1950fc902b52"
+    ],
+    "lexica": [
+      "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "cdada850-4eeb-5090-b792-5bb1d4df471f",
+      "13968c26-494d-5313-9c14-1950fc902b52",
+      "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c"
+    ],
+    "exacta": [
+      "13968c26-494d-5313-9c14-1950fc902b52",
+      "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c",
+      "cdada850-4eeb-5090-b792-5bb1d4df471f"
+    ]
+  },
+  "seleccionados": [
+    "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+    "cdada850-4eeb-5090-b792-5bb1d4df471f",
+    "13968c26-494d-5313-9c14-1950fc902b52",
+    "6cdeae48-b1a2-5f43-b9b2-9c8f5cdcc82c"
+  ],
+  "compositor": "extractiva-es-1.0.0",
+  "uso": "evidencia_historica",
+  "criterio": "presion_activo",
+  "unidades": [
+    "5c707f27-d5b8-5020-94ea-22d886a09bb2"
+  ]
+}

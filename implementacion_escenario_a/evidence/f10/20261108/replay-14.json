@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:48:55.603920+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-docker-dev-20261108-184812"
+  ],
+  "status": "passed",
+  "resultado": "evento_ya_confirmado",
+  "revision_evento": 14,
+  "revision_gobierno": 14,
+  "intentos": [],
+  "eventos_confirmados": 0
+}

@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:37:16.748069+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10.py",
+    "--profile",
+    "baseline",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/verificacion-entrega/baseline",
+    "consolidar",
+    "--stage",
+    "${TMPDIR}/petroandes-entrega-zm4jaj19/staging/manifest.json"
+  ],
+  "generation_id": "1589c208-0450-5b25-b58c-d61373aa340d",
+  "perfil": "baseline",
+  "revision_gobierno": 1,
+  "particion": "structural-es-1.0.0",
+  "bundle": "e5small-es-1.0.0",
+  "dimension": 384,
+  "distancia": "cosine",
+  "catalogo_sha256": "a86a08053229268104914f2b2106a5e2d3a149c44f76ef7146a7e99eee4a77c3",
+  "proyeccion_densa_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "proyeccion_lexica_sha256": "32d9224e61af82d736f528778cf06ace5fef3f1ddc989147f34530b2f2e4a582",
+  "cantidad_fragmentos": 0,
+  "stage": "cd67dbf6-5beb-570b-b66c-c882f4512111",
+  "manifiesto_sha256": "b1c814650c71a8933cb2ce0badfecf9c9037a4529dc2207ba1a60248c3f1467b"
+}

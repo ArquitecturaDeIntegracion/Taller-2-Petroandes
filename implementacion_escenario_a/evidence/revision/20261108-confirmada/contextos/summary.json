@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "alcance": "Integridad, fuentes, partición y contratos",
+  "manifiesto_sha256": "81eb5990565db122c1569f30ccf6ec47c0d8f3460a98decfcf4ea783e6dfd97a",
+  "casos_congelados": {
+    "ajuste": 8,
+    "reserva": 16
+  },
+  "correcciones_aprobadas": [
+    "A02",
+    "A03",
+    "A07",
+    "R09",
+    "R10",
+    "R13",
+    "R16"
+  ],
+  "referencias_pdf_verificadas": 82,
+  "fichas_originales_verificadas": 43,
+  "decisiones_documentales": 3,
+  "casos_ejecutados": 0,
+  "copias_aisladas": 24,
+  "contextos_preparados": 25,
+  "semillas": [
+    "semillas-001.jsonl"
+  ],
+  "fase": "catálogos y contextos de preparación",
+  "publicacion_indices": "pendiente_en_ejecucion_posterior"
+}

@@ -1,28 +1,25 @@
-# Matriz inicial de trazabilidad
+# Matriz de trazabilidad hasta F11
 
-Fecha: 2026-11-01. Responsable técnico: Codex. Fuente: plan, sección 9.
-Ningún requisito global se considera completo con la base técnica actual de F0–F3.
+Responsable técnico: Codex. Fuente: plan, sección 9.
+La [validación integral](validacion-dev-f11.md) reproduce los controles
+técnicos. La columna Estado conserva los requisitos académicos pendientes.
 
 | ID | Tareas y prueba prevista | Evidencia actual | Estado |
 | --- | --- | --- | --- |
-| R01 | F0/F3/F4: 19 PDF, extracción e índice persistente | [19 PDF y fragmentos F3](f3-ingesta.md) | Extracción verificada; índice F4 pendiente |
-| R02 | F1/F2: contratos, hash, autoridad, período y ámbitos | [Catálogo y controles F2](f2-gobierno.md) | Cuatro exclusiones, quince pendientes; revisión humana pendiente |
-| R03 | F3/F4/F10: E5 fijado, tokens, trazas y reindexación | [Partición y tokenizador reales F3](f3-ingesta.md) | 92 fragmentos y reingesta estables; indexación/reindexación pendientes |
-| R04 | F5: ambas ramas restringidas antes del ranking | [Política común F2](f2-gobierno.md) | Elegibilidad probada; ramas del recuperador pendientes |
-| R05 | F7: búsqueda y obtención con esquemas y errores | [Contratos iniciales](contratos.md) | Implementación pública pendiente |
-| R06 | F0/F7/F11: Inspector, listado, llamadas y errores | [Inspector real](../evidence/f0/mcp-local/summary.json) | F0 verificado; F7/F11 pendientes |
-| R07 | F1/F8: al menos 15 esperados revisados y métricas | [Calidad](../knowledge/05-calidad.md) | Revisión humana pendiente |
-| R08 | F6/F8: extracción, citas, ámbitos y abstención | Diseño acordado | Pendiente |
-| R09 | F9: recuperar anexo y demostrar contención o fallo | [Anexo extraído y marcado en F3](f3-ingesta.md) | Conservación verificada; recuperación/ataque F9 pendientes |
-| R10 | F10/F11: cambios, revocación, fallos y reproducción | [Revisión/eventos F2](f2-gobierno.md) | Transacción y rollback de autorización probados; propagación y reproducción pendientes |
+| R01 | F0/F3/F4: 19 PDF, extracción e índice persistente | [Ingesta](f3-ingesta.md) · [Índices](f4-indices.md) | 92 fragmentos extraídos y 58 puntos reabiertos en contexto histórico. |
+| R02 | F1/F2: contratos, hash, autoridad, período y ámbitos | [Catálogo F2](f2-gobierno.md) · [Decisiones registradas](certificacion-laboratorio-20261103.md) | Baseline con cuatro exclusiones y quince pendientes. Doce decisiones simuladas en laboratorio. |
+| R03 | F3/F4/F10: E5 fijado, tokens, trazas y reindexación | [Bundle](f4-indices.md) · [Reindexación](../evidence/f10/20261108/final/reindexacion.json) | Reconstrucción comparada dentro del bundle fijado. |
+| R04 | F5: ambas ramas restringidas antes del ranking | [Recuperación gobernada](f5-recuperacion.md) | Prefiltro y revalidación, incluidos accesos directos. |
+| R05 | F7: búsqueda y obtención con esquemas y errores | [Contratos MCP](f7-mcp.md) | Ambas herramientas implementadas y verificadas. |
+| R06 | F0/F7/F11: Inspector, listado, llamadas y errores | [Validación F7](validacion-dev-hasta-f7.md) | Negociación, esquemas, resultados, errores y reapertura con Inspector real. |
+| R07 | F1/F8: al menos 15 esperados revisados y métricas | [Propuestas](revision/README.md) · [Diagnóstico](../evidence/f8/20261108/summary.json) | Cuatro controles diagnósticos ejecutados. Calibración y reserva formal pendientes. |
+| R08 | F6/F8: extracción, citas, ámbitos y abstención | [Composición](validacion-dev-hasta-f6.md) · [Diagnóstico](validacion-dev-f8.md) | Citas, abstenciones y paridad comprobadas en ensayos técnicos. |
+| R09 | F9: recuperar anexo y demostrar contención o fallo | [Evidencia del ataque](../evidence/f9/20261108/summary.json) | Recuperación, descarte y auditoría autorizada comprobados. |
+| R10 | F10/F11: cambios, revocación, fallos y reproducción | [Propagación](../evidence/f10/20261108/final/summary.json) · [Reproducción](validacion-dev-f11.md) | Revocación con punto presente, idempotencia, reintentos y reversión verificados. |
 
 ## Revisión académica pendiente
 
-El estudiante o grupo debe identificar responsable, rol representado y revisar
-cada decisión simulada y cada esperado contra sus páginas PDF. No se infiere
-aprobación por ejecutar pruebas sintéticas. Baseline: cuatro excluidos,
-quince pendientes y cero certificados positivos.
-
-El perfil académico deberá estar separado del baseline, vincular cada decisión
-a SHA-256, uso, ámbito, acceso e intervalo efectivo y rotular toda simulación.
-La selección de casos reservados no se usará para ajustar recuperación.
+El estudiante o grupo debe revisar cada esperado contra sus páginas PDF y
+registrar quién revisó qué. El perfil de laboratorio vincula cada decisión a
+SHA-256, uso, ámbito, acceso e intervalo efectivo. El diagnóstico técnico y
+las certificaciones simuladas registradas tienen evidencias separadas.

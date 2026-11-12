@@ -1,0 +1,101 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "R09",
+  "titulo": "Revocación con vector conservado",
+  "pregunta": "Tras revocar la autorización, ¿cuál es el umbral de presión declarado por PRO-OPE-012 v3?",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [
+      "D08"
+    ],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": [
+      "Usar D08 como única autorización positiva. Publicar y demostrar recuperación y existencia del vector.",
+      "Revocar antes de la consulta medida. Conservar el vector en la colección anterior.",
+      "Comprobar búsqueda, obtención y expansión F5 con los identificadores previos."
+    ]
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_con_correcciones",
+    "justificacion": "**Precisar el montaje.** PRO-OPE-012 v3 §3 aporta un dato real del corpus que debe quedar bloqueado por una revocación sintética. Conservar el vector anterior y distinguir una revocación previa de un cambio durante la búsqueda."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "reserva",
+  "oracle": {
+    "estado": "abstencion",
+    "motivo_abstencion": "sin_evidencia_autorizada",
+    "criterios_semanticos": [
+      "La revocación posterior prevalece; excluir PRO-OPE-012 v3 antes de puntuar.",
+      "El vector y texto anteriores deben seguir presentes en la copia para que el control sea demostrativo.",
+      "Obtención directa y expansión de padres también deben denegar; no usar v2 excluida.",
+      "Esperar sin_evidencia_autorizada en búsqueda y evidencia_no_autorizada en obtención y expansión. gobierno_cambio en revocación concurrente corresponde a otro control técnico."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/02_procedimientos/PRO-OPE-012_v3.pdf",
+        "doc_id": "PRO-OPE-012",
+        "version_documental": "3",
+        "pdf_sha256": "49c851c5f7693eb6ca720d85a15e5ce084045eaab292b6ea1615c67048672452",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [
+      "D07"
+    ],
+    "acceso_directo_esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    },
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales.",
+    "expansion_esperada": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    }
+  },
+  "ficha_original": {
+    "path": "../casos/R09.json",
+    "sha256": "9614d0edba1f1430622f5bc98080570f5bfabbc164e349517952747165fb19b1"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "buscar_documentos",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "consulta": "Tras revocar la autorización, ¿cuál es el umbral de presión declarado por PRO-OPE-012 v3?",
+        "top_k": 5
+      }
+    }
+  ]
+}

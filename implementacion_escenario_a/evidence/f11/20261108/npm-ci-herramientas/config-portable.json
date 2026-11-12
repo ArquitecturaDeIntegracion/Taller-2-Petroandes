@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "baseline": {
+      "command": "python",
+      "args": [
+        "-m",
+        "petroandes.mcp_server",
+        "--profile",
+        "baseline"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": ".cache",
+        "PETROANDES_MODELS_DIR": ".cache/models",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

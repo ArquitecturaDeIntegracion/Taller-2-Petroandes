@@ -1,0 +1,38 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:54:41.794154+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-final-dev-20261108-185328"
+  ],
+  "busqueda": {
+    "correlation_id": "8a9b1f50-bf63-4a65-a1bf-afd221e5c337",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "estado": "abstencion",
+    "motivo_abstencion": "evidencia_insuficiente"
+  },
+  "directa": {
+    "estado": "denegado",
+    "correlation_id": "4c802ddd-b3f7-43a8-aea9-2ae710b2a34c",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  },
+  "expansion": {
+    "estado": "denegado",
+    "correlation_id": "fa1a2839-98eb-4204-a5e8-7a529dbddcce",
+    "generation_id": "e9c6ada9-a29e-536b-8760-42bc6d9f6726",
+    "revision_gobierno": 16,
+    "partes": [],
+    "citas": [],
+    "error": "evidencia_no_autorizada"
+  }
+}

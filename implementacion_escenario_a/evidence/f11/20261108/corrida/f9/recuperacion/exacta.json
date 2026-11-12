@@ -1,0 +1,40 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:12:12.046728+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f9"
+  ],
+  "candidatos": [
+    {
+      "chunk_id": "2504320e-9c0c-5871-92dd-425a6e41d9c8",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "condiciones-de-aplicacion"
+    },
+    {
+      "chunk_id": "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "asunto"
+    },
+    {
+      "chunk_id": "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "contenido-de-la-version"
+    },
+    {
+      "chunk_id": "8164fe95-9daf-5a10-b246-6240a6f126bc",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "notas-de-la-version"
+    },
+    {
+      "chunk_id": "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "anexo-notas-de-integracion"
+    }
+  ]
+}

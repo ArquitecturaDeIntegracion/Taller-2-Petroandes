@@ -1,0 +1,1 @@
+{"result":{"tools":[{"name":"comprobar_entorno","description":"Comprueba el transporte de laboratorio; no concede permisos ni vigencia.","inputSchema":{"type":"object","properties":{},"title":"comprobar_entornoArguments"},"outputSchema":{"type":"object","additionalProperties":{"type":"string"},"title":"comprobar_entornoDictOutput"}}]}}

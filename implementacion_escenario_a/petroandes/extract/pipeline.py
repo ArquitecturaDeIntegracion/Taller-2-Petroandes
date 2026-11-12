@@ -27,8 +27,11 @@ def ingest(perfil, output):
     reports, fragments, parents = [], [], []
     with Catalog.open(profile_path(perfil), perfil, read_only=True) as catalog:
         snapshot = catalog.snapshot()
-        actual_files = sorted(pdf_root.rglob("*.pdf"))
-        if len(snapshot.documentos) != registry["expected_logical_documents"] or len(actual_files) != 19:
+        actual = {"project:" + path.relative_to(PROJECT_ROOT).as_posix() for path in pdf_root.rglob("*.pdf")}
+        declared = {doc.pdf_uri for doc in snapshot.documentos}
+        initial = registry["expected_logical_documents"]
+        if (declared != actual or len(declared) != len(snapshot.documentos) or len(actual) < initial
+                or (perfil == "baseline" and len(actual) != initial)):
             raise ExtractionReview("Inventario incompleto; no preparar una generación parcial silenciosa")
         for index, document in enumerate(sorted(snapshot.documentos, key=lambda doc: doc.pdf_uri), 1):
             sections, extraction = (), None

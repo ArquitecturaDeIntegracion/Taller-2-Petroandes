@@ -1,0 +1,27 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-entrega-zm4jaj19/historico/servers.json",
+    "--server",
+    "historico",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/list"
+  ],
+  "cwd": "${TMPDIR}",
+  "started_utc": "2026-11-09T01:38:29.144692+00:00",
+  "elapsed_seconds": 6.647689131001243,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

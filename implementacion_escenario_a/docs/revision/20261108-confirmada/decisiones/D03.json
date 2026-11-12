@@ -1,0 +1,73 @@
+{
+  "tipo_registro": "decision_humana_documental",
+  "id": "D03",
+  "schema_version": "revision-confirmada/1.0.0",
+  "documento": {
+    "doc_id": "MAN-OPE-004",
+    "version_documental": "2",
+    "titulo": "Manual de operación del sistema de medición y transferencia de custodia",
+    "emisor_segun_pdf": "Gerencia de Medición",
+    "pdf": {
+      "base": "project",
+      "path": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+      "doc_id": "MAN-OPE-004",
+      "version_documental": "2",
+      "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+      "pagina": 1,
+      "section_id": "encabezado"
+    }
+  },
+  "estado_baseline_observado": "pendiente",
+  "evidencia_corpus": {
+    "conclusion": "Declara verificación mensual como mínimo; el acta de noviembre informa un manual retirado sin identificarlo.",
+    "fuentes": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+        "doc_id": "MAN-OPE-004",
+        "version_documental": "2",
+        "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "como mínimo, una vez al mes."
+      },
+      {
+        "base": "project",
+        "path": "corpus/pdf/04_actas/ACTA-CTO-2025-11.pdf",
+        "doc_id": "ACTA-CTO-2025-11",
+        "version_documental": null,
+        "pdf_sha256": "0ea3fda33ddf27a21979297c96f5dbc6fe9990de2ccc28fb171b4c43dc6ace8f",
+        "pagina": 1,
+        "section_id": "3",
+        "extracto_verificado": "un manual dejó de aplicarse por decisión del área"
+      }
+    ]
+  },
+  "propuesta": {
+    "accion": "conservar_pendiente",
+    "perfil_destino": "laboratorio",
+    "usos_a_revisar": [],
+    "ambito_a_revisar": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "grupos_a_revisar": [],
+    "periodo_a_revisar": null,
+    "rol_emisor_simulado_a_confirmar": "Gerencia de Medición",
+    "autenticidad_actual": "no_certificada_por_esta_propuesta",
+    "supuesto_laboratorio": null,
+    "restriccion": "No identificar este documento como retirado ni como vigente; no autorizarlo por ser v2."
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "mantener_pendiente",
+    "justificacion": "El acta ACTA-CTO-2025-11 §§3.3 y 4.2 no identifica el manual retirado y exige certificación del área emisora."
+  },
+  "ficha_original": {
+    "path": "../decisiones/D03.json",
+    "sha256": "49cc36978b736eb744d4cccb1e1022d95366a9086f2ee43f902ee399e7e1e0d0"
+  }
+}

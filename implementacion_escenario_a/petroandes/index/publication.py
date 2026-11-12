@@ -18,7 +18,7 @@ def document_identity(document):
 def select(stage, eligibility, profile):
     if stage.manifest["perfil"] != profile:
         raise IndexUnavailable("Staging y gobierno de perfiles distintos")
-    allowed = {document_identity(doc) for doc in eligibility.documentos}
+    allowed = {document_identity(doc): doc for doc in eligibility.documentos}
     available, selected = set(), []
     parent_map = {parent["parent_id"]: parent for parent in stage.parents}
     ids = set()
@@ -32,8 +32,10 @@ def select(stage, eligibility, profile):
         ids.add(fragment.chunk_id)
         available.add(document_identity(fragment))
         if document_identity(fragment) in allowed:
+            if document != allowed[document_identity(fragment)]:
+                raise IndexUnavailable("Documento de staging distinto del catálogo vigente")
             selected.append(item)
-    if not allowed.issubset(available):
+    if not allowed.keys() <= available:
         raise IndexUnavailable("Documento elegible sin staging de su hash actual")
     return sorted(selected, key=lambda item: item["fragment"]["chunk_id"])
 
@@ -64,7 +66,8 @@ class Publisher:
             self.owner.close()
             raise
 
-    def publish(self, stage, *, before_activate=None):
+    def publish(self, stage, *, before_activate=None, encode=None, reindex=None,
+                check_activation=None, after_activate=None):
         eligibility = self.policy.eligible()
         records = select(stage, eligibility, self.policy.catalog.perfil)
         key = {"stage": stage.manifest["generation_id"], "perfil": self.policy.catalog.perfil,
@@ -73,9 +76,11 @@ class Publisher:
             "records_sha256": digest([record_digest(item) for item in records])}
         if records:
             key["dense_digest_version"] = "qdrant-local-reopened-1"
+        if reindex is not None:
+            key["reindex"] = reindex
         key["generation_id"] = generation_id(key)
         receipt, reused = prepare(self.root, self.owner, self.encoder, records, stage.parents, key,
-                                  [item["embedding_input"] for item in records])
+                                  [item["embedding_input"] for item in records], encode=encode)
         if before_activate:
             before_activate()  # inyección de fallos/carreras; no expuesto a CLI/MCP
         with governance_fence(self.policy, eligibility.revision) as current:
@@ -83,9 +88,13 @@ class Publisher:
                 raise IndexUnavailable("Elegibilidad cambió antes de activar")
             folder = self.root / "generations" / key["generation_id"]
             verify(folder, receipt, self.owner, self.encoder.fingerprint)
+            if check_activation:
+                check_activation(receipt)
             if select(stage, self.policy.eligible(), self.policy.catalog.perfil) != records:
                 raise IndexUnavailable("Permiso venció durante la verificación de publicación")
             self.registry.activate(key["generation_id"], receipt)
+            if after_activate:
+                after_activate(eligibility.revision)
         return {"generation_id": key["generation_id"], "perfil": key["perfil"],
                 "governance_revision": eligibility.revision, "published_fragments": len(records),
                 "eligible_documents": len(eligibility.documentos), "reused": reused,

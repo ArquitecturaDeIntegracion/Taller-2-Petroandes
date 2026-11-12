@@ -1,6 +1,11 @@
+FROM python:3.12-slim-bookworm AS inspector-lock
+COPY implementacion_escenario_a/config/inspector-npm-lock.zip /tmp/inspector-npm-lock.zip
+RUN python -m zipfile -e /tmp/inspector-npm-lock.zip /lock
+
 FROM node:22-bookworm-slim AS inspector
 WORKDIR /opt/inspector
-RUN npm init -y && npm install --save-exact @modelcontextprotocol/inspector@2.13.0
+COPY --from=inspector-lock /lock/package.json /lock/package-lock.json ./
+RUN npm ci --no-audit --no-fund
 
 FROM python:3.12-slim-bookworm
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONIOENCODING=utf-8

@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T03:37:01.611077+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10.py",
+    "--profile",
+    "laboratorio",
+    "--output-dir",
+    "reports/portable/revision-confirmada-20261108/propagacion",
+    "propagar",
+    "--stage",
+    "reports/portable/revision-confirmada-20261108/staging/manifest.json"
+  ],
+  "generation_id": "184df981-1588-5629-9d37-61236e5ad3a8",
+  "perfil": "laboratorio",
+  "revision_gobierno": 15,
+  "particion": "structural-es-1.0.0",
+  "bundle": "e5small-es-1.0.0",
+  "dimension": 384,
+  "distancia": "cosine",
+  "catalogo_sha256": "1b83461bec8ec400768c8acb672359c54a0d9fc31f184dbd1dab7fca75ebace9",
+  "proyeccion_densa_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "proyeccion_lexica_sha256": "d771cfd1fe5d9b072dc9488fdf301451dcce6412fc24efdea5d508792fe21397",
+  "cantidad_fragmentos": 0,
+  "stage": "6959853e-9e72-5605-8241-e083a4c6f2e1",
+  "manifiesto_sha256": "dfc39b85e3bc9715d4cc334473c1c9bf4167b18fd259d5fe0928d900650dcb05"
+}

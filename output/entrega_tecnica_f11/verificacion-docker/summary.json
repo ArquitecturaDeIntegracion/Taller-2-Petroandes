@@ -1,0 +1,35 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:38:59.891121+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f11_verify_delivery.py",
+    "--output-dir",
+    "reports/portable/verificacion-entrega"
+  ],
+  "status": "passed",
+  "baseline": {
+    "revision": 1,
+    "clasificacion": {
+      "pendiente": 15,
+      "excluido": 4,
+      "certificado": 0
+    },
+    "fragmentos_extraidos": 92,
+    "fragmentos_publicados": 0,
+    "eventos_pendientes": 0,
+    "consulta": "abstencion",
+    "directa_excluida": "denegado"
+  },
+  "inspector": "2.13.0",
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "estado_p101": "respondida",
+  "revision_historica": 13,
+  "paridad_python_mcp": true
+}

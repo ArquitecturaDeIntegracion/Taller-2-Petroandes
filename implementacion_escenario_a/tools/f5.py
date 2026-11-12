@@ -6,16 +6,11 @@ from uuid import UUID
 
 from pydantic import ValidationError
 
-from f0_common import configure_cache
-from petroandes.catalog.api import Catalog
-from petroandes.catalog.store import CatalogUnavailable, index_directory, profile_path
+import project_paths  # Carga las raíces también al ejecutar el script desde otra carpeta.
+from petroandes.catalog.store import CatalogUnavailable
 from petroandes.compose import answer
 from petroandes.contracts.queries import FragmentQuery, SearchQuery
-from petroandes.embeddings.encoder import E5Encoder
-from petroandes.governance.eligibility import EligibilityService
-from petroandes.governance.models import ServiceContext
-from petroandes.paths import APP_ROOT
-from petroandes.retrieve import Retriever
+from petroandes.deployment import LocalDeployment
 
 
 def parse_command(argv=None):
@@ -69,12 +64,8 @@ def parse_command(argv=None):
 
 def main():
     profile, operation, query = parse_command()
-    configure_cache(offline=True)
     try:
-        context = ServiceContext.model_validate_json(
-            (APP_ROOT / "config/f4-context.json").read_text(encoding="utf-8"))
-        with Catalog.open(profile_path(profile), profile, read_only=True) as catalog:
-            service = Retriever(index_directory(profile), EligibilityService(catalog, context), E5Encoder())
+        with LocalDeployment(profile).connect() as service:
             dispatch = {"buscar": service.search, "obtener": service.obtain, "expandir": service.expand,
                         "responder": lambda request: answer(service, request)}
             report = dispatch[operation](query)

@@ -1,0 +1,127 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:11:26.597919+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8"
+  ],
+  "status": "passed",
+  "alcance": "prueba_tecnica_f8_fuera_de_ajuste_y_reserva",
+  "suite_sha256": "74f09f3de23d821d2758f1e17b1f106b06396fa85b79ac90c0fae08cda2ff3e4",
+  "inspector": "2.13.0",
+  "plataforma": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "evaluador": {
+    "paquete": "0.4.20",
+    "modelo": "convaiinnovations/laya-multilingual",
+    "revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+    "device": "cpu",
+    "backend": "eager",
+    "hilos": 2,
+    "carga_ms": 14144.431124994298,
+    "limites": {
+      "max_len": 1024,
+      "head_max_len": 256
+    },
+    "pregunta_anclaje": {
+      "type": "noul",
+      "instructions": "¿La evidencia respalda íntegramente la afirmación, incluidas cifras y condiciones?"
+    },
+    "pregunta_pertinencia": {
+      "type": "choice",
+      "instructions": "¿El fragmento aporta evidencia para responder la consulta?",
+      "criteria": {
+        "pertinente": "Aporta evidencia directa o contexto necesario",
+        "no_pertinente": "No aporta evidencia necesaria para la consulta"
+      }
+    },
+    "umbral_diagnostico": 0.5,
+    "umbral_calibrado": null
+  },
+  "casos_propuestos_por_estado": {
+    "pendiente_revision": 24
+  },
+  "evaluacion_formal_ejecutada": false,
+  "casos_intentados": 4,
+  "casos_con_resultado": 4,
+  "fallos": [],
+  "casos": [
+    {
+      "id": "T01",
+      "estado": "abstencion",
+      "paridad_mcp": true,
+      "resultado_esperado": true,
+      "secciones_citadas_esperadas": true,
+      "literales_esperados": true,
+      "candidatos_elegibles": true
+    },
+    {
+      "id": "T02",
+      "estado": "denegado",
+      "paridad_mcp": true,
+      "resultado_esperado": true,
+      "secciones_citadas_esperadas": true,
+      "literales_esperados": true,
+      "candidatos_elegibles": true
+    },
+    {
+      "id": "T03",
+      "estado": "respondida",
+      "paridad_mcp": true,
+      "resultado_esperado": true,
+      "secciones_citadas_esperadas": true,
+      "literales_esperados": true,
+      "candidatos_elegibles": true
+    },
+    {
+      "id": "T04",
+      "estado": "respondida",
+      "paridad_mcp": true,
+      "resultado_esperado": true,
+      "secciones_citadas_esperadas": true,
+      "literales_esperados": true,
+      "candidatos_elegibles": true
+    }
+  ],
+  "metricas_diagnosticas": {
+    "procedencia": {
+      "numerador": 2,
+      "denominador": 2,
+      "valor": 1.0
+    },
+    "anclaje_laya": {
+      "numerador": 2,
+      "denominador": 2,
+      "valor": 1.0,
+      "no_evaluables": 0,
+      "errores": 0
+    },
+    "pertinencia_laya": {
+      "numerador": 3,
+      "denominador": 9,
+      "valor": 0.3333333333333333,
+      "no_evaluables": 0,
+      "errores": 0
+    },
+    "recall_at_5_medio": {
+      "numerador": 2.0,
+      "denominador": 2,
+      "valor": 1.0
+    },
+    "desviacion_detectada": {
+      "numerador": 0,
+      "denominador": 4,
+      "valor": 0.0
+    },
+    "abstenciones_correctas": {
+      "numerador": 1,
+      "denominador": 1,
+      "valor": 1.0
+    },
+    "abstenciones_indebidas": 0
+  }
+}

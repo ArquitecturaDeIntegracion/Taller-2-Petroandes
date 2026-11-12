@@ -1,0 +1,39 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:48:55.060186+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-docker-dev-20261108-184812"
+  ],
+  "status": "failed",
+  "resultado": "reintentos_agotados",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 1.6414734720019624
+    },
+    {
+      "intento": 2,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 0.15076134500122862
+    },
+    {
+      "intento": 3,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada antes de activar",
+      "segundos": 0.18812799099396216
+    }
+  ],
+  "eventos_confirmados": 0
+}

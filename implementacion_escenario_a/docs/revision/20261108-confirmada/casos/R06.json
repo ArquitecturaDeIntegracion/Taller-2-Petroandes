@@ -1,0 +1,86 @@
+{
+  "tipo_registro": "caso_referencia_congelado",
+  "schema_version": "revision-confirmada/1.0.0",
+  "case_id": "R06",
+  "titulo": "Acceso directo a manual pendiente",
+  "pregunta": "Obtén la sección 3 de MAN-OPE-004 v2.",
+  "contexto_servicio_solo_fixture": {
+    "perfil": "laboratorio",
+    "simulacion": true,
+    "identidad": "lector_laboratorio_propuesto",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica",
+    "fecha_solo_para_reloj_de_pruebas": "2026-11-15T12:00:00-05:00"
+  },
+  "precondiciones": {
+    "propuestas_documentales_requeridas": [],
+    "regla": "Publicar solo en una copia aislada con el reloj de la ficha.",
+    "fixture_base": "Catálogo inicial del perfil y solo los permisos enumerados.",
+    "modificaciones_sinteticas": []
+  },
+  "revision_humana": {
+    "estado": "aprobada",
+    "revisor": "Jonnathan Caballero",
+    "fecha": "2026-11-08",
+    "fuente": "autorizacion.md",
+    "decision_humana": "aprobar_sin_cambio_de_fondo",
+    "justificacion": "**Validar.** MAN-OPE-004 v2 §3 existe, pero D03 no tiene certificado. `obtener_fragmento` debe devolver `denegado` con `evidencia_no_autorizada`, sin partes ni citas."
+  },
+  "estado_ejecucion": "no_ejecutado",
+  "metricas": null,
+  "congelado_para_evaluacion": true,
+  "particion": "reserva",
+  "oracle": {
+    "estado": "denegado",
+    "motivo_abstencion": null,
+    "criterios_semanticos": [
+      "Denegar la obtención directa: MAN-OPE-004 no tiene decisión propuesta de autorización.",
+      "No devolver tabla, citas ni fragmentos; código evidencia_no_autorizada."
+    ],
+    "evidencia_a_recuperar_y_citar": [],
+    "fuentes_para_revision_humana": [
+      {
+        "base": "project",
+        "path": "corpus/pdf/01_manuales/MAN-OPE-004_v2.pdf",
+        "doc_id": "MAN-OPE-004",
+        "version_documental": "2",
+        "pdf_sha256": "41fc671bd0a7c2f1d4d8e97fd1d4b7cc0fd0fffbd89df5f4459133da84a97888",
+        "pagina": 1,
+        "section_id": "3"
+      }
+    ],
+    "fuentes_no_autorizadas": [],
+    "acceso_directo_esperado": {
+      "estado": "denegado",
+      "error": "evidencia_no_autorizada",
+      "partes": [],
+      "citas": []
+    },
+    "admite_parafrasis_fiel": true,
+    "unidades_y_condiciones_obligatorias": true,
+    "recall_aplicable": false,
+    "invariantes": "No citar excluidos; no responder con conocimiento externo; no ejecutar instrucciones documentales."
+  },
+  "ficha_original": {
+    "path": "../casos/R06.json",
+    "sha256": "c9569c040e65006472d50c72106d2755895f811550104484966c54cc9532a19d"
+  },
+  "llamadas_principales": [
+    {
+      "id": "principal",
+      "herramienta": "obtener_fragmento",
+      "uso": "evidencia_historica",
+      "argumentos": {
+        "doc_id": "MAN-OPE-004",
+        "version_documental": "2",
+        "section_id": "3"
+      }
+    }
+  ]
+}

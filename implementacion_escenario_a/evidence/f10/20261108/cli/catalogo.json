@@ -1,0 +1,28 @@
+{
+  "evidence_schema_version": 2,
+  "recorded_utc": "2026-11-08T23:49:57.115382+00:00",
+  "operacion": "carga_inicial_f2_desde_pdf",
+  "perfil": "laboratorio",
+  "governance_revision": 1,
+  "documentos": 19,
+  "clasificacion": {
+    "pendiente": 15,
+    "excluido": 4,
+    "certificado": 0
+  },
+  "decisiones_registradas": 0,
+  "conflictos_abiertos": 0,
+  "eventos_pendientes": 1,
+  "relaciones": 9,
+  "certificaciones_humanas_creadas": 0,
+  "backup_sha256": "4f3b604b8fb8b7349679f8af4a1994de1fbe7da08be4e535a6050cf3c9201d2c",
+  "catalog_ref": {
+    "base": "artifacts",
+    "path": "catalog/laboratorio/catalog.sqlite3"
+  },
+  "index_ref": {
+    "base": "artifacts",
+    "path": "indexes/laboratorio"
+  },
+  "indices_construidos": false
+}

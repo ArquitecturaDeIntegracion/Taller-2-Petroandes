@@ -1,0 +1,67 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-08T23:48:55.554198+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f10_check.py",
+    "--output-dir",
+    "reports/portable/f10-docker-dev-20261108-184812"
+  ],
+  "status": "passed",
+  "resultado": "publicacion_verificada",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "fallido",
+      "tipo": "RuntimeError",
+      "motivo": "F10: interrupción simulada después de activar y antes de confirmar",
+      "segundos": 0.22349634400598006
+    },
+    {
+      "intento": 2,
+      "estado": "confirmado",
+      "segundos": 0.2117577219978557
+    }
+  ],
+  "publicacion": {
+    "generation_id": "0f284bc6-d9b2-5391-a02b-460ed1205bc3",
+    "perfil": "laboratorio",
+    "governance_revision": 14,
+    "published_fragments": 54,
+    "eligible_documents": 11,
+    "reused": true,
+    "collection": "e5small_es_1_0_0_r14_0f284bc6d9b2_3102a764"
+  },
+  "recibo": {
+    "collection": "e5small_es_1_0_0_r14_0f284bc6d9b2_3102a764",
+    "key": {
+      "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+      "context": {
+        "ambito": {
+          "identificador": "corpus_revision",
+          "tipo": "general"
+        },
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "identidad": "ensayo-historico",
+        "uso": "evidencia_historica"
+      },
+      "dense_digest_version": "qdrant-local-reopened-1",
+      "generation_id": "0f284bc6-d9b2-5391-a02b-460ed1205bc3",
+      "lexical_version": "bm25-codes-es-1.0.0",
+      "perfil": "laboratorio",
+      "records_sha256": "4e185b0fd43b6f767591c019518a66720f69f88d78bb1100302f1b236ec2f59a",
+      "revision_gobierno": 14,
+      "stage": "8f9d387d-bdf2-55a1-9beb-c3c2541b2f62"
+    },
+    "manifest_sha256": "28171f5522cf465817ea6866fa446ea1af9e7ff53d241059655df77ac68a1a2b"
+  },
+  "comparacion": null,
+  "vectores_reutilizados": 0,
+  "vectores_calculados": 0,
+  "eventos_confirmados": 1
+}

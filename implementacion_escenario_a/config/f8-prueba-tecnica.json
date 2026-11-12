@@ -1,0 +1,49 @@
+{
+  "alcance": "prueba_tecnica_f8_fuera_de_ajuste_y_reserva",
+  "casos": [
+    {
+      "id": "T01",
+      "contexto": "habitual",
+      "herramienta": "buscar_documentos",
+      "entrada": {"consulta": "Presión de descarga documentada de P-101.", "top_k": 5},
+      "esperado": {"estado": "abstencion", "motivo_abstencion": "sin_evidencia_autorizada"},
+      "secciones": [],
+      "literales": []
+    },
+    {
+      "id": "T02",
+      "contexto": "habitual",
+      "herramienta": "obtener_fragmento",
+      "entrada": {"doc_id": "FIC-ACT-P101", "version_documental": "2", "section_id": "2"},
+      "esperado": {"estado": "denegado", "error": "evidencia_no_autorizada"},
+      "secciones": [],
+      "literales": []
+    },
+    {
+      "id": "T03",
+      "contexto": "historico",
+      "herramienta": "buscar_documentos",
+      "entrada": {
+        "consulta": "Presión de descarga documentada de P-101.",
+        "top_k": 5,
+        "filtros": {"tipo": "ficha", "activo": "P-101"}
+      },
+      "esperado": {"estado": "respondida"},
+      "secciones": [["FIC-ACT-P101", "2", "2"]],
+      "literales": ["1.180 psi", "1.240 psi"]
+    },
+    {
+      "id": "T04",
+      "contexto": "historico",
+      "herramienta": "buscar_documentos",
+      "entrada": {
+        "consulta": "Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.",
+        "top_k": 5,
+        "filtros": {"tipo": "resolucion"}
+      },
+      "esperado": {"estado": "respondida"},
+      "secciones": [["RES-CREG-0043-2024", null, "articulo-2"]],
+      "literales": ["no excederá", "0,3 %"]
+    }
+  ]
+}

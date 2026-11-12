@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:12:05.112677+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f9"
+  ],
+  "generation_id": "16b82e91-4db3-5046-b97b-4fb686178e50",
+  "perfil": "laboratorio",
+  "governance_revision": 13,
+  "published_fragments": 5,
+  "eligible_documents": 1,
+  "reused": false,
+  "collection": "e5small_es_1_0_0_r13_16b82e914db3_99d0ed0f"
+}

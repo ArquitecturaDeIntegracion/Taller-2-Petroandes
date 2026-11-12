@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "verificado_en": "2026-11-11T20:25:27.928637-05:00",
+  "servidor": "petroandes-historico-f7",
+  "inspector": "2.13.0",
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "busqueda": {
+    "estado": "respondida",
+    "revision": 13,
+    "texto": "Parámetro | Valor de diseño | Límite de alarma\nPresión de descarga | 1.180 psi | 1.240 psi"
+  },
+  "obtencion": {
+    "estado": "encontrado",
+    "doc_id": "RES-CREG-0043-2024",
+    "section_id": "articulo-2"
+  },
+  "evidencia": "reports/portable/disponibilidad-mcp-20261111-202527"
+}

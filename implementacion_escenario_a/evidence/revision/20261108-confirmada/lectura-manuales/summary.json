@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "catalogo": {
+    "perfil": "laboratorio",
+    "governance_revision": 15,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 1,
+      "excluido": 4,
+      "certificado": 14
+    },
+    "decisiones_registradas": 14,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 0
+  },
+  "baseline_identico": true,
+  "contexto": {
+    "identidad": "sonda-documental-manuales",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica"
+  },
+  "publicacion_aislada": {
+    "generation_id": "a7116be8-ed2d-51c3-b8ab-c9f75a59564d",
+    "perfil": "laboratorio",
+    "governance_revision": 15,
+    "published_fragments": 68,
+    "eligible_documents": 14,
+    "reused": false,
+    "collection": "e5small_es_1_0_0_r15_a7116be8ed2d_8f54d976"
+  },
+  "obtenciones_administrativas": {
+    "D01": {
+      "estado": "encontrado",
+      "citas": [
+        {
+          "doc_id": "MAN-MTO-002",
+          "version_documental": "1",
+          "pdf_sha256": "16ede6f8485ef911a1937b72c44a1573d2e95ab2fe6673b7d10a769fc2ed475f",
+          "section_id": "2",
+          "pagina_inicio": 1,
+          "pagina_fin": 1
+        }
+      ]
+    },
+    "D02": {
+      "estado": "encontrado",
+      "citas": [
+        {
+          "doc_id": "MAN-OPE-001",
+          "version_documental": "3",
+          "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+          "section_id": "1",
+          "pagina_inicio": 1,
+          "pagina_fin": 1
+        }
+      ]
+    }
+  },
+  "casos_ejecutados": 0
+}

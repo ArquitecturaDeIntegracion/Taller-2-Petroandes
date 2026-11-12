@@ -1,0 +1,37 @@
+{
+  "decision": {
+    "doc_id": "MAN-OPE-001",
+    "version_documental": "3",
+    "pdf_sha256": "44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b",
+    "decision_id": "6c9e9b63-2acf-5ce6-97b7-f8b270ac24c6",
+    "perfil": "laboratorio",
+    "simulacion_academica": true,
+    "estado": "certificado",
+    "evidencia": [
+      "app:docs/revision/20261108-confirmada/autorizacion.md#sha256=e22a9c0ce5baa6630cfd3d77dabe57f4237d405b537a9e05f3fd0605956a0088",
+      "project:corpus/pdf/01_manuales/MAN-OPE-001_v3.pdf#sha256=44557b2e5b95cfa3d9e1e9c1705f6975c48ce9336f33a296d4f3c15c84f1ef2b"
+    ],
+    "autoridad": "SIMULACIÓN ACADÉMICA: rol de Vicepresidencia de Transporte — Operaciones",
+    "revisor_humano": "Jonnathan Caballero",
+    "revisado_en": "2026-11-08T22:34:26.021685-05:00",
+    "effective_from": "2026-11-08T22:34:26.021685-05:00",
+    "effective_to": "2026-12-01T00:00:00-05:00",
+    "intervalo_abierto_expreso": false,
+    "ambitos": [
+      {
+        "tipo": "general",
+        "identificador": "corpus_revision"
+      }
+    ],
+    "usos": [
+      "evidencia_historica"
+    ],
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "revision_gobierno": 15
+  },
+  "supuesto": "Confirmación individual por el rol del área competente Vicepresidencia de Transporte — Operaciones, supuesto académico expresamente autorizado por Jonnathan Caballero. No identifica ni acredita una autoridad real de PetroAndes. Autenticidad verificada únicamente dentro de esta simulación académica. Lectura descriptiva del MAOP de diseño declarado en el manual, limitada a la simulación académica.",
+  "autenticidad": "verificada",
+  "contenido_no_confiable": true
+}

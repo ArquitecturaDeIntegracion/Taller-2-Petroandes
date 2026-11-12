@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "reutilizado": false,
+  "solicitud_sha256": "eb1371b9c56eb81c80dd0a5f631bf5e5ae19dd849c7b786a6bf5ca8ced7e79f2",
+  "revision_humana_fecha": "2026-11-08",
+  "inicio_efectivo": "2026-11-08T22:34:26.021685-05:00",
+  "fin_exclusivo": "2026-12-01T00:00:00-05:00",
+  "antes": {
+    "perfil": "laboratorio",
+    "governance_revision": 13,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 3,
+      "excluido": 4,
+      "certificado": 12
+    },
+    "decisiones_registradas": 12,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 13
+  },
+  "despues": {
+    "perfil": "laboratorio",
+    "governance_revision": 15,
+    "documentos": 19,
+    "clasificacion": {
+      "pendiente": 1,
+      "excluido": 4,
+      "certificado": 14
+    },
+    "decisiones_registradas": 14,
+    "conflictos_abiertos": 0,
+    "eventos_pendientes": 15
+  },
+  "baseline_identico": true,
+  "permisos_manuales": {
+    "historico": [
+      "MAN-MTO-002",
+      "MAN-OPE-001"
+    ],
+    "antes": [],
+    "fin_exclusivo": [],
+    "otro_grupo": [],
+    "otro_ambito": [],
+    "instruccion_operativa": [],
+    "limite_diseno": [],
+    "especificacion_activo": [],
+    "referencia_normativa": [],
+    "recomendacion": [],
+    "inspeccion_no_confiable": []
+  },
+  "sha256_copias": {
+    "laboratorio-after.sqlite3": "4699c28cbfce5c18eff61140b0d7f7fb69661bb2cfeda69ebbe5b1fe25dde61d",
+    "laboratorio-before.sqlite3": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb"
+  }
+}

@@ -2,25 +2,13 @@
 import hashlib
 import importlib.metadata
 import json
-import os
 import platform
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from project_paths import APP_ROOT as ROOT, CACHE_DIR, portable
-CACHE = CACHE_DIR / "huggingface"
-
-
-def configure_cache(offline=False):
-    os.environ["HF_HOME"] = str(CACHE)
-    os.environ["HF_HUB_CACHE"] = str(CACHE / "hub")
-    os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
-    os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    if offline:
-        os.environ["HF_HUB_OFFLINE"] = "1"
-        os.environ["TRANSFORMERS_OFFLINE"] = "1"
+from project_paths import APP_ROOT as ROOT, portable
+from petroandes.embeddings.cache import configure_cache
 
 
 def memory():
@@ -57,7 +45,7 @@ def hashes(directory):
     return result
 
 
-def write_report(path, report):
+def write_report(path, report, *, emit=True):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     report = {"recorded_utc": datetime.now(timezone.utc).isoformat(),
@@ -70,4 +58,5 @@ def write_report(path, report):
     if path.exists():
         raise FileExistsError(f"No sobrescribir evidencia: {path}")
     path.write_text(content, encoding="utf-8")
-    print(content, end="")
+    if emit:
+        print(content, end="")

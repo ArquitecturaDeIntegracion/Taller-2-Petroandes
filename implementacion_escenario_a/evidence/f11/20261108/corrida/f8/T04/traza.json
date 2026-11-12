@@ -1,0 +1,88 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:10:36.352562+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f8_evaluate.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f8",
+    "--collect-to",
+    "${TMPDIR}/petroandes-f8-traspaso-uzc1h5_9/captura.json"
+  ],
+  "correlation_id": "2e3f4acb-bdd4-43d0-9cb5-0049b655187a",
+  "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+  "revision_gobierno": 13,
+  "operacion": "responder",
+  "tiempos_ms": {
+    "gobierno": 0.722179000149481,
+    "generacion": 71.21867399837356,
+    "catalogo_publicado": 3.890812993631698,
+    "exacta": 0.06615999154746532,
+    "embedding": 70.84842999756802,
+    "densa": 1.9569599971873686,
+    "lexica": 1.2074250116711482,
+    "fusion": 0.10649200703483075,
+    "composicion": 2.100372003042139,
+    "revalidacion": 1.1784429952967912,
+    "total": 154.14258300734218
+  },
+  "top_k": 5,
+  "profundidad_rama": 10,
+  "rrf_k": 60,
+  "fusion": "rrf",
+  "tokenizacion": "bm25-codes-es-1.0.0",
+  "codigos": "codes-es-1.0.0",
+  "desempate": "coincidencia_exacta_y_chunk_id",
+  "modo": "texto",
+  "prefiltro_fragmentos": 12,
+  "candidatos": {
+    "densa": [
+      "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+      "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+      "3685ab04-4611-53c4-9f85-7558344b3e6d",
+      "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+      "e3e7596e-ab2a-544a-9255-efc608e43bd6",
+      "53321bbb-4bd2-5d55-a5f3-219a17bd5907",
+      "9e39bb70-2493-5ac5-a831-d88c1f3a5618",
+      "3ddb5119-09ff-5b87-b6ee-9c7ed5b76faa",
+      "2a27296c-b0fd-5ca6-b0ba-394ab068838f",
+      "1fba9eb2-7671-5c18-bb2c-cfe79f43bda6"
+    ],
+    "lexica": [
+      "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+      "3685ab04-4611-53c4-9f85-7558344b3e6d",
+      "53321bbb-4bd2-5d55-a5f3-219a17bd5907",
+      "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+      "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+      "e3e7596e-ab2a-544a-9255-efc608e43bd6",
+      "1fba9eb2-7671-5c18-bb2c-cfe79f43bda6",
+      "200d5348-9e59-5be7-b4ad-4ddf87bbe7ce",
+      "2a27296c-b0fd-5ca6-b0ba-394ab068838f",
+      "3ddb5119-09ff-5b87-b6ee-9c7ed5b76faa"
+    ],
+    "exacta": [
+      "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+      "3685ab04-4611-53c4-9f85-7558344b3e6d",
+      "53321bbb-4bd2-5d55-a5f3-219a17bd5907",
+      "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+      "e3e7596e-ab2a-544a-9255-efc608e43bd6",
+      "eacdd529-b0de-5c1b-9725-7bf43fac25f5"
+    ]
+  },
+  "seleccionados": [
+    "eacdd529-b0de-5c1b-9725-7bf43fac25f5",
+    "3685ab04-4611-53c4-9f85-7558344b3e6d",
+    "248a3e1a-c35a-57b6-8664-356ba4dfc456",
+    "7c30af4b-2d3a-5bc6-a88e-7e47eb1025bc",
+    "53321bbb-4bd2-5d55-a5f3-219a17bd5907"
+  ],
+  "compositor": "extractiva-es-1.0.0",
+  "uso": "evidencia_historica",
+  "criterio": "incertidumbre",
+  "unidades": [
+    "eacdd529-b0de-5c1b-9725-7bf43fac25f5"
+  ]
+}

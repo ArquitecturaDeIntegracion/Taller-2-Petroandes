@@ -1,0 +1,39 @@
+{
+  "servers": {
+    "petroandes-local": {
+      "type": "stdio",
+      "command": "docker",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "compose",
+        "--profile",
+        "dev",
+        "run",
+        "--rm",
+        "--no-deps",
+        "-T",
+        "dev",
+        "-m",
+        "petroandes.mcp_server",
+        "--profile",
+        "laboratorio"
+      ]
+    },
+    "petroandes-historico-f7": {
+      "type": "stdio",
+      "command": "docker",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "compose",
+        "--profile",
+        "dev",
+        "run",
+        "--rm",
+        "--no-deps",
+        "-T",
+        "dev",
+        "tools/f7_historical_mcp.py"
+      ]
+    }
+  }
+}

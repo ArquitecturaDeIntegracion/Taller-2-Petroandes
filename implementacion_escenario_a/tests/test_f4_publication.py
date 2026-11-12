@@ -11,6 +11,7 @@ import pytest
 from petroandes.embeddings.encoder import BundleMismatch, E5Encoder, EncodedQuery, validate_vectors
 from petroandes.index.common import IndexUnavailable
 from petroandes.index.dense import DenseOwner
+from petroandes.index import generation
 from petroandes.index.projections import lexical_search, tokens
 from petroandes.index.publication import Publisher
 from f2_helpers import NOW, catalog, context, doc, policy, record
@@ -148,3 +149,20 @@ def test_registry_failure_rolls_back_and_context_mismatch(tmp_path, encoder):
             publisher.policy = policy(store, ctx=context(grupos=frozenset(["OTRO"])))
             with pytest.raises(IndexUnavailable, match="Contexto"):
                 publisher.active()
+
+
+def test_partial_generation_removes_only_its_unpublished_collection(tmp_path, encoder, monkeypatch):
+    with catalog(tmp_path) as store:
+        stage = stage_fixture(store, encoder)
+        with Publisher(tmp_path / "index", policy(store), encoder) as publisher:
+            first = publisher.publish(stage)
+            original = publisher.registry.active()
+
+            def fail(*_):
+                raise OSError("fallo al materializar las proyecciones SQLite")
+
+            monkeypatch.setattr(generation, "write_projections", fail)
+            with pytest.raises(OSError, match="materializar"):
+                publisher.publish(stage, reindex="fallo-controlado")
+            assert publisher.registry.active() == original
+            assert [item.name for item in publisher.owner.client.get_collections().collections] == [first["collection"]]

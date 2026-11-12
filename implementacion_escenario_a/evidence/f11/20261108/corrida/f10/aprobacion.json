@@ -1,0 +1,60 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:14:06.325034+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f10_check.py",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/f11-final-dev-20261108-195433/f10"
+  ],
+  "status": "passed",
+  "resultado": "publicacion_verificada",
+  "intentos": [
+    {
+      "intento": 1,
+      "estado": "confirmado",
+      "segundos": 2.4553917630109936
+    }
+  ],
+  "publicacion": {
+    "generation_id": "b500ed6b-8886-5ab3-9090-79b583c83a91",
+    "perfil": "laboratorio",
+    "governance_revision": 15,
+    "published_fragments": 58,
+    "eligible_documents": 12,
+    "reused": false,
+    "collection": "e5small_es_1_0_0_r15_b500ed6b8886_f25e4a60"
+  },
+  "recibo": {
+    "collection": "e5small_es_1_0_0_r15_b500ed6b8886_f25e4a60",
+    "key": {
+      "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+      "context": {
+        "ambito": {
+          "identificador": "corpus_revision",
+          "tipo": "general"
+        },
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "identidad": "ensayo-historico",
+        "uso": "evidencia_historica"
+      },
+      "dense_digest_version": "qdrant-local-reopened-1",
+      "generation_id": "b500ed6b-8886-5ab3-9090-79b583c83a91",
+      "lexical_version": "bm25-codes-es-1.0.0",
+      "perfil": "laboratorio",
+      "records_sha256": "680cb237e83ee190d853136d53aa3fae983675d1bd6ecaba57ef21f6d7e3764c",
+      "revision_gobierno": 15,
+      "stage": "8f9d387d-bdf2-55a1-9beb-c3c2541b2f62"
+    },
+    "manifest_sha256": "6bf310dafba83d3fd5ed17a858a3fbb8ac21b7987fe136658149e3c9644478c7"
+  },
+  "comparacion": null,
+  "vectores_reutilizados": 54,
+  "vectores_calculados": 4,
+  "eventos_confirmados": 1
+}

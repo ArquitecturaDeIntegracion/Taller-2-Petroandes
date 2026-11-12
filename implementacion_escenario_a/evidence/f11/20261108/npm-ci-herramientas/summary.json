@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-09T01:08:26.772915+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "-c",
+    "reports/portable/f11-lock-tools-20261108"
+  ],
+  "status": "passed",
+  "inspector": "2.13.0",
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "error_esperado": "parametros_invalidos",
+  "licencias": {
+    "python": 77,
+    "npm": 123,
+    "python_sin_declaracion": [
+      "petroandes-educativo"
+    ],
+    "npm_sin_declaracion": [],
+    "archivos": [
+      "licencias-python-001.jsonl",
+      "licencias-npm-001.jsonl"
+    ]
+  }
+}

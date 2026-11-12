@@ -1,0 +1,28 @@
+{
+  "evidence_schema_version": 2,
+  "recorded_utc": "2026-11-09T00:59:35.418841+00:00",
+  "operacion": "carga_inicial_f2_desde_pdf",
+  "perfil": "baseline",
+  "governance_revision": 1,
+  "documentos": 19,
+  "clasificacion": {
+    "pendiente": 15,
+    "excluido": 4,
+    "certificado": 0
+  },
+  "decisiones_registradas": 0,
+  "conflictos_abiertos": 0,
+  "eventos_pendientes": 1,
+  "relaciones": 9,
+  "certificaciones_humanas_creadas": 0,
+  "backup_sha256": "4539687aab66f8aeeab34629006675453bac626f62e6d9df10fa9c9e27a12f57",
+  "catalog_ref": {
+    "base": "artifacts",
+    "path": "catalog/baseline/catalog.sqlite3"
+  },
+  "index_ref": {
+    "base": "artifacts",
+    "path": "indexes/baseline"
+  },
+  "indices_construidos": false
+}

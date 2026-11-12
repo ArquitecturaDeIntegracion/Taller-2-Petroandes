@@ -1,0 +1,28 @@
+{
+  "schema_version": "revision-confirmada/1.0.0",
+  "configuracion_tecnica_referencias": [
+    "config/embedding-bundle.json",
+    "requirements-portable.lock",
+    "requirements-dev.lock"
+  ],
+  "materializacion": {
+    "semilla": "catálogo inicial del perfil, revisión 1, con los 19 documentos y las exclusiones de origen",
+    "autorizaciones": "solo las que enumera la ficha, copiadas por identidad y SHA-256, con revisión local de la copia",
+    "publicacion": "en una ruta independiente por caso, mediante F3/F4 con el bundle fijado y el reloj de la ficha",
+    "aislamiento": "cada caso usa sus propias copias del catálogo y del índice, incluso los casos con los mismos permisos",
+    "reloj": "inyectado en la política de la prueba; no es un argumento MCP",
+    "r09": "conservar la colección inicial. Revocar después del control positivo y antes de probar la abstención, la obtención y la expansión",
+    "r10": "crear el PDF derivado fuera del corpus original. Tras el control positivo, registrar el mismo código y versión con el nuevo hash y probar la búsqueda y la obtención",
+    "r11": "usar el límite exclusivo indicado en la ficha. El control positivo usa el instante anterior con el mismo contexto",
+    "r12": "registrar el conflicto sintético entre las dos identidades de la ficha, acotado al contexto y al intervalo de prueba",
+    "r16": "usar el mismo catálogo semilla y dos publicaciones separadas por uso, una de auditoría y otra histórica"
+  },
+  "evaluacion_formal": {
+    "particiones": {"ajuste": 8, "reserva": 16},
+    "ajustar_solo_con": "ajuste",
+    "calibracion": "pendiente",
+    "ejecucion": "pendiente",
+    "reserva_minima": 15,
+    "metrica_r16": "recuperación de auditoría y contención, fuera del recall de respuestas"
+  }
+}
