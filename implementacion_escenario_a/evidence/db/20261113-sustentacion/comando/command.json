@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "dev",
+    "tools/db_demo_check.py",
+    "--output-dir",
+    "reports/portable/db-sustentacion-20261113-validacion"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T03:17:37.706292+00:00",
+  "elapsed_seconds": 111.6805136000039,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

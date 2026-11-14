@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "build",
+    "dev"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:51:46.274286+00:00",
+  "elapsed_seconds": 25.37327050001477,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

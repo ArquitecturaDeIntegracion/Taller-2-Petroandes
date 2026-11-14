@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-inspector-demo-cer9yytn/servers.json",
+    "--server",
+    "petroandes",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "buscar_documentos",
+    "--tool-args-json",
+    "{\"consulta\": \"En COM-PRV-0134 localice el anexo de notas de integración.\", \"top_k\": 5, \"filtros\": {\"tipo\": \"comunicacion\"}}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-13T03:24:44.470011+00:00",
+  "elapsed_seconds": 42.327059136000116,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

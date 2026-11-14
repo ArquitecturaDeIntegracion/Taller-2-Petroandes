@@ -1,21 +1,3 @@
 {
-  "mcpServers": {
-    "petroandes": {
-      "command": "C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker-compose.exe",
-      "args": [
-        "-f",
-        "C:\\Users\\jcjca\\OneDrive\\Documentos\\ChatGPT\\Taller 2 Arquitecura de Integración\\implementacion_escenario_a\\compose.yaml",
-        "--profile",
-        "dev",
-        "run",
-        "--rm",
-        "-T",
-        "dev",
-        "-m",
-        "petroandes.mcp_server",
-        "--profile",
-        "laboratorio"
-      ]
-    }
-  }
+  "mcpServers": {}
 }

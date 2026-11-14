@@ -1,0 +1,28 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:34:43.707118+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "/f9-output/ensayo/f9_original/resultado"
+  ],
+  "correlation_id": "b483e65a-5496-4ba1-aa7f-6d5f608fbd4e",
+  "generation_id": "16b82e91-4db3-5046-b97b-4fb686178e50",
+  "revision_gobierno": 13,
+  "operacion": "obtener",
+  "tiempos_ms": {
+    "gobierno": 14.435451004828792,
+    "generacion": 469.6191560069565,
+    "catalogo_publicado": 2.188016995205544,
+    "seleccion": 0.07139400258893147,
+    "revalidacion": 7.704740004555788,
+    "total": 520.5712440001662
+  },
+  "seleccionados": [
+    "8bf6f5e9-6a73-58ed-adce-c809554ba5e0"
+  ]
+}

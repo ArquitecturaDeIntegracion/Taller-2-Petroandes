@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/db_demo.py",
+    "preparar",
+    "--output-dir",
+    "${APP_ROOT}/reports/portable/db-sustentacion-20261113-validacion/datos"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T03:17:46.900013+00:00",
+  "elapsed_seconds": 52.08565863400145,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

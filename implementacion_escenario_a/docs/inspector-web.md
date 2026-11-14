@@ -1,92 +1,108 @@
-# Usar PetroAndes desde el Inspector web
+# PetroAndes con una conexión en MCP Inspector
 
-## Iniciar y conectar
+## Arranque
 
-1. Abre Docker Desktop en modo contenedores Linux. En PowerShell, sitúate en
-   `implementacion_escenario_a`, donde está `compose.yaml`.
-2. Inicia el Inspector. La primera ejecución puede tardar mientras Docker
-   construye la imagen del proyecto.
+Abre PowerShell en `implementacion_escenario_a`, con Docker Desktop activo
+y contenedores Linux. Ejecuta cada comando por separado:
 
-   ```powershell
-   docker.exe compose --profile inspector up --build -d inspector-web
-   ```
+```powershell
+docker compose --profile dev build dev
+$marca = Get-Date -Format 'yyyyMMdd-HHmmss'
+docker compose --profile dev run --rm -T dev tools/f0.py e5 --output "reports/portable/e5-$marca.json"
+docker compose --profile inspector up --build -d --force-recreate inspector-web
+docker compose --profile inspector ps inspector-web
+```
 
-3. Espera a que se prepare la copia histórica y abre el
-   [Inspector web local](http://127.0.0.1:6274/). En **Servers**, activa
-   **petroandes** para los casos 1 y 2 o **petroandes-historico-f7** para los
-   casos 3 y 4. Cuando muestre **Connected**, abre **Tools**.
+Abre [Inspector local](http://127.0.0.1:6274/). Recarga la página si estaba
+abierta con la configuración anterior. En **Servers** activa únicamente
+**petroandes**. Espera **Connected** y abre **Tools**. Debes ver
+`buscar_documentos` y `obtener_fragmento`. La interfaz puede indicar
+**Read-only session** porque la configuración se carga desde el proyecto.
 
-Para cambiar de contexto, vuelve a **Servers**, desactiva la conexión actual
-y activa la otra. Las cuatro llamadas se ejecutan en la misma dirección web.
-El arranque requiere el modelo E5 en el volumen y las dos primeras llamadas
-usan el catálogo habitual preparado en la [validación de F5](validacion-dev-hasta-f5.md).
+Todas las consultas usan la revisión 15 aprobada, en una copia aislada con
+reloj histórico del 8 de noviembre de 2026. Hay catorce documentos autorizados
+y 68 fragmentos publicados. La primera llamada carga E5 y construye el índice;
+puede tardar varios minutos. Las siguientes reutilizan la misma preparación.
+El [ADR 0013](adr-0013-mcp-demostracion-unica.md) explica contexto y aislamiento.
 
-La interfaz muestra **Read-only session** porque el catálogo viene del
-proyecto. Puedes ejecutar las herramientas y ver sus resultados. El navegador
-recibe automáticamente el token de la sesión al cargar la página local.
-[Documentación del Inspector web](https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/web).
+## Cuatro pruebas de presentación
 
-## 1 Búsqueda sin evidencia en petroandes
+Selecciona la herramienta, activa **Edit as JSON**, reemplaza el objeto
+completo y pulsa **Execute Tool**. Usa **Close results** para volver a editar.
+Conserva `petroandes` conectado en todas las pruebas.
 
-1. En **Tools**, selecciona `buscar_documentos`.
-2. En **Consulta**, escribe `Presión de descarga documentada de P-101.`.
-   Pon `3` en **Top K** y deja los filtros vacíos.
-3. Pulsa **Execute Tool** y revisa el resultado. En el volumen habitual del
-   laboratorio, con la revisión 13, espera `estado` igual a `abstencion`,
-   `sin_evidencia_autorizada` como motivo y listas de evidencia y afirmaciones vacías.
-   La primera búsqueda puede tardar mientras se carga el modelo local.
+### 1 Buscar la ficha de P101
 
-## 2 Obtención denegada en petroandes
-
-1. Selecciona `obtener_fragmento`.
-2. Introduce `FIC-ACT-P101` en **Doc Id**, `2` en **Version Documental** y `2`
-   en **Section Id**. La versión y la sección son cadenas de texto.
-3. Pulsa **Execute Tool**. En el mismo contexto, espera `estado` igual a
-   `denegado` y el motivo `evidencia_no_autorizada`, con partes y citas vacías.
-
-**Protocol** muestra las solicitudes MCP y sus respuestas. Un `OK` en esa
-pestaña indica que la llamada se completó. El resultado de la herramienta
-indica si el contexto documental autoriza devolver evidencia.
-
-## 3 y 4 Búsquedas autorizadas en petroandes historico f7
-
-Selecciona `buscar_documentos`, configura los campos y pulsa **Execute Tool**
-para cada caso. Ambos devuelven `respondida` en la copia histórica.
-
-| Caso | Consulta | Campos | Resultado esperado |
-| --- | --- | --- | --- |
-| 3 | `Presión de descarga documentada de P-101.` | **Top K** `3`, **Tipo** `ficha`, **Activo** `P-101`, **Tramo** vacío | Diseño `1.180 psi` y alarma `1.240 psi`, con cita a `FIC-ACT-P101` v2, sección `2`. |
-| 4 | `Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.` | **Top K** `3`, **Tipo** `resolucion`, **Activo** y **Tramo** vacíos | `0,3 %` en puntos de transferencia de custodia, con cita a `RES-CREG-0043-2024`, artículo 2. |
-
-Al pasar del caso 3 al 4, pulsa **Close results** y activa **Edit as JSON**.
-Reemplaza todos los argumentos por este objeto y pulsa **Execute Tool**.
-Así se elimina la clave `activo` que conserva el formulario al borrar su valor.
+Herramienta `buscar_documentos`:
 
 ```json
-{
-  "consulta": "Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.",
-  "top_k": 3,
-  "filtros": {"tipo": "resolucion"}
-}
+{"consulta":"Presión de descarga documentada de P-101.","top_k":3,"filtros":{"tipo":"ficha","activo":"P-101"}}
 ```
 
-El contexto histórico reproduce la autorización académica registrada en la
-revisión 13. En la exposición, repetir la pregunta de P-101 en ambos
-contextos permite mostrar la diferencia de permisos con la misma herramienta.
+Esperado: `respondida`, diseño **1.180 psi**, alarma **1.240 psi** y cita a
+`FIC-ACT-P101`, versión 2, sección 2, página 1. `revision_gobierno` es 15.
 
-## Comprobar y detener el servicio
+### 2 Obtener la sección autorizada
 
-Si la página no abre, comprueba que el servicio esté en ejecución y publique
-el puerto local `127.0.0.1:6274`.
+Herramienta `obtener_fragmento`:
+
+```json
+{"doc_id":"FIC-ACT-P101","version_documental":"2","section_id":"2"}
+```
+
+Esperado: `encontrado`, partes de la ficha con los mismos valores y su cita.
+
+### 3 Denegar una versión excluida
+
+Herramienta `obtener_fragmento`:
+
+```json
+{"doc_id":"PRO-MED-007","version_documental":"1","section_id":"3"}
+```
+
+Esperado: `denegado`, `error: evidencia_no_autorizada`, partes y citas vacías.
+
+### 4 Buscar la incertidumbre
+
+Herramienta `buscar_documentos`:
+
+```json
+{"consulta":"Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.","top_k":3,"filtros":{"tipo":"resolucion"}}
+```
+
+Esperado: `respondida`, incertidumbre combinada máxima **0,3 %**, cita a
+`RES-CREG-0043-2024`, `articulo-2`, página 1.
+
+## Controles adicionales y documento envenenado
+
+Los argumentos completos y resultados de nueve controles están en
+`config/demo-pruebas.json`. Para probar el contenido legítimo, llama
+`buscar_documentos` con:
+
+```json
+{"consulta":"Identifique el firmware anunciado por COM-PRV-0134 y las condiciones de aplicación.","top_k":10,"filtros":{"tipo":"comunicacion"}}
+```
+
+Esperado: `respondida`, firmware **7.4**, punto **fuera de servicio** y
+**verificación del factor**. Para comprobar la contención:
+
+```json
+{"consulta":"En COM-PRV-0134 localice el anexo de notas de integración.","top_k":5,"filtros":{"tipo":"comunicacion"}}
+```
+
+Esperado: `abstencion`, `evidencia_insuficiente`, sin afirmaciones ni evidencia.
+La [validación F9](validacion-dev-f9.md) conserva el ensayo de auditoría,
+las trazas de descarte y los observadores de efectos en un contexto aislado.
+
+## Comprobación automática y cierre
 
 ```powershell
-docker.exe compose --profile inspector ps inspector-web
+docker compose --profile dev run --rm -T dev tools/demo_check.py --output-dir "reports/portable/demo-$marca"
+docker compose --profile dev run --rm -T dev tools/demo_inspector_check.py --output-dir "reports/portable/demo-inspector-$marca"
+docker compose --profile inspector stop inspector-web
 ```
 
-Si Docker indica que el puerto está ocupado, libera `6274` y vuelve a iniciar
-el servicio. Tras reiniciarlo, recarga la página y activa de nuevo `petroandes`.
-Puedes detenerlo al terminar con este comando.
-
-```powershell
-docker.exe compose --profile inspector stop inspector-web
-```
+Esperado: salida 0 y `summary.json` con `status: passed`. La primera orden
+comprueba nueve llamadas reales por stdio; la segunda usa MCP Inspector real.
+La reserva formal no se ejecuta. Si falla la carga del modelo, revisa la
+sonda E5 antes de reconectar. Nunca envíes grupo, uso o perfil como argumentos.

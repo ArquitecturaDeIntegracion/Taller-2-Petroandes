@@ -1,0 +1,45 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:44:24.386511+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "revision_gobierno": 13,
+  "instante": "2026-11-03T00:12:31.781997-05:00",
+  "contextos": {
+    "historico": {
+      "contexto": {
+        "identidad": "ensayo-historico",
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "ambito": {
+          "tipo": "general",
+          "identificador": "corpus_revision"
+        },
+        "uso": "evidencia_historica"
+      },
+      "index": "${USER_HOME}/petroandes-f9-mcp-zc5ri6ww/index"
+    },
+    "auditoria": {
+      "contexto": {
+        "identidad": "ensayo-historico",
+        "grupos": [
+          "LAB_REVISION"
+        ],
+        "ambito": {
+          "tipo": "general",
+          "identificador": "corpus_revision"
+        },
+        "uso": "inspeccion_no_confiable"
+      },
+      "index": "${USER_HOME}/petroandes-f9-mcp-zc5ri6ww/index-auditoria"
+    }
+  }
+}

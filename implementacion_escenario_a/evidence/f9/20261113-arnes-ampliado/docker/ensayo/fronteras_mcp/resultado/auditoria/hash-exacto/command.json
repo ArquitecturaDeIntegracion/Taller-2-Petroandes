@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${USER_HOME}/petroandes-f9-mcp-zc5ri6ww/servers.json",
+    "--server",
+    "auditoria",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "obtener_fragmento",
+    "--tool-args-json",
+    "{\"doc_id\": \"COM-PRV-0134\", \"version_documental\": null, \"section_id\": \"asunto\", \"pdf_sha256\": \"4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f\"}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:41:43.784943+00:00",
+  "elapsed_seconds": 37.277893784004846,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

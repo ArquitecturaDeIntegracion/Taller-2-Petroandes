@@ -1,0 +1,36 @@
+{
+  "fecha_utc": "2026-11-14T02:02:45.462999+00:00",
+  "status": "passed",
+  "tipo_revision": "verificación técnica del agente, sin aprobación humana nueva",
+  "docker_profile": "dev",
+  "regresion": {
+    "passed": 232,
+    "failed": 0,
+    "seconds": 212.45
+  },
+  "f9_original_checks": 19,
+  "mcp_real_checks": 17,
+  "consumidor": {
+    "casos": 23,
+    "adversariales": 18,
+    "benignos": 5,
+    "propuestas": 24,
+    "denegaciones_previstas": 18,
+    "filtraciones": 0,
+    "contaminaciones": 0
+  },
+  "llm_real": "no_evaluado",
+  "reserva_ejecutada": false,
+  "word": {
+    "ruta": "output/doc/Resumen_Ejecutivo_Arnes_F9_1_PetroAndes.docx",
+    "sha256": "fc4b0309bd6d71656037c44e83337b0a34712c0f77ef03d3dfc997b00f2b1cd8",
+    "paginas": 4,
+    "qa": "4 PNG inspeccionados visualmente por el agente"
+  },
+  "diagrama": {
+    "sha256": "4f6c219e12bb54e91728989deacef7b050cd3d9ebc1b3a78abebdf1faf0eb8ab",
+    "notacion": "EIP oficial, adaptación funcional a llamadas y archivos locales",
+    "atribucion": "Gregor Hohpe y Bobby Woolf, CC BY 4.0"
+  },
+  "fuentes_clases": "app:evidence/f9/20261113-analisis-clases/summary.json"
+}

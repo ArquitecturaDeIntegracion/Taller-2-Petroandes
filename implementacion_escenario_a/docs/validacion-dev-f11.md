@@ -1,5 +1,9 @@
 # Validación integral hasta F11 en Docker dev
 
+Para la presentación actual con una conexión `petroandes`, usa la
+[guía de Inspector](inspector-web.md) y [Copilot](copilot-vscode.md).
+Este ensayo integral conserva sus contextos históricos aislados.
+
 Abre Docker Desktop en modo Linux y PowerShell en `implementacion_escenario_a`.
 Conserva el corpus y los documentos del taller en la carpeta padre. Ejecuta
 cada línea por separado en la misma terminal.

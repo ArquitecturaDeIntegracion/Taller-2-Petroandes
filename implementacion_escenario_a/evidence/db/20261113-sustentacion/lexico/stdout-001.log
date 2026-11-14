@@ -1,0 +1,14 @@
+{
+  "motor": "SQLite",
+  "base": "lexico",
+  "revision_copia": 15,
+  "sql": "SELECT COUNT(*) AS fragmentos_lexicos,\n       MIN(json_array_length(payload)) AS minimo_tokens_por_fragmento,\n       MAX(json_array_length(payload)) AS maximo_tokens_por_fragmento\nFROM fragments;\n",
+  "filas": [
+    {
+      "fragmentos_lexicos": 68,
+      "minimo_tokens_por_fragmento": 31,
+      "maximo_tokens_por_fragmento": 165
+    }
+  ],
+  "total_filas": 1
+}

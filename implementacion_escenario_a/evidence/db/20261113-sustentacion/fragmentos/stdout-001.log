@@ -1,0 +1,107 @@
+{
+  "motor": "SQLite",
+  "base": "fragmentos",
+  "revision_copia": 15,
+  "sql": "SELECT json_extract(payload, '$.fragment.doc_id') AS documento,\n       json_extract(payload, '$.fragment.version_documental') AS version,\n       COUNT(*) AS fragmentos_documento,\n       SUM(COUNT(*)) OVER () AS total_fragmentos_publicados,\n       COUNT(*) OVER () AS documentos_publicados\nFROM fragments\nGROUP BY json_extract(payload, '$.fragment.doc_id'),\n         json_extract(payload, '$.fragment.version_documental')\nORDER BY documento, version;\n",
+  "filas": [
+    {
+      "documento": "ACTA-CTO-2025-07",
+      "version": null,
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "ACTA-CTO-2025-11",
+      "version": null,
+      "fragmentos_documento": 4,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "COM-PRV-0098",
+      "version": null,
+      "fragmentos_documento": 4,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "COM-PRV-0134",
+      "version": null,
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "FIC-ACT-P101",
+      "version": "2",
+      "fragmentos_documento": 4,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "MAN-MTO-002",
+      "version": "1",
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "MAN-OPE-001",
+      "version": "3",
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "PRO-HSE-003",
+      "version": "4",
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "PRO-MED-007",
+      "version": "2",
+      "fragmentos_documento": 4,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "PRO-OPE-012",
+      "version": "3",
+      "fragmentos_documento": 5,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "PRO-OPE-021",
+      "version": "1",
+      "fragmentos_documento": 4,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "PRO-SEG-015",
+      "version": "1",
+      "fragmentos_documento": 6,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "RES-ANH-0471-2023",
+      "version": null,
+      "fragmentos_documento": 6,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    },
+    {
+      "documento": "RES-CREG-0043-2024",
+      "version": null,
+      "fragmentos_documento": 6,
+      "total_fragmentos_publicados": 68,
+      "documentos_publicados": 14
+    }
+  ],
+  "total_filas": 14
+}

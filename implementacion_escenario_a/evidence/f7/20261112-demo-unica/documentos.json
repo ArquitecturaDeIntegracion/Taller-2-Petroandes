@@ -1,0 +1,21 @@
+{
+  "base": "project",
+  "verificacion_visual": "Codex inspeccionó las trece páginas PNG después de renderizar con Word",
+  "documentos": [
+    {
+      "path": "output/doc/Resumen_Ejecutivo_Arquitectura_PetroAndes.docx",
+      "paginas": 4,
+      "sha256": "b9b336cc519253cbf3a382ec388705e7f7827f8b7ffd7c1acab4798be38b5266"
+    },
+    {
+      "path": "output/doc/Diagramas_Arquitectura_y_Funcionamiento_PetroAndes.docx",
+      "paginas": 4,
+      "sha256": "e441dc4fe3812c9497346c443082fbd7bcd887364c6cd9497ff4c99d98732cb6"
+    },
+    {
+      "path": "output/doc/Guia_Pruebas_Docker_MCP_VSCode_PetroAndes.docx",
+      "paginas": 5,
+      "sha256": "00236ebc65ac205490aaca7b953d5e2ca039e05e1e1a246030cef3acdc4dfbda"
+    }
+  ]
+}

@@ -1,87 +1,84 @@
-# Exposición de PetroAndes desde Copilot en VS Code
+# PetroAndes desde Copilot con una conexión
 
-Abre Docker Desktop en modo Linux y abre la carpeta `implementacion_escenario_a`
-en VS Code. El proyecto usa la imagen y los volúmenes del perfil Docker `dev`.
-La configuración del espacio de trabajo inicia los dos servidores por stdio.
-[Configuración MCP de VS Code](https://code.visualstudio.com/docs/agents/reference/mcp-configuration).
+Abre `implementacion_escenario_a` como carpeta en VS Code y mantén Docker
+Desktop activo en modo Linux. `.vscode/mcp.json` declara únicamente
+`petroandes`, que ejecuta Docker `dev` y `python -m petroandes.demo` por stdio.
+La [guía web](inspector-web.md) usa exactamente la misma configuración de
+demostración, revisión 15 y reloj histórico del 8 de noviembre de 2026.
 
-En el chat de GitHub Copilot, crea una sesión con destino **Local**. Puedes
-pegar una pregunta de esta guía o ejecutar su prompt guardado.
+## Iniciar y comprobar
 
-## Preguntas en lenguaje natural
+1. Construye la imagen y prepara E5 siguiendo la [guía web](inspector-web.md).
+2. Pulsa `Ctrl+Shift+P`, ejecuta **MCP: List Servers** y elige **petroandes**.
+   Pulsa **Start Server** si está detenido y espera **Running**.
+3. Abre un chat nuevo de GitHub Copilot con destino **Local**, modo **Agent**
+   o equivalente y herramientas habilitadas. Deben aparecer
+   `buscar_documentos` y `obtener_fragmento` de `petroandes`.
+4. Envía un prompt. La primera llamada prepara los índices; puede tardar
+   varios minutos. Expande su tarjeta para verificar argumentos y resultado.
 
-Copia solo el texto de cada recuadro y envíalo como un mensaje de chat. Para
-probar cada caso por separado, abre un chat nuevo. Expande la tarjeta de la
-llamada MCP y comprueba el servidor, la herramienta y el resultado antes de
-comparar la respuesta de Copilot con el esperado.
+Si VS Code conserva herramientas de los nombres anteriores, recarga la ventana
+con **Developer: Reload Window** y abre un chat nuevo. El proyecto elimina las
+entradas anteriores de `.vscode/mcp.json` y deja `.mcp.json` sin duplicados.
+No necesitas iniciar Inspector para usar Copilot.
 
-### 1. Búsqueda en el contexto habitual
+## Cuatro prompts en lenguaje natural
 
-```text
-Usa buscar_documentos del servidor petroandes-local para buscar la presión de descarga documentada de la bomba P-101. Pide hasta tres resultados. Responde solo con lo que devuelva esa herramienta e indica el estado y el motivo si falta evidencia autorizada.
-```
-
-**Resultado esperado.** `abstencion` con motivo `sin_evidencia_autorizada`.
-
-### 2. Obtención directa de la ficha en el contexto habitual
-
-```text
-Usa obtener_fragmento del servidor petroandes-local para pedir la sección 2 del documento FIC-ACT-P101, versión 2. Indica el estado que devuelve el MCP y el motivo si deniega el acceso.
-```
-
-**Resultado esperado.** `denegado` con error `evidencia_no_autorizada`.
-
-### 3. Presión de descarga de P-101 en el laboratorio histórico
+### 1 Buscar la presión documentada
 
 ```text
-Consulta la herramienta buscar_documentos del servidor petroandes-historico-f7. ¿Cuál es la presión de descarga de diseño de la bomba P-101 y cuál es su límite de alarma? Cita el documento, la versión, la sección y la página.
+Usa buscar_documentos del servidor petroandes. Busca la presión de descarga documentada de P-101, con top_k 3 y filtros tipo ficha y activo P-101. Conserva las condiciones y cita documento, versión, sección y página.
 ```
 
-**Resultado esperado.** `respondida`, con **1.180 psi** de diseño y **1.240 psi**
-como límite de alarma. Ficha `FIC-ACT-P101`, versión 2, sección 2 («Datos de
-operación»), página 1.
+Esperado: `respondida`, **1.180 psi** de diseño y **1.240 psi** de alarma,
+`FIC-ACT-P101`, versión 2, sección 2, página 1.
 
-### 4. Incertidumbre de medición en el laboratorio histórico
+### 2 Leer una sección autorizada
 
 ```text
-Usa buscar_documentos del servidor petroandes-historico-f7 y filtra por tipo resolución. ¿Qué límite de incertidumbre combinada de medición fija RES-CREG-0043-2024 para los puntos de transferencia de custodia? Cita el artículo y la página usando el resultado del MCP.
+Usa obtener_fragmento del servidor petroandes con doc_id FIC-ACT-P101, version_documental "2" y section_id "2". Muestra el estado, las partes y sus citas.
 ```
 
-**Resultado esperado.** `respondida`, con un límite de **0,3 %** en
-`RES-CREG-0043-2024`, artículo 2, página 1.
+Esperado: `encontrado`, los mismos valores de la ficha y su cita.
 
-La pregunta libre del caso 3 se ejecutó en Copilot y devolvió los dos valores
-con su cita. Los esperados de los otros tres casos se tomaron de las pruebas
-de los prompts guardados. [Evidencia de los cuatro prompts](../evidence/f7/20261108/copilot-vscode.md).
+### 3 Comprobar una denegación
 
-## Prompts guardados
+```text
+Usa obtener_fragmento del servidor petroandes con doc_id PRO-MED-007, version_documental "1" y section_id "3". Indica el estado y el error devueltos; usa únicamente el resultado de esa llamada.
+```
 
-Escribe `/petroandes-` en el chat y selecciona un prompt. También puedes abrir
-la paleta con `Ctrl+Shift+P`, ejecutar **Chat: Run Prompt** y elegir el mismo
-nombre. [Prompts reutilizables de VS Code](https://code.visualstudio.com/docs/agent-customization/prompt-files).
+Esperado: `denegado`, `evidencia_no_autorizada`, partes y citas vacías.
 
-| Prompt | Servidor | Resultado esperado |
+### 4 Buscar la incertidumbre
+
+```text
+Usa buscar_documentos del servidor petroandes. Localiza el límite de incertidumbre de medición de RES-CREG-0043-2024, con top_k 3 y filtro tipo resolucion. Cita el artículo y la página usando el resultado MCP.
+```
+
+Esperado: `respondida`, incertidumbre combinada máxima **0,3 %**, artículo 2,
+página 1. El código de sección devuelto es `articulo-2`.
+
+## Prompts guardados y controles adicionales
+
+Escribe `/petroandes-` o usa **Chat: Run Prompt** para elegir:
+
+| Prompt | Herramienta | Resultado |
 | --- | --- | --- |
-| `/petroandes-01` | `petroandes-local` | `abstencion` por falta de evidencia autorizada. |
-| `/petroandes-02` | `petroandes-local` | `denegado` al pedir la sección 2 de la ficha P-101. |
-| `/petroandes-03` | `petroandes-historico-f7` | `respondida`, 1.180 psi de diseño y 1.240 psi de alarma en la ficha. |
-| `/petroandes-04` | `petroandes-historico-f7` | `respondida`, límite de 0,3 % en el artículo 2 de la resolución. |
+| `/petroandes-01` | buscar_documentos | P-101 respondida |
+| `/petroandes-02` | obtener_fragmento | Ficha encontrada |
+| `/petroandes-03` | obtener_fragmento | Versión excluida denegada |
+| `/petroandes-04` | buscar_documentos | Incertidumbre respondida |
 
-La primera consulta histórica prepara una copia temporal del catálogo y el
-índice de F7. La primera llamada histórica por stdio tardó unos 72 segundos
-en el equipo de prueba. Las siguientes reutilizan esa copia mientras el
-servidor esté en ejecución. Para la exposición, puedes ejecutar el prompt
-03 o 04 antes de mostrar el chat. Expande la llamada para comprobar el
-nombre del servidor, los argumentos y el resultado original de MCP.
+Todos usan `petroandes`. Los argumentos exactos están en cada archivo
+`.github/prompts/petroandes-0N.prompt.md`. El resultado original MCP es la
+referencia al comparar con la redacción del modelo.
 
-Si un servidor aparece detenido, usa **MCP: List Servers** en la paleta y
-selecciona **Start Server**. El nombre `petroandes-local` identifica el
-contexto habitual de la [guía del Inspector](inspector-web.md) dentro de VS Code.
-Los dos clientes se pueden abrir por separado. El Inspector web es útil
-para ver la transcripción del protocolo en el navegador.
+El [Inspector](inspector-web.md) documenta los parámetros de firmware y del
+anexo malicioso. Puedes pedir las mismas llamadas desde Copilot. El firmware
+debe devolver 7.4 y sus condiciones; el anexo debe dar `abstencion` con
+`evidencia_insuficiente`. El MCP trata ese texto como dato no confiable.
+Los ensayos especiales de auditoría y cambio de permisos siguen en F9/F10,
+con copias aisladas; no se añade otra conexión de presentación.
 
-El 11 de noviembre se encontró el servidor histórico en estado **Error**.
-**Start Server** lo llevó a **Running**. Después se abrió un chat nuevo y
-se ejecutó la consulta de incertidumbre con resultado `respondida`,
-**0,3 %** y cita al artículo 2, página 1.
-[Recibo de la prueba en VS Code](../evidence/f7/20261111-vscode/conexion.md).
+Consulta el [ADR](adr-0013-mcp-demostracion-unica.md) y la
+[evidencia de la validación](../evidence/f7/20261112-demo-unica/README.md).

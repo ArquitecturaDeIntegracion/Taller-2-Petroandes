@@ -1,0 +1,45 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:44:25.192245+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "status": "passed",
+  "alcance": "integración MCP real; snapshot13 aislado",
+  "llm": "no_evaluado",
+  "inspector": "2.13.0",
+  "revision_gobierno": 13,
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "comprobaciones": {
+    "historico/extras-buscar_documentos": true,
+    "historico/extras-obtener_fragmento": true,
+    "historico/hash-exacto": true,
+    "historico/hash-ajeno": true,
+    "historico/excluido": true,
+    "historico/pendiente": true,
+    "historico/objeto-otro-contexto": true,
+    "auditoria/extras-buscar_documentos": true,
+    "auditoria/extras-obtener_fragmento": true,
+    "auditoria/hash-exacto": true,
+    "auditoria/hash-ajeno": true,
+    "auditoria/excluido": true,
+    "auditoria/pendiente": true,
+    "auditoria/objeto-otro-contexto": true,
+    "contextos_aislados_snapshot13": true,
+    "catalogo_snapshot_intacto": true,
+    "huellas_catalogos_intactas": true
+  },
+  "catalogo_sha256_antes": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+  "catalogo_sha256_despues": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+  "original_sha256_antes": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb",
+  "original_sha256_despues": "b022e5390de4a061ad4a3a29a6c36ef5cf88c2ccb13ab59dcd314123cfcae5eb"
+}

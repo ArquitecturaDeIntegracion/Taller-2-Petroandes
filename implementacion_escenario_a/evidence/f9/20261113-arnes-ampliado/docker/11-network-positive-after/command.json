@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "petroandes-f9-8d911ac4d4fb415488d28df36239a82d-control",
+    "--label",
+    "petroandes.f9.run=8d911ac4d4fb415488d28df36239a82d",
+    "--network",
+    "petroandes-f9-8d911ac4d4fb415488d28df36239a82d",
+    "--mount",
+    "type=bind,source=${APP_ROOT},target=/workspace/implementacion_escenario_a,readonly",
+    "--workdir",
+    "/workspace/implementacion_escenario_a",
+    "petroandes-educativo:local",
+    "tools/f9_sandbox_probe.py",
+    "--receiver",
+    "172.22.0.2:8765",
+    "--network-only"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:32:30.725596+00:00",
+  "elapsed_seconds": 1.908466099994257,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

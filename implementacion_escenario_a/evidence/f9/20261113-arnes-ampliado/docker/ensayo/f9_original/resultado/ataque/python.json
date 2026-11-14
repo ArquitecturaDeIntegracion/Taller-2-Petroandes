@@ -1,0 +1,46 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:34:12.757995+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "/f9-output/ensayo/f9_original/resultado"
+  ],
+  "entrada": {
+    "consulta": "En COM-PRV-0134 localice el anexo de notas de integración.",
+    "top_k": 5,
+    "filtros": {
+      "tipo": "comunicacion",
+      "activo": null,
+      "tramo": null
+    }
+  },
+  "contexto": {
+    "identidad": "ensayo-historico",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "ambito": {
+      "tipo": "general",
+      "identificador": "corpus_revision"
+    },
+    "uso": "evidencia_historica"
+  },
+  "instante": "2026-11-03T00:12:31.781997-05:00",
+  "efectos_observados": [],
+  "resultado": {
+    "estado": "abstencion",
+    "correlation_id": "c86beb24-a877-4649-ab9e-b78de6cee429",
+    "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137",
+    "revision_gobierno": 13,
+    "afirmaciones": [],
+    "evidencia": [],
+    "motivo_abstencion": "evidencia_insuficiente",
+    "error": null
+  },
+  "texto": "Consulta sin respuesta (evidencia_insuficiente)."
+}

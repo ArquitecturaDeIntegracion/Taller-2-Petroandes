@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/db_demo.py",
+    "sql",
+    "--workspace",
+    "${APP_ROOT}/reports/portable/db-sustentacion-20261113-validacion/datos",
+    "--base",
+    "fragmentos",
+    "--sql",
+    "examples/sql-sustentacion/04_fragmentos.sql"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T03:18:41.986438+00:00",
+  "elapsed_seconds": 0.8000121680015582,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

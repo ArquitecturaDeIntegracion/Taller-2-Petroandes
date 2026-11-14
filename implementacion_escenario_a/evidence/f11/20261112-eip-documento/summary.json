@@ -1,0 +1,26 @@
+{
+  "fecha_local": "2026-11-12T23:03:38.386869-05:00",
+  "documento": {
+    "base": "project",
+    "path": "output/doc/Patrones_Arquitectura_EIP_PetroAndes.docx",
+    "paginas": 4,
+    "sha256": "f7b418f3e193252332c983fb919c46193d829fc31189f55ab126bc1204b483b5"
+  },
+  "render": "Microsoft Word y rasterizador render_docx.py de la habilidad documents",
+  "verificacion_visual": {
+    "agente": "Codex",
+    "paginas_inspeccionadas": 4,
+    "resultado": "sin cortes ni solapamientos"
+  },
+  "referencias_hipervinculadas": 21,
+  "notacion": "https://www.enterpriseintegrationpatterns.com/",
+  "licencia_iconos": "https://creativecommons.org/licenses/by/4.0/",
+  "fuentes_proyecto": [
+    "docs/f11-diseno-eip.md",
+    "docs/adr-0013-mcp-demostracion-unica.md",
+    "docs/f10-operacion.md",
+    "evidence/f7/20261112-demo-unica/README.md"
+  ],
+  "codigo_aplicacion_modificado": false,
+  "reserva_ejecutada": false
+}

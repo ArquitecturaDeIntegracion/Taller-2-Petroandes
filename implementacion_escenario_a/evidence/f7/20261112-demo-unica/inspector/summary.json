@@ -1,0 +1,32 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-13T03:25:26.830292+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/demo_inspector_check.py",
+    "--output-dir",
+    "reports/portable/demo-unica-20261112/inspector"
+  ],
+  "status": "passed",
+  "inspector": "2.13.0",
+  "servidor": "petroandes",
+  "revision": 15,
+  "comprobaciones": [
+    {
+      "id": "M01",
+      "estado": "respondida"
+    },
+    {
+      "id": "M04",
+      "estado": "denegado"
+    },
+    {
+      "id": "M08",
+      "estado": "abstencion"
+    }
+  ],
+  "evaluacion_formal_ejecutada": false
+}

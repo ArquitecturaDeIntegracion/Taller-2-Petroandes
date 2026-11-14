@@ -1,0 +1,52 @@
+[
+  {
+    "pattern_page": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageEndpoint.html",
+    "image_url": "https://www.enterpriseintegrationpatterns.com/img/MessageEndpointIcon.gif",
+    "local": "MessageEndpoint.gif",
+    "sha256": "2ade9f634fa03f3b48542fe4b9617629f9128557123b745a605871211ef599e2",
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  {
+    "pattern_page": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html",
+    "image_url": "https://www.enterpriseintegrationpatterns.com/img/MessageFilterIcon.gif",
+    "local": "Filter.gif",
+    "sha256": "d2b3e6d88ba362d10464778e8efe03e9e2be0395ccc26e49bb03aa8817ff3d72",
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  {
+    "pattern_page": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html",
+    "image_url": "https://www.enterpriseintegrationpatterns.com/img/MessageStoreIcon.gif",
+    "local": "MessageStore.gif",
+    "sha256": "99990ebc337742d428adaa0b9df174da5a7bc00dabc57dc3d2c82b72415959d6",
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  {
+    "pattern_page": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html",
+    "image_url": "https://www.enterpriseintegrationpatterns.com/img/WireTapIcon.gif",
+    "local": "WireTap.gif",
+    "sha256": "93a365150b12fb3807027267c5fc360e247350fa75c23b56f324acd569de2d5f",
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  {
+    "pattern_page": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/InvalidMessageChannel.html",
+    "image_url": "https://www.enterpriseintegrationpatterns.com/img/InvalidMessageChannelIcon.gif",
+    "local": "InvalidMessageChannel.gif",
+    "sha256": "b139edcdcf97ff03173e3bd3a2ad0ab16c18433dae167cd5524ead0625007684",
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by/4.0/"
+    ]
+  }
+]

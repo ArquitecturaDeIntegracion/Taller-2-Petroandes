@@ -3,7 +3,7 @@
     "petroandes": {
       "type": "stdio",
       "command": "/usr/local/bin/python",
-      "args": ["-m", "petroandes.mcp_server", "--profile", "laboratorio"],
+      "args": ["-m", "petroandes.demo"],
       "protocolEra": "legacy"
     }
   }

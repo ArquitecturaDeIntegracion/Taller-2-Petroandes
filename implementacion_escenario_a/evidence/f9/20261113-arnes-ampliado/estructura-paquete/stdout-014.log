@@ -1,0 +1,147 @@
+  5 líneas  petroandes/compose/__init__.py
+ 92 líneas  petroandes/compose/intent.py
+ 80 líneas  petroandes/compose/service.py
+ 61 líneas  petroandes/compose/tables.py
+ 98 líneas  petroandes/compose/units.py
+  1 líneas  petroandes/contracts/__init__.py
+ 28 líneas  petroandes/contracts/common.py
+ 96 líneas  petroandes/contracts/documents.py
+ 29 líneas  petroandes/contracts/queries.py
+101 líneas  petroandes/contracts/responses.py
+  1 líneas  petroandes/embeddings/__init__.py
+ 16 líneas  petroandes/embeddings/cache.py
+123 líneas  petroandes/embeddings/encoder.py
+ 33 líneas  petroandes/embeddings/input.py
+  1 líneas  petroandes/extract/__init__.py
+ 19 líneas  petroandes/extract/__main__.py
+ 37 líneas  petroandes/extract/contrast.py
+ 61 líneas  petroandes/extract/metadata.py
+ 36 líneas  petroandes/extract/models.py
+ 36 líneas  petroandes/extract/output.py
+ 71 líneas  petroandes/extract/pdf.py
+ 82 líneas  petroandes/extract/pipeline.py
+ 44 líneas  petroandes/extract/prepare.py
+ 72 líneas  petroandes/extract/staging.py
+ 94 líneas  petroandes/extract/tables.py
+  1 líneas  petroandes/governance/__init__.py
+ 75 líneas  petroandes/governance/administration.py
+ 71 líneas  petroandes/governance/baseline.py
+ 62 líneas  petroandes/governance/eligibility.py
+102 líneas  petroandes/governance/models.py
+ 37 líneas  petroandes/governance/pdf_metadata.py
+ 90 líneas  petroandes/governance/registration.py
+  1 líneas  petroandes/index/__init__.py
+ 30 líneas  petroandes/index/common.py
+ 82 líneas  petroandes/index/dense.py
+ 95 líneas  petroandes/index/generation.py
+ 80 líneas  petroandes/index/projections.py
+116 líneas  petroandes/index/propagation.py
+132 líneas  petroandes/index/publication.py
+ 49 líneas  petroandes/index/registry.py
+ 67 líneas  petroandes/index/reuse.py
+ 66 líneas  petroandes/index/stage.py
+  5 líneas  petroandes/retrieve/__init__.py
+ 52 líneas  petroandes/retrieve/index.py
+ 89 líneas  petroandes/retrieve/ranking.py
+ 35 líneas  petroandes/retrieve/selection.py
+156 líneas  petroandes/retrieve/service.py
+  4 líneas  petroandes/security_lab/__init__.py
+ 93 líneas  petroandes/security_lab/cases.py
+ 35 líneas  petroandes/security_lab/client.py
+100 líneas  petroandes/security_lab/dispatcher.py
+ 63 líneas  petroandes/security_lab/grading.py
+ 58 líneas  petroandes/security_lab/models.py
+ 83 líneas  petroandes/security_lab/runner.py
+  7 líneas  tests/conftest.py
+ 45 líneas  tests/f2_helpers.py
+ 31 líneas  tests/f4_helpers.py
+ 62 líneas  tests/f5_helpers.py
+ 46 líneas  tests/f7_stdio_fixture.py
+ 52 líneas  tests/historical_lab.py
+121 líneas  tests/test_contracts.py
+ 37 líneas  tests/test_f10_substitution.py
+ 46 líneas  tests/test_f2_baseline.py
+105 líneas  tests/test_f2_catalog.py
+ 32 líneas  tests/test_f2_cli.py
+130 líneas  tests/test_f2_governance.py
+ 71 líneas  tests/test_f3_chunk.py
+ 41 líneas  tests/test_f3_critical.py
+ 60 líneas  tests/test_f3_extraction.py
+ 36 líneas  tests/test_f3_quarantine.py
+ 42 líneas  tests/test_f3_staging.py
+ 86 líneas  tests/test_f4_integrity.py
+168 líneas  tests/test_f4_publication.py
+ 34 líneas  tests/test_f5_corpus.py
+176 líneas  tests/test_f5_retrieval.py
+ 27 líneas  tests/test_f5_selection.py
+182 líneas  tests/test_f6_compose.py
+172 líneas  tests/test_f9_guard.py
+ 62 líneas  tests/test_f9_mcp_boundaries.py
+141 líneas  tests/test_f9_validate.py
+ 38 líneas  tests/test_json_schemas.py
+133 líneas  tests/test_lab_administration.py
+ 78 líneas  tests/test_portability.py
+ 58 líneas  tools/certify_lab.py
+107 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 55 líneas  tools/check_f2.py
+133 líneas  tools/check_f3.py
+ 77 líneas  tools/check_f4.py
+ 65 líneas  tools/check_lab_index.py
+107 líneas  tools/check_lab_state.py
+ 70 líneas  tools/check_portability.py
+110 líneas  tools/debug_smoke.py
+ 74 líneas  tools/demo_check.py
+ 46 líneas  tools/demo_inspector_check.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 62 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+109 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+148 líneas  tools/f10.py
+176 líneas  tools/f10_check.py
+140 líneas  tools/f10_controls.py
+145 líneas  tools/f11_check.py
+140 líneas  tools/f11_inventory.py
+127 líneas  tools/f11_package.py
+ 56 líneas  tools/f11_verify_delivery.py
+ 81 líneas  tools/f4.py
+ 80 líneas  tools/f5.py
+ 37 líneas  tools/f7_historical_mcp.py
+173 líneas  tools/f7_inspector.py
+ 49 líneas  tools/f7_inspector_client.py
+ 27 líneas  tools/f7_inspector_web.py
+ 64 líneas  tools/f7_wire.py
+177 líneas  tools/f8_evaluate.py
+ 57 líneas  tools/f8_judge.py
+ 75 líneas  tools/f8_metrics.py
+154 líneas  tools/f9_attack.py
+ 76 líneas  tools/f9_guard_check.py
+151 líneas  tools/f9_mcp_boundaries.py
+ 77 líneas  tools/f9_observe.py
+142 líneas  tools/f9_sandbox_probe.py
+ 71 líneas  tools/f9_sources.py
+101 líneas  tools/f9_validate.py
+149 líneas  tools/f9_validation_runtime.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+ 66 líneas  tools/prepare_lab_request.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+170 líneas  tools/review_apply_manuals.py
+125 líneas  tools/review_case_sources.py
+135 líneas  tools/review_frozen.py
+ 46 líneas  tools/review_lab_case_dependencies.py
+139 líneas  tools/review_seed_contexts.py
+103 líneas  tools/validate_agent.py
+
+OK: 2224 archivos textuales; máximo 199 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "servidor": "petroandes",
+  "transporte": "stdio",
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "revision": 15,
+  "comprobaciones_tecnicas": 9,
+  "snapshot_sha256": "4699c28cbfce5c18eff61140b0d7f7fb69661bb2cfeda69ebbe5b1fe25dde61d",
+  "snapshot_identico": true,
+  "evaluacion_formal_ejecutada": false
+}

@@ -1,0 +1,16 @@
+{
+  "snapshot": {
+    "base": "app",
+    "path": "evidence/revision/20261108-confirmada/registro/laboratorio-after.sqlite3",
+    "sha256": "4699c28cbfce5c18eff61140b0d7f7fb69661bb2cfeda69ebbe5b1fe25dde61d"
+  },
+  "perfil": "laboratorio",
+  "revision": 15,
+  "reloj_historico": "2026-11-08T22:34:26.021685-05:00",
+  "contexto": {
+    "identidad": "demostracion-educativa",
+    "grupos": ["LAB_REVISION"],
+    "ambito": {"tipo": "general", "identificador": "corpus_revision"},
+    "uso": "evidencia_historica"
+  }
+}

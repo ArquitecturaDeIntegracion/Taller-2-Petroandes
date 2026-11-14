@@ -1,0 +1,23 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/db_demo.py",
+    "qdrant",
+    "--workspace",
+    "${APP_ROOT}/reports/portable/db-sustentacion-20261113-validacion/datos",
+    "--doc-id",
+    "COM-PRV-0134",
+    "--section-id",
+    "anexo-notas-de-integracion",
+    "--vector"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T03:18:45.021642+00:00",
+  "elapsed_seconds": 4.112429876004171,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

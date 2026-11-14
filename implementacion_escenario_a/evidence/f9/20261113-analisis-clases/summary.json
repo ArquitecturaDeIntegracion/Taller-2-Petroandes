@@ -1,0 +1,56 @@
+{
+  "fecha_local": "2026-11-13T20:00:04.312722-05:00",
+  "alcance": "Análisis y propuesta, sin implementación",
+  "propuesta": {
+    "base": "app",
+    "path": "docs/propuesta-f9-clases-13-14-20261113.md",
+    "lineas": 154,
+    "sha256": "88c6aff70d19aa4cb0f0920185477372ba7568107f542d5d425e00d68b09af3c"
+  },
+  "pdfs": [
+    {
+      "base": "pdfs_aportados_por_usuario",
+      "path": "ARTI4212_S13_Orquestacion_Agentes.pdf",
+      "paginas": 20,
+      "sha256": "e58dc03a0588609084a8a71823fc673c30681f9c262a407639068747dc7ceef4",
+      "paginas_renderizadas_e_inspeccionadas": [
+        7,
+        16
+      ]
+    },
+    {
+      "base": "pdfs_aportados_por_usuario",
+      "path": "ARTI4212_Sesion14.pdf",
+      "paginas": 27,
+      "sha256": "420c2864f443e780b57018aec6e9a7771983241797c15397317820988b2400c6",
+      "paginas_renderizadas_e_inspeccionadas": [
+        15,
+        16,
+        18,
+        27
+      ]
+    }
+  ],
+  "codigo_revisado_sha256": {
+    "tools/f9_attack.py": "d3a49329e3da29e69550a717a0e255caa5161d14e2b49dec1fa9363b2d145c79",
+    "tools/f9_observe.py": "8359dff1b686446fdb9bf0469fdad8ea727647a9c0faf172f9673fed988e7908",
+    "petroandes/extract/prepare.py": "78e9ea306747f25c1e7cba941449e84f4427261f73e5d5d64cffcf0f9ddd638d",
+    "petroandes/compose/units.py": "8ae4d4870712e5ff1a3526c2ee25a8f6e98283b4d8622e8f1bfdee1b5733ea91",
+    "petroandes/mcp_tools.py": "35eab76a9760e0b13c90153bcc96626a08e373689b26630491e2fe9f36c88f19",
+    "compose.yaml": "daa6ea0872c1d7b7b42c2e3d27d4e0f9f6a39b46c5d76e22f4fd2e5b63a70b70",
+    "Dockerfile": "4a3d0703a91dd1d13f35ce9dfdeb4b294315c421e233a1d176d02fed5b652acc",
+    ".vscode/mcp.json": "adecec885017cd173f28933371437f19013f43f14460d365b085e2c4927926f5"
+  },
+  "fuentes_industria": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html",
+    "https://ai.meta.com/blog/practical-ai-agent-security/",
+    "https://learn.microsoft.com/en-us/security/zero-trust/sfi/defend-indirect-prompt-injection",
+    "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+    "https://www.anthropic.com/research/prompt-injection-defenses"
+  ],
+  "runtime_modificado": false,
+  "ataques_nuevos_ejecutados": false,
+  "reserva_ejecutada": false,
+  "mediciones_nuevas_de_seguridad": false
+}

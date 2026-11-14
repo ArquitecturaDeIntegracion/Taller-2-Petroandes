@@ -1,0 +1,21 @@
+{
+  "motor": "SQLite",
+  "base": "gobierno",
+  "revision_copia": 15,
+  "sql": "SELECT revision AS revision_decision,\n       json_extract(payload, '$.decision.doc_id') AS documento,\n       json_extract(payload, '$.decision.version_documental') AS version,\n       json_extract(payload, '$.decision.estado') AS estado,\n       json_extract(payload, '$.decision.pdf_sha256') AS pdf_sha256,\n       json_extract(payload, '$.decision.usos') AS usos,\n       json_extract(payload, '$.decision.grupos') AS grupos,\n       json_extract(payload, '$.decision.simulacion_academica') AS simulacion_academica,\n       json_extract(payload, '$.decision.effective_to') AS fin_exclusivo,\n       json_extract(payload, '$.contenido_no_confiable') AS contenido_no_confiable\nFROM decisions\nWHERE json_extract(payload, '$.decision.doc_id') = 'COM-PRV-0134'\nORDER BY revision DESC;\n",
+  "filas": [
+    {
+      "revision_decision": 12,
+      "documento": "COM-PRV-0134",
+      "version": null,
+      "estado": "certificado",
+      "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+      "usos": "[\"recomendacion\",\"evidencia_historica\",\"inspeccion_no_confiable\"]",
+      "grupos": "[\"LAB_REVISION\"]",
+      "simulacion_academica": 1,
+      "fin_exclusivo": "2026-12-01T00:00:00-05:00",
+      "contenido_no_confiable": 1
+    }
+  ],
+  "total_filas": 1
+}

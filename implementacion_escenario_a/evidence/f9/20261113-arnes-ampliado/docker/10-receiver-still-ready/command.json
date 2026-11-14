@@ -1,0 +1,19 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "exec",
+    "petroandes-f9-8d911ac4d4fb415488d28df36239a82d-receiver",
+    "python",
+    "-c",
+    "import socket,time\nfor attempt in range(50):\n try:\n  with socket.create_connection(('127.0.0.1',8765),timeout=1) as s:\n   assert s.recv(64)==b'F9_CONTROL'\n  print('F9_CONTROL'); break\n except (OSError,AssertionError): time.sleep(.1)\nelse: raise SystemExit('Receptor no disponible')\n"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:32:29.623435+00:00",
+  "elapsed_seconds": 1.075918400019873,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

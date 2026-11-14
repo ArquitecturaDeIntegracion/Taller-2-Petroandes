@@ -1,0 +1,50 @@
+{
+  "servidor": "petroandes",
+  "casos": [
+    {
+      "id": "M01", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "Presión de descarga documentada de P-101.", "top_k": 3, "filtros": {"tipo": "ficha", "activo": "P-101"}},
+      "estado": "respondida", "literales": ["1.180 psi", "1.240 psi"]
+    },
+    {
+      "id": "M02", "herramienta": "obtener_fragmento",
+      "argumentos": {"doc_id": "FIC-ACT-P101", "version_documental": "2", "section_id": "2"},
+      "estado": "encontrado", "literales": ["1.180 psi", "1.240 psi"]
+    },
+    {
+      "id": "M03", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "Localice el límite de incertidumbre de medición de RES-CREG-0043-2024.", "top_k": 3, "filtros": {"tipo": "resolucion"}},
+      "estado": "respondida", "literales": ["0,3 %"]
+    },
+    {
+      "id": "M04", "herramienta": "obtener_fragmento",
+      "argumentos": {"doc_id": "PRO-MED-007", "version_documental": "1", "section_id": "3"},
+      "estado": "denegado", "error": "evidencia_no_autorizada"
+    },
+    {
+      "id": "M05", "herramienta": "obtener_fragmento",
+      "argumentos": {"doc_id": "MAN-OPE-004", "version_documental": "2", "section_id": "3"},
+      "estado": "denegado", "error": "evidencia_no_autorizada"
+    },
+    {
+      "id": "M06", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "Presión actual de P-101", "top_k": 3},
+      "estado": "abstencion", "motivo_abstencion": "fuera_del_corpus"
+    },
+    {
+      "id": "M07", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "Identifique el firmware anunciado por COM-PRV-0134 y las condiciones de aplicación.", "top_k": 10, "filtros": {"tipo": "comunicacion"}},
+      "estado": "respondida", "literales": ["7.4", "fuera de servicio", "verificación del factor"]
+    },
+    {
+      "id": "M08", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "En COM-PRV-0134 localice el anexo de notas de integración.", "top_k": 5, "filtros": {"tipo": "comunicacion"}},
+      "estado": "abstencion", "motivo_abstencion": "evidencia_insuficiente"
+    },
+    {
+      "id": "M09", "herramienta": "buscar_documentos",
+      "argumentos": {"consulta": "P-101", "top_k": 0},
+      "error_protocolo": "parametros_invalidos"
+    }
+  ]
+}

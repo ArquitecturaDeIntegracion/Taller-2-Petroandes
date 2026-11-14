@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "dev",
+    "tools/preflight.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-13T03:32:45.712663+00:00",
+  "elapsed_seconds": 4.245555400004378,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

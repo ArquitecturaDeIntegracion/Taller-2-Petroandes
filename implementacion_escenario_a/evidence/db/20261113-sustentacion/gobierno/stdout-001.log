@@ -1,0 +1,17 @@
+{
+  "motor": "SQLite",
+  "base": "gobierno",
+  "revision_copia": 15,
+  "sql": "SELECT perfil,\n       schema_version,\n       revision AS revision_gobierno,\n       (SELECT COUNT(*) FROM documents) AS documentos,\n       (SELECT COUNT(*) FROM decisions) AS decisiones,\n       (SELECT COUNT(*) FROM events) AS eventos\nFROM metadata;\n",
+  "filas": [
+    {
+      "perfil": "laboratorio",
+      "schema_version": 1,
+      "revision_gobierno": 15,
+      "documentos": 19,
+      "decisiones": 14,
+      "eventos": 15
+    }
+  ],
+  "total_filas": 1
+}

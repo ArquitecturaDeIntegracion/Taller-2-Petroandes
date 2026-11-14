@@ -1,0 +1,37 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "-v",
+    "${APP_ROOT}\\reports\\portable\\f9-empty-nsli75ux:/workspace/implementacion_escenario_a/reports/portable:ro",
+    "project",
+    "tools/validate_agent.py"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T02:01:26.568498+00:00",
+  "elapsed_seconds": 9.153278999991016,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stdout-002.log",
+    "stdout-003.log",
+    "stdout-004.log",
+    "stdout-005.log",
+    "stdout-006.log",
+    "stdout-007.log",
+    "stdout-008.log",
+    "stdout-009.log",
+    "stdout-010.log",
+    "stdout-011.log",
+    "stdout-012.log",
+    "stdout-013.log",
+    "stdout-014.log"
+  ]
+}

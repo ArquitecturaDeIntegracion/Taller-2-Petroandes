@@ -1,0 +1,2 @@
+{"ensayo": "corpus_revision_historica", "reloj_prueba": "2026-11-03T00:12:31.781997-05:00", "preparados": 19, "generation_id": "41befd85-9a59-5324-8d06-8a67e6d9e137", "perfil": "laboratorio", "governance_revision": 13, "published_fragments": 58, "eligible_documents": 12, "reused": false, "collection": "e5small_es_1_0_0_r13_41befd859a59_880e0c73"}
+{"status": "passed", "alcance": "integración MCP real; snapshot13 aislado"}

@@ -1,0 +1,160 @@
+  7 líneas  .env.example
+ 17 líneas  .gitignore
+  3 líneas  .mcp.json
+ 82 líneas  AGENTS.md
+ 28 líneas  Dockerfile
+ 17 líneas  Dockerfile.dockerignore
+ 24 líneas  INICIO.md
+199 líneas  README.md
+ 83 líneas  compose.yaml
+ 41 líneas  config.json
+ 16 líneas  pyproject.toml
+  3 líneas  requirements-dev.lock
+ 76 líneas  requirements-portable.lock
+ 13 líneas  requirements.in
+ 75 líneas  requirements.lock
+ 42 líneas  .agents\skills\petroandes-desarrollo\SKILL.md
+ 42 líneas  .agents\skills\petroandes-evaluacion\SKILL.md
+ 40 líneas  .agents\skills\petroandes-recuperacion-mcp\SKILL.md
+  7 líneas  .codex\config.toml
+ 21 líneas  .github\prompts\petroandes-01.prompt.md
+ 18 líneas  .github\prompts\petroandes-02.prompt.md
+ 18 líneas  .github\prompts\petroandes-03.prompt.md
+ 20 líneas  .github\prompts\petroandes-04.prompt.md
+ 33 líneas  .vscode\launch.json
+ 21 líneas  .vscode\mcp.json
+ 50 líneas  config\demo-pruebas.json
+ 15 líneas  config\e5-artifacts.json
+ 15 líneas  config\embedding-bundle.json
+  9 líneas  config\f4-context.json
+ 49 líneas  config\f8-prueba-tecnica.json
+ 10 líneas  config\inspector-web.json
+ 16 líneas  config\mcp-demo.json
+ 44 líneas  config\admin\lab-20261103\authorization.md
+ 12 líneas  config\admin\lab-20261103\request\01.json
+ 12 líneas  config\admin\lab-20261103\request\02.json
+ 12 líneas  config\admin\lab-20261103\request\03.json
+ 12 líneas  config\admin\lab-20261103\request\04.json
+ 12 líneas  config\admin\lab-20261103\request\05.json
+ 12 líneas  config\admin\lab-20261103\request\06.json
+ 12 líneas  config\admin\lab-20261103\request\07.json
+ 11 líneas  config\admin\lab-20261103\request\08.json
+ 11 líneas  config\admin\lab-20261103\request\09.json
+ 12 líneas  config\admin\lab-20261103\request\10.json
+ 13 líneas  config\admin\lab-20261103\request\11.json
+ 12 líneas  config\admin\lab-20261103\request\12.json
+ 34 líneas  config\admin\lab-20261103\request\request.json
+  7 líneas  config\admin\lab-20261108\request\01.json
+  7 líneas  config\admin\lab-20261108\request\02.json
+ 24 líneas  config\admin\lab-20261108\request\request.json
+ 53 líneas  contracts\v0.1.0\Citation.json
+ 25 líneas  contracts\v0.1.0\Claim.json
+185 líneas  contracts\v0.1.0\Decision.json
+ 84 líneas  contracts\v0.1.0\Document.json
+127 líneas  contracts\v0.1.0\Fragment.json
+ 61 líneas  contracts\v0.1.0\FragmentQuery.json
+ 86 líneas  contracts\v0.1.0\FragmentResponse.json
+ 82 líneas  contracts\v0.1.0\Manifest.json
+ 27 líneas  contracts\v0.1.0\Scope.json
+ 54 líneas  contracts\v0.1.0\SearchFilters.json
+ 35 líneas  contracts\v0.1.0\SearchQuery.json
+106 líneas  contracts\v0.1.0\SearchResponse.json
+ 56 líneas  docs\adr-0005-entorno-f0.md
+ 56 líneas  docs\adr-0006-portabilidad.md
+ 57 líneas  docs\adr-0007-extraccion-estructural.md
+ 76 líneas  docs\adr-0008-publicacion-f4.md
+ 68 líneas  docs\adr-0009-incorporacion-laboratorio.md
+ 73 líneas  docs\adr-0010-composicion-f6.md
+ 20 líneas  docs\adr-0011-inspector-web.md
+ 26 líneas  docs\adr-0012-evaluacion-f8.md
+ 58 líneas  docs\adr-0013-mcp-demostracion-unica.md
+ 67 líneas  docs\adr-0014-arnes-f9-1.md
+ 65 líneas  docs\arnes-f9-1-amenazas.md
+121 líneas  docs\certificacion-laboratorio-20261103.md
+ 57 líneas  docs\contratos.md
+ 84 líneas  docs\copilot-vscode.md
+ 91 líneas  docs\docker-validacion.md
+ 46 líneas  docs\entrega-tecnica.md
+198 líneas  docs\estado-20261113-antes-arnes.md
+161 líneas  docs\estado-hasta-f3.md
+100 líneas  docs\estado-hasta-f4.md
+167 líneas  docs\estado-hasta-f5.md
+ 68 líneas  docs\estado.md
+100 líneas  docs\f0-compatibilidad.md
+ 73 líneas  docs\f10-operacion.md
+ 34 líneas  docs\f11-diseno-eip.md
+ 58 líneas  docs\f11-resultados.md
+103 líneas  docs\f2-gobierno.md
+110 líneas  docs\f3-ingesta.md
+ 36 líneas  docs\f3-revision-visual.md
+104 líneas  docs\f4-indices.md
+ 60 líneas  docs\f5-recuperacion.md
+ 59 líneas  docs\f7-mcp.md
+108 líneas  docs\inspector-web.md
+154 líneas  docs\propuesta-f9-clases-13-14-20261113.md
+ 59 líneas  docs\resumen-portabilidad.md
+ 53 líneas  docs\revision-academica.md
+ 25 líneas  docs\trazabilidad.md
+ 80 líneas  docs\validacion-dev-f10.md
+100 líneas  docs\validacion-dev-f11.md
+ 50 líneas  docs\validacion-dev-f8.md
+111 líneas  docs\validacion-dev-f9-1.md
+ 78 líneas  docs\validacion-dev-f9.md
+ 97 líneas  docs\validacion-dev-hasta-f5.md
+ 80 líneas  docs\validacion-dev-hasta-f6.md
+ 95 líneas  docs\validacion-dev-hasta-f7.md
+ 34 líneas  docs\verificacion.md
+135 líneas  docs\revision\README.md
+146 líneas  docs\revision\casos-ajuste.md
+143 líneas  docs\revision\casos-reserva-1.md
+147 líneas  docs\revision\casos-reserva-2.md
+144 líneas  docs\revision\contraste-tecnico-20261108.md
+115 líneas  docs\revision\manifest.json
+ 51 líneas  docs\revision\matriz-casos.md
+ 67 líneas  docs\revision\matriz-documental.md
+ 16 líneas  docs\revision\verificacion.json
+ 28 líneas  docs\revision\20261108-confirmada\autorizacion.md
+ 81 líneas  docs\revision\20261108-confirmada\manifest.json
+ 36 líneas  docs\revision\20261108-confirmada\matriz.md
+ 28 líneas  docs\revision\20261108-confirmada\protocolo.json
+ 80 líneas  docs\revision\20261108-confirmada\casos\A01.json
+ 96 líneas  docs\revision\20261108-confirmada\casos\A02.json
+133 líneas  docs\revision\20261108-confirmada\casos\A03.json
+116 líneas  docs\revision\20261108-confirmada\casos\A04.json
+132 líneas  docs\revision\20261108-confirmada\casos\A05.json
+112 líneas  docs\revision\20261108-confirmada\casos\A06.json
+173 líneas  docs\revision\20261108-confirmada\casos\A07.json
+129 líneas  docs\revision\20261108-confirmada\casos\A08.json
+115 líneas  docs\revision\20261108-confirmada\casos\R01.json
+ 94 líneas  docs\revision\20261108-confirmada\casos\R02.json
+ 95 líneas  docs\revision\20261108-confirmada\casos\R03.json
+ 95 líneas  docs\revision\20261108-confirmada\casos\R04.json
+ 83 líneas  docs\revision\20261108-confirmada\casos\R05.json
+ 86 líneas  docs\revision\20261108-confirmada\casos\R06.json
+ 82 líneas  docs\revision\20261108-confirmada\casos\R07.json
+ 88 líneas  docs\revision\20261108-confirmada\casos\R08.json
+101 líneas  docs\revision\20261108-confirmada\casos\R09.json
+ 93 líneas  docs\revision\20261108-confirmada\casos\R10.json
+ 88 líneas  docs\revision\20261108-confirmada\casos\R11.json
+ 97 líneas  docs\revision\20261108-confirmada\casos\R12.json
+147 líneas  docs\revision\20261108-confirmada\casos\R13.json
+ 83 líneas  docs\revision\20261108-confirmada\casos\R14.json
+111 líneas  docs\revision\20261108-confirmada\casos\R15.json
+119 líneas  docs\revision\20261108-confirmada\casos\R16.json
+ 82 líneas  docs\revision\20261108-confirmada\decisiones\D01.json
+ 82 líneas  docs\revision\20261108-confirmada\decisiones\D02.json
+ 73 líneas  docs\revision\20261108-confirmada\decisiones\D03.json
+ 65 líneas  docs\revision\casos\A01.json
+ 81 líneas  docs\revision\casos\A02.json
+118 líneas  docs\revision\casos\A03.json
+101 líneas  docs\revision\casos\A04.json
+117 líneas  docs\revision\casos\A05.json
+ 97 líneas  docs\revision\casos\A06.json
+117 líneas  docs\revision\casos\A07.json
+114 líneas  docs\revision\casos\A08.json
+100 líneas  docs\revision\casos\R01.json
+ 79 líneas  docs\revision\casos\R02.json
+ 80 líneas  docs\revision\casos\R03.json
+ 80 líneas  docs\revision\casos\R04.json
+ 68 líneas  docs\revision\casos\R05.json
+ 70 líneas  docs\revision\casos\R06.json

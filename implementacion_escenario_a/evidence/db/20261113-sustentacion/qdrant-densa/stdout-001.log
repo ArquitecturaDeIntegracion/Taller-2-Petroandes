@@ -1,0 +1,101 @@
+{
+  "motor": "Qdrant local",
+  "collection": "e5small_es_1_0_0_r15_9d0ad11b7dc2_6af7f012",
+  "generation_id": "9d0ad11b-7dc2-56f7-9407-1450e1b04972",
+  "revision_copia": 15,
+  "puntos_totales": 68,
+  "dimension": 384,
+  "distancia": "Cosine",
+  "consulta": "P-101 presión de diseño",
+  "filtros": {
+    "doc_id": null,
+    "section_id": null
+  },
+  "modo": "busqueda_densa_directa",
+  "limite": 3,
+  "siguiente_offset": null,
+  "puntos": [
+    {
+      "id": "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+      "payload": {
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "chunk_id": "5c707f27-d5b8-5020-94ea-22d886a09bb2",
+        "section_id": "2",
+        "titulo_seccion": "2. Datos de operación",
+        "pagina_inicio": 1,
+        "pagina_fin": 1,
+        "parte": 1,
+        "orden": 1,
+        "parent_id": "b08261ff-93b1-5b45-bdb6-1d343bee78e6",
+        "texto": "Parámetro | Valor de diseño | Límite de alarma\nCaudal | 4.200 bpd por etapa | —\nPresión de descarga | 1.180 psi | 1.240 psi\nTemperatura de cojinetes | 65 °C | 82 °C\nVibración global | 2,8 mm/s | 7,1 mm/s",
+        "parser_version": "pypdf-layout-es-1.0.1",
+        "particion": "structural-es-1.0.0",
+        "bundle": "e5small-es-1.0.0",
+        "tokens_entrada": 130,
+        "contenido_no_confiable": true,
+        "generation_id": "9d0ad11b-7dc2-56f7-9407-1450e1b04972",
+        "governance_revision": 15,
+        "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+        "tipo": "ficha"
+      },
+      "score": 0.8948566059497426
+    },
+    {
+      "id": "cdada850-4eeb-5090-b792-5bb1d4df471f",
+      "payload": {
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "chunk_id": "cdada850-4eeb-5090-b792-5bb1d4df471f",
+        "section_id": "4",
+        "titulo_seccion": "4. Documentos asociados",
+        "pagina_inicio": 1,
+        "pagina_fin": 1,
+        "parte": 1,
+        "orden": 3,
+        "parent_id": "c60123b7-bea3-56c5-b92a-cb84171e1d93",
+        "texto": "Manual de operación de estaciones de bombeo y procedimiento de arranque en frío de unidades de bombeo.",
+        "parser_version": "pypdf-layout-es-1.0.1",
+        "particion": "structural-es-1.0.0",
+        "bundle": "e5small-es-1.0.0",
+        "tokens_entrada": 76,
+        "contenido_no_confiable": true,
+        "generation_id": "9d0ad11b-7dc2-56f7-9407-1450e1b04972",
+        "governance_revision": 15,
+        "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+        "tipo": "ficha"
+      },
+      "score": 0.8622683369256441
+    },
+    {
+      "id": "13968c26-494d-5313-9c14-1950fc902b52",
+      "payload": {
+        "doc_id": "FIC-ACT-P101",
+        "version_documental": "2",
+        "pdf_sha256": "842563370e3783fb9ead79977714eeae6618316ef06f58637b2df7b16f087b3a",
+        "chunk_id": "13968c26-494d-5313-9c14-1950fc902b52",
+        "section_id": "3",
+        "titulo_seccion": "3. Histórico de intervenciones mayores",
+        "pagina_inicio": 1,
+        "pagina_fin": 1,
+        "parte": 1,
+        "orden": 2,
+        "parent_id": "915cb778-edc8-5b87-9a85-c14e3d5c4745",
+        "texto": "Fecha | Intervención | Orden de trabajo\n2019-03-18 | Cambio de sellos mecánicos | OT-2019-00842\n2021-11-02 | Alineación y balanceo de rotor | OT-2021-03117\n2024-05-28 | Reemplazo de cojinetes de empuje | OT-2024-01955",
+        "parser_version": "pypdf-layout-es-1.0.1",
+        "particion": "structural-es-1.0.0",
+        "bundle": "e5small-es-1.0.0",
+        "tokens_entrada": 130,
+        "contenido_no_confiable": true,
+        "generation_id": "9d0ad11b-7dc2-56f7-9407-1450e1b04972",
+        "governance_revision": 15,
+        "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956",
+        "tipo": "ficha"
+      },
+      "score": 0.8579102819990903
+    }
+  ],
+  "alcance": "Inspeccion administrativa; no aplica permisos de Retriever ni composicion F6"
+}

@@ -1,0 +1,16 @@
+{
+  "fecha_utc": "2026-11-14T03:43:30.015871+00:00",
+  "tipo": "documentacion_sin_nueva_ejecucion_F9",
+  "documento": "output/doc/Arquitectura_y_Funcionamiento_del_Nuevo_Arnes_PetroAndes.docx",
+  "sha256": "923b684cac7a01d8818a8526cf34d5d3f8cc361ebf53f3463ad169d6a30592cd",
+  "paginas": 4,
+  "diagramas": 2,
+  "revision_visual": "Las cuatro paginas finales fueron inspeccionadas por el agente",
+  "fuente_resultados": "app:evidence/f9/20261113-arnes-ampliado/summary.json",
+  "vistas": [
+    "Arquitectura general con EIP",
+    "Flujo de decisiones del consumidor sintetico"
+  ],
+  "llm_real": "no_evaluado",
+  "preserva_entregables_previos": true
+}

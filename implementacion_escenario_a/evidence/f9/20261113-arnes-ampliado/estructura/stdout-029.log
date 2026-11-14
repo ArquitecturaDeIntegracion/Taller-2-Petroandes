@@ -1,0 +1,39 @@
+140 líneas  tools/f11_inventory.py
+127 líneas  tools/f11_package.py
+ 56 líneas  tools/f11_verify_delivery.py
+ 81 líneas  tools/f4.py
+ 80 líneas  tools/f5.py
+ 37 líneas  tools/f7_historical_mcp.py
+173 líneas  tools/f7_inspector.py
+ 49 líneas  tools/f7_inspector_client.py
+ 27 líneas  tools/f7_inspector_web.py
+ 64 líneas  tools/f7_wire.py
+177 líneas  tools/f8_evaluate.py
+ 57 líneas  tools/f8_judge.py
+ 75 líneas  tools/f8_metrics.py
+154 líneas  tools/f9_attack.py
+ 76 líneas  tools/f9_guard_check.py
+151 líneas  tools/f9_mcp_boundaries.py
+ 77 líneas  tools/f9_observe.py
+142 líneas  tools/f9_sandbox_probe.py
+ 71 líneas  tools/f9_sources.py
+101 líneas  tools/f9_validate.py
+149 líneas  tools/f9_validation_runtime.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+ 66 líneas  tools/prepare_lab_request.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+170 líneas  tools/review_apply_manuals.py
+125 líneas  tools/review_case_sources.py
+135 líneas  tools/review_frozen.py
+ 46 líneas  tools/review_lab_case_dependencies.py
+139 líneas  tools/review_seed_contexts.py
+103 líneas  tools/validate_agent.py
+
+OK: 4516 archivos textuales; máximo 199 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

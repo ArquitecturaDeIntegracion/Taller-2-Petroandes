@@ -1,0 +1,25 @@
+{
+  "fecha_local": "2026-11-13T00:50:57.159834-05:00",
+  "documento": {
+    "base": "project",
+    "path": "output/doc/Diseno_Seguridad_y_Contencion_Ataque_PetroAndes.docx",
+    "paginas": 3,
+    "sha256": "6fc06b5effb2fb73b47471b5e9755b422f02446e4238647b4866cfdfa1762db2"
+  },
+  "verificacion": "Render Microsoft Word y render_docx.py; tres páginas PNG inspeccionadas por Codex",
+  "fuentes": [
+    "tools/f9_attack.py",
+    "tools/f9_sources.py",
+    "tools/f9_observe.py",
+    "petroandes/extract/prepare.py",
+    "petroandes/compose/units.py",
+    "petroandes/compose/service.py",
+    "evidence/f9/20261108/summary.json",
+    "evidence/f9/20261108/recuperacion/python.json",
+    "evidence/f9/20261108/ataque/traza.json"
+  ],
+  "contraste": "El mismo chunk recuperado aparece en descartados_seguridad; misma generación; respuesta abstencion",
+  "nueva_corrida_f9": false,
+  "codigo_aplicacion_modificado": false,
+  "reserva_ejecutada": false
+}

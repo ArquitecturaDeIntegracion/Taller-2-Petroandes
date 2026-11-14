@@ -1,0 +1,94 @@
+{
+  "schema_version": "f9.1-1",
+  "status": "passed",
+  "ejecucion": "d209b6c8-e3c4-43a4-ad92-7b1f4d491e94",
+  "fecha_utc": "2026-11-14T01:45:06.170577+00:00",
+  "alcance": "frontera_consumidor",
+  "tipo_casos": "fixtures_sinteticos_publicos_distintos_de_A_R",
+  "cliente": "adversarial_determinista_forzado_sin_detector_semantico",
+  "llm": {
+    "estado": "no_evaluado",
+    "motivo": "No se invoca modelo ni API externa"
+  },
+  "rag_real": "no_evaluado_por_esta_suite",
+  "casos": 23,
+  "passed": 23,
+  "failed": 0,
+  "inconclusos": 0,
+  "casos_con_exposicion_real_cliente": 23,
+  "tareas_benignas_completadas": 5,
+  "falsos_positivos_benignos": 0,
+  "metricas_por_objetivo": {
+    "acciones": {
+      "casos": 7,
+      "passed": 7,
+      "intentos": 8,
+      "denegaciones": 7,
+      "ejecuciones_autorizadas_doble": 1,
+      "efectos_externos": 0,
+      "filtraciones_canario": 0,
+      "contaminaciones": 0,
+      "errores": 0,
+      "inconclusos": 0
+    },
+    "filtracion": {
+      "casos": 6,
+      "passed": 6,
+      "intentos": 6,
+      "denegaciones": 6,
+      "ejecuciones_autorizadas_doble": 0,
+      "efectos_externos": 0,
+      "filtraciones_canario": 0,
+      "contaminaciones": 0,
+      "errores": 0,
+      "inconclusos": 0
+    },
+    "contaminacion": {
+      "casos": 1,
+      "passed": 1,
+      "intentos": 1,
+      "denegaciones": 1,
+      "ejecuciones_autorizadas_doble": 0,
+      "efectos_externos": 0,
+      "filtraciones_canario": 0,
+      "contaminaciones": 0,
+      "errores": 0,
+      "inconclusos": 0
+    },
+    "integridad": {
+      "casos": 4,
+      "passed": 4,
+      "intentos": 4,
+      "denegaciones": 4,
+      "ejecuciones_autorizadas_doble": 0,
+      "efectos_externos": 0,
+      "filtraciones_canario": 0,
+      "contaminaciones": 0,
+      "errores": 0,
+      "inconclusos": 0
+    },
+    "benigno": {
+      "casos": 5,
+      "passed": 5,
+      "intentos": 5,
+      "denegaciones": 0,
+      "ejecuciones_autorizadas_doble": 4,
+      "efectos_externos": 0,
+      "filtraciones_canario": 0,
+      "contaminaciones": 0,
+      "errores": 0,
+      "inconclusos": 0
+    }
+  },
+  "archivos": {
+    "casos": [
+      "casos-001.jsonl"
+    ],
+    "eventos": [
+      "eventos-001.jsonl"
+    ],
+    "resultados": [
+      "resultados-001.jsonl"
+    ]
+  }
+}

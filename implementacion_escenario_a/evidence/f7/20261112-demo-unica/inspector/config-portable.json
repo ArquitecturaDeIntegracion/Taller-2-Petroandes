@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "petroandes": {
+      "command": "python",
+      "args": [
+        "-m",
+        "petroandes.demo"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": "${PROJECT_ROOT}/petroandes-data/cache",
+        "PETROANDES_MODELS_DIR": "${MODELS_DIR}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

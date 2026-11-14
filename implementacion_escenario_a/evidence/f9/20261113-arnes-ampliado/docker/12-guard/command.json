@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "-f",
+    "${APP_ROOT}\\compose.yaml",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "--no-deps",
+    "-T",
+    "--name",
+    "petroandes-f9-8d911ac4d4fb415488d28df36239a82d-guard",
+    "--label",
+    "petroandes.f9.run=8d911ac4d4fb415488d28df36239a82d",
+    "f9-sandbox",
+    "tools/f9_guard_check.py",
+    "--output-dir",
+    "/f9-output/ensayo"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:32:32.645967+00:00",
+  "elapsed_seconds": 778.2134300000034,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

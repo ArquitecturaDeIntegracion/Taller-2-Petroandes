@@ -1,0 +1,45 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T03:19:28.097510+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/db_demo_check.py",
+    "--output-dir",
+    "reports/portable/db-sustentacion-20261113-validacion"
+  ],
+  "status": "passed",
+  "revision": 15,
+  "documentos_inventario": 19,
+  "documentos_publicados": 14,
+  "fragmentos_publicados": 68,
+  "dimension_vector": 384,
+  "consultas_sql": 6,
+  "consultas_qdrant": 2,
+  "restricciones_sql_comprobadas": 2,
+  "anexo_identico_sql_qdrant": true,
+  "ids_tres_proyecciones_identicos": true,
+  "snapshot_original_y_copia_intactos": true,
+  "snapshot_sha256": "4699c28cbfce5c18eff61140b0d7f7fb69661bb2cfeda69ebbe5b1fe25dde61d",
+  "datos": "reports/portable/db-sustentacion-20261113-validacion/datos",
+  "ranking_denso_observado": [
+    {
+      "doc_id": "FIC-ACT-P101",
+      "section_id": "2",
+      "score": 0.8948566059497426
+    },
+    {
+      "doc_id": "FIC-ACT-P101",
+      "section_id": "4",
+      "score": 0.8622683369256441
+    },
+    {
+      "doc_id": "FIC-ACT-P101",
+      "section_id": "3",
+      "score": 0.8579102819990903
+    }
+  ],
+  "alcance": "consulta directa administrativa en copia aislada con reloj histórico; no MCP ni autorización operativa"
+}

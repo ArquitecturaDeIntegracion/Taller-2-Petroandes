@@ -1,0 +1,22 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "-f",
+    "${APP_ROOT}\\compose.yaml",
+    "--profile",
+    "dev",
+    "config",
+    "--images",
+    "f9-sandbox"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:32:22.374376+00:00",
+  "elapsed_seconds": 0.3838869000028353,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${USER_HOME}/petroandes-f9-mcp-zc5ri6ww/servers.json",
+    "--server",
+    "auditoria",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "obtener_fragmento",
+    "--tool-args-json",
+    "{\"doc_id\": \"MAN-OPE-004\", \"version_documental\": \"2\", \"section_id\": \"3\"}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:43:21.905218+00:00",
+  "elapsed_seconds": 29.90930226400087,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

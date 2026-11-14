@@ -1,0 +1,38 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:45:32.971415+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_validate.py",
+    "--output-dir",
+    "reports/portable/f9-guard-20261113-01"
+  ],
+  "phase": "F9.1",
+  "status": "passed",
+  "classification": "controles_y_ensayo_verificados",
+  "error": null,
+  "verified": [
+    "control_positivo",
+    "aislamiento_so",
+    "ensayo_guard"
+  ],
+  "pending": [],
+  "cleanup_completed": true,
+  "controlled_receiver": "Contenedor propio en red bridge interna; sin puertos publicados ni terceros.",
+  "evidence": [
+    "network-positive.json",
+    "network-positive-after.json",
+    "sandbox-configuration.json",
+    "sandbox-probe.json",
+    "ensayo/summary.json",
+    "commands.json"
+  ],
+  "limitations": [
+    "La sonda nativa prueba el aislamiento frente al receptor controlado.",
+    "CapDrop y no-new-privileges no impiden crear subprocess.",
+    "No acredita inmunidad a todo documento envenenado ni protege procesos del cliente MCP."
+  ]
+}

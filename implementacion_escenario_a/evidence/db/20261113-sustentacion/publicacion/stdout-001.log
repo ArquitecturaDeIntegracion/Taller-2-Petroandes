@@ -1,0 +1,16 @@
+{
+  "motor": "SQLite",
+  "base": "publicaciones",
+  "revision_copia": 15,
+  "sql": "SELECT active.generation AS generation_id,\n       json_extract(generations.receipt, '$.collection') AS coleccion_qdrant,\n       json_extract(generations.receipt, '$.key.perfil') AS perfil,\n       json_extract(generations.receipt, '$.key.revision_gobierno') AS revision_gobierno,\n       json_extract(generations.receipt, '$.key.bundle_fingerprint') AS bundle_fingerprint\nFROM generations\nJOIN active ON generations.id = active.generation;\n",
+  "filas": [
+    {
+      "generation_id": "9d0ad11b-7dc2-56f7-9407-1450e1b04972",
+      "coleccion_qdrant": "e5small_es_1_0_0_r15_9d0ad11b7dc2_6af7f012",
+      "perfil": "laboratorio",
+      "revision_gobierno": 15,
+      "bundle_fingerprint": "401ce6aa6beb0bf6aea03411694850aae455b708c1b2fa358b933b6578c51956"
+    }
+  ],
+  "total_filas": 1
+}

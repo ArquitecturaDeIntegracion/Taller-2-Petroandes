@@ -1,0 +1,160 @@
+[
+    {
+        "Id": "f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274",
+        "Created": "2026-11-14T01:32:27.170166576Z",
+        "Path": "python",
+        "Args": [
+            "-c",
+            "import time; time.sleep(180)"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 4246,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-11-14T01:32:27.437366518Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:c6ab26e77aa9ac7264e55ab8fb675d57481f62285aef9e307f55098424dba37d",
+        "ResolvConfPath": "/var/lib/docker/containers/f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274/hostname",
+        "HostsPath": "/var/lib/docker/containers/f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274/hosts",
+        "LogPath": "/var/lib/docker/containers/f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274/f9e21994b2b1e92be4de0c9044a1eed8388f1e45b7dce034f0b0ad4f13a2c274-json.log",
+        "Name": "/petroandes-f9-8d911ac4d4fb415488d28df36239a82d-sandbox",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "petroandes-educativo_model-cache:/models-root:ro",
+                "/run/desktop/mnt/host/c/Users/jcjca/OneDrive/Documentos/ChatGPT/Taller 2 Arquitecura de Integración/implementacion_escenario_a/reports/portable/f9-guard-20261113-01:/f9-output:rw",
+                "/run/desktop/mnt/host/c/Users/jcjca/OneDrive/Documentos/ChatGPT/Taller 2 Arquitecura de Integración/implementacion_escenario_a:/workspace/implementacion_escenario_a:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "none",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": true,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": [
+                "ALL"
+            ],
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": [
+                "no-new-privileges:true"
+            ],
+            "Tmpfs": {
+                "/tmp": "rw,noexec,nosuid,size=1073741824,mode=1777"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": 128,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "petroandes-educativo_model-cache",
+                "Source": "/var/lib/docker/volumes/petroandes-educativo_model-cache/_data",
+                "Destination": "/models-root",
+                "Driver": "local",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/c/Users/jcjca/OneDrive/Documentos/ChatGPT/Taller 2 Arquitecura de Integración/implementacion_escenario_a/reports/portable/f9-guard-20261113-01",
+                "Destination": "/f9-output",
+                "Mode": "rw",
+                "RW": true,

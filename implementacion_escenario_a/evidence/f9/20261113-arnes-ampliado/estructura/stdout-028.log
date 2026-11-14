@@ -1,0 +1,160 @@
+ 23 líneas  reports/portable/revision-confirmada-20261108/staging/document-17/report.json
+  4 líneas  reports/portable/revision-confirmada-20261108/staging/document-17/sections-001.jsonl
+ 73 líneas  reports/portable/revision-confirmada-20261108/staging/document-18/layout-page-001-part-001.txt
+ 23 líneas  reports/portable/revision-confirmada-20261108/staging/document-18/report.json
+  5 líneas  reports/portable/revision-confirmada-20261108/staging/document-18/sections-001.jsonl
+ 76 líneas  reports/portable/revision-confirmada-20261108/staging/document-19/layout-page-001-part-001.txt
+ 23 líneas  reports/portable/revision-confirmada-20261108/staging/document-19/report.json
+  4 líneas  reports/portable/revision-confirmada-20261108/staging/document-19/sections-001.jsonl
+ 27 líneas  reports/portable/revision-propuestas-20261101/command.json
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-001.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-002.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-003.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-004.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-005.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-006.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-007.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-008.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-009.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-010.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-011.log
+160 líneas  reports/portable/revision-propuestas-20261101/stdout-012.log
+ 13 líneas  reports/portable/revision-propuestas-20261101/stdout-013.log
+ 21 líneas  reports/portable/tests-final/command.json
+  2 líneas  reports/portable/tests-final/stdout-001.log
+ 62 líneas  reports/portable/validacion-f7-20261107-231316/config-portable.json
+ 36 líneas  reports/portable/validacion-f7-20261107-231316/summary.json
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/direct-denied/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-231316/direct-denied/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/direct-denied/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/direct-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-231316/direct-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/direct-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/direct-ok/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-231316/direct-ok/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/direct-ok/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/index-error/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-231316/index-error/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/index-error/stdout-001.log
+ 27 líneas  reports/portable/validacion-f7-20261107-231316/list/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-231316/list/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/list/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/privilege-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-231316/privilege-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/privilege-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/reconnect/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-231316/reconnect/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/reconnect/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/search-abstention/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-231316/search-abstention/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/search-abstention/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/search-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-231316/search-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/search-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/search-ok/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-231316/search-ok/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/search-ok/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-231316/service-error/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-231316/service-error/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-231316/service-error/stdout-001.log
+ 19 líneas  reports/portable/validacion-f7-20261107-231316/wire/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-231316/wire/stderr-001.log
+  2 líneas  reports/portable/validacion-f7-20261107-231316/wire/stdout-001.log
+ 62 líneas  reports/portable/validacion-f7-20261107-232051/config-portable.json
+ 36 líneas  reports/portable/validacion-f7-20261107-232051/summary.json
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/direct-denied/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-232051/direct-denied/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/direct-denied/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/direct-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-232051/direct-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/direct-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/direct-ok/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-232051/direct-ok/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/direct-ok/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/index-error/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-232051/index-error/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/index-error/stdout-001.log
+ 27 líneas  reports/portable/validacion-f7-20261107-232051/list/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-232051/list/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/list/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/privilege-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-232051/privilege-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/privilege-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/reconnect/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-232051/reconnect/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/reconnect/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/search-abstention/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-232051/search-abstention/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/search-abstention/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/search-invalid/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-232051/search-invalid/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/search-invalid/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/search-ok/command.json
+  4 líneas  reports/portable/validacion-f7-20261107-232051/search-ok/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/search-ok/stdout-001.log
+ 31 líneas  reports/portable/validacion-f7-20261107-232051/service-error/command.json
+  3 líneas  reports/portable/validacion-f7-20261107-232051/service-error/stderr-001.log
+  1 líneas  reports/portable/validacion-f7-20261107-232051/service-error/stdout-001.log
+ 19 líneas  reports/portable/validacion-f7-20261107-232051/wire/command.json
+  2 líneas  reports/portable/validacion-f7-20261107-232051/wire/stderr-001.log
+  2 líneas  reports/portable/validacion-f7-20261107-232051/wire/stdout-001.log
+ 16 líneas  reports/portable/validate-delivery/command.json
+160 líneas  reports/portable/validate-delivery/stdout-001.log
+ 51 líneas  reports/portable/validate-delivery/stdout-002.log
+ 16 líneas  reports/portable/validate-final/command.json
+160 líneas  reports/portable/validate-final/stdout-001.log
+ 46 líneas  reports/portable/validate-final/stdout-002.log
+  7 líneas  tests/conftest.py
+ 45 líneas  tests/f2_helpers.py
+ 31 líneas  tests/f4_helpers.py
+ 62 líneas  tests/f5_helpers.py
+ 46 líneas  tests/f7_stdio_fixture.py
+ 52 líneas  tests/historical_lab.py
+121 líneas  tests/test_contracts.py
+ 37 líneas  tests/test_f10_substitution.py
+ 46 líneas  tests/test_f2_baseline.py
+105 líneas  tests/test_f2_catalog.py
+ 32 líneas  tests/test_f2_cli.py
+130 líneas  tests/test_f2_governance.py
+ 71 líneas  tests/test_f3_chunk.py
+ 41 líneas  tests/test_f3_critical.py
+ 60 líneas  tests/test_f3_extraction.py
+ 36 líneas  tests/test_f3_quarantine.py
+ 42 líneas  tests/test_f3_staging.py
+ 86 líneas  tests/test_f4_integrity.py
+168 líneas  tests/test_f4_publication.py
+ 34 líneas  tests/test_f5_corpus.py
+176 líneas  tests/test_f5_retrieval.py
+ 27 líneas  tests/test_f5_selection.py
+182 líneas  tests/test_f6_compose.py
+172 líneas  tests/test_f9_guard.py
+ 62 líneas  tests/test_f9_mcp_boundaries.py
+141 líneas  tests/test_f9_validate.py
+ 38 líneas  tests/test_json_schemas.py
+133 líneas  tests/test_lab_administration.py
+ 78 líneas  tests/test_portability.py
+ 58 líneas  tools/certify_lab.py
+107 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 55 líneas  tools/check_f2.py
+133 líneas  tools/check_f3.py
+ 77 líneas  tools/check_f4.py
+ 65 líneas  tools/check_lab_index.py
+107 líneas  tools/check_lab_state.py
+ 70 líneas  tools/check_portability.py
+110 líneas  tools/debug_smoke.py
+ 74 líneas  tools/demo_check.py
+ 46 líneas  tools/demo_inspector_check.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 62 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+109 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+148 líneas  tools/f10.py
+176 líneas  tools/f10_check.py
+140 líneas  tools/f10_controls.py
+145 líneas  tools/f11_check.py

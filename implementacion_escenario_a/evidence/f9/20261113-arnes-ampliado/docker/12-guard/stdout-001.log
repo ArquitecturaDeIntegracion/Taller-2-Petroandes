@@ -1,0 +1,32 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T01:45:30.366773+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_guard_check.py",
+    "--output-dir",
+    "/f9-output/ensayo"
+  ],
+  "status": "passed",
+  "version_arnes": "F9.1",
+  "llm_real": "no_evaluado",
+  "integridad_fuentes_y_reserva": true,
+  "reserva_ejecutada": false,
+  "fases": {
+    "f9_original": {
+      "status": "passed",
+      "resumen": "f9_original/resultado/summary.json"
+    },
+    "fronteras_mcp": {
+      "status": "passed",
+      "resumen": "fronteras_mcp/resultado/summary.json"
+    },
+    "frontera_consumidor": {
+      "status": "passed",
+      "resumen": "frontera_consumidor/summary.json"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "container",
+    "inspect",
+    "--format",
+    "{{index .Config.Labels \"petroandes.f9.run\"}}",
+    "petroandes-f9-8d911ac4d4fb415488d28df36239a82d-guard"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T01:45:31.063353+00:00",
+  "elapsed_seconds": 0.09884829999646172,
+  "exit_code": 1,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}
