@@ -6,6 +6,7 @@ from collections import defaultdict
 from petroandes.index.publication import document_identity
 from petroandes.retrieve.ranking import normalized, version_key
 from petroandes.retrieve.selection import context_parts
+from petroandes.security.detection import findings
 from .intent import fold
 from .tables import Unit, table_units
 
@@ -25,8 +26,7 @@ TABLE_KINDS = {"alarma_tramo", "presion_activo", "maop"}
 
 
 def blocked(fragment, record):
-    flags = record["metadata"].get("seguridad", {}).get("security_flags", ())
-    return fragment.section_id.startswith("anexo-") or "instrucciones_dirigidas_al_procesador" in flags
+    return bool(findings(fragment, record))
 
 
 def is_anchor(fragment, record, intent, use):

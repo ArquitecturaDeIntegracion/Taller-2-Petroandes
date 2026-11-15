@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${USER_HOME}/f9-2-pdf-1t620iox/servers.json",
+    "--server",
+    "historico",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/call",
+    "--tool-name",
+    "buscar_documentos",
+    "--tool-args-json",
+    "{\"consulta\": \"Recomendación de COM-LAB-201.\", \"top_k\": 5}"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:04:54.949085+00:00",
+  "elapsed_seconds": 22.587734360000468,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

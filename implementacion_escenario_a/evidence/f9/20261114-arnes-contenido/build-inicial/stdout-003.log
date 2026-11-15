@@ -1,0 +1,100 @@
+#18 84.61 Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+#18 84.64 Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+#18 84.68    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 20.4 MB/s eta 0:00:00
+#18 84.71 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#18 84.73 Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+#18 84.77 Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+#18 84.82 Downloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+#18 85.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 15.1 MB/s eta 0:00:00
+#18 85.46 Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+#18 87.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 17.1 MB/s eta 0:00:00
+#18 87.56 Downloading sentence_transformers-5.7.0-py3-none-any.whl (611 kB)
+#18 87.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 611.3/611.3 kB 20.1 MB/s eta 0:00:00
+#18 87.63 Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+#18 87.70    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 13.5 MB/s eta 0:00:00
+#18 87.73 Downloading sse_starlette-3.6.0-py3-none-any.whl (17 kB)
+#18 87.76 Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+#18 87.79 Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+#18 87.81 Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+#18 88.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 14.5 MB/s eta 0:00:00
+#18 88.08 Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+#18 88.11 Downloading transformers-4.57.6-py3-none-any.whl (12.0 MB)
+#18 88.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 13.8 MB/s eta 0:00:00
+#18 89.01 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#18 89.03 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#18 89.06 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#18 89.09 Downloading debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl (4.0 MB)
+#18 89.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 18.7 MB/s eta 0:00:00
+#18 89.33 Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+#18 89.59    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 17.4 MB/s eta 0:00:00
+#18 90.49 Installing collected packages: flatbuffers, urllib3, typing-inspection, tqdm, threadpoolctl, tabulate, setuptools, safetensors, rpds-py, regex, PyYAML, python-multipart, python-dotenv, pypdf, PyJWT, Pygments, pydantic_core, pycparser, psutil, protobuf, portalocker, pluggy, packaging, numpy, narwhals, MarkupSafe, iniconfig, idna, hyperframe, httpx-sse, hpack, hf-xet, h11, grpcio, filelock, debugpy, colorama, cloudpickle, click, charset-normalizer, certifi, attrs, annotated-types, uvicorn, scipy, requests, referencing, rank-bm25, pytest, pydantic, onnxruntime, joblib, httpcore, h2, cffi, anyio, starlette, scikit-learn, pydantic-settings, jsonschema-specifications, huggingface_hub, httpx, cryptography, tokenizers, sse-starlette, jsonschema, transformers, qdrant-client, mcp, sentence-transformers, laya, pymupdf4llm, pymupdf-layout, pymupdf
+#18 91.11   Attempting uninstall: setuptools
+#18 91.12     Found existing installation: setuptools 78.1.0
+#18 91.17     Uninstalling setuptools-78.1.0:
+#18 91.35       Successfully uninstalled setuptools-78.1.0
+#18 99.32   Attempting uninstall: MarkupSafe
+#18 99.32     Found existing installation: MarkupSafe 3.0.3
+#18 99.32     Uninstalling MarkupSafe-3.0.3:
+#18 99.32       Successfully uninstalled MarkupSafe-3.0.3
+#18 100.00   Attempting uninstall: filelock
+#18 100.0     Found existing installation: filelock 4.2.4
+#18 100.0     Uninstalling filelock-4.2.4:
+#18 100.0       Successfully uninstalled filelock-4.2.4
+#18 129.2 Successfully installed MarkupSafe-3.0.4 PyJWT-2.15.1 PyYAML-6.0.3 Pygments-2.21.0 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 certifi-2026.10.23 cffi-2.1.1 charset-normalizer-3.5.2 click-8.5.0 cloudpickle-3.1.2 colorama-0.4.6 cryptography-50.0.2 debugpy-1.8.22 filelock-4.2.6 flatbuffers-25.12.19 grpcio-1.85.1 h11-0.16.0 h2-4.4.1 hf-xet-1.8.0 hpack-4.2.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 huggingface_hub-0.36.2 hyperframe-6.1.0 idna-3.20 iniconfig-2.3.1 joblib-1.6.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 laya-0.4.20 mcp-1.30.0 narwhals-2.28.0 numpy-2.5.4 onnxruntime-1.32.0 packaging-26.3 pluggy-1.7.0 portalocker-4.4.2 protobuf-7.36.2 psutil-7.2.2 pycparser-3.12 pydantic-2.14.2 pydantic-settings-2.16.2 pydantic_core-2.50.2 pymupdf-2.1 pymupdf-layout-2.1 pymupdf4llm-2.1 pypdf-6.21.4 pytest-9.2.0 python-dotenv-1.2.4 python-multipart-0.0.33 qdrant-client-1.20.0 rank-bm25-0.2.2 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 rpds-py-2026.9.1 safetensors-0.8.0 scikit-learn-1.9.1 scipy-1.18.1 sentence-transformers-5.7.0 setuptools-84.2.1 sse-starlette-3.6.0 starlette-1.10.0 tabulate-0.10.0 threadpoolctl-3.7.0 tokenizers-0.22.2 tqdm-4.70.1 transformers-4.57.6 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.54.0
+#18 129.2 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#18 129.5 
+#18 129.5 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#18 129.5 [notice] To update, run: pip install --upgrade pip
+#18 131.7 No broken requirements found.
+#18 DONE 134.6s
+
+#19 [stage-2  8/12] COPY corpus/ /workspace/corpus/
+#19 DONE 1.0s
+
+#20 [stage-2  9/12] COPY output/doc/ /workspace/output/doc/
+#20 DONE 0.6s
+
+#21 [stage-2 10/12] COPY [Contenido de la Actividad.docx, ARTI4212_Caso_PetroAndes.pdf, ARTI4212_Caso_PetroAndes.md, contexto_arquitectura_integracion.md, plan_trabajo_alternativa_1_escenario_a.md, /workspace/]
+#21 DONE 0.7s
+
+#22 [stage-2 11/12] COPY implementacion_escenario_a/ ./
+#22 DONE 3.5s
+
+#23 [stage-2 12/12] RUN pip install --no-deps --no-build-isolation -e .
+#23 2.877 Obtaining file:///workspace/implementacion_escenario_a
+#23 2.881   Checking if build backend supports build_editable: started
+#23 3.765   Checking if build backend supports build_editable: finished with status 'done'
+#23 3.768   Preparing editable metadata (pyproject.toml): started
+#23 4.692   Preparing editable metadata (pyproject.toml): finished with status 'done'
+#23 4.700 Building wheels for collected packages: petroandes-educativo
+#23 4.703   Building editable for petroandes-educativo (pyproject.toml): started
+#23 5.588   Building editable for petroandes-educativo (pyproject.toml): finished with status 'done'
+#23 5.589   Created wheel for petroandes-educativo: filename=petroandes_educativo-0.1.0-0.editable-py3-none-any.whl size=2883 sha256=165e1472c454d0b039019d084088b2852af48aa35a141f07be1db03c304d68bc
+#23 5.589   Stored in directory: /tmp/pip-ephem-wheel-cache-50ox41v8/wheels/0f/b3/db/8badd6e83296a1cb9ba9e11d5b2f34eb53eb35f2718595644c
+#23 5.593 Successfully built petroandes-educativo
+#23 5.593 Installing collected packages: petroandes-educativo
+#23 5.669 Successfully installed petroandes-educativo-0.1.0
+#23 5.671 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#23 6.104 
+#23 6.104 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#23 6.104 [notice] To update, run: pip install --upgrade pip
+#23 DONE 6.3s
+
+#24 exporting to image
+#24 exporting layers
+#24 exporting layers 79.4s done
+#24 exporting manifest sha256:1350959fdef47bb415d9936b37d0605dbd51ecddcd5c76028e34f3be92febb1f
+#24 exporting manifest sha256:1350959fdef47bb415d9936b37d0605dbd51ecddcd5c76028e34f3be92febb1f 1.2s done
+#24 exporting config sha256:3cbd2c7035255d567c5d71b2d092909cf92efcbc45ab6708040bd9baf6b290ff
+#24 exporting config sha256:3cbd2c7035255d567c5d71b2d092909cf92efcbc45ab6708040bd9baf6b290ff 0.1s done
+#24 exporting attestation manifest sha256:f4b2e4713175c55d98e3326f835741000e238a4206c5a6ee86dd4533fc8b87f8
+#24 exporting attestation manifest sha256:f4b2e4713175c55d98e3326f835741000e238a4206c5a6ee86dd4533fc8b87f8 0.2s done
+#24 exporting manifest list sha256:ecba8a3e82cbc72482ec172d636eeb4f4865fba26bb5b843a847dc50b7d3fa64
+#24 exporting manifest list sha256:ecba8a3e82cbc72482ec172d636eeb4f4865fba26bb5b843a847dc50b7d3fa64 0.1s done
+#24 naming to docker.io/library/petroandes-educativo:local 0.0s done
+#24 unpacking to docker.io/library/petroandes-educativo:local
+#24 unpacking to docker.io/library/petroandes-educativo:local 55.9s done
+#24 DONE 137.0s
+
+#25 resolving provenance for metadata file
+#25 DONE 0.2s

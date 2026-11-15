@@ -6,7 +6,7 @@ y gobierno; F3 prepara PDF, F4 publica índices, F5 recupera evidencia gobernada
 y F6 compone extractos con citas. F7 expone dos herramientas MCP de lectura.
 Consulta el [estado](docs/estado.md) y la [guía integral de validación F11 en Docker dev](docs/validacion-dev-f11.md).
 Los [resultados y pendientes](docs/f11-resultados.md) separan las mediciones de la revisión académica.
-Guías por tema: [evaluación](docs/validacion-dev-f8.md), [F9 original](docs/validacion-dev-f9.md), [arnés ampliado](docs/validacion-dev-f9-1.md) y [actualización](docs/f10-operacion.md).
+Guías por tema: [evaluación](docs/validacion-dev-f8.md), [F9 original](docs/validacion-dev-f9.md), [arnés F9.2](docs/validacion-dev-f9-2.md) y [actualización](docs/f10-operacion.md).
 Si abriste el ZIP, empieza por la [guía de entrega técnica](docs/entrega-tecnica.md).
 Presentación: una conexión `petroandes` en [Inspector](docs/inspector-web.md) y [Copilot](docs/copilot-vscode.md), con catorce autorizaciones de revisión 15.
 

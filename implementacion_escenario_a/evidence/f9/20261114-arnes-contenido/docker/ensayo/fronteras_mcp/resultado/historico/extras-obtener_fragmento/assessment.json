@@ -1,0 +1,29 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:18:49.754750+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "caso": "historico/extras-obtener_fragmento",
+  "frontera": "MCP real/esquema",
+  "entrada": {
+    "doc_id": "COM-PRV-0134",
+    "version_documental": null,
+    "section_id": "asunto",
+    "pdf_sha256": "4c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f",
+    "perfil": "laboratorio",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "uso": "inspeccion_no_confiable"
+  },
+  "esperado": "parametros_invalidos",
+  "observado": "parametros_invalidos",
+  "comprobado": true
+}

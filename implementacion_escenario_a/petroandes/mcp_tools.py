@@ -1,7 +1,6 @@
 """Dos contratos MCP de lectura sobre las funciones gobernadas de F5 y F6."""
 import json
 import logging
-from uuid import uuid4
 
 from mcp import types
 from mcp.server import Server
@@ -10,6 +9,7 @@ from pydantic import ValidationError
 from petroandes.compose import answer
 from petroandes.contracts.queries import FragmentQuery, SearchQuery
 from petroandes.contracts.responses import FragmentResponse, SearchResponse
+from petroandes.security.audit import AuditReceipt
 
 CONTRACT_VERSION = "0.1.0"
 LOGGER = logging.getLogger(__name__)
@@ -51,29 +51,49 @@ def create_server(connect):
 
     @server.call_tool(validate_input=False)
     async def call_tool(name, arguments):
+        try:
+            audit = AuditReceipt(name, arguments)
+        except (OSError, TypeError, ValueError):
+            return invalid('auditoria_no_disponible')
+        def reject(code):
+            try:
+                audit.finish('rechazado', reason=code)
+            except OSError:
+                return invalid('auditoria_no_disponible')
+            result = invalid(code)
+            result.meta = {'correlation_id': audit.id}
+            return result
+
         if name not in CONTRACTS:
-            return invalid("herramienta_desconocida")
+            return reject("herramienta_desconocida")
         query_model, response_model, _ = CONTRACTS[name]
         try:
             query = query_model.model_validate(arguments)
         except ValidationError:
-            return invalid("parametros_invalidos")
+            return reject("parametros_invalidos")
 
         rendered = None
+        report = {}
         try:
             # Las operaciones síncronas se ejecutan por turno. El servicio cierra
             # Qdrant y el catálogo al salir de cada operación.
             with connect() as service:
+                audit.context(service)
                 report = answer(service, query) if name == "buscar_documentos" else service.obtain(query)
+                report['resultado']['correlation_id'] = audit.id
                 response = response_model.model_validate(report["resultado"])
                 rendered = report.get("texto")
         except Exception as exc:
             LOGGER.warning("Fallo del despliegue MCP (%s)", type(exc).__name__)
             response = response_model(estado="error", error="servicio_no_disponible",
-                                      correlation_id=uuid4(), generation_id=None, revision_gobierno=None)
+                                      correlation_id=audit.id, generation_id=None, revision_gobierno=None)
             rendered = None
 
         body = response.model_dump(mode="json")
+        try:
+            audit.finish(body['estado'], body=body, trace=report.get('traza'))
+        except OSError:
+            return invalid('auditoria_no_disponible')
         content = [text_block(json.dumps(body, ensure_ascii=False))]
         if rendered:
             content.append(text_block(rendered))

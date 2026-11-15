@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "run",
+    "--detach",
+    "--name",
+    "petroandes-f9-8b94ff6064444ee8bc163a9752525b46-receiver",
+    "--label",
+    "petroandes.f9.run=8b94ff6064444ee8bc163a9752525b46",
+    "--network",
+    "petroandes-f9-8b94ff6064444ee8bc163a9752525b46",
+    "petroandes-educativo:local",
+    "-c",
+    "import socket\ns=socket.socket(); s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)\ns.bind(('0.0.0.0',8765)); s.listen(16)\nwhile True:\n c,_=s.accept()\n with c: c.sendall(b'F9_CONTROL')\n"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:15:01.419497+00:00",
+  "elapsed_seconds": 0.8940989000257105,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

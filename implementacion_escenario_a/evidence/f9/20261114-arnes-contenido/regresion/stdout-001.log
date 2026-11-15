@@ -1,0 +1,11 @@
+........................................................................ [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 84%]
+.......................................                                  [100%]
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /workspace/implementacion_escenario_a/.pytest_cache/v/cache/nodeids: [Errno 13] Permission denied: '/workspace/implementacion_escenario_a/.pytest_cache/v/cache'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+255 passed, 1 warning in 189.42s (0:03:09)

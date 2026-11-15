@@ -1,0 +1,27 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "dev",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--basetemp",
+    "/tmp/f9-2-pytest"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:07:26.902870+00:00",
+  "elapsed_seconds": 195.6520658999798,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

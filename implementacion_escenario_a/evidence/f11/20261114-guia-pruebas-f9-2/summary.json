@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-15T04:50:06.354460+00:00",
+  "documento": "output/doc/Guia_Actualizada_Pruebas_PetroAndes_F9_2.docx",
+  "sha256": "99ae185f3bf9aabd725148af45ff866b1744936b92ebb18fbbb74b7907db580d",
+  "paginas": 5,
+  "casos_mcp": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09"
+  ],
+  "objetos_json_en_word": 10,
+  "prompts_copilot": 4,
+  "implementacion_verificada_por_hash": 23,
+  "formato": "Letter vertical",
+  "render": "Microsoft Word y render_docx.py con exportacion PDF nativa",
+  "qa_visual": "Cinco paginas finales inspeccionadas sin recortes ni solapamientos",
+  "preflight_host": {
+    "exit_code": 0,
+    "errores": [],
+    "advertencia": "Node host 20 no cumple Inspector actual; se documenta Inspector en contenedor Node 22"
+  },
+  "validate_agent_host": {
+    "exit_code": 0,
+    "archivos_textuales": 5991,
+    "maximo_lineas": 199,
+    "momento": "Antes de agregar este recibo y actualizar el estado"
+  },
+  "evidencia_docker_reutilizada": "evidence/f9/20261114-arnes-contenido/summary.json",
+  "nueva_corrida_docker": false,
+  "reserva_ejecutada": false,
+  "anterior_conservado": true
+}

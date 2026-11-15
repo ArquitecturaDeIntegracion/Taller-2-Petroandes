@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:15:04.975084+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_validate.py",
+    "--output-dir",
+    "reports/portable/f9-2-20261114/integrado",
+    "--timeout",
+    "1800"
+  ],
+  "status": "passed",
+  "network": {
+    "connected": true,
+    "errno": 0,
+    "error": null,
+    "receiver_marker": "F9_CONTROL",
+    "destination": "172.22.0.2:8765",
+    "implementation": "libc socket/connect/recv"
+  }
+}

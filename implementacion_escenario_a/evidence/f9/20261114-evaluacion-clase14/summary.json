@@ -1,0 +1,24 @@
+{
+  "tipo": "revision_documental_codigo_y_evidencia",
+  "fecha_utc": "2026-11-14T05:03:23.958194+00:00",
+  "fecha_local_revision": "2026-11-14",
+  "zona_horaria": "America/Bogota",
+  "documento": "output/doc/Informe_Evaluacion_Arnes_Clase14_PetroAndes.docx",
+  "sha256": "36a45a276df613080a0f25e6cbd19f9c7afb81813b1d805d4e63bd33ad688f5d",
+  "paginas": 4,
+  "diagramas": 2,
+  "qa_visual": "4 páginas finales inspeccionadas sin recortes ni solapamientos",
+  "render": "Microsoft Word a PDF y rasterizador render_docx.py de la habilidad documents",
+  "enlaces_locales_verificados": 6,
+  "archivos_tecnicos_con_hash_coincidente": 19,
+  "nueva_ejecucion_docker": false,
+  "evidencia_docker_revisada": "app:evidence/f9/20261113-arnes-ampliado",
+  "codigo_aplicacion_modificado": false,
+  "reserva_ejecutada": false,
+  "mejora_implementada_en_esta_revision": false,
+  "conclusion": "Alineación parcial: contención comprobada con cobertura limitada y consumidor real no evaluado",
+  "preflight_host": {
+    "errors": [],
+    "warning": "Node 20.19.4 inferior al mínimo 22.19.0 de Inspector; no se usa para acreditar Docker"
+  }
+}

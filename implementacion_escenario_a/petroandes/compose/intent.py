@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 from petroandes.retrieve.ranking import ASSET_ALIASES, normalized, normalized_segment, query_codes
 
-RULE_VERSION = "extractiva-es-1.0.0"
+RULE_VERSION = "extractiva-es-1.1.0"
 DOC_PREFIX = ("acta-", "com-", "fic-", "man-", "pro-", "res-")
 EXTERNAL = re.compile(
     r"\b(envi[ae]r?|ejecut[ae]r?|modific[ae]r?|telemetria|en tiempo real|"

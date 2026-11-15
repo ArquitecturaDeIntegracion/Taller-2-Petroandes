@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "documento": "output/doc/Despliegue_PetroAndes_Flujo_Completo_Tecnologias.docx",
+  "sha256": "04704d14d40a99f4e554c46496577cd1906ebe866ecc5cd8a8b5f4469614aab9",
+  "paginas": 2,
+  "formato": "A3 horizontal",
+  "tipo": "diagrama de despliegue y flujo de informacion de punta a punta",
+  "tecnologias_con_icono": [
+    "python",
+    "docker",
+    "sqlite",
+    "vscode",
+    "pytorch",
+    "nodejs",
+    "linux",
+    "powershell",
+    "qdrant",
+    "mcp",
+    "huggingface",
+    "pydantic",
+    "pytest"
+  ],
+  "despliegue_verificado": [
+    "compose.yaml",
+    "Dockerfile",
+    ".vscode/mcp.json",
+    "config/inspector-web.json",
+    "petroandes/demo.py"
+  ],
+  "distinciones": [
+    "artifacts operativo persistente frente a demo privada por proceso",
+    "HTTP web 6274 frente a MCP stdio",
+    "Qdrant embebido sin servicio HTTP",
+    "F8 laya fuera de consulta",
+    "F9 sandbox separado del IDE"
+  ],
+  "qa_visual": "dos paginas finales inspeccionadas sin recortes ni solapamientos",
+  "render": "Microsoft Word y rasterizador render_docx.py de documents",
+  "enlaces_locales_verificados": 5,
+  "implementacion_verificada_por_hash": 23,
+  "reserva_ejecutada": false,
+  "nueva_corrida_docker": false,
+  "atribucion": "Devicon MIT; Simple Icons CC0; marcas de sus titulares; diagramacion propia"
+}

@@ -1,0 +1,21 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "inspector",
+    "up",
+    "-d",
+    "--force-recreate",
+    "inspector-web"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:24:33.481058+00:00",
+  "elapsed_seconds": 8.428423800010933,
+  "exit_code": 0,
+  "output_files": [
+    "stderr-001.log"
+  ]
+}

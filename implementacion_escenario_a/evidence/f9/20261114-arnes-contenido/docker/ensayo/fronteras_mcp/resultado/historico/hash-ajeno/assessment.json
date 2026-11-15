@@ -1,0 +1,26 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:19:41.171678+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "caso": "historico/hash-ajeno",
+  "frontera": "MCP real/gobierno documental",
+  "entrada": {
+    "doc_id": "COM-PRV-0134",
+    "version_documental": null,
+    "section_id": "asunto",
+    "pdf_sha256": "0c6d846e4709f3ef2a14344d0d135dfddc62866a230341ac16b0082c33c6587f"
+  },
+  "esperado": "denegado",
+  "observado": "denegado",
+  "revision_gobierno": 13,
+  "generation_id": "6e939016-f60b-5b6f-9bd6-b22e4ad35048",
+  "comprobado": true
+}

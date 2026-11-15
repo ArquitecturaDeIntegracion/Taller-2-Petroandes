@@ -1,0 +1,24 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "inspector",
+    "exec",
+    "-T",
+    "inspector-web",
+    "python",
+    "tools/demo_inspector_check.py",
+    "--output-dir",
+    "reports/portable/f9-2-20261114/inspector-servidor"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:26:49.084497+00:00",
+  "elapsed_seconds": 131.43782250001095,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

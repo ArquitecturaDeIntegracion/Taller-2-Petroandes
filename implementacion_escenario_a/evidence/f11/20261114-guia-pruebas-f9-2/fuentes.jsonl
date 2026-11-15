@@ -1,0 +1,10 @@
+{"base": "app", "path": "config/demo-pruebas.json", "sha256": "a3f76c89a81ee4e497545d5b7afd33d49038e8823403a1acabd3ee9981af0a62"}
+{"base": "app", "path": "docs/validacion-dev-f9-2.md", "sha256": "ebc06389232e8e7c26697950f0786f4358dc00d86fa05b0377568c3a77864887"}
+{"base": "app", "path": "docs/copilot-vscode.md", "sha256": "a69d30def9e8efee71cfbd31ad9b87d97e9def9599507ba0c3f0af5d1cb0f5ed"}
+{"base": "app", "path": "compose.yaml", "sha256": "37beaf2c47cb4c9b61deadf981fd9f3247c0b95d881ae11eaf46151b0b5aee73"}
+{"base": "app", "path": ".vscode/mcp.json", "sha256": "adecec885017cd173f28933371437f19013f43f14460d365b085e2c4927926f5"}
+{"base": "app", "path": "config/inspector-web.json", "sha256": "7c3ab3fa80aff55b1aa0d59c5dc73930ea412444b6556a434d01df90c4a9e555"}
+{"base": "app", "path": "evidence/f9/20261114-arnes-contenido/summary.json", "sha256": "91d1b994e2d2bfdeeee6542ca838f3fd0f2d3356e190d926669430a4b0a25dec"}
+{"base": "app", "path": "evidence/f9/20261114-arnes-contenido/docker/summary.json", "sha256": "a47954efe9fef471e16334e578f61fcdb424d5eaf86d1a9ed3ea2a8b8da63514"}
+{"base": "app", "path": "evidence/f9/20261114-arnes-contenido/cliente-publico/resultado/summary.json", "sha256": "57bb14ae6074f7e49ef5e7abceccfd98c038581f3f24daf96ddf885b812ee567"}
+{"base": "project", "path": "output/doc/Guia_Actualizada_Pruebas_PetroAndes_F9_2.docx", "sha256": "99ae185f3bf9aabd725148af45ff866b1744936b92ebb18fbbb74b7907db580d"}

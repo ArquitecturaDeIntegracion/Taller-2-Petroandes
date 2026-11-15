@@ -1,0 +1,6 @@
+{"base": "project", "path": "implementacion_escenario_a/docs/f11-diseno-eip.md", "sha256": "245dd2f9cd2160889834f650531bdb86e611675eea864c9416483f854598325f"}
+{"base": "project", "path": "implementacion_escenario_a/docs/adr-0015-arnes-f9-2.md", "sha256": "8804e362c56e5131756c2d06e7632aaeb4d850955c56fc311fa94c3e95d5cb1a"}
+{"base": "project", "path": "implementacion_escenario_a/evidence/f9/20261114-arnes-contenido/fuentes.jsonl", "sha256": "40c41579b37afa03543a0413c6862c3c536928c4ed4bae36c9154b9869d87572"}
+{"base": "project", "path": "tmp/eip_integral_actual/diagram.py", "sha256": "f9a662f04daed71bd3a44c48ce4a5391f5168cf37da4103a4cd45e9ea85af15d"}
+{"base": "project", "path": "tmp/eip_integral_actual/build.py", "sha256": "441358c3e76080fad3b076148ae284c47f3a380d16885e7df39a3f2e06f4a1b5"}
+{"base": "project", "path": "output/doc/Diagrama_Integral_EIP_PetroAndes_Actual.docx", "sha256": "8b2947b3d1203f11c1819f73954c66a6d6d362c9a6d5ef694aafe01176bc51e2"}

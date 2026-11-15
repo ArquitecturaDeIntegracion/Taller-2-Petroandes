@@ -1,0 +1,8 @@
+{"base": "project", "path": "implementacion_escenario_a/compose.yaml", "sha256": "37beaf2c47cb4c9b61deadf981fd9f3247c0b95d881ae11eaf46151b0b5aee73"}
+{"base": "project", "path": "implementacion_escenario_a/Dockerfile", "sha256": "4a3d0703a91dd1d13f35ce9dfdeb4b294315c421e233a1d176d02fed5b652acc"}
+{"base": "project", "path": "implementacion_escenario_a/.vscode/mcp.json", "sha256": "adecec885017cd173f28933371437f19013f43f14460d365b085e2c4927926f5"}
+{"base": "project", "path": "implementacion_escenario_a/config/inspector-web.json", "sha256": "7c3ab3fa80aff55b1aa0d59c5dc73930ea412444b6556a434d01df90c4a9e555"}
+{"base": "project", "path": "implementacion_escenario_a/petroandes/demo.py", "sha256": "3d31b56454c4188c1b0122f1bde04bd62d5369c5a20d8d86a0d03eada94600e3"}
+{"base": "project", "path": "output/doc/Despliegue_PetroAndes_Flujo_Completo_Tecnologias.docx", "sha256": "04704d14d40a99f4e554c46496577cd1906ebe866ecc5cd8a8b5f4469614aab9"}
+{"base": "project", "path": "tmp/despliegue_petroandes/diagram.py", "sha256": "c8e822f5b5315030cfdca96f500d929f7fb4f2e2ffb89d80085d95484d3beebd"}
+{"base": "project", "path": "tmp/despliegue_petroandes/build.py", "sha256": "15291ebeb13702ee23c6cd3d1720a6acafc943ff48af271b6422cf9bf3e8f8ba"}

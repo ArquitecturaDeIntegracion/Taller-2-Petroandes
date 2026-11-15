@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "documento": "output/doc/Arquitectura_EIP_Servicios_MCP_y_Arnes_PetroAndes.docx",
+  "sha256": "761e58d212736242d47f00421e067ce247aabe43dc274d725a18624c874a3d59",
+  "paginas": 2,
+  "formato": "A3 horizontal",
+  "estilo": "iconos EIP abiertos y bandas horizontales seg\u00fan la imagen aportada por el usuario",
+  "herramientas": [
+    "buscar_documentos",
+    "obtener_fragmento"
+  ],
+  "arnes": "F9.2",
+  "bandas": [
+    "preparacion y gobierno",
+    "consultas MCP",
+    "administracion y auditoria",
+    "arnes y evidencia"
+  ],
+  "qa_visual": "dos paginas finales renderizadas con Word e inspeccionadas sin recortes ni solapamientos",
+  "render": "Microsoft Word y rasterizador render_docx.py de documents",
+  "implementacion_verificada_por_hash": 23,
+  "reserva_ejecutada": false,
+  "nueva_corrida_docker": false,
+  "atribucion": "EIP Gregor Hohpe y Bobby Woolf CC BY 4.0; diagrama propio basado en la referencia visual"
+}

@@ -1,0 +1,22 @@
+{
+  "clase": {
+    "archivo": "ARTI4212_Sesion14.pdf",
+    "sha256": "420c2864f443e780b57018aec6e9a7771983241797c15397317820988b2400c6",
+    "paginas_relevantes": [
+      15,
+      16,
+      17,
+      24,
+      25
+    ],
+    "paginas_15_y_16": "inspección visual"
+  },
+  "fuentes_primarias_web": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html",
+    "https://learn.microsoft.com/en-us/security/zero-trust/sfi/defend-indirect-prompt-injection",
+    "https://arxiv.org/abs/2503.18813v2",
+    "https://github.com/google-research/camel-prompt-injection",
+    "https://www.anthropic.com/research/prompt-injection-defenses"
+  ]
+}

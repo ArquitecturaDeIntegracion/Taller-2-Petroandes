@@ -1,0 +1,1 @@
+{"status": "passed", "network": {"connected": true, "errno": 0, "error": null, "receiver_marker": "F9_CONTROL", "destination": "172.22.0.2:8765", "implementation": "libc socket/connect/recv"}}

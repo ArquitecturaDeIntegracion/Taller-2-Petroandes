@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:20:30.794438+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "caso": "historico/pendiente",
+  "frontera": "MCP real/gobierno documental",
+  "entrada": {
+    "doc_id": "MAN-OPE-004",
+    "version_documental": "2",
+    "section_id": "3"
+  },
+  "esperado": "denegado",
+  "observado": "denegado",
+  "revision_gobierno": 13,
+  "generation_id": "6e939016-f60b-5b6f-9bd6-b22e4ad35048",
+  "comprobado": true
+}

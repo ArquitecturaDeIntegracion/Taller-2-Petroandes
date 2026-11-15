@@ -1,10 +1,11 @@
-# Dependencias directas. El bloqueo reproducible es requirements.lock (pip freeze --all).
+# Dependencias directas. Docker usa requirements-portable.lock; requirements.lock es histórico.
 # Transformers 4 conserva la API usada en esta primera comprobación de laya/E5.
 qdrant-client
 sentence-transformers<6
 transformers<5
 torch
 pypdf
+pymupdf==2.1
 pydantic
 rank-bm25
 mcp<2

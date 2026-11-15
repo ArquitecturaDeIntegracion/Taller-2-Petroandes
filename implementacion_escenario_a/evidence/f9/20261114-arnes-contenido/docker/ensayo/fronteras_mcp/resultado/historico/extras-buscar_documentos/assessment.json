@@ -1,0 +1,27 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:18:42.099204+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "caso": "historico/extras-buscar_documentos",
+  "frontera": "MCP real/esquema",
+  "entrada": {
+    "consulta": "COM-PRV-0134",
+    "top_k": 1,
+    "perfil": "laboratorio",
+    "grupos": [
+      "LAB_REVISION"
+    ],
+    "uso": "inspeccion_no_confiable"
+  },
+  "esperado": "parametros_invalidos",
+  "observado": "parametros_invalidos",
+  "comprobado": true
+}

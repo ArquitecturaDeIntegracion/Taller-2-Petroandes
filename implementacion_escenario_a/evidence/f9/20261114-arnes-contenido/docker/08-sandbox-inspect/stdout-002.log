@@ -1,0 +1,114 @@
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/c/Users/jcjca/OneDrive/Documentos/ChatGPT/Taller 2 Arquitecura de Integración/implementacion_escenario_a/reports/portable/f9-2-20261114/integrado",
+                "Destination": "/f9-output",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "297515a0dfd2",
+            "Domainname": "",
+            "User": "10001:10001",
+            "AttachStdin": true,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": true,
+            "StdinOnce": true,
+            "Env": [
+                "PYTHONDONTWRITEBYTECODE=1",
+                "MKL_NUM_THREADS=2",
+                "HOME=/tmp",
+                "PETROANDES_CACHE_DIR=/tmp/cache",
+                "PETROANDES_AUDIT_DIR=/f9-output/mcp-audit",
+                "PETROANDES_INSPECTOR_DIR=/opt/inspector",
+                "PETROANDES_ARTIFACTS_DIR=/tmp/artifacts",
+                "PETROANDES_F9_OUTPUT_DIR=/f9-output",
+                "PETROANDES_MODELS_DIR=/models-root/models",
+                "OMP_NUM_THREADS=2",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.16",
+                "PYTHON_SHA256=b5796915dc45ff745cfb4e990a7e7c93d6f546328a102ce31448d69ebc37575c",
+                "PYTHONUNBUFFERED=1",
+                "PYTHONIOENCODING=utf-8"
+            ],
+            "Cmd": [
+                "-c",
+                "import time; time.sleep(180)"
+            ],
+            "Image": "petroandes-educativo:local",
+            "Volumes": null,
+            "WorkingDir": "/workspace/implementacion_escenario_a",
+            "Entrypoint": [
+                "python"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "42e54d52cf3a80437a5045f84ed276bada15824001c44f8a0d3171a0c374d802",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:ecba8a3e82cbc72482ec172d636eeb4f4865fba26bb5b843a847dc50b7d3fa64",
+                "com.docker.compose.oneoff": "True",
+                "com.docker.compose.project": "petroandes-educativo",
+                "com.docker.compose.project.config_files": "${APP_ROOT}\\compose.yaml",
+                "com.docker.compose.project.working_dir": "${APP_ROOT}",
+                "com.docker.compose.service": "f9-sandbox",
+                "com.docker.compose.slug": "591ab30d863be32c6c2710ded6600e0432f03a40ad31a0c4a2155f0ca453a248",
+                "com.docker.compose.version": "2.38.2",
+                "petroandes.f9.run": "8b94ff6064444ee8bc163a9752525b46"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "bf898a9f846f9079e29d268eab9acd3e43287f1b78c5631752dbb7ca3f91d929",
+            "SandboxKey": "/var/run/docker/netns/bf898a9f846f",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "none": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c43eeb3861deb9f99663d5758eb141c0517ca7fa442b370f00d8c45a262cf983",
+                    "EndpointID": "9d0802ebff8b34a01e92b6d3cee8f303300f0e3add6faed0a263476be3ec1c5b",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:1350959fdef47bb415d9936b37d0605dbd51ecddcd5c76028e34f3be92febb1f",
+            "size": 3158,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

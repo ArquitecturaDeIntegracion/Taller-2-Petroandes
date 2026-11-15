@@ -54,6 +54,7 @@ services:
       MKL_NUM_THREADS: "2"
       HOME: /tmp
       PETROANDES_F9_OUTPUT_DIR: /f9-output
+      PETROANDES_AUDIT_DIR: /f9-output/mcp-audit
     volumes:
       - .:/workspace/implementacion_escenario_a:ro
       - model-cache:/models-root:ro

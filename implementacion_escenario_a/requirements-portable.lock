@@ -47,6 +47,12 @@ pydantic-settings==2.16.2
 pydantic==2.14.2
 pydantic_core==2.50.2
 pypdf==6.21.4
+pymupdf==2.1
+pymupdf-layout==2.1
+pymupdf4llm==2.1
+onnxruntime==1.32.0
+flatbuffers==25.12.19
+tabulate==0.10.0
 pytest==9.2.0
 python-dotenv==1.2.4
 python-multipart==0.0.33

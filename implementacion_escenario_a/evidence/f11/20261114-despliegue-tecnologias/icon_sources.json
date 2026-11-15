@@ -1,0 +1,80 @@
+[
+  {
+    "name": "python",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    "sha256": "71493b4a732f0532b3a03a7a95da3ee11a65766367c8303b901ffbe7bf91a3a2",
+    "status": "ok"
+  },
+  {
+    "name": "docker",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+    "sha256": "3fd830ea69431ed7a0b8d068cd5b34ad3f00a1a78195d50f13ff56713f2462e1",
+    "status": "ok"
+  },
+  {
+    "name": "sqlite",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg",
+    "sha256": "2b91c30887d3602479ba845cc012ef6ae577fba71eb96705a05b12e35d2c5e7e",
+    "status": "ok"
+  },
+  {
+    "name": "vscode",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+    "sha256": "503d580c442a7071aae180d9b4766e312e4600bf0e9d842b30f56d0e614eceb8",
+    "status": "ok"
+  },
+  {
+    "name": "pytorch",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg",
+    "sha256": "7fb9c244f59aa3261ed17d6166ef50d0f07e6e5bc4e5211ca53b6e4837e09e75",
+    "status": "ok"
+  },
+  {
+    "name": "nodejs",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+    "sha256": "3218687c5ea24a4d4c0a33dc5c287da38c33a72dcfe9382469d7ce4e0bf661fb",
+    "status": "ok"
+  },
+  {
+    "name": "linux",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+    "sha256": "cf50ae4a263c6142963fad3561f7cb0311d0d41cc6189eadfb34f81a8a36acb0",
+    "status": "ok"
+  },
+  {
+    "name": "powershell",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/powershell/powershell-original.svg",
+    "sha256": "f72bc9843ff04005045b659f1ce960d03ddf7707fe02cb5d3dee373914a6d750",
+    "status": "ok"
+  },
+  {
+    "name": "qdrant",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/qdrant.svg",
+    "sha256": "c5fbbbf771648975f22973627b4eb5620c68a4f81ccfb6c21633bb1d04f9fdf1",
+    "status": "ok"
+  },
+  {
+    "name": "mcp",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/modelcontextprotocol.svg",
+    "sha256": "4796bc576053cf2ae4724ea1813d9f4ec05bc671154abdd80a18b790613c7d81",
+    "status": "ok"
+  },
+  {
+    "name": "huggingface",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/huggingface.svg",
+    "sha256": "aa81744034eecf4ac6b3fb7108dd71223965c7af3c534932391314563b150109",
+    "status": "ok"
+  },
+  {
+    "name": "pydantic",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/pydantic.svg",
+    "sha256": "68cfc07f02413da0c03bb7f768e38dc5cf385b0b0a830909b5cb7507ad6f0c84",
+    "status": "ok"
+  },
+  {
+    "name": "pytest",
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytest/pytest-original.svg",
+    "sha256": "e3073e7f520866f93a40e76b633efc29715539150423178cdb2e33f7077e4be1",
+    "status": "ok"
+  }
+]

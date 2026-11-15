@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "documento": "output/doc/Diagrama_Integral_EIP_PetroAndes_Actual.docx",
+  "sha256": "8b2947b3d1203f11c1819f73954c66a6d6d362c9a6d5ef694aafe01176bc51e2",
+  "paginas": 2,
+  "formato": "A3 horizontal 420 x 297 mm",
+  "elementos_identificados": 41,
+  "filas_matriz": 21,
+  "todos_los_elementos_con_correspondencia": true,
+  "render": "Microsoft Word y rasterizador render_docx.py",
+  "qa_visual": "dos paginas finales inspeccionadas sin recortes ni solapamientos",
+  "archivos_implementacion_verificados": 23,
+  "reserva_ejecutada": false,
+  "alcance": "documental; sin nuevos ataques ni corrida Docker",
+  "atribucion": "EIP de Gregor Hohpe y Bobby Woolf; iconos CC BY 4.0; diagrama propio",
+  "notacion": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/"
+}

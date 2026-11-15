@@ -1,0 +1,26 @@
+[
+  {
+    "pagina": 1,
+    "palabras_texto": 311,
+    "png_sha256": "daf220248ec01ea4548fbacb87f18765b7bae549305d09df64c17feb9f870da5",
+    "qa": "inspeccionada_sin_recortes_ni_solapamientos"
+  },
+  {
+    "pagina": 2,
+    "palabras_texto": 264,
+    "png_sha256": "21ac8c76669bfc138b785e9bad8cf934e08d542ae7c6af981afa43ab9588165b",
+    "qa": "inspeccionada_sin_recortes_ni_solapamientos"
+  },
+  {
+    "pagina": 3,
+    "palabras_texto": 340,
+    "png_sha256": "b1f173ef9d34985774128131db7fd1c75c87dd9be83416e8ea18828561fae8f9",
+    "qa": "inspeccionada_sin_recortes_ni_solapamientos"
+  },
+  {
+    "pagina": 4,
+    "palabras_texto": 377,
+    "png_sha256": "31aa80bacbafa4ca775223dab518abd46800bbc62184c8bc921dd4614fe08d3d",
+    "qa": "inspeccionada_sin_recortes_ni_solapamientos"
+  }
+]

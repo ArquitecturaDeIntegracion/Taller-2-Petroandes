@@ -1,0 +1,36 @@
+{
+  "fecha_utc": "2026-11-14T18:37:49.288944+00:00",
+  "status": "passed",
+  "tipo": "emision_documental",
+  "documento": {
+    "base": "project",
+    "path": "output/doc/Arquitectura_C4_EIP_y_Funcionamiento_Arnes_F9_2.docx",
+    "sha256": "c74d9bfa9488395e2f1c8767434048a06aec27897f7b8d798f6906c30085a765"
+  },
+  "paginas": 4,
+  "diagramas": {
+    "C4_nivel_2": 1,
+    "C4_nivel_3": 1,
+    "EIP": 1
+  },
+  "render": "Microsoft Word a PDF y rasterizador render_docx.py de documents; LibreOffice no instalado",
+  "qa_visual": "cuatro paginas finales revisadas",
+  "diagramas_con_texto_alternativo": 3,
+  "enlaces_locales_verificados": 3,
+  "fuentes_codigo_con_hash_coincidente": 23,
+  "evidencia_base": "evidence/f9/20261114-arnes-contenido/summary.json",
+  "pruebas_docker": "referencia a la corrida F9.2 conservada; sin repetirla en esta tarea documental",
+  "reserva_ejecutada": false,
+  "notacion": [
+    {
+      "nombre": "C4 de Simon Brown",
+      "url": "https://c4model.com/diagrams/container",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "nombre": "EIP de Gregor Hohpe y Bobby Woolf",
+      "url": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/",
+      "licencia": "CC BY 4.0"
+    }
+  ]
+}

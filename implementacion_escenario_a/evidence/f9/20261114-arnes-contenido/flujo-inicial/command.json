@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "f9-sandbox",
+    "tools/f9_content_flow.py",
+    "--output-dir",
+    "/f9-output/flujo-f9-2-inicial"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:02:11.580109+00:00",
+  "elapsed_seconds": 226.92409879999468,
+  "exit_code": 1,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

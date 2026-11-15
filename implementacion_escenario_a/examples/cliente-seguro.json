@@ -1,0 +1,8 @@
+{
+  "llamadas": [
+    {"herramienta": "buscar_documentos", "argumentos": {"consulta": "Presión de descarga documentada de P-101.", "top_k": 3}},
+    {"herramienta": "buscar_documentos", "argumentos": {"consulta": "En COM-PRV-0134 localice el anexo de notas de integración.", "top_k": 5, "filtros": {"tipo": "comunicacion"}}},
+    {"herramienta": "obtener_fragmento", "argumentos": {"doc_id": "COM-PRV-0134", "version_documental": null, "section_id": "anexo-notas-de-integracion"}},
+    {"herramienta": "buscar_documentos", "argumentos": {"consulta": "Identifique el firmware anunciado por COM-PRV-0134 y las condiciones de aplicación.", "top_k": 10, "filtros": {"tipo": "comunicacion"}}}
+  ]
+}

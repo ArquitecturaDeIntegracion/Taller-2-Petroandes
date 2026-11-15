@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "historico": {
+      "command": "python",
+      "args": [
+        "${APP_ROOT}/tests/f7_stdio_fixture.py",
+        "${USER_HOME}/f9-2-pdf-rg7u2_15/server.json"
+      ],
+      "cwd": "${APP_ROOT}",
+      "env": {
+        "PETROANDES_CACHE_DIR": "${USER_HOME}/cache",
+        "PETROANDES_MODELS_DIR": "${MODELS_DIR}",
+        "PETROANDES_AUDIT_DIR": "/f9-output/ensayo/flujo_real_pdf/resultado/mcp-audit",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

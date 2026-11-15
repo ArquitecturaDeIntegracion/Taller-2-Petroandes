@@ -1,0 +1,25 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:23:27.939315+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_mcp_boundaries.py",
+    "--output-dir",
+    "/f9-output/ensayo/fronteras_mcp/resultado"
+  ],
+  "caso": "auditoria/objeto-otro-contexto",
+  "frontera": "MCP real/gobierno documental",
+  "entrada": {
+    "doc_id": "RES-CREG-0043-2024",
+    "version_documental": null,
+    "section_id": "articulo-2"
+  },
+  "esperado": "denegado",
+  "observado": "denegado",
+  "revision_gobierno": 13,
+  "generation_id": "1e4c2ada-7ae6-576c-9367-066da253fe5c",
+  "comprobado": true
+}

@@ -1,0 +1,160 @@
+ 37 líneas  evidence/f11/20261108/corrida/comandos/f7/stdout-001.log
+ 18 líneas  evidence/f11/20261108/corrida/comandos/f8/command.json
+  1 líneas  evidence/f11/20261108/corrida/comandos/f8/stderr-001.log
+128 líneas  evidence/f11/20261108/corrida/comandos/f8/stdout-001.log
+ 17 líneas  evidence/f11/20261108/corrida/comandos/f9/command.json
+ 71 líneas  evidence/f11/20261108/corrida/comandos/f9/stdout-001.log
+ 20 líneas  evidence/f11/20261108/corrida/comandos/ingesta-pdf/command.json
+ 81 líneas  evidence/f11/20261108/corrida/comandos/ingesta-pdf/stdout-001.log
+ 20 líneas  evidence/f11/20261108/corrida/comandos/modelo-e5/command.json
+  2 líneas  evidence/f11/20261108/corrida/comandos/modelo-e5/stderr-001.log
+ 78 líneas  evidence/f11/20261108/corrida/comandos/modelo-e5/stdout-001.log
+ 21 líneas  evidence/f11/20261108/corrida/comandos/modelo-laya/command.json
+  1 líneas  evidence/f11/20261108/corrida/comandos/modelo-laya/stderr-001.log
+160 líneas  evidence/f11/20261108/corrida/comandos/modelo-laya/stdout-001.log
+112 líneas  evidence/f11/20261108/corrida/comandos/modelo-laya/stdout-002.log
+ 15 líneas  evidence/f11/20261108/corrida/comandos/preflight/command.json
+ 90 líneas  evidence/f11/20261108/corrida/comandos/preflight/stdout-001.log
+ 22 líneas  evidence/f11/20261108/corrida/comandos/regresion/command.json
+  4 líneas  evidence/f11/20261108/corrida/comandos/regresion/stdout-001.log
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-001.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-002.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-003.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-004.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-005.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-006.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-007.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-008.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-009.jsonl
+160 líneas  evidence/f11/20261108/corrida/entrega/archivos-010.jsonl
+ 98 líneas  evidence/f11/20261108/corrida/entrega/archivos-011.jsonl
+ 24 líneas  evidence/f11/20261108/corrida/entrega/casos-academicos-001.jsonl
+120 líneas  evidence/f11/20261108/corrida/entrega/licencias-npm-001.jsonl
+ 77 líneas  evidence/f11/20261108/corrida/entrega/licencias-python-001.jsonl
+ 55 líneas  evidence/f11/20261108/corrida/entrega/summary.json
+  1 líneas  evidence/f11/20261108/corrida/f10/aprobacion-eventos-001.jsonl
+ 72 líneas  evidence/f11/20261108/corrida/f10/aprobacion-manifiesto.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/aprobacion.json
+ 44 líneas  evidence/f11/20261108/corrida/f10/bundle.json
+ 13 líneas  evidence/f11/20261108/corrida/f10/consolidacion-eventos-001.jsonl
+ 72 líneas  evidence/f11/20261108/corrida/f10/consolidacion-manifiesto.json
+ 72 líneas  evidence/f11/20261108/corrida/f10/consolidacion-repetida-manifiesto.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/consolidacion-repetida.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/consolidacion.json
+ 12 líneas  evidence/f11/20261108/corrida/f10/decisiones-iniciales-001.jsonl
+ 19 líneas  evidence/f11/20261108/corrida/f10/documentos-iniciales-001.jsonl
+ 39 líneas  evidence/f11/20261108/corrida/f10/fallo-activacion.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/fallo-no-publica.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/huella-cambiada-tres-rutas.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/huella-pendiente-despues.json
+  1 líneas  evidence/f11/20261108/corrida/f10/huella-pendiente-propagada-eventos-001.jsonl
+ 62 líneas  evidence/f11/20261108/corrida/f10/huella-pendiente-propagada-manifiesto.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/huella-pendiente-propagada.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/huella-pendiente-tras-rollback.json
+ 18 líneas  evidence/f11/20261108/corrida/f10/huellas-pdf.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/permisos-despues.json
+  1 líneas  evidence/f11/20261108/corrida/f10/permisos-propagados-eventos-001.jsonl
+ 66 líneas  evidence/f11/20261108/corrida/f10/permisos-propagados-manifiesto.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/permisos-propagados.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/permisos-tres-rutas.json
+  1 líneas  evidence/f11/20261108/corrida/f10/recuperacion-eventos-001.jsonl
+ 68 líneas  evidence/f11/20261108/corrida/f10/recuperacion-manifiesto.json
+ 67 líneas  evidence/f11/20261108/corrida/f10/recuperacion.json
+ 62 líneas  evidence/f11/20261108/corrida/f10/reindexacion-manifiesto.json
+ 70 líneas  evidence/f11/20261108/corrida/f10/reindexacion.json
+ 19 líneas  evidence/f11/20261108/corrida/f10/replay-1.json
+ 19 líneas  evidence/f11/20261108/corrida/f10/replay-14.json
+ 72 líneas  evidence/f11/20261108/corrida/f10/restablecer-reloj-ensayo-manifiesto.json
+ 60 líneas  evidence/f11/20261108/corrida/f10/restablecer-reloj-ensayo.json
+ 48 líneas  evidence/f11/20261108/corrida/f10/revocacion-en-consulta.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/revocado-tres-rutas.json
+ 17 líneas  evidence/f11/20261108/corrida/f10/rollback-misma-revision.json
+ 16 líneas  evidence/f11/20261108/corrida/f10/rollback-rechazado.json
+ 14 líneas  evidence/f11/20261108/corrida/f10/rollback-vencido.json
+ 58 líneas  evidence/f11/20261108/corrida/f10/summary.json
+ 16 líneas  evidence/f11/20261108/corrida/f10/vector-revocado.json
+ 13 líneas  evidence/f11/20261108/corrida/f10/vencimiento-propagado-manifiesto.json
+ 59 líneas  evidence/f11/20261108/corrida/f10/vencimiento-propagado.json
+ 38 líneas  evidence/f11/20261108/corrida/f10/vencimiento-tres-rutas.json
+ 62 líneas  evidence/f11/20261108/corrida/f7/config-portable.json
+ 36 líneas  evidence/f11/20261108/corrida/f7/summary.json
+ 31 líneas  evidence/f11/20261108/corrida/f7/direct-denied/command.json
+  4 líneas  evidence/f11/20261108/corrida/f7/direct-denied/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/direct-denied/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/direct-invalid/command.json
+  3 líneas  evidence/f11/20261108/corrida/f7/direct-invalid/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/direct-invalid/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/direct-ok/command.json
+  4 líneas  evidence/f11/20261108/corrida/f7/direct-ok/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/direct-ok/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/index-error/command.json
+  4 líneas  evidence/f11/20261108/corrida/f7/index-error/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/index-error/stdout-001.log
+ 27 líneas  evidence/f11/20261108/corrida/f7/list/command.json
+  2 líneas  evidence/f11/20261108/corrida/f7/list/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/list/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/privilege-invalid/command.json
+  3 líneas  evidence/f11/20261108/corrida/f7/privilege-invalid/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/privilege-invalid/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/reconnect/command.json
+  4 líneas  evidence/f11/20261108/corrida/f7/reconnect/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/reconnect/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/search-abstention/command.json
+  2 líneas  evidence/f11/20261108/corrida/f7/search-abstention/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/search-abstention/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/search-invalid/command.json
+  3 líneas  evidence/f11/20261108/corrida/f7/search-invalid/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/search-invalid/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/search-ok/command.json
+  4 líneas  evidence/f11/20261108/corrida/f7/search-ok/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/search-ok/stdout-001.log
+ 31 líneas  evidence/f11/20261108/corrida/f7/service-error/command.json
+  3 líneas  evidence/f11/20261108/corrida/f7/service-error/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f7/service-error/stdout-001.log
+ 19 líneas  evidence/f11/20261108/corrida/f7/wire/command.json
+  2 líneas  evidence/f11/20261108/corrida/f7/wire/stderr-001.log
+  2 líneas  evidence/f11/20261108/corrida/f7/wire/stdout-001.log
+ 62 líneas  evidence/f11/20261108/corrida/f8/config-portable.json
+127 líneas  evidence/f11/20261108/corrida/f8/summary.json
+ 55 líneas  evidence/f11/20261108/corrida/f8/T01/evaluacion.json
+ 29 líneas  evidence/f11/20261108/corrida/f8/T01/python.json
+ 24 líneas  evidence/f11/20261108/corrida/f8/T01/traza.json
+ 31 líneas  evidence/f11/20261108/corrida/f8/T01/inspector/command.json
+  2 líneas  evidence/f11/20261108/corrida/f8/T01/inspector/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f8/T01/inspector/stdout-001.log
+ 56 líneas  evidence/f11/20261108/corrida/f8/T02/evaluacion.json
+ 29 líneas  evidence/f11/20261108/corrida/f8/T02/python.json
+ 24 líneas  evidence/f11/20261108/corrida/f8/T02/traza.json
+ 31 líneas  evidence/f11/20261108/corrida/f8/T02/inspector/command.json
+  2 líneas  evidence/f11/20261108/corrida/f8/T02/inspector/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f8/T02/inspector/stdout-001.log
+ 53 líneas  evidence/f11/20261108/corrida/f8/T03/densa-1.json
+160 líneas  evidence/f11/20261108/corrida/f8/T03/evaluacion.json
+ 53 líneas  evidence/f11/20261108/corrida/f8/T03/exacta-1.json
+ 53 líneas  evidence/f11/20261108/corrida/f8/T03/lexica-1.json
+ 67 líneas  evidence/f11/20261108/corrida/f8/T03/python.json
+ 73 líneas  evidence/f11/20261108/corrida/f8/T03/traza.json
+ 31 líneas  evidence/f11/20261108/corrida/f8/T03/inspector/command.json
+  4 líneas  evidence/f11/20261108/corrida/f8/T03/inspector/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f8/T03/inspector/stdout-001.log
+107 líneas  evidence/f11/20261108/corrida/f8/T04/densa-1.json
+178 líneas  evidence/f11/20261108/corrida/f8/T04/evaluacion.json
+ 71 líneas  evidence/f11/20261108/corrida/f8/T04/exacta-1.json
+107 líneas  evidence/f11/20261108/corrida/f8/T04/lexica-1.json
+ 66 líneas  evidence/f11/20261108/corrida/f8/T04/python.json
+ 88 líneas  evidence/f11/20261108/corrida/f8/T04/traza.json
+ 31 líneas  evidence/f11/20261108/corrida/f8/T04/inspector/command.json
+  4 líneas  evidence/f11/20261108/corrida/f8/T04/inspector/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f8/T04/inspector/stdout-001.log
+ 71 líneas  evidence/f11/20261108/corrida/f9/anexo.json
+ 30 líneas  evidence/f11/20261108/corrida/f9/config-portable.json
+ 20 líneas  evidence/f11/20261108/corrida/f9/publicacion-auditoria.json
+ 70 líneas  evidence/f11/20261108/corrida/f9/summary.json
+ 19 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/comparacion.json
+ 72 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/python.json
+ 28 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/traza.json
+ 31 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/inspector/command.json
+  5 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/inspector/stderr-001.log
+  1 líneas  evidence/f11/20261108/corrida/f9/anexo-directo/inspector/stdout-001.log
+ 19 líneas  evidence/f11/20261108/corrida/f9/ataque/comparacion.json
+ 46 líneas  evidence/f11/20261108/corrida/f9/ataque/python.json

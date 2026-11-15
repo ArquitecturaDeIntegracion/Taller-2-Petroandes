@@ -1,0 +1,15 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:15:29.631078+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_guard_check.py",
+    "--output-dir",
+    "/f9-output/ensayo"
+  ],
+  "archivos": 379,
+  "sha256_inventario": "822746b8621369b1ee987904439d16759c7051340078e12e934a7e0c9ae2d650"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "cliente": "extractivo_sin_llm_sin_interprete_de_acciones",
+  "plan_sha256": "e69f41bc36fba725dddf84802acca7fe837a418ea453a639c9718e6bd80c0a25",
+  "llamadas_planificadas": 4,
+  "llamadas_ejecutadas": 4,
+  "fecha_utc": "2026-11-14T16:26:08.303421+00:00"
+}

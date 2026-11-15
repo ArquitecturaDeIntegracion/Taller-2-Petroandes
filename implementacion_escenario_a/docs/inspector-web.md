@@ -96,6 +96,11 @@ las trazas de descarte y los observadores de efectos en un contexto aislado.
 
 ## Comprobación automática y cierre
 
+F9.2 añade un recibo por llamada en `reports/portable/mcp-audit/`, identificado
+por el `correlation_id` devuelto. La [guía F9.2](validacion-dev-f9-2.md) explica
+su consulta, el nuevo detector y el cliente restringido. Recrear Inspector
+tras construir la imagen actualizada; los argumentos de las herramientas siguen iguales.
+
 ```powershell
 docker compose --profile dev run --rm -T dev tools/demo_check.py --output-dir "reports/portable/demo-$marca"
 docker compose --profile dev run --rm -T dev tools/demo_inspector_check.py --output-dir "reports/portable/demo-inspector-$marca"

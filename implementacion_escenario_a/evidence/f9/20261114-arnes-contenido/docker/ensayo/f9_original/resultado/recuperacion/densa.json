@@ -1,0 +1,60 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:16:06.824955+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "/f9-output/ensayo/f9_original/resultado"
+  ],
+  "candidatos": [
+    {
+      "chunk_id": "8bf6f5e9-6a73-58ed-adce-c809554ba5e0",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "anexo-notas-de-integracion"
+    },
+    {
+      "chunk_id": "7446ec98-8fc5-5cfb-8756-8f5b729df1c8",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "contenido-de-la-version"
+    },
+    {
+      "chunk_id": "3a1cf4d8-2d12-5cf2-bfcd-17905ed1361f",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "asunto"
+    },
+    {
+      "chunk_id": "2504320e-9c0c-5871-92dd-425a6e41d9c8",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "condiciones-de-aplicacion"
+    },
+    {
+      "chunk_id": "8164fe95-9daf-5a10-b246-6240a6f126bc",
+      "doc_id": "COM-PRV-0134",
+      "section_id": "notas-de-la-version"
+    },
+    {
+      "chunk_id": "a5830c8a-cd4d-58cb-a991-529b908d61d1",
+      "doc_id": "COM-PRV-0098",
+      "section_id": "recomendacion"
+    },
+    {
+      "chunk_id": "dc23e984-6de3-59b3-9b91-c4413ee077be",
+      "doc_id": "COM-PRV-0098",
+      "section_id": "alcance"
+    },
+    {
+      "chunk_id": "639b56d3-c245-5565-abfe-76433c36195a",
+      "doc_id": "COM-PRV-0098",
+      "section_id": "asunto"
+    },
+    {
+      "chunk_id": "894b5508-c8c6-5b6c-b0f9-e34b1b3542e8",
+      "doc_id": "COM-PRV-0098",
+      "section_id": "antecedente"
+    }
+  ]
+}

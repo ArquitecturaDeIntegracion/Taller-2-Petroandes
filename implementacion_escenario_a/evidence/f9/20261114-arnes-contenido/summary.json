@@ -1,0 +1,48 @@
+{
+  "version": "F9.2",
+  "fecha_utc": "2026-11-14T16:40:58.425444+00:00",
+  "status": "passed",
+  "regresion_docker_dev": {
+    "pruebas_aprobadas": 255,
+    "exit_code": 0
+  },
+  "integrado": "passed",
+  "fases": {
+    "f9_original": {
+      "status": "passed",
+      "resumen": "f9_original/resultado/summary.json"
+    },
+    "fronteras_mcp": {
+      "status": "passed",
+      "resumen": "fronteras_mcp/resultado/summary.json"
+    },
+    "flujo_real_pdf": {
+      "status": "passed",
+      "resumen": "flujo_real_pdf/resultado/summary.json"
+    },
+    "frontera_consumidor": {
+      "status": "passed",
+      "resumen": "frontera_consumidor/summary.json"
+    }
+  },
+  "flujo_pdf": {
+    "casos_pdf": 12,
+    "adversariales": 7,
+    "benignos": 5,
+    "detectados_adversariales": 7,
+    "falsos_positivos_benignos": 0,
+    "llamadas_cliente": 24,
+    "registros_auditoria": 26,
+    "top_k_ensayo": 10
+  },
+  "cliente_publico": "passed",
+  "inspector": "passed",
+  "inspector_web_http": 200,
+  "estructura_docker_dev": 0,
+  "estructura_imagen": 0,
+  "reserva_ejecutada": false,
+  "llm_real": "no_evaluado",
+  "copilot_adversarial": "no_evaluado",
+  "propuesta_word": "conservada_sin_modificacion",
+  "fuentes_identificadas": 34
+}

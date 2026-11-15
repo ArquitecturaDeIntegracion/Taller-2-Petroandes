@@ -1,0 +1,17 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "network",
+    "rm",
+    "petroandes-f9-8b94ff6064444ee8bc163a9752525b46"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:28:24.820855+00:00",
+  "elapsed_seconds": 0.4096205999958329,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log"
+  ]
+}

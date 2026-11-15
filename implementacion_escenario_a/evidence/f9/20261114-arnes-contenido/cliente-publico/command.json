@@ -1,0 +1,26 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "docker",
+    "compose",
+    "--profile",
+    "dev",
+    "run",
+    "--rm",
+    "-T",
+    "f9-sandbox",
+    "-m",
+    "petroandes.safe_client",
+    "--request-file",
+    "examples/cliente-seguro.json"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:25:00.496554+00:00",
+  "elapsed_seconds": 69.54737809998915,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

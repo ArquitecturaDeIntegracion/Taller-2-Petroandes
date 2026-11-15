@@ -52,7 +52,8 @@ def main():
     write_report(destination / "integridad-antes.json", {"archivos": len(before),
                  "sha256_inventario": hashlib.sha256(json.dumps(before, sort_keys=True).encode()).hexdigest()}, emit=False)
     phases = {}
-    for name, script in (("f9_original", "f9_attack.py"), ("fronteras_mcp", "f9_mcp_boundaries.py")):
+    for name, script in (("f9_original", "f9_attack.py"), ("fronteras_mcp", "f9_mcp_boundaries.py"),
+                         ("flujo_real_pdf", "f9_content_flow.py")):
         phases[name] = invoke(script, destination / name, args.timeout)
     try:
         from petroandes.security_lab import run_suite
@@ -61,7 +62,7 @@ def main():
         phases["frontera_consumidor"] = {"status": "failed", "tipo": type(exc).__name__, "motivo": str(exc)}
     intact = before == protected_inventory()
     summary = {"status": "passed" if intact and all(item.get("status") == "passed" for item in phases.values())
-               else "failed", "version_arnes": "F9.1", "llm_real": "no_evaluado",
+               else "failed", "version_arnes": "F9.2", "llm_real": "no_evaluado",
                "integridad_fuentes_y_reserva": intact,
                "reserva_ejecutada": False}
     # Cada fase conserva su propio resumen completo; el índice no duplica trazas.

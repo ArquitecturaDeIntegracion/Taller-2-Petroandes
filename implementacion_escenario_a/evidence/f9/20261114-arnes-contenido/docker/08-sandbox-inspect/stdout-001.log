@@ -1,0 +1,160 @@
+[
+    {
+        "Id": "297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92",
+        "Created": "2026-11-14T16:15:05.764506295Z",
+        "Path": "python",
+        "Args": [
+            "-c",
+            "import time; time.sleep(180)"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 8287,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-11-14T16:15:06.117991665Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:ecba8a3e82cbc72482ec172d636eeb4f4865fba26bb5b843a847dc50b7d3fa64",
+        "ResolvConfPath": "/var/lib/docker/containers/297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92/hostname",
+        "HostsPath": "/var/lib/docker/containers/297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92/hosts",
+        "LogPath": "/var/lib/docker/containers/297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92/297515a0dfd2c1cd1f84bf0fbfe28c199c1e7b5a807b425b7e4a5265a1b7ff92-json.log",
+        "Name": "/petroandes-f9-8b94ff6064444ee8bc163a9752525b46-sandbox",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "${APP_ROOT}:/workspace/implementacion_escenario_a:ro",
+                "petroandes-educativo_model-cache:/models-root:ro",
+                "/run/desktop/mnt/host/c/Users/jcjca/OneDrive/Documentos/ChatGPT/Taller 2 Arquitecura de Integración/implementacion_escenario_a/reports/portable/f9-2-20261114/integrado:/f9-output:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "none",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": true,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": [
+                "ALL"
+            ],
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": [
+                "no-new-privileges:true"
+            ],
+            "Tmpfs": {
+                "/tmp": "rw,noexec,nosuid,size=1073741824,mode=1777"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": 128,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "${APP_ROOT}",
+                "Destination": "/workspace/implementacion_escenario_a",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "petroandes-educativo_model-cache",
+                "Source": "/var/lib/docker/volumes/petroandes-educativo_model-cache/_data",
+                "Destination": "/models-root",
+                "Driver": "local",
+                "Mode": "ro",
+                "RW": false,

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-15T05:15:24.783940+00:00",
+  "documento": "output/doc/Arquitectura_Final_PetroAndes_C4_EIP_F9_2.docx",
+  "sha256": "2adde3bc0ce277f710ac93577aff4b5ff6e40b844ee4f1c7df228f07e2dd74e8",
+  "paginas": 6,
+  "diagramas": [
+    "C4 contexto",
+    "C4 contenedores",
+    "despliegue Docker",
+    "C4 componentes",
+    "EIP integral",
+    "arquitectura arnes F9.2"
+  ],
+  "formato": "Letter vertical",
+  "enlaces_locales_verificados": 7,
+  "diagramas_con_texto_alternativo": 6,
+  "implementacion_verificada_por_hash": 23,
+  "documentos_anteriores_con_hash_conservado": 4,
+  "validate_agent_host": {
+    "exit_code": 0,
+    "archivos": 5994,
+    "maximo_lineas": 199
+  },
+  "preflight_host": {
+    "exit_code": 0,
+    "errores": [],
+    "advertencia": "Node local 20; la configuracion actual usa Inspector en contenedor Node 22"
+  },
+  "render": "Microsoft Word a PDF y rasterizador render_docx.py de documents",
+  "qa_visual": "Seis paginas finales inspeccionadas sin texto cortado ni solapamientos",
+  "evidencia_docker_conservada": "evidence/f9/20261114-arnes-contenido/summary.json",
+  "nueva_corrida_docker": false,
+  "reserva_ejecutada": false,
+  "copilot_adversarial": "no_evaluado",
+  "fuentes_notacion": [
+    "https://c4model.com/diagrams",
+    "https://www.enterpriseintegrationpatterns.com/patterns/messaging/"
+  ],
+  "atribucion": "C4 Simon Brown; EIP Gregor Hohpe y Bobby Woolf CC BY 4.0; Devicon MIT; Simple Icons CC0"
+}

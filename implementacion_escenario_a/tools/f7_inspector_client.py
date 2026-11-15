@@ -42,7 +42,7 @@ class Inspector:
 
 
 def server_entry(command, args, **extra_env):
-    overrides = ("PETROANDES_PROJECT_ROOT", "PETROANDES_CACHE_DIR", "PETROANDES_MODELS_DIR")
+    overrides = ("PETROANDES_PROJECT_ROOT", "PETROANDES_CACHE_DIR", "PETROANDES_MODELS_DIR", "PETROANDES_AUDIT_DIR")
     environment = {key: os.environ[key] for key in overrides if key in os.environ}
     environment.update(extra_env)
     return {"command": command, "args": args, "cwd": str(APP_ROOT),

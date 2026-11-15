@@ -1,0 +1,160 @@
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/P06-recuperacion.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/P07-recuperacion.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/casos.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/cliente-1.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/cliente-2.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/cliente-3.json
+ 16 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/summary.json
+ 18 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/config-portable.json
+ 31 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/ataque/command.json
+  4 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/ataque/stderr-001.log
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/ataque/stdout-001.log
+ 31 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/autoautorizacion/command.json
+  3 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/autoautorizacion/stderr-001.log
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/autoautorizacion/stdout-001.log
+ 27 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/list/command.json
+  2 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/list/stderr-001.log
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/inspector/list/stdout-001.log
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/04f1a01d-c55a-4e53-aa47-fa2a9e08c6fe.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/17857ab7-9fbb-4929-9bbe-16844559ccba.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/2f00270c-b61f-471c-9d41-e0d140793d71.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/36078c9d-c51b-453a-b04b-d4627f600ee0.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/38540c08-0e10-485f-a5ff-512d1adfbabc.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/426336aa-f266-468f-b6ee-99ee4050fb74.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/5e79716a-4212-4340-873e-3de7ee1c6f27.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/6aa71d83-c63c-45f3-9a6e-494288885723.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/6aec8336-7665-4934-bc3f-3b8a6e6e643a.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/6fb01de5-c1a6-41c6-b197-5bbb8aeb832a.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/8cf04d73-0073-4ed2-a40c-d316216c57e8.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/9ec763f3-ba76-40aa-8543-319a730555b1.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/a5aff06d-5aaf-4769-ae1e-1aec4d0c6fb1.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/af7a28fb-fac7-4d29-8c23-8bbdf8958f99.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/b0e8f8e5-572b-4adb-839b-bb2b61ea7800.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/b12e3644-025b-47fc-b57f-7f4b79415d50.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/b6e8d5f4-2977-4daa-ac81-48fa9fd079df.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/bc159525-4ccf-4334-8e47-9084253f695d.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/bc2c6f1b-504d-4945-b286-33fbe6e3d6de.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/c510cf81-8dc0-439b-a073-42d56b23bb8f.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/cde735b6-b977-41bf-9821-0e41bd7f4382.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/d1bb1f30-5647-4e5b-b22b-87dd4d3a0051.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/d6d53234-1c7e-4c0f-840a-81e54ede6cdd.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/dac662f5-edc0-4368-b8e7-2dd8da69bcf6.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/dbb2fd24-d235-4d1c-b9dc-5daa95ef545f.json
+  1 líneas  evidence/f9/20261114-arnes-contenido/intento-inicial/mcp-audit/fe8e9ff1-6641-410a-9ea4-c31dcd5c8433.json
+ 22 líneas  evidence/f9/20261114-arnes-contenido/preflight-final/command.json
+ 90 líneas  evidence/f9/20261114-arnes-contenido/preflight-final/stdout-001.log
+ 27 líneas  evidence/f9/20261114-arnes-contenido/regresion/command.json
+ 11 líneas  evidence/f9/20261114-arnes-contenido/regresion/stdout-001.log
+ 22 líneas  evidence/f9/20261114-evaluacion-clase14/fuentes-externas.json
+ 25 líneas  evidence/f9/20261114-evaluacion-clase14/fuentes-locales.jsonl
+ 24 líneas  evidence/f9/20261114-evaluacion-clase14/summary.json
+ 41 líneas  evidence/lab/20261103/README.md
+ 30 líneas  evidence/lab/20261103/implementation-sha256.json
+ 26 líneas  evidence/lab/20261103/reconciled.json
+ 73 líneas  evidence/lab/20261103/state-after.json
+ 53 líneas  evidence/lab/20261103/state-before.json
+ 73 líneas  evidence/lab/20261103/state-final.json
+ 44 líneas  evidence/lab/20261103/administrative-inputs/authorization.md
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/01.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/02.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/03.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/04.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/05.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/06.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/07.json
+ 11 líneas  evidence/lab/20261103/administrative-inputs/request/08.json
+ 11 líneas  evidence/lab/20261103/administrative-inputs/request/09.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/10.json
+ 13 líneas  evidence/lab/20261103/administrative-inputs/request/11.json
+ 12 líneas  evidence/lab/20261103/administrative-inputs/request/12.json
+ 34 líneas  evidence/lab/20261103/administrative-inputs/request/request.json
+ 18 líneas  evidence/lab/20261103/archive-verify/command.json
+  1 líneas  evidence/lab/20261103/archive-verify/stdout-001.log
+ 24 líneas  evidence/lab/20261103/case-dependencies/dependencies-001.jsonl
+ 12 líneas  evidence/lab/20261103/case-dependencies/summary.json
+ 19 líneas  evidence/lab/20261103/case-dependencies-run/command.json
+ 12 líneas  evidence/lab/20261103/case-dependencies-run/stdout-001.log
+ 24 líneas  evidence/lab/20261103/check-current-run/command.json
+ 73 líneas  evidence/lab/20261103/check-current-run/stdout-001.log
+ 24 líneas  evidence/lab/20261103/check-final-state-run/command.json
+ 73 líneas  evidence/lab/20261103/check-final-state-run/stdout-001.log
+ 19 líneas  evidence/lab/20261103/check-index-run/command.json
+ 31 líneas  evidence/lab/20261103/check-index-run/stdout-001.log
+ 15 líneas  evidence/lab/20261103/docker-preflight/command.json
+ 90 líneas  evidence/lab/20261103/docker-preflight/stdout-001.log
+ 13 líneas  evidence/lab/20261103/index-closure/manifest.json
+ 24 líneas  evidence/lab/20261103/index-closure/receipt.json
+ 31 líneas  evidence/lab/20261103/index-closure/summary.json
+ 19 líneas  evidence/lab/20261103/plan-f10/command.json
+  2 líneas  evidence/lab/20261103/plan-f10/stderr-001.log
+ 28 líneas  evidence/lab/20261103/plan-f10/stdout-001.log
+ 19 líneas  evidence/lab/20261103/plan-f2/command.json
+  2 líneas  evidence/lab/20261103/plan-f2/stderr-001.log
+ 25 líneas  evidence/lab/20261103/plan-f2/stdout-001.log
+ 19 líneas  evidence/lab/20261103/plan-f4/command.json
+  2 líneas  evidence/lab/20261103/plan-f4/stderr-001.log
+ 28 líneas  evidence/lab/20261103/plan-f4/stdout-001.log
+ 15 líneas  evidence/lab/20261103/preflight-start/command.json
+ 90 líneas  evidence/lab/20261103/preflight-start/stdout-001.log
+ 19 líneas  evidence/lab/20261103/prepare-request/command.json
+ 22 líneas  evidence/lab/20261103/reconcile-run/command.json
+ 26 líneas  evidence/lab/20261103/reconcile-run/stdout-001.log
+ 19 líneas  evidence/lab/20261103/register-repeat-run/command.json
+ 52 líneas  evidence/lab/20261103/register-repeat-run/stdout-001.log
+ 19 líneas  evidence/lab/20261103/register-run/command.json
+ 52 líneas  evidence/lab/20261103/register-run/stdout-001.log
+ 13 líneas  evidence/lab/20261103/registration/events-001.jsonl
+ 52 líneas  evidence/lab/20261103/registration/summary.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/01.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/02.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/03.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/04.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/05.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/06.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/07.json
+ 37 líneas  evidence/lab/20261103/registration/decisions/08.json
+ 37 líneas  evidence/lab/20261103/registration/decisions/09.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/10.json
+ 39 líneas  evidence/lab/20261103/registration/decisions/11.json
+ 38 líneas  evidence/lab/20261103/registration/decisions/12.json
+ 13 líneas  evidence/lab/20261103/registration-repeat/events-001.jsonl
+ 52 líneas  evidence/lab/20261103/registration-repeat/summary.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/01.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/02.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/03.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/04.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/05.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/06.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/07.json
+ 37 líneas  evidence/lab/20261103/registration-repeat/decisions/08.json
+ 37 líneas  evidence/lab/20261103/registration-repeat/decisions/09.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/10.json
+ 39 líneas  evidence/lab/20261103/registration-repeat/decisions/11.json
+ 38 líneas  evidence/lab/20261103/registration-repeat/decisions/12.json
+ 20 líneas  evidence/lab/20261103/stale-index-denied/command.json
+ 15 líneas  evidence/lab/20261103/stale-index-denied/stderr-001.log
+ 18 líneas  evidence/lab/20261103/state-before-run/command.json
+ 53 líneas  evidence/lab/20261103/state-before-run/stdout-001.log
+ 23 líneas  evidence/lab/20261103/tests-before-apply/command.json
+  2 líneas  evidence/lab/20261103/tests-before-apply/stdout-001.log
+ 19 líneas  evidence/lab/20261103/tests-full/command.json
+  4 líneas  evidence/lab/20261103/tests-full/stdout-001.log
+ 29 líneas  evidence/lab/20261103/validate-final/command.json
+160 líneas  evidence/lab/20261103/validate-final/stdout-001.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-002.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-003.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-004.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-005.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-006.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-007.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-008.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-009.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-010.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-011.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-012.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-013.log
+160 líneas  evidence/lab/20261103/validate-final/stdout-014.log
+120 líneas  evidence/lab/20261103/validate-final/stdout-015.log
+ 28 líneas  evidence/lab/20261103/validate-start/command.json
+160 líneas  evidence/lab/20261103/validate-start/stdout-001.log
+160 líneas  evidence/lab/20261103/validate-start/stdout-002.log

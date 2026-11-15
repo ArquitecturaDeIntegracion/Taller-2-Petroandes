@@ -1,0 +1,160 @@
+  8 líneas  evidence/f4/initial-20261101/tests-initial/stdout-001.log
+ 28 líneas  evidence/f4/initial-20261101/validate-final/command.json
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-001.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-002.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-003.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-004.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-005.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-006.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-007.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-008.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-009.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-010.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-011.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-012.log
+160 líneas  evidence/f4/initial-20261101/validate-final/stdout-013.log
+ 24 líneas  evidence/f4/initial-20261101/validate-final/stdout-014.log
+ 28 líneas  evidence/f4/initial-20261101/validate-prearchive/command.json
+  3 líneas  evidence/f4/initial-20261101/validate-prearchive/stderr-001.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-001.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-002.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-003.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-004.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-005.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-006.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-007.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-008.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-009.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-010.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-011.log
+160 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-012.log
+151 líneas  evidence/f4/initial-20261101/validate-prearchive/stdout-013.log
+ 27 líneas  evidence/f4/initial-20261101/validate-start/command.json
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-001.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-002.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-003.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-004.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-005.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-006.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-007.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-008.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-009.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-010.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-011.log
+160 líneas  evidence/f4/initial-20261101/validate-start/stdout-012.log
+ 32 líneas  evidence/f4/initial-20261101/validate-start/stdout-013.log
+ 33 líneas  evidence/f5/20261107/README.md
+ 56 líneas  evidence/f5/20261107/lab-manifest.json
+ 19 líneas  evidence/f5/20261107/baseline-search/command.json
+ 20 líneas  evidence/f5/20261107/baseline-search/stdout-001.log
+ 19 líneas  evidence/f5/20261107/baseline-state/command.json
+ 13 líneas  evidence/f5/20261107/baseline-state/stdout-001.log
+ 22 líneas  evidence/f5/20261107/build-verified/command.json
+  1 líneas  evidence/f5/20261107/build-verified/stderr-001.log
+103 líneas  evidence/f5/20261107/build-verified/stdout-001.log
+ 22 líneas  evidence/f5/20261107/corpus-reopen/command.json
+ 72 líneas  evidence/f5/20261107/corpus-reopen/stdout-001.log
+ 21 líneas  evidence/f5/20261107/full-verified/command.json
+  4 líneas  evidence/f5/20261107/full-verified/stdout-001.log
+ 19 líneas  evidence/f5/20261107/lab-direct-verified/command.json
+ 22 líneas  evidence/f5/20261107/lab-direct-verified/stdout-001.log
+ 20 líneas  evidence/f5/20261107/lab-inspect/command.json
+ 56 líneas  evidence/f5/20261107/lab-inspect/stdout-001.log
+ 19 líneas  evidence/f5/20261107/lab-search/command.json
+ 20 líneas  evidence/f5/20261107/lab-search/stdout-001.log
+ 19 líneas  evidence/f5/20261107/lab-state/command.json
+ 13 líneas  evidence/f5/20261107/lab-state/stdout-001.log
+ 21 líneas  evidence/f5/20261107/plan/command.json
+  3 líneas  evidence/f5/20261107/plan/stderr-001.log
+ 29 líneas  evidence/f5/20261107/plan/stdout-001.log
+ 15 líneas  evidence/f5/20261107/preflight/command.json
+ 90 líneas  evidence/f5/20261107/preflight/stdout-001.log
+ 25 líneas  evidence/f5/20261107/targeted-verified/command.json
+ 18 líneas  evidence/f5/20261107/targeted-verified/stdout-001.log
+ 18 líneas  evidence/f6/20261107/README.md
+ 20 líneas  evidence/f6/20261107/baseline-answer/command.json
+ 24 líneas  evidence/f6/20261107/baseline-answer/stdout-001.log
+ 22 líneas  evidence/f6/20261107/build-final/command.json
+  1 líneas  evidence/f6/20261107/build-final/stderr-001.log
+102 líneas  evidence/f6/20261107/build-final/stdout-001.log
+ 21 líneas  evidence/f6/20261107/full/command.json
+  4 líneas  evidence/f6/20261107/full/stdout-001.log
+ 20 líneas  evidence/f6/20261107/lab-answer/command.json
+ 24 líneas  evidence/f6/20261107/lab-answer/stdout-001.log
+ 24 líneas  evidence/f6/20261107/lab-direct/command.json
+ 22 líneas  evidence/f6/20261107/lab-direct/stdout-001.log
+ 19 líneas  evidence/f6/20261107/plan/command.json
+  2 líneas  evidence/f6/20261107/plan/stderr-001.log
+ 23 líneas  evidence/f6/20261107/plan/stdout-001.log
+ 15 líneas  evidence/f6/20261107/preflight/command.json
+ 90 líneas  evidence/f6/20261107/preflight/stdout-001.log
+ 23 líneas  evidence/f6/20261107/targeted/command.json
+ 20 líneas  evidence/f6/20261107/targeted/stdout-001.log
+ 16 líneas  evidence/f6/20261107/validate/command.json
+ 12 líneas  evidence/f6/20261107/validate/stdout-001.log
+ 29 líneas  evidence/f7/20261107/README.md
+ 36 líneas  evidence/f7/20261107/powershell-separado.json
+ 22 líneas  evidence/f7/20261107/build-final/command.json
+  1 líneas  evidence/f7/20261107/build-final/stderr-001.log
+106 líneas  evidence/f7/20261107/build-final/stdout-001.log
+ 21 líneas  evidence/f7/20261107/full/command.json
+  4 líneas  evidence/f7/20261107/full/stdout-001.log
+ 62 líneas  evidence/f7/20261107/inspector/config-portable.json
+ 36 líneas  evidence/f7/20261107/inspector/summary.json
+ 31 líneas  evidence/f7/20261107/inspector/direct-denied/command.json
+  4 líneas  evidence/f7/20261107/inspector/direct-denied/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/direct-denied/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/direct-invalid/command.json
+  3 líneas  evidence/f7/20261107/inspector/direct-invalid/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/direct-invalid/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/direct-ok/command.json
+  4 líneas  evidence/f7/20261107/inspector/direct-ok/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/direct-ok/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/index-error/command.json
+  4 líneas  evidence/f7/20261107/inspector/index-error/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/index-error/stdout-001.log
+ 27 líneas  evidence/f7/20261107/inspector/list/command.json
+  2 líneas  evidence/f7/20261107/inspector/list/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/list/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/privilege-invalid/command.json
+  3 líneas  evidence/f7/20261107/inspector/privilege-invalid/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/privilege-invalid/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/reconnect/command.json
+  4 líneas  evidence/f7/20261107/inspector/reconnect/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/reconnect/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/search-abstention/command.json
+  2 líneas  evidence/f7/20261107/inspector/search-abstention/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/search-abstention/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/search-invalid/command.json
+  3 líneas  evidence/f7/20261107/inspector/search-invalid/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/search-invalid/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/search-ok/command.json
+  4 líneas  evidence/f7/20261107/inspector/search-ok/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/search-ok/stdout-001.log
+ 31 líneas  evidence/f7/20261107/inspector/service-error/command.json
+  3 líneas  evidence/f7/20261107/inspector/service-error/stderr-001.log
+  1 líneas  evidence/f7/20261107/inspector/service-error/stdout-001.log
+ 19 líneas  evidence/f7/20261107/inspector/wire/command.json
+  2 líneas  evidence/f7/20261107/inspector/wire/stderr-001.log
+  2 líneas  evidence/f7/20261107/inspector/wire/stdout-001.log
+ 19 líneas  evidence/f7/20261107/plan/command.json
+  2 líneas  evidence/f7/20261107/plan/stderr-001.log
+ 32 líneas  evidence/f7/20261107/plan/stdout-001.log
+ 15 líneas  evidence/f7/20261107/preflight/command.json
+ 90 líneas  evidence/f7/20261107/preflight/stdout-001.log
+ 16 líneas  evidence/f7/20261107/validate/command.json
+ 12 líneas  evidence/f7/20261107/validate/stdout-001.log
+ 19 líneas  evidence/f7/20261107/volumen/config-portable.json
+ 31 líneas  evidence/f7/20261107/volumen/direct/command.json
+  2 líneas  evidence/f7/20261107/volumen/direct/stderr-001.log
+  1 líneas  evidence/f7/20261107/volumen/direct/stdout-001.log
+ 31 líneas  evidence/f7/20261108/copilot-vscode.md
+ 24 líneas  evidence/f7/20261108/inspector-unificado.md
+ 42 líneas  evidence/f7/20261108/inspector-web.md
+  8 líneas  evidence/f7/20261111-disponibilidad/http.json
+ 21 líneas  evidence/f7/20261111-disponibilidad/summary.json
+ 31 líneas  evidence/f7/20261111-disponibilidad/busqueda/command.json
+  4 líneas  evidence/f7/20261111-disponibilidad/busqueda/stderr-001.log
+  1 líneas  evidence/f7/20261111-disponibilidad/busqueda/stdout-001.log
+ 31 líneas  evidence/f7/20261111-disponibilidad/fragmento/command.json
+  4 líneas  evidence/f7/20261111-disponibilidad/fragmento/stderr-001.log

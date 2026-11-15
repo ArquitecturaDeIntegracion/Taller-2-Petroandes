@@ -2,6 +2,8 @@
 from datetime import datetime, timezone
 
 from petroandes.chunk.structural import PARTITION, partition
+from petroandes.security.detection import VERSION
+from petroandes.security.pdf_review import inspect_pdf, fragment_flags
 from .contrast import compare_markdown
 from .metadata import declared_scope, government_projection, observed_semantics
 from .models import ExtractionReview
@@ -17,10 +19,13 @@ def prepare_document(expected, path, markdown_path, snapshot, relations, tokeniz
     fragments, parents = partition(document, sections, scope, tokenizer)
     government = government_projection(snapshot, document)
     semantics = observed_semantics(scope, sections)
+    review = inspect_pdf(path)
+    section_texts = {section.section_id: '\n'.join(block.text for block in section.blocks) for section in sections}
+    extraction['revision_seguridad'] = review
     source_issuer = next(line.strip() for line in extraction["layout_pages"][0].splitlines() if line.strip())
     for record in fragments:
         fragment = record["fragment"]
-        annex = fragment["section_id"].startswith("anexo-")
+        flags = fragment_flags(fragment, section_texts[fragment['section_id']], review)
         record["metadata"] = {"documento": document.model_dump(mode="json"), "idioma": "es",
             "emisor_documental": source_issuer, "area_emisora": document.emisor,
             "formato_fuente": "pdf", "ingested_at": datetime.now(timezone.utc).isoformat(),
@@ -30,7 +35,9 @@ def prepare_document(expected, path, markdown_path, snapshot, relations, tokeniz
                 "chunking_version": PARTITION, "embedding_bundle_id": tokenizer.config["bundle"],
                 "tokenizer_revision": tokenizer.config["revision"], "index_revision": None},
             "seguridad": {"trust_level": "untrusted", "contenido_no_confiable": True,
-                "security_flags": ["instrucciones_dirigidas_al_procesador"] if annex else [],
+                "security_flags": flags, "detector_version": VERSION,
+                "revision_visual": review['metodo'],
+                "requiere_revision_seguridad": bool(flags),
                 "review_status": "contraste_lexico_ordenado_verificado"},
             "publication_state": "staging_no_autorizado"}
     report = {"doc_id": document.doc_id, "version_documental": document.version_documental,

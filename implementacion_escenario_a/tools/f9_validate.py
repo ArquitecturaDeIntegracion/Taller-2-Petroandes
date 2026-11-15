@@ -1,4 +1,4 @@
-"""Valida F9.1 en Docker dev con un receptor ficticio privado y sandbox real."""
+"""Valida F9.2 en Docker dev con un receptor ficticio privado y sandbox real."""
 import argparse
 import json
 from pathlib import Path
@@ -69,7 +69,7 @@ def validate(output, timeout=1800):
             error = (error or '') + f'; limpieza: {exc}'
         if not cleanup_ok and status == 'passed':
             status, classification = 'inconclusive', 'limpieza_no_completada'
-    summary = {'phase': 'F9.1', 'status': status, 'classification': classification,
+    summary = {'phase': 'F9.2', 'status': status, 'classification': classification,
         'error': error, 'verified': verified, 'pending': pending, 'cleanup_completed': cleanup_ok,
         'controlled_receiver': 'Contenedor propio en red bridge interna; sin puertos publicados ni terceros.',
         'evidence': ['network-positive.json', 'network-positive-after.json',

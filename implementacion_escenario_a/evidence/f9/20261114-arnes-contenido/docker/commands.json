@@ -1,0 +1,112 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:28:25.237306+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_validate.py",
+    "--output-dir",
+    "reports/portable/f9-2-20261114/integrado",
+    "--timeout",
+    "1800"
+  ],
+  "steps": [
+    {
+      "step": "image",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/01-image/command.json"
+    },
+    {
+      "step": "network-create",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/02-network-create/command.json"
+    },
+    {
+      "step": "receiver-start",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/03-receiver-start/command.json"
+    },
+    {
+      "step": "receiver-ready",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/04-receiver-ready/command.json"
+    },
+    {
+      "step": "receiver-address",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/05-receiver-address/command.json"
+    },
+    {
+      "step": "network-positive",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/06-network-positive/command.json"
+    },
+    {
+      "step": "sandbox-start",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/07-sandbox-start/command.json"
+    },
+    {
+      "step": "sandbox-inspect",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/08-sandbox-inspect/command.json"
+    },
+    {
+      "step": "sandbox-probe",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/09-sandbox-probe/command.json"
+    },
+    {
+      "step": "receiver-still-ready",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/10-receiver-still-ready/command.json"
+    },
+    {
+      "step": "network-positive-after",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/11-network-positive-after/command.json"
+    },
+    {
+      "step": "guard",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/12-guard/command.json"
+    },
+    {
+      "step": "cleanup-inspect-control",
+      "exit_code": 1,
+      "evidence": "reports/portable/f9-2-20261114/integrado/13-cleanup-inspect-control/command.json"
+    },
+    {
+      "step": "cleanup-inspect-guard",
+      "exit_code": 1,
+      "evidence": "reports/portable/f9-2-20261114/integrado/14-cleanup-inspect-guard/command.json"
+    },
+    {
+      "step": "cleanup-inspect-sandbox",
+      "exit_code": 1,
+      "evidence": "reports/portable/f9-2-20261114/integrado/15-cleanup-inspect-sandbox/command.json"
+    },
+    {
+      "step": "cleanup-inspect-receiver",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/16-cleanup-inspect-receiver/command.json"
+    },
+    {
+      "step": "cleanup-container",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/17-cleanup-container/command.json"
+    },
+    {
+      "step": "cleanup-inspect-8b94ff6064444ee8bc163a9752525b46",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/18-cleanup-inspect-8b94ff6064444ee8bc163a9752525b46/command.json"
+    },
+    {
+      "step": "cleanup-network",
+      "exit_code": 0,
+      "evidence": "reports/portable/f9-2-20261114/integrado/19-cleanup-network/command.json"
+    }
+  ]
+}

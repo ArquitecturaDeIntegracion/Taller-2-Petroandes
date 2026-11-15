@@ -8,6 +8,12 @@ demostración, revisión 15 y reloj histórico del 8 de noviembre de 2026.
 
 ## Iniciar y comprobar
 
+Tras actualizar a F9.2, reconstruye la imagen y reinicia `petroandes` desde
+**MCP: List Servers**. Cada llamada deja un recibo por `correlation_id` en
+`reports/portable/mcp-audit/`. La [guía F9.2](validacion-dev-f9-2.md) muestra
+cómo consultarlo y cómo usar el cliente aislado. Copilot conserva sus propias
+capacidades; no queda aislado por el sandbox del arnés.
+
 1. Construye la imagen y prepara E5 siguiendo la [guía web](inspector-web.md).
 2. Pulsa `Ctrl+Shift+P`, ejecuta **MCP: List Servers** y elige **petroandes**.
    Pulsa **Start Server** si está detenido y espera **Running**.

@@ -1,0 +1,160 @@
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/17-cleanup-container/stdout-001.log
+ 19 líneas  evidence/f9/20261113-arnes-ampliado/docker/18-cleanup-inspect-8d911ac4d4fb415488d28df36239a82d/command.json
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/18-cleanup-inspect-8d911ac4d4fb415488d28df36239a82d/stdout-001.log
+ 17 líneas  evidence/f9/20261113-arnes-ampliado/docker/19-cleanup-network/command.json
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/19-cleanup-network/stdout-001.log
+ 15 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/integridad-antes.json
+ 32 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/summary.json
+ 17 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/comando/command.json
+ 71 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/comando/stdout-001.log
+ 71 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo.json
+ 30 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/config-portable.json
+ 20 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/publicacion-auditoria.json
+ 70 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/summary.json
+ 19 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/comparacion.json
+ 72 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/python.json
+ 28 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/traza.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/inspector/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/inspector/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/anexo-directo/inspector/stdout-001.log
+ 19 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/comparacion.json
+ 46 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/python.json
+ 44 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/traza.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/inspector/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/inspector/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/ataque/inspector/stdout-001.log
+ 19 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/comparacion.json
+144 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/python.json
+ 92 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/traza.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/inspector/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/inspector/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/firmware/inspector/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/list/command.json
+  2 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/list/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/list/stdout-001.log
+ 60 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/recuperacion/densa.json
+ 40 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/recuperacion/exacta.json
+ 60 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/recuperacion/lexica.json
+181 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/recuperacion/python.json
+ 76 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/f9_original/resultado/recuperacion/traza.json
+ 23 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/frontera_consumidor/casos-001.jsonl
+118 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/frontera_consumidor/eventos-001.jsonl
+ 23 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/frontera_consumidor/resultados-001.jsonl
+ 94 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/frontera_consumidor/summary.json
+ 17 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/comando/command.json
+  2 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/comando/stdout-001.log
+ 71 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/anexo.json
+ 30 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/config-portable.json
+ 45 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/contextos.json
+ 20 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/publicacion-auditoria.json
+ 45 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/summary.json
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/excluido/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/excluido/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/excluido/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/excluido/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-buscar_documentos/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-buscar_documentos/command.json
+  3 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-buscar_documentos/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-buscar_documentos/stdout-001.log
+ 29 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-obtener_fragmento/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-obtener_fragmento/command.json
+  3 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-obtener_fragmento/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/extras-obtener_fragmento/stdout-001.log
+ 26 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-ajeno/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-ajeno/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-ajeno/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-ajeno/stdout-001.log
+ 26 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-exacto/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-exacto/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-exacto/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/hash-exacto/stdout-001.log
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/objeto-otro-contexto/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/objeto-otro-contexto/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/objeto-otro-contexto/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/objeto-otro-contexto/stdout-001.log
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/pendiente/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/pendiente/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/pendiente/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/auditoria/pendiente/stdout-001.log
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/excluido/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/excluido/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/excluido/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/excluido/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-buscar_documentos/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-buscar_documentos/command.json
+  3 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-buscar_documentos/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-buscar_documentos/stdout-001.log
+ 29 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-obtener_fragmento/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-obtener_fragmento/command.json
+  3 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-obtener_fragmento/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/extras-obtener_fragmento/stdout-001.log
+ 26 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-ajeno/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-ajeno/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-ajeno/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-ajeno/stdout-001.log
+ 26 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-exacto/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-exacto/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-exacto/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/hash-exacto/stdout-001.log
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/objeto-otro-contexto/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/objeto-otro-contexto/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/objeto-otro-contexto/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/objeto-otro-contexto/stdout-001.log
+ 25 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/pendiente/assessment.json
+ 31 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/pendiente/command.json
+  5 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/pendiente/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/historico/pendiente/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list/command.json
+  2 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-auditoria/command.json
+  2 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-auditoria/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-auditoria/stdout-001.log
+ 27 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-historico-repetido/command.json
+  2 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-historico-repetido/stderr-001.log
+  1 líneas  evidence/f9/20261113-arnes-ampliado/docker/ensayo/fronteras_mcp/resultado/list-historico-repetido/stdout-001.log
+ 50 líneas  evidence/f9/20261113-arnes-ampliado/estructura/command.json
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-001.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-002.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-003.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-004.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-005.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-006.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-007.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-008.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-009.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-010.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-011.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-012.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-013.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-014.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-015.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-016.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-017.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-018.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-019.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-020.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-021.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-022.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-023.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-024.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-025.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-026.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-027.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-028.log
+ 39 líneas  evidence/f9/20261113-arnes-ampliado/estructura/stdout-029.log
+ 43 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/command.json
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-001.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-002.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-003.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-004.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-005.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-006.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-007.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-008.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-009.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-010.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-011.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-012.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-013.log
+160 líneas  evidence/f9/20261113-arnes-ampliado/estructura-host/stdout-014.log

@@ -1,0 +1,21 @@
+{
+  "archivos": 408,
+  "inventarios": [
+    {
+      "path": "inventario-001.jsonl",
+      "sha256": "d99bc91f4918630678702df7a1507867188f802e9d3b73265fedc75637ad71b5"
+    },
+    {
+      "path": "inventario-002.jsonl",
+      "sha256": "9ef8744a5f52d38db3bca7518d29aca746b101a9fe3380013c93539b9960ffb8"
+    },
+    {
+      "path": "inventario-003.jsonl",
+      "sha256": "3a6d131c99a1779ab116461b7d0f75b75405c17bd699aa9817f2dd7f2ff70d09"
+    }
+  ],
+  "exclusiones": [
+    "inventario-*.jsonl",
+    "integridad.json"
+  ]
+}

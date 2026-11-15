@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-14T22:06:46.816664+00:00",
+  "documento": {
+    "base": "project",
+    "path": "output/doc/Arquitectura_Actual_PetroAndes_C4_EIP_F9_2.docx",
+    "sha256": "8b09232e8de80f171b557e8eba9de8f1f9ac51c7ad80134513bf583d9b5d7bd8"
+  },
+  "alcance": "arquitectura completa y funcionamiento del Escenario A con mejoras F9.2",
+  "paginas": 4,
+  "diagramas": {
+    "C4_contexto": 1,
+    "C4_contenedores": 1,
+    "C4_componentes": 1,
+    "EIP_integracion": 1
+  },
+  "render": "Microsoft Word a PDF y rasterizador render_docx.py de documents",
+  "qa_visual": "cuatro paginas finales inspeccionadas",
+  "enlaces_locales_verificados": 4,
+  "diagramas_con_texto_alternativo": 4,
+  "archivos_implementacion_con_hash_coincidente": 23,
+  "pruebas_docker": "evidencia F9.2 previa verificada; sin nueva corrida documental",
+  "reserva_ejecutada": false,
+  "copilot_adversarial": "no_evaluado",
+  "notacion": [
+    {
+      "autor": "Simon Brown",
+      "url": "https://c4model.com/",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "autor": "Gregor Hohpe y Bobby Woolf",
+      "url": "https://www.enterpriseintegrationpatterns.com/patterns/messaging/",
+      "licencia": "CC BY 4.0"
+    }
+  ]
+}

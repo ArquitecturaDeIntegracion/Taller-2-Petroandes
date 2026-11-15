@@ -1,0 +1,49 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:27:33.887495+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_content_flow.py",
+    "--output-dir",
+    "/f9-output/ensayo/flujo_real_pdf/resultado"
+  ],
+  "status": "passed",
+  "version_arnes": "F9.2",
+  "checks": {
+    "planes_invariables": true,
+    "anexo_benigno_sin_marca": true,
+    "mcp_solo_dos_lecturas": true,
+    "inspector_abstencion": true,
+    "autoautorizacion_rechazada": true,
+    "catalogo_intacto": true,
+    "auditoria_por_llamada": true,
+    "sin_registros_incompletos": true,
+    "sin_texto_en_auditoria": true
+  },
+  "casos_pdf": 12,
+  "adversariales": 7,
+  "benignos": 5,
+  "detectados_adversariales": 7,
+  "falsos_positivos_benignos": 0,
+  "llamadas_cliente": 24,
+  "registros_auditoria": 26,
+  "top_k_ensayo": 10,
+  "publicacion": {
+    "generation_id": "7784f635-4dab-56fc-8bd6-35e2e9fac868",
+    "perfil": "laboratorio",
+    "governance_revision": 24,
+    "published_fragments": 49,
+    "eligible_documents": 12,
+    "reused": false,
+    "collection": "e5small_es_1_0_0_r24_7784f6354dab_70095cc2"
+  },
+  "llm_real": "no_evaluado",
+  "reserva_ejecutada": false,
+  "limites": [
+    "Cliente sin LLM; no acredita resistencia semántica de Copilot.",
+    "Detección por señales y contraste visual sin OCR; cobertura finita."
+  ]
+}

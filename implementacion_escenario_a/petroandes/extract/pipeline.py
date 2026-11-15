@@ -9,6 +9,7 @@ from petroandes.chunk.structural import PARTITION, stable_uuid
 from petroandes.chunk.context import CONTEXT_POLICY
 from petroandes.embeddings.input import E5Tokenizer
 from petroandes.paths import APP_ROOT, ARTIFACTS_DIR, PROJECT_ROOT, relative_path
+from petroandes.security.detection import VERSION as SECURITY_VERSION
 from .metadata import relations_for
 from .models import ExtractionReview
 from .output import write_document, write_json, write_jsonl
@@ -54,11 +55,13 @@ def ingest(perfil, output):
         if catalog.verify_revision() != snapshot.revision:
             raise ExtractionReview("Gobierno cambió durante preparación; repetir antes de consolidar")
     identity = {"perfil": perfil, "governance_revision": snapshot.revision,
+        "security_version": SECURITY_VERSION,
         "parser_version": PARSER_VERSION, "partition": PARTITION, "tokenizer": tokenizer.config,
         "input_format": "e5passage-es-1.0.0", "context_policy": CONTEXT_POLICY,
         "documents": [(row["doc_id"], row["version_documental"], row["pdf_sha256"], row["status"])
                       for row in reports]}
     manifest = {"evidence_schema_version": 2, "generation_id": stable_uuid(identity),
+        "security_version": SECURITY_VERSION,
         "perfil": perfil, "governance_revision": snapshot.revision, "parser_version": PARSER_VERSION,
         "partition": PARTITION, "embedding_bundle": tokenizer.config["bundle"],
         "input_format": "e5passage-es-1.0.0", "context_policy": CONTEXT_POLICY,

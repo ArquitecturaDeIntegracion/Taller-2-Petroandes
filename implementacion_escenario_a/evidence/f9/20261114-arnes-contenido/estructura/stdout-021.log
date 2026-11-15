@@ -1,0 +1,160 @@
+ 38 líneas  reports/portable/f10-validacion-20261108-193058/revocado-tres-rutas.json
+ 17 líneas  reports/portable/f10-validacion-20261108-193058/rollback-misma-revision.json
+ 16 líneas  reports/portable/f10-validacion-20261108-193058/rollback-rechazado.json
+ 14 líneas  reports/portable/f10-validacion-20261108-193058/rollback-vencido.json
+ 58 líneas  reports/portable/f10-validacion-20261108-193058/summary.json
+ 16 líneas  reports/portable/f10-validacion-20261108-193058/vector-revocado.json
+ 13 líneas  reports/portable/f10-validacion-20261108-193058/vencimiento-propagado-manifiesto.json
+ 59 líneas  reports/portable/f10-validacion-20261108-193058/vencimiento-propagado.json
+ 38 líneas  reports/portable/f10-validacion-20261108-193058/vencimiento-tres-rutas.json
+  7 líneas  reports/portable/f11-comparacion-20261108/antes.json
+ 26 líneas  reports/portable/f11-comparacion-20261108/diferencias-npm.json
+ 19 líneas  reports/portable/f11-comparacion-20261108/summary.json
+ 17 líneas  reports/portable/f11-docker-dev-20261108-195159/comandos/dependencias/command.json
+  1 líneas  reports/portable/f11-docker-dev-20261108-195159/comandos/dependencias/stdout-001.log
+145 líneas  reports/portable/f11-final-dev-20261108-195433/summary.json
+ 19 líneas  reports/portable/f11-final-dev-20261108-195433/baseline/documentos-001.jsonl
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/baseline/eventos-001.jsonl
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/baseline/manifiesto.json
+ 24 líneas  reports/portable/f11-final-dev-20261108-195433/baseline/reconstruccion.json
+122 líneas  reports/portable/f11-final-dev-20261108-195433/baseline/summary.json
+ 21 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/catalogo-baseline/command.json
+ 28 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/catalogo-baseline/stdout-001.log
+ 22 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/consolidacion-baseline/command.json
+122 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/consolidacion-baseline/stdout-001.log
+ 22 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/consulta-baseline/command.json
+ 24 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/consulta-baseline/stdout-001.log
+ 17 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/dependencias/command.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/dependencias/stdout-001.log
+ 24 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/directa-excluida/command.json
+ 22 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/directa-excluida/stdout-001.log
+ 19 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estado-baseline/command.json
+ 13 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estado-baseline/stdout-001.log
+ 35 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/command.json
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-001.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-002.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-003.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-004.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-005.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-006.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-007.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-008.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-009.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-010.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-011.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-012.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-013.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-014.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-015.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-016.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-017.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-018.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-019.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-020.log
+139 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/estructura/stdout-021.log
+ 17 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f10/command.json
+ 58 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f10/stdout-001.log
+ 17 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f7/command.json
+ 37 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f7/stdout-001.log
+ 18 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f8/command.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f8/stderr-001.log
+128 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f8/stdout-001.log
+ 17 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f9/command.json
+ 71 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/f9/stdout-001.log
+ 20 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/ingesta-pdf/command.json
+ 81 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/ingesta-pdf/stdout-001.log
+ 20 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-e5/command.json
+  2 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-e5/stderr-001.log
+ 78 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-e5/stdout-001.log
+ 21 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-laya/command.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-laya/stderr-001.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-laya/stdout-001.log
+112 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/modelo-laya/stdout-002.log
+ 15 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/preflight/command.json
+ 90 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/preflight/stdout-001.log
+ 22 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/regresion/command.json
+  4 líneas  reports/portable/f11-final-dev-20261108-195433/comandos/regresion/stdout-001.log
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-001.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-002.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-003.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-004.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-005.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-006.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-007.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-008.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-009.jsonl
+160 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-010.jsonl
+ 98 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/archivos-011.jsonl
+ 24 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/casos-academicos-001.jsonl
+120 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/licencias-npm-001.jsonl
+ 77 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/licencias-python-001.jsonl
+ 55 líneas  reports/portable/f11-final-dev-20261108-195433/entrega/summary.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f10/aprobacion-eventos-001.jsonl
+ 72 líneas  reports/portable/f11-final-dev-20261108-195433/f10/aprobacion-manifiesto.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/aprobacion.json
+ 44 líneas  reports/portable/f11-final-dev-20261108-195433/f10/bundle.json
+ 13 líneas  reports/portable/f11-final-dev-20261108-195433/f10/consolidacion-eventos-001.jsonl
+ 72 líneas  reports/portable/f11-final-dev-20261108-195433/f10/consolidacion-manifiesto.json
+ 72 líneas  reports/portable/f11-final-dev-20261108-195433/f10/consolidacion-repetida-manifiesto.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/consolidacion-repetida.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/consolidacion.json
+ 12 líneas  reports/portable/f11-final-dev-20261108-195433/f10/decisiones-iniciales-001.jsonl
+ 19 líneas  reports/portable/f11-final-dev-20261108-195433/f10/documentos-iniciales-001.jsonl
+ 39 líneas  reports/portable/f11-final-dev-20261108-195433/f10/fallo-activacion.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/fallo-no-publica.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-cambiada-tres-rutas.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-pendiente-despues.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-pendiente-propagada-eventos-001.jsonl
+ 62 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-pendiente-propagada-manifiesto.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-pendiente-propagada.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huella-pendiente-tras-rollback.json
+ 18 líneas  reports/portable/f11-final-dev-20261108-195433/f10/huellas-pdf.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/permisos-despues.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f10/permisos-propagados-eventos-001.jsonl
+ 66 líneas  reports/portable/f11-final-dev-20261108-195433/f10/permisos-propagados-manifiesto.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/permisos-propagados.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/permisos-tres-rutas.json
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f10/recuperacion-eventos-001.jsonl
+ 68 líneas  reports/portable/f11-final-dev-20261108-195433/f10/recuperacion-manifiesto.json
+ 67 líneas  reports/portable/f11-final-dev-20261108-195433/f10/recuperacion.json
+ 62 líneas  reports/portable/f11-final-dev-20261108-195433/f10/reindexacion-manifiesto.json
+ 70 líneas  reports/portable/f11-final-dev-20261108-195433/f10/reindexacion.json
+ 19 líneas  reports/portable/f11-final-dev-20261108-195433/f10/replay-1.json
+ 19 líneas  reports/portable/f11-final-dev-20261108-195433/f10/replay-14.json
+ 72 líneas  reports/portable/f11-final-dev-20261108-195433/f10/restablecer-reloj-ensayo-manifiesto.json
+ 60 líneas  reports/portable/f11-final-dev-20261108-195433/f10/restablecer-reloj-ensayo.json
+ 48 líneas  reports/portable/f11-final-dev-20261108-195433/f10/revocacion-en-consulta.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/revocado-tres-rutas.json
+ 17 líneas  reports/portable/f11-final-dev-20261108-195433/f10/rollback-misma-revision.json
+ 16 líneas  reports/portable/f11-final-dev-20261108-195433/f10/rollback-rechazado.json
+ 14 líneas  reports/portable/f11-final-dev-20261108-195433/f10/rollback-vencido.json
+ 58 líneas  reports/portable/f11-final-dev-20261108-195433/f10/summary.json
+ 16 líneas  reports/portable/f11-final-dev-20261108-195433/f10/vector-revocado.json
+ 13 líneas  reports/portable/f11-final-dev-20261108-195433/f10/vencimiento-propagado-manifiesto.json
+ 59 líneas  reports/portable/f11-final-dev-20261108-195433/f10/vencimiento-propagado.json
+ 38 líneas  reports/portable/f11-final-dev-20261108-195433/f10/vencimiento-tres-rutas.json
+ 62 líneas  reports/portable/f11-final-dev-20261108-195433/f7/config-portable.json
+ 36 líneas  reports/portable/f11-final-dev-20261108-195433/f7/summary.json
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-denied/command.json
+  4 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-denied/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-denied/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-invalid/command.json
+  3 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-invalid/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-invalid/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-ok/command.json
+  4 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-ok/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/direct-ok/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/index-error/command.json
+  4 líneas  reports/portable/f11-final-dev-20261108-195433/f7/index-error/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/index-error/stdout-001.log
+ 27 líneas  reports/portable/f11-final-dev-20261108-195433/f7/list/command.json
+  2 líneas  reports/portable/f11-final-dev-20261108-195433/f7/list/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/list/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/privilege-invalid/command.json
+  3 líneas  reports/portable/f11-final-dev-20261108-195433/f7/privilege-invalid/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/privilege-invalid/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/reconnect/command.json
+  4 líneas  reports/portable/f11-final-dev-20261108-195433/f7/reconnect/stderr-001.log
+  1 líneas  reports/portable/f11-final-dev-20261108-195433/f7/reconnect/stdout-001.log
+ 31 líneas  reports/portable/f11-final-dev-20261108-195433/f7/search-abstention/command.json
+  2 líneas  reports/portable/f11-final-dev-20261108-195433/f7/search-abstention/stderr-001.log

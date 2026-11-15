@@ -1,0 +1,86 @@
+ 86 líneas  tests/test_f4_integrity.py
+168 líneas  tests/test_f4_publication.py
+ 34 líneas  tests/test_f5_corpus.py
+176 líneas  tests/test_f5_retrieval.py
+ 27 líneas  tests/test_f5_selection.py
+182 líneas  tests/test_f6_compose.py
+172 líneas  tests/test_f9_guard.py
+ 62 líneas  tests/test_f9_mcp_boundaries.py
+141 líneas  tests/test_f9_validate.py
+ 38 líneas  tests/test_json_schemas.py
+133 líneas  tests/test_lab_administration.py
+ 78 líneas  tests/test_portability.py
+ 40 líneas  tests/test_safe_consumer.py
+ 74 líneas  tests/test_security_audit.py
+ 69 líneas  tests/test_security_detection.py
+ 58 líneas  tools/certify_lab.py
+107 líneas  tools/check_docker.py
+ 93 líneas  tools/check_f0.py
+ 55 líneas  tools/check_f2.py
+133 líneas  tools/check_f3.py
+ 77 líneas  tools/check_f4.py
+ 65 líneas  tools/check_lab_index.py
+107 líneas  tools/check_lab_state.py
+ 70 líneas  tools/check_portability.py
+ 97 líneas  tools/db_demo.py
+103 líneas  tools/db_demo_check.py
+ 66 líneas  tools/db_demo_common.py
+110 líneas  tools/debug_smoke.py
+ 74 líneas  tools/demo_check.py
+ 46 líneas  tools/demo_inspector_check.py
+ 41 líneas  tools/export_contracts.py
+ 65 líneas  tools/f0.py
+ 62 líneas  tools/f0_common.py
+ 44 líneas  tools/f0_corpus.py
+ 82 líneas  tools/f0_e5.py
+109 líneas  tools/f0_laya.py
+ 64 líneas  tools/f0_mcp.py
+ 14 líneas  tools/f0_mcp_server.py
+ 79 líneas  tools/f0_storage.py
+148 líneas  tools/f10.py
+176 líneas  tools/f10_check.py
+140 líneas  tools/f10_controls.py
+145 líneas  tools/f11_check.py
+140 líneas  tools/f11_inventory.py
+127 líneas  tools/f11_package.py
+ 56 líneas  tools/f11_verify_delivery.py
+ 81 líneas  tools/f4.py
+ 80 líneas  tools/f5.py
+ 37 líneas  tools/f7_historical_mcp.py
+173 líneas  tools/f7_inspector.py
+ 49 líneas  tools/f7_inspector_client.py
+ 27 líneas  tools/f7_inspector_web.py
+ 64 líneas  tools/f7_wire.py
+177 líneas  tools/f8_evaluate.py
+ 57 líneas  tools/f8_judge.py
+ 75 líneas  tools/f8_metrics.py
+154 líneas  tools/f9_attack.py
+ 21 líneas  tools/f9_content_cases.py
+135 líneas  tools/f9_content_flow.py
+104 líneas  tools/f9_content_prepare.py
+ 77 líneas  tools/f9_guard_check.py
+151 líneas  tools/f9_mcp_boundaries.py
+ 77 líneas  tools/f9_observe.py
+142 líneas  tools/f9_sandbox_probe.py
+ 71 líneas  tools/f9_sources.py
+101 líneas  tools/f9_validate.py
+149 líneas  tools/f9_validation_runtime.py
+ 47 líneas  tools/freeze_environment.py
+ 19 líneas  tools/lock_compat.py
+ 35 líneas  tools/migrate_models.py
+103 líneas  tools/preflight.py
+ 66 líneas  tools/prepare_lab_request.py
+  7 líneas  tools/project_paths.py
+ 84 líneas  tools/read_source.py
+ 67 líneas  tools/record_command.py
+ 45 líneas  tools/render_f3_review.py
+170 líneas  tools/review_apply_manuals.py
+125 líneas  tools/review_case_sources.py
+135 líneas  tools/review_frozen.py
+ 46 líneas  tools/review_lab_case_dependencies.py
+139 líneas  tools/review_seed_contexts.py
+ 50 líneas  tools/revisar_documento.py
+103 líneas  tools/validate_agent.py
+
+OK: 5523 archivos textuales; máximo 199 líneas.
+Estructura validada; no comprueba una sesión real de VS Code ni termina F0.

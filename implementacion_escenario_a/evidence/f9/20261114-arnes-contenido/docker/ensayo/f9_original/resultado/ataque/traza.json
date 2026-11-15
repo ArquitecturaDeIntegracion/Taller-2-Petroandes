@@ -1,0 +1,54 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:16:07.410040+00:00",
+  "python": "3.12.16",
+  "executable": "python",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_attack.py",
+    "--output-dir",
+    "/f9-output/ensayo/f9_original/resultado"
+  ],
+  "correlation_id": "724b39b1-2eb7-47ae-8e65-f27710f52b78",
+  "generation_id": "6e939016-f60b-5b6f-9bd6-b22e4ad35048",
+  "revision_gobierno": 13,
+  "operacion": "responder",
+  "tiempos_ms": {
+    "gobierno": 1.254330993106123,
+    "generacion": 70.31748499866808,
+    "catalogo_publicado": 4.939320002449676,
+    "exacta": 0.07709999772487208,
+    "embedding": 25.286326002969872,
+    "densa": 2.6810909985215403,
+    "lexica": 2.419568001641892,
+    "fusion": 0.18198999896412715,
+    "composicion": 0.9489539952483028,
+    "revalidacion": 1.681754001765512,
+    "total": 110.910833995149
+  },
+  "top_k": 5,
+  "profundidad_rama": 10,
+  "rrf_k": 60,
+  "fusion": "rrf",
+  "tokenizacion": "bm25-codes-es-1.0.0",
+  "codigos": "codes-es-1.0.0",
+  "desempate": "coincidencia_exacta_y_chunk_id",
+  "modo": "texto",
+  "prefiltro_fragmentos": 9,
+  "compositor": "extractiva-es-1.1.0",
+  "uso": "evidencia_historica",
+  "detector_version": "contenido-no-confiable-1.0.0",
+  "descartados_seguridad": [
+    "8bf6f5e9-6a73-58ed-adce-c809554ba5e0"
+  ],
+  "senales_seguridad": {
+    "8bf6f5e9-6a73-58ed-adce-c809554ba5e0": [
+      "exfiltracion_solicitada",
+      "instrucciones_dirigidas_al_procesador",
+      "ocultacion_al_usuario",
+      "orden_al_procesador",
+      "sustitucion_instrucciones"
+    ]
+  }
+}

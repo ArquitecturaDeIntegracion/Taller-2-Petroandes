@@ -1,0 +1,31 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "recorded_utc": "2026-11-14T16:15:07.994719+00:00",
+  "python": "3.12.14",
+  "executable": "python",
+  "command": [
+    "python",
+    "tools/f9_validate.py",
+    "--output-dir",
+    "reports/portable/f9-2-20261114/integrado",
+    "--timeout",
+    "1800"
+  ],
+  "checks": {
+    "network_mode_none": true,
+    "rootfs_read_only": true,
+    "user_10001": true,
+    "cap_drop_all": true,
+    "no_new_privileges": true,
+    "pids_limit": true,
+    "memory_limit": true,
+    "cpu_limit": true,
+    "tmpfs_tmp": true,
+    "solo_tmpfs_temporal": true,
+    "solo_montajes_declarados": true,
+    "permisos_montajes": true,
+    "fuente_bind_proyecto": true,
+    "reporte_bind": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "/usr/local/bin/node",
+    "${INSPECTOR_DIR}/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
+    "--cli",
+    "--config",
+    "${TMPDIR}/petroandes-inspector-demo-umsf6dki/servers.json",
+    "--server",
+    "petroandes",
+    "--protocol-era",
+    "legacy",
+    "--format",
+    "json",
+    "--method",
+    "tools/list"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:26:51.278822+00:00",
+  "elapsed_seconds": 6.322988398002053,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

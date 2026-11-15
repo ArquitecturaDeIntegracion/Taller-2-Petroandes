@@ -1,0 +1,18 @@
+{
+  "evidence_schema_version": 2,
+  "path_encoding": "portable-placeholders",
+  "command": [
+    "python",
+    "${APP_ROOT}/tools/f9_content_flow.py",
+    "--output-dir",
+    "/f9-output/ensayo/flujo_real_pdf/resultado"
+  ],
+  "cwd": "${APP_ROOT}",
+  "started_utc": "2026-11-14T16:23:32.985005+00:00",
+  "elapsed_seconds": 263.287821306003,
+  "exit_code": 0,
+  "output_files": [
+    "stdout-001.log",
+    "stderr-001.log"
+  ]
+}

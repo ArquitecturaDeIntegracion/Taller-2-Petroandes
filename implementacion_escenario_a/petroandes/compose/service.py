@@ -6,15 +6,18 @@ from contextlib import closing
 from petroandes.contracts.responses import Claim, SearchResponse
 from petroandes.retrieve.selection import citation
 from petroandes.retrieve.service import abstention
+from petroandes.security.detection import VERSION as SECURITY_VERSION, findings
 from .intent import RULE_VERSION, resolve
 from .units import TABLE_KINDS, blocked, is_anchor, section_units
 
 
 def compose(query, context, ranked, records, folder, trace):
     trace.update({"compositor": RULE_VERSION, "uso": context.uso})
+    trace['detector_version'] = SECURITY_VERSION
     flagged = [key for key in ranked if blocked(*records[key])]
     if flagged:
         trace["descartados_seguridad"] = flagged
+        trace['senales_seguridad'] = {key: findings(*records[key]) for key in flagged}
     intent, reason = resolve(query, context, records)
     if reason:
         return abstention(reason)
