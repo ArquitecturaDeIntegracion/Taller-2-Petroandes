@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-16T00:38:33.353237+00:00",
+  "autorizacion": "Aprobación expresa del usuario para aplicar la propuesta de clasificación al original",
+  "documento": "Escenario_A_3_1_Analisis_y_Diseno_PetroAndes.docx",
+  "sha256_antes": "12e7601521c604c01c5afa6b22ae9f1f69a6a691f723759bf5e23ee09d8127fa",
+  "sha256_despues": "27e105e87463132ad49b6f9e146c8034db099a07b918faebf3a1040d155b80e8",
+  "respaldo": "output/doc/versiones/20261115-antes-clasificacion-aprobada/Escenario_A_3_1_Analisis_y_Diseno_PetroAndes.docx",
+  "clasificacion": {
+    "Certificado": 14,
+    "Pendiente": 1,
+    "Excluido": 4
+  },
+  "tabla_con_un_solo_estado": true,
+  "fundamentos_exclusion_conservados": true,
+  "D03": "pendiente_sin_acceso",
+  "condiciones_D01_D02": "laboratorio evidencia_historica general:corpus_revision LAB_REVISION; fin exclusivo 2026-12-01T00:00:00-05:00",
+  "cambio_paquete_ooxml": [
+    "word/document.xml"
+  ],
+  "parrafos_originales_modificados": [
+    32,
+    33,
+    35,
+    105
+  ],
+  "nota_de_alcance_agregada": true,
+  "resumen_gobierno_actualizado": true,
+  "tablas_diagramas_estilos_encabezados_pies_ajenos": "conservados",
+  "paginas": 14,
+  "qa_visual": "Catorce paginas inspeccionadas; estados completos, tablas y nota legibles",
+  "render": "Microsoft Word y render_docx.py con exportacion PDF nativa",
+  "validate_agent_host": {
+    "exit_code": 0,
+    "archivos": 6014,
+    "maximo_lineas": 199
+  },
+  "preflight_host": {
+    "exit_code": 0,
+    "errors": [],
+    "advertencia": "Node host 20; Inspector configurado en Docker Node 22"
+  },
+  "catalogos_y_permisos_modificados": false,
+  "nueva_corrida_docker": false,
+  "reserva_ejecutada": false
+}

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-15T23:52:53.208683+00:00",
+  "documento": "output/doc/Escenario_A_3_1_Analisis_y_Diseno_PetroAndes_Actualizado_20261115.docx",
+  "sha256": "de2054734a0bd24f828ef4144cf22e96d9fb7b56de822a883f8e6af3a2a9699d",
+  "paginas": 18,
+  "fuente_raiz": {
+    "path": "Escenario_A_3_1_Analisis_y_Diseno_PetroAndes.docx",
+    "sha256": "553fa0422ddf361a47fb5464d43cee50779f3c0cbfd0184877d5d429150fb5bd",
+    "conservada": true
+  },
+  "copia_previa_output_doc_conservada": true,
+  "formato": "A4 vertical del original",
+  "secciones_originales": 7,
+  "adr_originales_conservados": 4,
+  "diagramas_actualizados": 4,
+  "tablas": 12,
+  "documentos_matriz": 19,
+  "matriz_demo": {
+    "certificado_simulado": 14,
+    "excluido": 4,
+    "pendiente": 1
+  },
+  "partes_ooxml_originales_conservadas": 15,
+  "geometria_estilos_tema_numeracion_encabezados_pies": "conservados_sin_cambios",
+  "enlaces_locales_verificados": 12,
+  "implementacion_verificada_por_hash": 23,
+  "qa_visual": "18 paginas finales inspeccionadas sin recortes ni solapamientos",
+  "render": "Microsoft Word y render_docx.py con exportacion nativa",
+  "validate_agent_host": {
+    "exit_code": 0,
+    "archivos": 6012,
+    "maximo_lineas": 199
+  },
+  "preflight_host": {
+    "exit_code": 0,
+    "errors": [],
+    "advertencia": "Node host 20; Inspector configurado en Docker Node 22"
+  },
+  "nueva_corrida_docker": false,
+  "reserva_ejecutada": false,
+  "evidencia_reutilizada": [
+    "evidence/f8/20261108/summary.json",
+    "evidence/f9/20261114-arnes-contenido/summary.json",
+    "evidence/f10/20261108/final/summary.json",
+    "evidence/revision/20261108-confirmada/registro/summary.json"
+  ]
+}

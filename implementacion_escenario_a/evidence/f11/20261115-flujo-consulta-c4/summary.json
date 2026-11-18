@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "fecha_utc": "2026-11-16T02:56:56.191208+00:00",
+  "documento": "output/doc/Flujo_Actual_Consulta_PetroAndes_y_Vistas_C4.docx",
+  "sha256": "ca66bb7b3db1ad6044da99776ce35fea0ef8fd06add44a6d410234be116c47b3",
+  "paginas": 4,
+  "diagramas": [
+    "flujo funcional de buscar_documentos",
+    "C4 contexto",
+    "C4 contenedores",
+    "C4 componentes"
+  ],
+  "referencia_visual": "imagen de flujo aportada por el usuario",
+  "ajustes_verificados": [
+    "RRF combina dos rankings; codigos apoyan prefiltro, rama lexica y desempate",
+    "ramas ejecutadas por turnos",
+    "gobierno_cambio sin reintento automatico en la llamada",
+    "revalidacion incluso sin elegibles",
+    "auditoria inicia y cierra antes de responder",
+    "obtener_fragmento no pasa por ranking ni F6",
+    "F8 y arnes F9.2 bajo demanda"
+  ],
+  "implementacion_verificada_por_hash": 23,
+  "enlaces_locales_verificados": 6,
+  "original_clasificacion_aprobada": "no editado ni revalidado en esta tarea documental independiente",
+  "qa_visual": "Cuatro paginas finales inspeccionadas sin recortes ni solapamientos",
+  "render": "Microsoft Word y render_docx.py con exportacion PDF nativa",
+  "validate_agent_host": {
+    "exit_code": 0,
+    "archivos": 6016,
+    "maximo_lineas": 199
+  },
+  "preflight_host": {
+    "exit_code": 0,
+    "errors": [],
+    "advertencia": "Node local 20; Inspector configurado en Docker Node 22"
+  },
+  "nueva_corrida_docker": false,
+  "reserva_ejecutada": false,
+  "fuente_C4": "https://c4model.com/diagrams/notation",
+  "atribucion": "C4 Simon Brown CC BY 4.0; diagramas propios"
+}

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1290" viewBox="0 0 1800 1290">
+<title>PetroAndes: diagrama C4 de componentes del servicio de consulta</title>
+<desc>Clientes MCP, adaptador, coordinación, política de acceso, recuperación híbrida, composición, detector, auditoría y almacenes locales.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="42" text-anchor="start" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#174B73" dominant-baseline="middle">PetroAndes · arquitectura del servicio de consulta</text>
+<text x="45" y="85" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#17324D" dominant-baseline="middle">C4 · diagrama de componentes (nivel 3) · dependencias de la implementación actual</text>
+<text x="1750" y="85" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#566875" dominant-baseline="middle">16 nov 2026</text>
+<rect x="50" y="290" width="1700" height="640" rx="12" fill="#FBFDFE" stroke="#6C879F" stroke-width="2"/>
+<text x="80" y="313" text-anchor="start" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#174B73" dominant-baseline="middle">Servicio PetroAndes  [Contenedor C4 · aplicación Python]</text>
+<rect x="680" y="120" width="440" height="120" rx="10" fill="#F1F3F5" stroke="#566875" stroke-width="2"/>
+<rect x="681" y="121" width="438" height="40" rx="8" fill="#566875" stroke="#566875" stroke-width="2"/>
+<text x="900.0" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Clientes MCP</text>
+<text x="900.0" y="181" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Sistema de software externo]</text>
+<text x="900.0" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Copilot en VS Code o MCP Inspector</text>
+<rect x="680" y="330" width="440" height="130" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="681" y="331" width="438" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="900.0" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Adaptador MCP</text>
+<text x="900.0" y="391" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / Pydantic]</text>
+<text x="900.0" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">buscar_documentos</text>
+<text x="900.0" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">obtener_fragmento</text>
+<rect x="1270" y="330" width="420" height="130" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1271" y="331" width="418" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1480.0" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Auditoría de llamadas</text>
+<text x="1480.0" y="391" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python]</text>
+<text x="1480.0" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Inicio y cierre antes de entregar.</text>
+<text x="1480.0" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Si falla, devuelve error sin evidencia.</text>
+<rect x="680" y="550" width="440" height="145" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="681" y="551" width="438" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="900.0" y="572" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Coordinador de consulta</text>
+<text x="900.0" y="611" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python]</text>
+<text x="900.0" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Búsqueda y lectura directa.</text>
+<text x="900.0" y="664" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Revalida gobierno al finalizar.</text>
+<rect x="110" y="550" width="390" height="145" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="111" y="551" width="388" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="305.0" y="572" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Política de acceso</text>
+<text x="305.0" y="611" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python]</text>
+<text x="305.0" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Hash, grupo, ámbito y uso.</text>
+<text x="305.0" y="664" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Período efectivo y revisión.</text>
+<rect x="1270" y="550" width="420" height="145" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1271" y="551" width="418" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1480.0" y="572" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Composición de respuesta</text>
+<text x="1480.0" y="611" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python]</text>
+<text x="1480.0" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Extractos autorizados con citas.</text>
+<text x="1480.0" y="664" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Descarta contenido marcado.</text>
+<rect x="680" y="785" width="440" height="130" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="681" y="786" width="438" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="900.0" y="807" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Recuperación híbrida</text>
+<text x="900.0" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / E5 / BM25]</text>
+<text x="900.0" y="873" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">E5 + BM25 → fusión RRF.</text>
+<text x="900.0" y="899" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Prefiltros y códigos exactos.</text>
+<rect x="1270" y="785" width="420" height="130" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1271" y="786" width="418" height="40" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1480.0" y="807" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Detector de contenido</text>
+<text x="1480.0" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python]</text>
+<text x="1480.0" y="873" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Marca texto sospechoso.</text>
+<text x="1480.0" y="899" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Consulta señales de ingesta.</text>
+<rect x="110" y="1020" width="390" height="130" rx="10" fill="#EDF6F2" stroke="#17695D" stroke-width="2"/>
+<rect x="111" y="1021" width="388" height="40" rx="8" fill="#17695D" stroke="#17695D" stroke-width="2"/>
+<text x="305.0" y="1042" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Catálogo y gobierno documental</text>
+<text x="305.0" y="1081" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Almacén local · SQLite]</text>
+<text x="305.0" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Documentos, autorizaciones</text>
+<text x="305.0" y="1134" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">y revisiones.</text>
+<rect x="680" y="1020" width="440" height="130" rx="10" fill="#EDF6F2" stroke="#17695D" stroke-width="2"/>
+<rect x="681" y="1021" width="438" height="40" rx="8" fill="#17695D" stroke="#17695D" stroke-width="2"/>
+<text x="900.0" y="1042" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Índices de consulta</text>
+<text x="900.0" y="1081" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Almacén local · Qdrant / SQLite]</text>
+<text x="900.0" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Vectores y proyección léxica;</text>
+<text x="900.0" y="1134" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">catálogo de fragmentos.</text>
+<rect x="1270" y="1020" width="420" height="130" rx="10" fill="#EDF6F2" stroke="#17695D" stroke-width="2"/>
+<rect x="1271" y="1021" width="418" height="40" rx="8" fill="#17695D" stroke="#17695D" stroke-width="2"/>
+<text x="1480.0" y="1042" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Evidencia de auditoría</text>
+<text x="1480.0" y="1081" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Almacén local · archivos JSON]</text>
+<text x="1480.0" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Recibos por correlation_id;</text>
+<text x="1480.0" y="1134" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">huellas, decisiones y señales.</text>
+<polyline points="810,240 810,330" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="810,330 804.6991141102255,318.12984377594 815.3008858897745,318.12984377594" fill="#47647E"/>
+<rect x="663.5" y="256.0" width="177.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="752" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Invoca herramientas</text>
+<text x="752" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">MCP / stdio</text>
+<polyline points="990,330 990,240" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polygon points="990,240 995.3008858897745,251.87015622406 984.6991141102255,251.87015622406" fill="#47647E"/>
+<rect x="979.5" y="256.0" width="153.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1056" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Devuelve estado,</text>
+<text x="1056" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">evidencia y citas</text>
+<polyline points="1120,400 1270,400" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1270,400 1258.12984377594,405.3008858897744 1258.12984377594,394.6991141102256" fill="#47647E"/>
+<rect x="1140.5" y="336.0" width="109.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1195" y="349" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Audita cada</text>
+<text x="1195" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">llamada</text>
+<polyline points="900,460 900,550" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="900,550 894.6991141102255,538.12984377594 905.3008858897745,538.12984377594" fill="#47647E"/>
+<rect x="825.5" y="489.0" width="149.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="900" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Delega la lectura</text>
+<polyline points="680,622 500,622" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="500,622 511.87015622406,616.6991141102255 511.87015622406,627.3008858897745" fill="#47647E"/>
+<rect x="514.5" y="555.0" width="151.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="590" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Evalúa y revalida</text>
+<text x="590" y="593" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">los permisos</text>
+<polyline points="1120,622 1270,622" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1270,622 1258.12984377594,627.3008858897745 1258.12984377594,616.6991141102255" fill="#47647E"/>
+<rect x="1127.5" y="555.0" width="135.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1195" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Búsqueda:</text>
+<text x="1195" y="593" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">compone y cita</text>
+<polyline points="900,695 900,785" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="900,785 894.6991141102255,773.12984377594 905.3008858897745,773.12984377594" fill="#47647E"/>
+<rect x="800.5" y="717.0" width="199.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="900" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Búsqueda: recupera</text>
+<text x="900" y="755" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">candidatos autorizados</text>
+<polyline points="1480,695 1480,785" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1480,785 1474.6991141102255,773.12984377594 1485.3008858897745,773.12984377594" fill="#47647E"/>
+<rect x="1391.0" y="717.0" width="178.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1480" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Inspecciona texto</text>
+<text x="1480" y="755" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">y señales de ingesta</text>
+<polyline points="305,695 305,1020" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="305,1020 299.6991141102256,1008.12984377594 310.3008858897744,1008.12984377594" fill="#47647E"/>
+<rect x="199.0" y="834.0" width="212.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="305" y="847" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Lee catálogo, decisiones</text>
+<text x="305" y="872" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">y revisión vigente</text>
+<polyline points="900,915 900,1020" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="900,1020 894.6991141102255,1008.12984377594 905.3008858897745,1008.12984377594" fill="#47647E"/>
+<rect x="802.0" y="946.0" width="196.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="900" y="959" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Consulta proyecciones</text>
+<text x="900" y="984" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">publicadas</text>
+<polyline points="1690,400 1720,400 1720,979 1570,979 1570,1020" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1570,1020 1564.6991141102255,1008.12984377594 1575.3008858897745,1008.12984377594" fill="#47647E"/>
+<rect x="1525.0" y="935.0" width="190.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1620" y="948" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Escribe recibos JSON</text>
+<rect x="50" y="1185" width="1700" height="70" rx="10" fill="#F3F6F8" stroke="#D6E0E7" stroke-width="2"/>
+<text x="75" y="1207" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#174B73" dominant-baseline="middle">Leyenda</text>
+<text x="185" y="1207" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Azul: componente · Gris: cliente externo · Verde: almacén local · Marco: servicio Python (contenedor C4).</text>
+<text x="75" y="1236" text-anchor="start" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Flechas: dependencias; discontinua: respuesta · Qdrant y SQLite en modo local · RRF: fusión de rankings · E5: modelo de embeddings.</text>
+<text x="45" y="1275" text-anchor="start" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#566875" dominant-baseline="middle">Lectura directa: misma política de acceso y revalidación, sin ranking ni composición · C4: c4model.com/diagrams/component</text>
+</svg>

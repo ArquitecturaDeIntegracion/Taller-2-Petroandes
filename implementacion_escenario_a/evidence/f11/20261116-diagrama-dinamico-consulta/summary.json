@@ -1,0 +1,59 @@
+{
+  "fecha_local": "2026-11-16",
+  "tipo": "diagrama_documental_c4_dinamico_componentes",
+  "alcance": "buscar_documentos, funcionamiento actual; sin cambios de aplicación",
+  "artefactos": [
+    {
+      "ruta": "output/diagrams/PetroAndes_C4_Dinamico_Flujo_Consulta_20261116.png",
+      "sha256": "3317d085e4d43d69480019c129ffeffa9004a87f90ad3e933cd1b6316412a7b1"
+    },
+    {
+      "ruta": "output/diagrams/PetroAndes_C4_Dinamico_Flujo_Consulta_20261116.svg",
+      "sha256": "a39dad97a5461ac78cfaf533b798c2b52f0884bb0f77bfafc92d080df9cc08b3"
+    }
+  ],
+  "fuentes_codigo": [
+    {
+      "ruta": "implementacion_escenario_a/petroandes/mcp_tools.py",
+      "sha256": "e62d128262c78c4762d710de68a724aa8fd275ff43ee1780bf98bd003a7129b7"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/retrieve/service.py",
+      "sha256": "f8c8841dc9fa28e100e35bb8d518376486c840324847e38681e5ccbec9b3a31a"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/retrieve/ranking.py",
+      "sha256": "1357c0ee900f6193ac43e25018d9a63e4e8826cc7e469608b878f3657be68630"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/compose/service.py",
+      "sha256": "dd9f45a64ce24a69850a59a9d8c4264a3ed6d9eff4da5981cc335a7eaf187b31"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/security/detection.py",
+      "sha256": "bff2b54fc8090fa7834572e83f3fa42c9c9ccd50e4a0ac31344e632eac7e2508"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/security/audit.py",
+      "sha256": "0a186bb47815f2ad1432654847ee77ab671617e0ed8015bbf82bcecebeca737a"
+    }
+  ],
+  "comprobaciones": {
+    "xml_svg_valido": true,
+    "png_integro": true,
+    "dimensiones_png": [
+      3600,
+      3020
+    ],
+    "inspeccion_visual": "Realizada sobre preview.png; texto, flechas y límites revisados",
+    "dos_rankings_no_tres": true,
+    "orden_por_turnos": true,
+    "revalidacion_sin_reintento_automatico": true,
+    "auditoria_antes_de_entregar": true,
+    "distingue_detector_en_consulta_y_arnes_bajo_demanda": true
+  },
+  "pruebas_aplicacion_nuevas": false,
+  "docker_ejecutado_en_esta_tarea": false,
+  "reserva_ejecutada": false,
+  "referencia_c4": "https://c4model.com/diagrams/dynamic"
+}

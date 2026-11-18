@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1510" viewBox="0 0 1800 1510">
+<title>PetroAndes: consulta MCP, vista dinámica C4 de componentes</title>
+<desc>Secuencia numerada de buscar_documentos: auditoría, gobierno, búsqueda híbrida de dos rankings, composición con F9.2, revalidación y respuesta.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="43" text-anchor="start" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#174B73" dominant-baseline="middle">PetroAndes · flujo de consulta MCP</text>
+<text x="45" y="87" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#17324D" dominant-baseline="middle">C4 · vista dinámica de componentes (nivel 3) · buscar_documentos</text>
+<text x="1750" y="86" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#566875" dominant-baseline="middle">Implementación actual · 16 nov 2026</text>
+<rect x="360" y="125" width="1390" height="1190" rx="12" fill="#FBFDFE" stroke="#6C879F" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="395" y="145" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#174B73" dominant-baseline="middle">Servidor petroandes  [Contenedor C4: aplicación Python · transporte stdio]</text>
+<rect x="40" y="170" width="270" height="155" rx="10" fill="#F1F3F5" stroke="#566875" stroke-width="2"/>
+<text x="175" y="197" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#566875" dominant-baseline="middle">Cliente MCP</text>
+<text x="175" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#566875" dominant-baseline="middle">[Software externo]</text>
+<text x="175" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Inspector web o VS Code</text>
+<text x="175" y="281" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Texto, top_k y filtros</text>
+<text x="175" y="307" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">JSON-RPC sobre stdio</text>
+<rect x="420" y="180" width="340" height="145" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="421" y="181" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="590.0" y="203" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Adaptador MCP</text>
+<text x="590.0" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / Pydantic]</text>
+<text x="590.0" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Valida el contrato JSON;</text>
+<text x="590.0" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">enruta y serializa la respuesta.</text>
+<rect x="1080" y="180" width="610" height="145" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1081" y="181" width="608" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1385.0" y="203" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Auditoría durable por llamada</text>
+<text x="1385.0" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / security/audit.py]</text>
+<text x="1385.0" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Recibo JSON: correlation_id, huellas, decisión y señales.</text>
+<text x="1385.0" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">reports/portable/mcp-audit/ · cierre antes de entregar.</text>
+<rect x="420" y="480" width="340" height="170" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="421" y="481" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="590.0" y="503" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Coordinador F5</text>
+<text x="590.0" y="544" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · retrieve/service.py]</text>
+<text x="590.0" y="574" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Orquesta la búsqueda y F6.</text>
+<text x="590.0" y="601" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Abre la generación publicada</text>
+<text x="590.0" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">y controla la revisión final.</text>
+<rect x="420" y="790" width="340" height="170" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="421" y="791" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="590.0" y="813" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Política de elegibilidad</text>
+<text x="590.0" y="854" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / SQLite]</text>
+<text x="590.0" y="884" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Hash, grupo, ámbito, uso,</text>
+<text x="590.0" y="911" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">período efectivo y revisión.</text>
+<text x="590.0" y="938" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Gobierno antes de puntuar.</text>
+<rect x="880" y="420" width="810" height="560" rx="9" fill="#F7FAFC" stroke="#9AB1C4" stroke-width="2"/>
+<text x="905" y="445" text-anchor="start" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#174B73" dominant-baseline="middle">Recuperación híbrida local  [Grupo de componentes]</text>
+<rect x="920" y="485" width="730" height="110" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="921" y="486" width="728" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1285.0" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Filtros y códigos exactos</text>
+<text x="1285.0" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / ranking.py + projections.py]</text>
+<text x="1285.0" y="579" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Código aislado: prefiltro; apoyo léxico y desempate RRF.</text>
+<rect x="920" y="655" width="340" height="140" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="921" y="656" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1090.0" y="678" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Ranking denso</text>
+<text x="1090.0" y="719" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · E5 + Qdrant local]</text>
+<text x="1090.0" y="749" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Embeddings E5 normalizados.</text>
+<text x="1090.0" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Similitud de significado.</text>
+<rect x="1310" y="655" width="340" height="140" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1311" y="656" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1480.0" y="678" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Ranking léxico</text>
+<text x="1480.0" y="719" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · BM25 / SQLite]</text>
+<text x="1480.0" y="749" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Coincidencias de términos.</text>
+<text x="1480.0" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Solo fragmentos autorizados.</text>
+<rect x="1100" y="850" width="370" height="120" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1101" y="851" width="368" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1285.0" y="873" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Fusión RRF</text>
+<text x="1285.0" y="914" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / ranking.py]</text>
+<text x="1285.0" y="944" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Dos rankings → top_k sin duplicados.</text>
+<rect x="930" y="1090" width="340" height="165" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="931" y="1091" width="338" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1100.0" y="1113" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Composición extractiva F6</text>
+<text x="1100.0" y="1154" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / compose/]</text>
+<text x="1100.0" y="1184" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Contexto autorizado,</text>
+<text x="1100.0" y="1211" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">condiciones y citas.</text>
+<text x="1100.0" y="1238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Extractos o abstención.</text>
+<rect x="1390" y="1090" width="300" height="165" rx="10" fill="#EFF5FA" stroke="#174B73" stroke-width="2"/>
+<rect x="1391" y="1091" width="298" height="42" rx="8" fill="#174B73" stroke="#174B73" stroke-width="2"/>
+<text x="1540.0" y="1113" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="middle">Detector F9.2</text>
+<text x="1540.0" y="1154" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="400" fill="#17324D" dominant-baseline="middle">[Componente · Python / security/]</text>
+<text x="1540.0" y="1184" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">Texto y señales de ingesta.</text>
+<text x="1540.0" y="1211" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">F6 descarta lo marcado;</text>
+<text x="1540.0" y="1238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#17324D" dominant-baseline="middle">no ejecuta el contenido.</text>
+<polyline points="310,220 420,220" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="420,220 408.12984377594,225.3008858897744 408.12984377594,214.6991141102256" fill="#47647E"/>
+<rect x="350.75" y="185.5" width="26.5" height="30" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="364" y="199" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">1</text>
+<polyline points="420,291 310,291" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polygon points="310,291 321.87015622406,285.6991141102256 321.87015622406,296.3008858897744" fill="#47647E"/>
+<rect x="346.5" y="257.5" width="37.0" height="30" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="365" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">14</text>
+<text x="174" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17695D" dominant-baseline="middle">14. Afirmaciones citadas,</text>
+<text x="174" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#17695D" dominant-baseline="middle">abstención o error</text>
+<polyline points="760,246 1080,246" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1080,246 1068.12984377594,251.3008858897744 1068.12984377594,240.6991141102256" fill="#47647E"/>
+<rect x="839.75" y="205.5" width="158.5" height="30" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="919" y="219" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">2. Inicia el recibo</text>
+<rect x="824.25" y="264.5" width="189.5" height="30" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="919" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">13. Persiste el cierre</text>
+<polyline points="478,325 478,480" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="478,480 472.6991141102256,468.12984377594 483.3008858897744,468.12984377594" fill="#47647E"/>
+<rect x="455.5" y="377.5" width="119.0" height="56" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="515" y="391" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">3. Invoca</text>
+<text x="515" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">la búsqueda</text>
+<polyline points="710,480 710,325" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polygon points="710,325 715.3008858897745,336.87015622406 704.6991141102255,336.87015622406" fill="#47647E"/>
+<rect x="651.5" y="379.0" width="99.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="701" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">Resultado</text>
+<text x="701" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">revalidado</text>
+<polyline points="514,650 514,790" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="514,790 508.6991141102256,778.12984377594 519.3008858897745,778.12984377594" fill="#47647E"/>
+<rect x="498.75" y="672.5" width="216.5" height="56" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="607" y="686" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">4. Evalúa elegibilidad</text>
+<text x="607" y="712" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">12. Revalida al terminar</text>
+<polyline points="760,528 920,528" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="920,528 908.12984377594,533.3008858897745 908.12984377594,522.6991141102255" fill="#47647E"/>
+<rect x="779.5" y="486.0" width="109.0" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="834" y="499" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">5. IDs</text>
+<text x="834" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">autorizados</text>
+<polyline points="1090,595 1090,655" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1090,655 1084.6991141102255,643.12984377594 1095.3008858897745,643.12984377594" fill="#47647E"/>
+<rect x="1043.5" y="610.0" width="93.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1090" y="623" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">6. Puntúa</text>
+<polyline points="1480,595 1480,655" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1480,655 1474.6991141102255,643.12984377594 1485.3008858897745,643.12984377594" fill="#47647E"/>
+<rect x="1433.5" y="610.0" width="93.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1480" y="623" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">7. Puntúa</text>
+<polyline points="1090,795 1090,825 1285,825 1285,850" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1285,850 1279.6991141102255,838.12984377594 1290.3008858897745,838.12984377594" fill="#47647E"/>
+<polyline points="1480,795 1480,825 1285,825" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="1186.0" y="812.0" width="198.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1285" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">8. Combina posiciones</text>
+<polyline points="1170,970 1170,1018 1100,1018 1100,1090" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1100,1090 1094.6991141102255,1078.12984377594 1105.3008858897745,1078.12984377594" fill="#47647E"/>
+<rect x="1063.5" y="1030.5" width="233.0" height="30" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1180" y="1044" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">9. Compone con contexto</text>
+<polyline points="1270,1161 1390,1161" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="1390,1161 1378.12984377594,1166.3008858897745 1378.12984377594,1155.6991141102255" fill="#47647E"/>
+<rect x="1279.5" y="1118.0" width="101.0" height="29" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="1330" y="1131" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">10. Evalúa</text>
+<polyline points="930,1198 810,1198 810,612 760,612" fill="none" stroke="#47647E" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<polygon points="760,612 771.87015622406,606.6991141102255 771.87015622406,617.3008858897745" fill="#47647E"/>
+<rect x="748.51171875" y="998.0" width="120.9765625" height="54" rx="3" fill="white" stroke="white" stroke-width="1"/>
+<text x="809" y="1011" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">11. Extractos</text>
+<text x="809" y="1036" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#17324D" dominant-baseline="middle">o abstención</text>
+<text x="1310" y="1287" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#566875" dominant-baseline="middle">El arnés completo F9.2 se ejecuta aparte; aquí se reutilizan sus controles.</text>
+<text x="40" y="428" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#8C4A3F" dominant-baseline="middle">Salidas alternativas</text>
+<rect x="40" y="467" width="270" height="175" rx="10" fill="#FBF1EE" stroke="#D1A99E" stroke-width="2"/>
+<text x="175" y="497" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#8C4A3F" dominant-baseline="middle">Sin elegibilidad</text>
+<text x="175" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Abstención antes de puntuar.</text>
+<text x="175" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Se revalida y audita</text>
+<text x="175" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">antes de responder.</text>
+<rect x="40" y="672" width="270" height="175" rx="10" fill="#FBF1EE" stroke="#D1A99E" stroke-width="2"/>
+<text x="175" y="702" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#8C4A3F" dominant-baseline="middle">Cambio de gobierno</text>
+<text x="175" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Abstención:</text>
+<text x="175" y="771" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">gobierno_cambio.</text>
+<text x="175" y="797" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Sin reintento automático.</text>
+<rect x="40" y="877" width="270" height="175" rx="10" fill="#FBF1EE" stroke="#D1A99E" stroke-width="2"/>
+<text x="175" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#8C4A3F" dominant-baseline="middle">Auditoría no disponible</text>
+<text x="175" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Error sin evidencia:</text>
+<text x="175" y="976" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">auditoria_no_disponible.</text>
+<text x="175" y="1002" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">No se entrega el contenido.</text>
+<rect x="40" y="1370" width="1710" height="105" rx="10" fill="#F3F6F8" stroke="#D6E0E7" stroke-width="2"/>
+<text x="65" y="1398" text-anchor="start" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#174B73" dominant-baseline="middle">Leyenda</text>
+<text x="190" y="1398" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Azul: componente interno · Gris: cliente externo · Marco: un proceso Python · Números: orden de interacción</text>
+<text x="65" y="1435" text-anchor="start" font-family="Arial, sans-serif" font-size="19" font-weight="400" fill="#17324D" dominant-baseline="middle">Flecha sólida: llamada / datos · Discontinua: devolución · E5 y BM25 se ejecutan por turnos; los códigos no son un tercer ranking.</text>
+<text x="45" y="1492" text-anchor="start" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="#566875" dominant-baseline="middle">C4: c4model.com/diagrams/dynamic · Elaborado a partir de mcp_tools.py, retrieve/service.py, ranking.py y compose/service.py.</text>
+</svg>

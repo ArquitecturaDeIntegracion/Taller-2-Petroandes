@@ -1,0 +1,69 @@
+{
+  "fecha_local": "2026-11-16",
+  "tipo": "C4 nivel 3, vista estática de componentes del servicio de consulta",
+  "solicitud": "Convertir el esquema suministrado; nombres funcionales para el cliente",
+  "artefactos": [
+    {
+      "ruta": "output/diagrams/PetroAndes_C4_Componentes_Servicio_Consulta_Cliente_20261116.png",
+      "sha256": "f859015fef8e89081adba2effe17c7a71a558110468d0b8013880afa44188ccc"
+    },
+    {
+      "ruta": "output/diagrams/PetroAndes_C4_Componentes_Servicio_Consulta_Cliente_20261116.svg",
+      "sha256": "c148825b01db99b402fb88cc221c047311435c0ff2cb49c19a16b3fd08ca093a"
+    }
+  ],
+  "fuentes_codigo": [
+    {
+      "ruta": "implementacion_escenario_a/petroandes/mcp_tools.py",
+      "sha256": "e62d128262c78c4762d710de68a724aa8fd275ff43ee1780bf98bd003a7129b7"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/demo.py",
+      "sha256": "3d31b56454c4188c1b0122f1bde04bd62d5369c5a20d8d86a0d03eada94600e3"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/retrieve/service.py",
+      "sha256": "f8c8841dc9fa28e100e35bb8d518376486c840324847e38681e5ccbec9b3a31a"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/retrieve/ranking.py",
+      "sha256": "1357c0ee900f6193ac43e25018d9a63e4e8826cc7e469608b878f3657be68630"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/compose/service.py",
+      "sha256": "dd9f45a64ce24a69850a59a9d8c4264a3ed6d9eff4da5981cc335a7eaf187b31"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/security/detection.py",
+      "sha256": "bff2b54fc8090fa7834572e83f3fa42c9c9ccd50e4a0ac31344e632eac7e2508"
+    },
+    {
+      "ruta": "implementacion_escenario_a/petroandes/security/audit.py",
+      "sha256": "0a186bb47815f2ad1432654847ee77ab671617e0ed8015bbf82bcecebeca737a"
+    }
+  ],
+  "validacion": {
+    "svg_xml_valido": true,
+    "png_integro": true,
+    "dimensiones_png": [
+      3600,
+      2580
+    ],
+    "texto_dentro_lienzo": true,
+    "componentes": 7,
+    "almacenes_locales": 3,
+    "cliente_externo": 1,
+    "sin_etiquetas_de_fases_de_desarrollo": true,
+    "inspeccion_visual": "preview.png revisado: componentes, almacenes, flechas y legibilidad"
+  },
+  "decisiones_de_representacion": [
+    "Vista de dependencias; no secuencia numerada de ejecución",
+    "Resultado MCP como devolución del adaptador al cliente",
+    "Modelo E5 en recuperación; vectores e índice léxico en almacén local",
+    "Auditoría y detector presentes; lectura directa conserva la misma elegibilidad"
+  ],
+  "cambios_aplicacion": false,
+  "docker_ejecutado": false,
+  "reserva_ejecutada": false,
+  "referencia_c4": "https://c4model.com/diagrams/component"
+}
