@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Escenario B - Taller 2, ARTI 4212 (PetroAndes S.A. / AndesTransporte S.A.S.)
+  Proceso de negocio: "Gestion de una diferencia de balance volumetrico" (v2)
+  Notacion BPMN 2.0, no ejecutable. Abre en bpmn.io o Camunda Modeler.
+  Contenido:
+   - Pool 1: caso por tramo y corte (calculo, archivo automatico, investigacion,
+     aprobacion humana, acta y cierre). Subproceso de investigacion con su propio diagrama.
+   - Pool 2: consolidacion y envio del reporte mensual (una vez al mes, todos los tramos).
+   - Pools de caja negra: DMZ industrial, autoridad competente y regulador sectorial.
+  Convencion: sufijo [D] determinista, [A] agentico, [H] humano.
+  Fuentes del corpus:
+   - PRO-MED-007 v2 : metodo, tolerancia 0,5 %, investigacion en 3 dias habiles,
+                      escalamiento > 1 %, cierre al 5.o dia habil, calculo determinista (num. 2.2).
+   - PRO-OPE-012 v3 : sospecha de sustraccion (num. 3.2) y notificacion del Centro de Control (num. 4.1).
+   - PRO-SEG-015 v1 : atencion de eventos de hurto, plazos de reporte y cadena de custodia.
+   - RES-ANH-0471-2023 : reporte mensual consolidado en 15 dias calendario, contenido minimo,
+                         conservacion de soportes 5 anos.
+-->
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Defs_EscenarioB" targetNamespace="http://petroandes.example/bpmn/escenario-b" exporter="Taller 2 ARTI 4212" exporterVersion="2.0">
+  <error id="Err_Datos" name="Mediciones incompletas" errorCode="MEDICIONES_INCOMPLETAS" />
+  <error id="Err_Abst" name="Abstención del agente" errorCode="ABSTENCION_AGENTE" />
+  <escalation id="Esc_Sospecha" name="Sospecha de sustracción" escalationCode="SOSPECHA_SUSTRACCION" />
+  <message id="Msg_Acuse" name="Acuse de recibo del regulador" />
+  <dataStore id="DS_Registro" name="Registro de conciliación por tramo" isUnlimited="true" />
+  <collaboration id="Collab_Conciliacion">
+    <participant id="P_Main" name="AndesTransporte / PetroAndes — Gestión de una diferencia de balance volumétrico (un caso por tramo y corte)" processRef="Process_Diferencia" />
+    <participant id="P_Mensual" name="PetroAndes — Consolidación y envío del reporte mensual de pérdidas (RES-ANH-0471-2023)" processRef="Process_ReporteMensual" />
+    <participant id="P_DMZ" name="DMZ industrial (nivel 3.5) — datos de operación publicados" />
+    <participant id="P_Autoridad" name="Autoridad competente" />
+    <participant id="P_Regulador" name="Regulador sectorial" />
+    <messageFlow id="MsgF1" name="Mediciones publicadas" sourceRef="P_DMZ" targetRef="T_Obtener" />
+    <messageFlow id="MsgF2" name="Series de presión (solo lectura)" sourceRef="P_DMZ" targetRef="Sp_Investigar" />
+    <messageFlow id="MsgF3" name="Reporte del evento (≤ 24 h)" sourceRef="Call_Hurto" targetRef="P_Autoridad" />
+    <messageFlow id="MsgF4" name="Reporte mensual de pérdidas" sourceRef="M_Enviar" targetRef="P_Regulador" />
+    <messageFlow id="MsgF5" name="Acuse de recibo" sourceRef="P_Regulador" targetRef="M_Acuse" />
+  </collaboration>
+  <process id="Process_Diferencia" name="Gestión de una diferencia de balance volumétrico" isExecutable="false">
+    <documentation>Escenario B, Taller 2 ARTI 4212 (PetroAndes). Modelo de negocio, no ejecutable. Fuentes: PRO-MED-007 v2, PRO-OPE-012 v3, PRO-SEG-015 v1, RES-ANH-0471-2023, ACTA-CTO-2025-11.</documentation>
+    <laneSet id="LaneSet_Process_Diferencia">
+      <lane id="Lane_Balance" name="Sistema de balance volumétrico">
+        <flowNodeRef>Start_Corte</flowNodeRef>
+        <flowNodeRef>Gw_M1</flowNodeRef>
+        <flowNodeRef>T_Obtener</flowNodeRef>
+        <flowNodeRef>T_Calcular</flowNodeRef>
+        <flowNodeRef>Gw_Tol</flowNodeRef>
+        <flowNodeRef>T_Archivar</flowNodeRef>
+        <flowNodeRef>End_Archivado</flowNodeRef>
+        <flowNodeRef>T_Registrar</flowNodeRef>
+        <flowNodeRef>End_Cerrado</flowNodeRef>
+        <flowNodeRef>Be_Datos</flowNodeRef>
+      </lane>
+      <lane id="Lane_Agente" name="Agente de conciliación (identidad no humana)">
+        <flowNodeRef>Gw_Par</flowNodeRef>
+        <flowNodeRef>Gw_MInv</flowNodeRef>
+        <flowNodeRef>Sp_Investigar</flowNodeRef>
+        <flowNodeRef>Be_Sospecha</flowNodeRef>
+        <flowNodeRef>Be_Plazo</flowNodeRef>
+        <flowNodeRef>Be_Abst</flowNodeRef>
+      </lane>
+      <lane id="Lane_Analista" name="Analista de medición del tramo">
+        <flowNodeRef>T_Solicitar</flowNodeRef>
+        <flowNodeRef>T_Manual</flowNodeRef>
+        <flowNodeRef>Gw_M2</flowNodeRef>
+        <flowNodeRef>T_Revisar</flowNodeRef>
+        <flowNodeRef>Gw_Rev</flowNodeRef>
+        <flowNodeRef>T_Firmar</flowNodeRef>
+      </lane>
+      <lane id="Lane_GerMed" name="Gerencia de Medición">
+        <flowNodeRef>T_Vencimiento</flowNodeRef>
+        <flowNodeRef>End_Vencimiento</flowNodeRef>
+        <flowNodeRef>T_AprobarCierre</flowNodeRef>
+        <flowNodeRef>Gw_Cierre</flowNodeRef>
+      </lane>
+      <lane id="Lane_CCO" name="Centro de Control de Operaciones">
+        <flowNodeRef>T_Confirmar</flowNodeRef>
+      </lane>
+      <lane id="Lane_SegFis" name="Gerencia de Seguridad Física">
+        <flowNodeRef>Call_Hurto</flowNodeRef>
+        <flowNodeRef>End_Hurto</flowNodeRef>
+        <flowNodeRef>Gw_Esc</flowNodeRef>
+        <flowNodeRef>T_EvalEsc</flowNodeRef>
+        <flowNodeRef>End_Esc</flowNodeRef>
+      </lane>
+    </laneSet>
+    <startEvent id="Start_Corte" name="Corte de conciliación (semanal o mensual)">
+      <documentation>PRO-MED-007 v2 §3: período mensual con corte preliminar semanal. Un caso por tramo y por corte.</documentation>
+      <outgoing>F01</outgoing>
+      <timerEventDefinition id="TED_Start_Corte"><timeCycle xsi:type="tFormalExpression">R/P1W</timeCycle></timerEventDefinition>
+    </startEvent>
+    <exclusiveGateway id="Gw_M1" name="">
+      <incoming>F01</incoming>
+      <incoming>F09</incoming>
+      <outgoing>F02</outgoing>
+    </exclusiveGateway>
+    <serviceTask id="T_Obtener" name="Obtener mediciones publicadas en la DMZ [D]">
+      <documentation>Lee custody transfer (corregido a condiciones estándar), variación de inventario de línea y purgas documentadas, solo desde la DMZ industrial (restricción del Taller 1: sin acceso directo a OT).</documentation>
+      <incoming>F02</incoming>
+      <outgoing>F03</outgoing>
+    </serviceTask>
+    <serviceTask id="T_Calcular" name="Calcular diferencia del tramo (% del volumen recibido) [D]">
+      <documentation>PRO-MED-007 v2 §2.1–2.2: recibido en entrada − entregado en salida, ajustado por inventario de línea y purgas; % del volumen recibido. Cálculo determinista; ningún otro sistema produce la cifra oficial.</documentation>
+      <incoming>F03</incoming>
+      <outgoing>F04</outgoing>
+    </serviceTask>
+    <exclusiveGateway id="Gw_Tol" name="¿|Diferencia| ≤ 0,5 %?">
+      <documentation>Tolerancia de PRO-MED-007 v2 §3 (0,5 % del volumen recibido), sobre el valor absoluto. Umbral leído de configuración versionada, no del texto recuperado.</documentation>
+      <incoming>F04</incoming>
+      <outgoing>F05</outgoing>
+      <outgoing>F07</outgoing>
+    </exclusiveGateway>
+    <serviceTask id="T_Archivar" name="Archivar caso sin investigación [D]">
+      <documentation>PRO-MED-007 v2 §3.1. Sin intervención humana. El caso queda en el registro y entra en la consolidación mensual.</documentation>
+      <incoming>F05</incoming>
+      <outgoing>F06</outgoing>
+      <dataOutputAssociation id="DOA_Archivar"><targetRef>DSR_1</targetRef></dataOutputAssociation>
+    </serviceTask>
+    <endEvent id="End_Archivado" name="Caso archivado">
+      <incoming>F06</incoming>
+    </endEvent>
+    <userTask id="T_Solicitar" name="Gestionar republicación de mediciones [H]">
+      <documentation>Camino de excepción: mediciones del período no publicadas o incompletas.</documentation>
+      <incoming>F08</incoming>
+      <outgoing>F09</outgoing>
+    </userTask>
+    <parallelGateway id="Gw_Par" name="">
+      <incoming>F07</incoming>
+      <outgoing>F10</outgoing>
+      <outgoing>F11</outgoing>
+    </parallelGateway>
+    <exclusiveGateway id="Gw_MInv" name="">
+      <incoming>F10</incoming>
+      <incoming>F27</incoming>
+      <outgoing>F15</outgoing>
+    </exclusiveGateway>
+    <subProcess id="Sp_Investigar" name="Investigar causas de la diferencia [D/A]">
+      <documentation>Subproceso con nodos deterministas y agénticos (ver su diagrama). Usa las herramientas MCP del Escenario A (buscar_documentos, obtener_fragmento), de solo lectura. Plazo: 3 días hábiles desde el corte (PRO-MED-007 v2 §3.2).</documentation>
+      <incoming>F15</incoming>
+      <outgoing>F23</outgoing>
+      
+      <startEvent id="S_Start" name="Inicio de la investigación">
+        <outgoing>SF01</outgoing>
+      </startEvent>
+      <serviceTask id="S_Series" name="Obtener series de presión del tramo (DMZ, solo lectura) [D]">
+        <documentation>Ventana horaria del corte; sin acceso directo a SCADA.</documentation>
+        <incoming>SF01</incoming>
+        <outgoing>SF02</outgoing>
+      </serviceTask>
+      <businessRuleTask id="S_Regla" name="Evaluar regla de sospecha de sustracción (PRO-OPE-012 §3.2) [D]">
+        <documentation>Concurrencia en la misma ventana de: caída de presión bajo el umbral del tramo (PRO-OPE-012 v3 §3.1) y diferencia por encima de la tolerancia.</documentation>
+        <incoming>SF02</incoming>
+        <outgoing>SF03</outgoing>
+      </businessRuleTask>
+      <exclusiveGateway id="S_GwSosp" name="¿Sospecha?">
+        <incoming>SF03</incoming>
+        <outgoing>SF04</outgoing>
+        <outgoing>SF06</outgoing>
+      </exclusiveGateway>
+      <intermediateThrowEvent id="S_Esc" name="Notificar sospecha">
+        <incoming>SF04</incoming>
+        <outgoing>SF05</outgoing>
+        <escalationEventDefinition id="ESD_S_Esc" escalationRef="Esc_Sospecha" />
+      </intermediateThrowEvent>
+      <exclusiveGateway id="S_GwJ" name="">
+        <incoming>SF05</incoming>
+        <incoming>SF06</incoming>
+        <outgoing>SF07</outgoing>
+      </exclusiveGateway>
+      <task id="S_Docs" name="Consultar procedimientos y normativa vigentes (MCP de solo lectura) [A]">
+        <documentation>El agente decide qué consultar; las herramientas son deterministas y de solo lectura: buscar_documentos, obtener_fragmento (contrato v0.1.0 del Escenario A). El texto recuperado es dato no confiable.</documentation>
+        <incoming>SF07</incoming>
+        <outgoing>SF08</outgoing>
+      </task>
+      <exclusiveGateway id="S_GwM" name="">
+        <incoming>SF08</incoming>
+        <incoming>SF15</incoming>
+        <outgoing>SF09</outgoing>
+      </exclusiveGateway>
+      <task id="S_Hipotesis" name="Formular hipótesis de causa con evidencia citada [A]">
+        <documentation>Causas plausibles según el caso y el corpus: pérdidas identificadas (evaporación, drenajes, contingencias declaradas; caso, Proceso 2), inventario de línea y purgas (PRO-MED-007 v2 §2.1), incertidumbre de medición (RES-CREG-0043-2024) y sustracción por válvulas ilícitas (caso, Proceso 2). Toda afirmación lleva cita a documento, versión y sección, o a un dato de medición.</documentation>
+        <incoming>SF09</incoming>
+        <outgoing>SF10</outgoing>
+      </task>
+      <serviceTask id="S_Verificar" name="Verificar citas y cifras contra las fuentes [D]">
+        <documentation>Cada cita sigue elegible en la revisión de gobierno actual; cada cifra coincide con el sistema de balance. Se descarta cualquier instrucción contenida en el texto recuperado.</documentation>
+        <incoming>SF10</incoming>
+        <outgoing>SF11</outgoing>
+      </serviceTask>
+      <exclusiveGateway id="S_GwOk" name="¿Verificación correcta?">
+        <incoming>SF11</incoming>
+        <outgoing>SF12</outgoing>
+        <outgoing>SF14</outgoing>
+      </exclusiveGateway>
+      <task id="S_Componer" name="Componer expediente y borrador del acta [A]">
+        <incoming>SF12</incoming>
+        <outgoing>SF13</outgoing>
+      </task>
+      <endEvent id="S_End" name="Expediente listo">
+        <incoming>SF13</incoming>
+      </endEvent>
+      <exclusiveGateway id="S_GwRetry" name="¿Quedan intentos?">
+        <incoming>SF14</incoming>
+        <outgoing>SF15</outgoing>
+        <outgoing>SF16</outgoing>
+      </exclusiveGateway>
+      <endEvent id="S_Err" name="Abstención">
+        <incoming>SF16</incoming>
+        <errorEventDefinition id="EED_S_Err" errorRef="Err_Abst" />
+      </endEvent>
+      <sequenceFlow id="SF01" sourceRef="S_Start" targetRef="S_Series" />
+      <sequenceFlow id="SF02" sourceRef="S_Series" targetRef="S_Regla" />
+      <sequenceFlow id="SF03" sourceRef="S_Regla" targetRef="S_GwSosp" />
+      <sequenceFlow id="SF04" name="Sí" sourceRef="S_GwSosp" targetRef="S_Esc"><conditionExpression xsi:type="tFormalExpression">sospecha == true</conditionExpression></sequenceFlow>
+      <sequenceFlow id="SF05" sourceRef="S_Esc" targetRef="S_GwJ" />
+      <sequenceFlow id="SF06" name="No" sourceRef="S_GwSosp" targetRef="S_GwJ"><conditionExpression xsi:type="tFormalExpression">sospecha == false</conditionExpression></sequenceFlow>
+      <sequenceFlow id="SF07" sourceRef="S_GwJ" targetRef="S_Docs" />
+      <sequenceFlow id="SF08" sourceRef="S_Docs" targetRef="S_GwM" />
+      <sequenceFlow id="SF09" sourceRef="S_GwM" targetRef="S_Hipotesis" />
+      <sequenceFlow id="SF10" sourceRef="S_Hipotesis" targetRef="S_Verificar" />
+      <sequenceFlow id="SF11" sourceRef="S_Verificar" targetRef="S_GwOk" />
+      <sequenceFlow id="SF12" name="Sí" sourceRef="S_GwOk" targetRef="S_Componer"><conditionExpression xsi:type="tFormalExpression">verificacion == 'ok'</conditionExpression></sequenceFlow>
+      <sequenceFlow id="SF13" sourceRef="S_Componer" targetRef="S_End" />
+      <sequenceFlow id="SF14" name="No" sourceRef="S_GwOk" targetRef="S_GwRetry"><conditionExpression xsi:type="tFormalExpression">verificacion != 'ok'</conditionExpression></sequenceFlow>
+      <sequenceFlow id="SF15" name="Sí (máx. 2)" sourceRef="S_GwRetry" targetRef="S_GwM"><conditionExpression xsi:type="tFormalExpression">intentos &lt; 2</conditionExpression></sequenceFlow>
+      <sequenceFlow id="SF16" name="No" sourceRef="S_GwRetry" targetRef="S_Err"><conditionExpression xsi:type="tFormalExpression">intentos &gt;= 2</conditionExpression></sequenceFlow>
+    </subProcess>
+    <userTask id="T_Confirmar" name="Confirmar anomalía y notificar (PRO-OPE-012 §4.1) [H]">
+      <documentation>El operador confirma la anomalía y notifica al supervisor aguas arriba y a Seguridad Física. PRO-SEG-015 §3: 2 h a Seguridad Física y a la Jefatura de Operaciones.</documentation>
+      <incoming>F16</incoming>
+      <outgoing>F17</outgoing>
+    </userTask>
+    <callActivity id="Call_Hurto" name="Atención de evento de hurto (PRO-SEG-015)" calledElement="Proceso_PRO_SEG_015">
+      <documentation>Proceso independiente. Cadena de custodia de la evidencia (§5) y reporte a la autoridad competente en 24 h. El evento queda en el registro para el reporte mensual (RES-ANH-0471 art. 3).</documentation>
+      <incoming>F17</incoming>
+      <outgoing>F18</outgoing>
+    </callActivity>
+    <endEvent id="End_Hurto" name="Evento de hurto en atención">
+      <incoming>F18</incoming>
+    </endEvent>
+    <userTask id="T_Vencimiento" name="Gestionar vencimiento del plazo de investigación [H]">
+      <incoming>F19</incoming>
+      <outgoing>F20</outgoing>
+    </userTask>
+    <endEvent id="End_Vencimiento" name="Vencimiento escalado">
+      <incoming>F20</incoming>
+    </endEvent>
+    <userTask id="T_Manual" name="Investigar manualmente y armar expediente [H]">
+      <documentation>Ruta de respaldo cuando el agente se abstiene o falla: el caso no se pierde.</documentation>
+      <incoming>F21</incoming>
+      <outgoing>F22</outgoing>
+    </userTask>
+    <exclusiveGateway id="Gw_Esc" name="¿|Diferencia| &gt; 1 %?">
+      <documentation>PRO-MED-007 v2 §3.3: por encima del 1 % se escala a Seguridad Física el mismo día del corte.</documentation>
+      <incoming>F11</incoming>
+      <outgoing>F12</outgoing>
+      <outgoing>F14</outgoing>
+    </exclusiveGateway>
+    <userTask id="T_EvalEsc" name="Evaluar escalamiento (mismo día del corte) [H]">
+      <incoming>F12</incoming>
+      <outgoing>F13</outgoing>
+    </userTask>
+    <endEvent id="End_Esc" name="Escalamiento cerrado">
+      <incoming>F13</incoming>
+      <incoming>F14</incoming>
+    </endEvent>
+    <exclusiveGateway id="Gw_M2" name="">
+      <incoming>F22</incoming>
+      <incoming>F23</incoming>
+      <incoming>F31</incoming>
+      <outgoing>F24</outgoing>
+    </exclusiveGateway>
+    <userTask id="T_Revisar" name="Revisar expediente y borrador (aprobación humana) [H]">
+      <documentation>Punto de aprobación humana. Vista de decisión en menos de 2 minutos: cifra oficial y tolerancia, hipótesis con citas verificadas, resultado de la regla de sospecha y alertas de contenido no confiable.</documentation>
+      <incoming>F24</incoming>
+      <outgoing>F25</outgoing>
+    </userTask>
+    <exclusiveGateway id="Gw_Rev" name="¿Decisión del analista?">
+      <incoming>F25</incoming>
+      <outgoing>F26</outgoing>
+      <outgoing>F27</outgoing>
+    </exclusiveGateway>
+    <userTask id="T_Firmar" name="Firmar acta de conciliación del período [H]">
+      <documentation>PRO-MED-007 v2 §4: acta firmada por el analista de medición.</documentation>
+      <incoming>F26</incoming>
+      <outgoing>F28</outgoing>
+    </userTask>
+    <userTask id="T_AprobarCierre" name="Aprobar cierre (≤ 5.º día hábil) [H]">
+      <documentation>PRO-MED-007 v2 §3: aprobación del cierre por la Gerencia de Medición, a más tardar el quinto día hábil del mes siguiente.</documentation>
+      <incoming>F28</incoming>
+      <outgoing>F29</outgoing>
+    </userTask>
+    <exclusiveGateway id="Gw_Cierre" name="¿Cierre aprobado?">
+      <incoming>F29</incoming>
+      <outgoing>F30</outgoing>
+      <outgoing>F31</outgoing>
+    </exclusiveGateway>
+    <serviceTask id="T_Registrar" name="Registrar cierre, acta y soportes del caso [D]">
+      <documentation>Deja el caso cerrado en el registro de conciliación con su correlation_id. Soportes conservados 5 años (RES-ANH-0471 art. 4). Insumo de la consolidación mensual.</documentation>
+      <incoming>F30</incoming>
+      <outgoing>F32</outgoing>
+      <dataOutputAssociation id="DOA_Registrar"><targetRef>DSR_2</targetRef></dataOutputAssociation>
+    </serviceTask>
+    <endEvent id="End_Cerrado" name="Caso cerrado">
+      <incoming>F32</incoming>
+    </endEvent>
+    <dataStoreReference id="DSR_1" name="Registro de conciliación por tramo" dataStoreRef="DS_Registro" />
+    <dataStoreReference id="DSR_2" name="Registro de conciliación por tramo" dataStoreRef="DS_Registro" />
+    <boundaryEvent id="Be_Datos" name="Mediciones incompletas" attachedToRef="T_Obtener">
+      <outgoing>F08</outgoing>
+      <errorEventDefinition id="EED_Be_Datos" errorRef="Err_Datos" />
+    </boundaryEvent>
+    <boundaryEvent id="Be_Sospecha" name="Sospecha de sustracción" attachedToRef="Sp_Investigar" cancelActivity="false">
+      <documentation>Lo lanza la regla determinista de PRO-OPE-012 §3.2. La investigación continúa en paralelo.</documentation>
+      <outgoing>F16</outgoing>
+      <escalationEventDefinition id="ESD_Be_Sospecha" escalationRef="Esc_Sospecha" />
+    </boundaryEvent>
+    <boundaryEvent id="Be_Plazo" name="3 días hábiles" attachedToRef="Sp_Investigar" cancelActivity="false">
+      <documentation>PRO-MED-007 v2 §3.2. Duración en calendario laboral.</documentation>
+      <outgoing>F19</outgoing>
+      <timerEventDefinition id="TED_Be_Plazo"><timeDuration xsi:type="tFormalExpression">P3D</timeDuration></timerEventDefinition>
+    </boundaryEvent>
+    <boundaryEvent id="Be_Abst" name="Abstención o falla del agente" attachedToRef="Sp_Investigar">
+      <outgoing>F21</outgoing>
+      <errorEventDefinition id="EED_Be_Abst" errorRef="Err_Abst" />
+    </boundaryEvent>
+    <sequenceFlow id="F01" sourceRef="Start_Corte" targetRef="Gw_M1" />
+    <sequenceFlow id="F02" sourceRef="Gw_M1" targetRef="T_Obtener" />
+    <sequenceFlow id="F03" sourceRef="T_Obtener" targetRef="T_Calcular" />
+    <sequenceFlow id="F04" sourceRef="T_Calcular" targetRef="Gw_Tol" />
+    <sequenceFlow id="F05" name="Sí" sourceRef="Gw_Tol" targetRef="T_Archivar"><conditionExpression xsi:type="tFormalExpression">abs(diferencia_pct) &lt;= 0.5</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F06" sourceRef="T_Archivar" targetRef="End_Archivado" />
+    <sequenceFlow id="F07" name="No" sourceRef="Gw_Tol" targetRef="Gw_Par"><conditionExpression xsi:type="tFormalExpression">abs(diferencia_pct) &gt; 0.5</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F08" sourceRef="Be_Datos" targetRef="T_Solicitar" />
+    <sequenceFlow id="F09" sourceRef="T_Solicitar" targetRef="Gw_M1" />
+    <sequenceFlow id="F10" sourceRef="Gw_Par" targetRef="Gw_MInv" />
+    <sequenceFlow id="F11" sourceRef="Gw_Par" targetRef="Gw_Esc" />
+    <sequenceFlow id="F12" name="Sí" sourceRef="Gw_Esc" targetRef="T_EvalEsc"><conditionExpression xsi:type="tFormalExpression">abs(diferencia_pct) &gt; 1.0</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F13" sourceRef="T_EvalEsc" targetRef="End_Esc" />
+    <sequenceFlow id="F14" name="No" sourceRef="Gw_Esc" targetRef="End_Esc"><conditionExpression xsi:type="tFormalExpression">abs(diferencia_pct) &lt;= 1.0</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F15" sourceRef="Gw_MInv" targetRef="Sp_Investigar" />
+    <sequenceFlow id="F16" sourceRef="Be_Sospecha" targetRef="T_Confirmar" />
+    <sequenceFlow id="F17" sourceRef="T_Confirmar" targetRef="Call_Hurto" />
+    <sequenceFlow id="F18" sourceRef="Call_Hurto" targetRef="End_Hurto" />
+    <sequenceFlow id="F19" sourceRef="Be_Plazo" targetRef="T_Vencimiento" />
+    <sequenceFlow id="F20" sourceRef="T_Vencimiento" targetRef="End_Vencimiento" />
+    <sequenceFlow id="F21" sourceRef="Be_Abst" targetRef="T_Manual" />
+    <sequenceFlow id="F22" sourceRef="T_Manual" targetRef="Gw_M2" />
+    <sequenceFlow id="F23" sourceRef="Sp_Investigar" targetRef="Gw_M2" />
+    <sequenceFlow id="F24" sourceRef="Gw_M2" targetRef="T_Revisar" />
+    <sequenceFlow id="F25" sourceRef="T_Revisar" targetRef="Gw_Rev" />
+    <sequenceFlow id="F26" name="Aprobado" sourceRef="Gw_Rev" targetRef="T_Firmar"><conditionExpression xsi:type="tFormalExpression">decision == 'aprobado'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F27" name="Devolver con observaciones" sourceRef="Gw_Rev" targetRef="Gw_MInv"><conditionExpression xsi:type="tFormalExpression">decision == 'devolver'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F28" sourceRef="T_Firmar" targetRef="T_AprobarCierre" />
+    <sequenceFlow id="F29" sourceRef="T_AprobarCierre" targetRef="Gw_Cierre" />
+    <sequenceFlow id="F30" name="Sí" sourceRef="Gw_Cierre" targetRef="T_Registrar"><conditionExpression xsi:type="tFormalExpression">cierre == 'aprobado'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F31" name="Devuelto" sourceRef="Gw_Cierre" targetRef="Gw_M2"><conditionExpression xsi:type="tFormalExpression">cierre == 'devuelto'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="F32" sourceRef="T_Registrar" targetRef="End_Cerrado" />
+    <textAnnotation id="Ann_Sup_Titulo"><text>SUPUESTOS Y DECISIONES DEL MODELO: elementos que no salen directamente del caso PetroAndes ni del corpus del taller. Revisión de noviembre de 2026.
+Fuentes contra las que se validó cada elemento: caso ARTI4212_Caso_PetroAndes.pdf; corpus del taller (PRO-MED-007 v2, PRO-OPE-012 v3, PRO-SEG-015 v1, RES-ANH-0471-2023, ACTA-CTO-2025-11); enunciado del Taller 2. Lo que exige el enunciado (agente, aprobación humana, archivo automático bajo el umbral, reutilizar las herramientas MCP del Escenario A) se trata como requisito y no como supuesto.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_1"><text>1. GRANULARIDAD, DISPARO Y NOTACIÓN
+S-01 · Un caso por tramo y por corte. El corpus define la conciliación por tramo y período, pero no cómo se instancia el proceso.
+S-02 · El corte preliminar semanal recorre el mismo flujo que el cierre mensual. PRO-MED-007 v2 define acta y aprobación del cierre solo para el período mensual; en un corte semanal, la firma del acta y la aprobación del cierre no aplicarían. Es una simplificación.
+S-03 · Los temporizadores (R/P1W, R/P1M, P3D) son notación aproximada: BPMN 2.0 no maneja días hábiles. Los plazos reales en días hábiles están en el nombre y la documentación de cada elemento.
+S-04 · Las compuertas basadas en cifras (≤ 0,5 %, &gt; 1 %) las evalúa el sistema de balance. La compuerta del 1 % aparece en el lane de Seguridad Física solo por la disposición del diagrama.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_2"><text>2. DATOS, SISTEMAS Y VIGENCIA
+S-05 · Todos los insumos del cálculo (custody transfer, inventario de línea, purgas documentadas) y las series de presión están publicados en la DMZ industrial. El caso dice que la DMZ publica la información de operación, pero no detalla qué datos, y hoy parte llega en planillas y correos.
+S-06 · El «Registro de conciliación por tramo» es un almacén propuesto, que puede vivir dentro del sistema de balance. El caso no nombra este repositorio; sí exige conservar soportes 5 años (RES-ANH-0471 art. 4).
+S-07 · La tolerancia se aplica sobre el valor absoluto de la diferencia. PRO-MED-007 v2 no indica el signo; una ganancia aparente también se investiga.
+S-08 · Los umbrales (0,5 %, 1 %) se leen de configuración versionada, no del texto recuperado. Es una decisión de diseño de seguridad, no una regla del corpus.
+S-09 · Se asume vigentes PRO-MED-007 v2, PRO-OPE-012 v3 y PRO-SEG-015 v1, por su campo «reemplaza_a» y por ACTA-CTO-2025-11 §3.1–3.2. Según la decisión 4.2 de esa acta, la vigencia la certifica el área emisora, y esa certificación no está en el corpus.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_3"><text>3. CAMINOS DE EXCEPCIÓN (EL CORPUS NO LOS DEFINE)
+S-10 · Mediciones incompletas o no publicadas: el analista gestiona la republicación y se reintenta la lectura.
+S-11 · Vencimiento de los 3 días hábiles de investigación: se escala a la Gerencia de Medición sin detener la investigación. PRO-MED-007 v2 §3.2 fija el plazo, pero no la consecuencia de incumplirlo.
+S-12 · Abstención o falla del agente: el analista investiga manualmente. El corpus no contempla un agente.
+S-13 · La verificación de citas y cifras se reintenta como máximo 2 veces. El número es una elección del grupo.
+S-14 · Bucles de devolución: el analista devuelve al agente, la Gerencia de Medición devuelve el cierre a revisión, Cumplimiento pide ajustes al reporte y gestiona tramos pendientes. Ninguno está descrito en el corpus.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_4"><text>4. ESCALAMIENTO Y SOSPECHA DE HURTO
+S-15 · Escalamiento por encima del 1 %: el corpus solo dice escalar a Seguridad Física el mismo día del corte. Que Seguridad Física «evalúe» el escalamiento y que esa rama termine aparte son supuestos.
+S-16 · La sospecha se detecta desde la conciliación. PRO-OPE-012 parte de la anomalía de presión que detecta el Centro de Control en operación; el modelo evalúa la regla §3.2 al corte, cruzando la diferencia del período con las anomalías de su ventana. Interpretar «misma ventana horaria» cuando el balance es por período es un supuesto.
+S-17 · PRO-OPE-012 v3 §3.1 solo define umbrales de presión para 4 tramos. Para los demás, la regla de sospecha no se puede evaluar y queda registrada en el expediente como «regla no evaluable».
+S-18 · Simplificaciones: no se modelan la verificación local del supervisor de turno (60 min, PRO-OPE-012 §4.2), la notificación a la Jefatura de Operaciones (2 h) ni el informe al comité directivo (PRO-SEG-015 §3). Quedan dentro de la actividad llamada PRO-SEG-015.
+S-19 · La conciliación del período continúa en paralelo con la atención del hurto; el cierre no se suspende. El corpus no dice si debe suspenderse.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_5"><text>5. REPORTE AL REGULADOR
+S-20 · La Gerencia de Cumplimiento elabora y envía el reporte mensual de RES-ANH-0471. El corpus le asigna el reporte al regulador en eventos de hurto (PRO-SEG-015 §3); se extiende al reporte mensual de pérdidas.
+S-21 · El proceso mensual arranca después del 5.º día hábil y espera a que todos los tramos estén cerrados. RES-ANH-0471 art. 2 solo fija el plazo de 15 días calendario.
+S-22 · Acuse de recibo y verificación de la radicación a los 3 días hábiles: la resolución no menciona acuse. Se incorporó del modelo del compañero del grupo.
+S-23 · El envío es electrónico y a un destinatario fijo en configuración. RES-ANH-0471 art. 1 menciona el «medio de reporte» sin definirlo.
+S-24 · Se toma RES-ANH-0471 como la norma del reporte de pérdidas. El caso también menciona reportes de volúmenes al Ministerio de Minas y Energía, que no se modelan.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_6"><text>6. COMPONENTE AGÉNTICO (DECISIONES DE DISEÑO DEL GRUPO)
+S-25 · La clasificación de cada tarea como [D], [A] o [H] es decisión del grupo. El enunciado exige la frontera y que el cálculo sea determinista; PRO-MED-007 v2 §2.2 lo respalda.
+S-26 · Las herramientas MCP (buscar_documentos, obtener_fragmento) siguen el contrato v0.1.0 del Escenario A, aún no implementado. No provienen del caso.
+S-27 · Verificar citas y cifras, componer el expediente y redactar el borrador del acta son tareas propuestas. El enunciado pide un borrador de reporte; el borrador del acta es una extensión.
+S-28 · El límite de 2 minutos para decidir viene del enunciado. El contenido de la vista del analista (cifra oficial, hipótesis con citas, resultado de la regla, alertas) es propuesta del grupo.
+S-29 · El agente actúa con identidad no humana y en nombre del analista: lo plantean el caso (motivadores de IA) y el enunciado. Su implementación concreta no está definida.</text></textAnnotation>
+    <textAnnotation id="Ann_Sup_7"><text>7. FUERA DEL ALCANCE DEL MODELO
+S-30 · No se modelan la liquidación de pérdidas entre remitentes, la facturación del transporte, las reclamaciones (glosas) de remitentes ni la auditoría trimestral de pérdidas, aunque el Proceso 2 del caso las menciona.</text></textAnnotation>
+    <textAnnotation id="Ann_Leyenda"><text>Convención (sufijo de cada tarea): [D] determinista · [A] agéntico · [H] humano. Ningún componente escribe sobre OT ni envía información fuera de la compañía sin aprobación humana.</text></textAnnotation>
+  </process>
+  <process id="Process_ReporteMensual" name="Consolidación y envío del reporte mensual de pérdidas" isExecutable="false">
+    <documentation>Una ejecución por mes para todos los tramos, incluidos los casos archivados. Lee el registro que alimentan los casos por tramo.</documentation>
+    <laneSet id="LaneSet_Process_ReporteMensual">
+      <lane id="LaneM_Balance" name="Sistema de balance volumétrico">
+        <flowNodeRef>M_Start</flowNodeRef>
+        <flowNodeRef>M_GwM1</flowNodeRef>
+        <flowNodeRef>M_Consolidar</flowNodeRef>
+        <flowNodeRef>M_GwCerr</flowNodeRef>
+      </lane>
+      <lane id="LaneM_Agente" name="Agente de conciliación (identidad no humana)">
+        <flowNodeRef>M_GwM4</flowNodeRef>
+        <flowNodeRef>M_Borrador</flowNodeRef>
+      </lane>
+      <lane id="LaneM_Cumpl" name="Gerencia de Cumplimiento">
+        <flowNodeRef>M_Pendientes</flowNodeRef>
+        <flowNodeRef>M_Aprobar</flowNodeRef>
+        <flowNodeRef>M_GwRep</flowNodeRef>
+        <flowNodeRef>M_Enviar</flowNodeRef>
+        <flowNodeRef>M_GwEvt</flowNodeRef>
+        <flowNodeRef>M_Acuse</flowNodeRef>
+        <flowNodeRef>M_EndOk</flowNodeRef>
+        <flowNodeRef>M_SinAcuse</flowNodeRef>
+        <flowNodeRef>M_Verificar</flowNodeRef>
+        <flowNodeRef>M_EndVer</flowNodeRef>
+      </lane>
+    </laneSet>
+    <startEvent id="M_Start" name="Cierre de mes (después del 5.º día hábil)">
+      <documentation>Arranca una vez cerrados los casos del mes (PRO-MED-007 v2 §3). Plazo de envío: 15 días calendario desde el cierre del mes (RES-ANH-0471 art. 2).</documentation>
+      <outgoing>MF01</outgoing>
+      <timerEventDefinition id="TED_M_Start"><timeCycle xsi:type="tFormalExpression">R/P1M</timeCycle></timerEventDefinition>
+    </startEvent>
+    <exclusiveGateway id="M_GwM1" name="">
+      <incoming>MF01</incoming>
+      <incoming>MF05</incoming>
+      <outgoing>MF02</outgoing>
+    </exclusiveGateway>
+    <serviceTask id="M_Consolidar" name="Consolidar volúmenes y pérdidas por tramo y causa [D]">
+      <documentation>RES-ANH-0471 art. 3: volumen transportado por tramo, pérdida identificada por causa, metodología y tolerancia, y relación de eventos reportados a la autoridad. Todas las cifras salen del sistema de balance.</documentation>
+      <incoming>MF02</incoming>
+      <outgoing>MF03</outgoing>
+      <dataInputAssociation id="DIA_Consolidar"><sourceRef>DSR_3</sourceRef></dataInputAssociation>
+    </serviceTask>
+    <exclusiveGateway id="M_GwCerr" name="¿Todos los tramos cerrados?">
+      <incoming>MF03</incoming>
+      <outgoing>MF04</outgoing>
+      <outgoing>MF06</outgoing>
+    </exclusiveGateway>
+    <userTask id="M_Pendientes" name="Gestionar tramos pendientes de cierre [H]">
+      <incoming>MF04</incoming>
+      <outgoing>MF05</outgoing>
+    </userTask>
+    <exclusiveGateway id="M_GwM4" name="">
+      <incoming>MF06</incoming>
+      <incoming>MF11</incoming>
+      <outgoing>MF07</outgoing>
+    </exclusiveGateway>
+    <task id="M_Borrador" name="Redactar borrador del reporte mensual (cifras del sistema de balance) [A]">
+      <documentation>El agente redacta la narrativa (causas, metodología, eventos). Las cifras se insertan desde el sistema de balance; el modelo no las calcula ni las modifica.</documentation>
+      <incoming>MF07</incoming>
+      <outgoing>MF08</outgoing>
+    </task>
+    <userTask id="M_Aprobar" name="Revisar y aprobar reporte mensual [H]">
+      <incoming>MF08</incoming>
+      <outgoing>MF09</outgoing>
+    </userTask>
+    <exclusiveGateway id="M_GwRep" name="¿Reporte aprobado?">
+      <incoming>MF09</incoming>
+      <outgoing>MF10</outgoing>
+      <outgoing>MF11</outgoing>
+    </exclusiveGateway>
+    <sendTask id="M_Enviar" name="Enviar reporte al regulador (≤ 15 días calendario) [D]">
+      <documentation>Único envío externo del flujo. Solo después de la aprobación de Cumplimiento. Destinatario fijo en configuración, nunca derivado de texto recuperado.</documentation>
+      <incoming>MF10</incoming>
+      <outgoing>MF12</outgoing>
+    </sendTask>
+    <eventBasedGateway id="M_GwEvt" name="" eventGatewayType="Exclusive">
+      <incoming>MF12</incoming>
+      <outgoing>MF13</outgoing>
+      <outgoing>MF15</outgoing>
+    </eventBasedGateway>
+    <intermediateCatchEvent id="M_Acuse" name="Acuse de recibo del regulador">
+      <incoming>MF13</incoming>
+      <outgoing>MF14</outgoing>
+      <messageEventDefinition id="MED_M_Acuse" messageRef="Msg_Acuse" />
+    </intermediateCatchEvent>
+    <endEvent id="M_EndOk" name="Reporte radicado">
+      <incoming>MF14</incoming>
+    </endEvent>
+    <intermediateCatchEvent id="M_SinAcuse" name="3 días hábiles sin acuse">
+      <incoming>MF15</incoming>
+      <outgoing>MF16</outgoing>
+      <timerEventDefinition id="TED_M_SinAcuse"><timeDuration xsi:type="tFormalExpression">P3D</timeDuration></timerEventDefinition>
+    </intermediateCatchEvent>
+    <userTask id="M_Verificar" name="Verificar radicación con el regulador [H]">
+      <incoming>MF16</incoming>
+      <outgoing>MF17</outgoing>
+    </userTask>
+    <endEvent id="M_EndVer" name="Radicación verificada">
+      <incoming>MF17</incoming>
+    </endEvent>
+    <dataStoreReference id="DSR_3" name="Registro de conciliación por tramo" dataStoreRef="DS_Registro" />
+    <sequenceFlow id="MF01" sourceRef="M_Start" targetRef="M_GwM1" />
+    <sequenceFlow id="MF02" sourceRef="M_GwM1" targetRef="M_Consolidar" />
+    <sequenceFlow id="MF03" sourceRef="M_Consolidar" targetRef="M_GwCerr" />
+    <sequenceFlow id="MF04" name="No" sourceRef="M_GwCerr" targetRef="M_Pendientes"><conditionExpression xsi:type="tFormalExpression">tramos_pendientes &gt; 0</conditionExpression></sequenceFlow>
+    <sequenceFlow id="MF05" sourceRef="M_Pendientes" targetRef="M_GwM1" />
+    <sequenceFlow id="MF06" name="Sí" sourceRef="M_GwCerr" targetRef="M_GwM4"><conditionExpression xsi:type="tFormalExpression">tramos_pendientes == 0</conditionExpression></sequenceFlow>
+    <sequenceFlow id="MF07" sourceRef="M_GwM4" targetRef="M_Borrador" />
+    <sequenceFlow id="MF08" sourceRef="M_Borrador" targetRef="M_Aprobar" />
+    <sequenceFlow id="MF09" sourceRef="M_Aprobar" targetRef="M_GwRep" />
+    <sequenceFlow id="MF10" name="Sí" sourceRef="M_GwRep" targetRef="M_Enviar"><conditionExpression xsi:type="tFormalExpression">reporte == 'aprobado'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="MF11" name="Requiere ajustes" sourceRef="M_GwRep" targetRef="M_GwM4"><conditionExpression xsi:type="tFormalExpression">reporte == 'ajustes'</conditionExpression></sequenceFlow>
+    <sequenceFlow id="MF12" sourceRef="M_Enviar" targetRef="M_GwEvt" />
+    <sequenceFlow id="MF13" sourceRef="M_GwEvt" targetRef="M_Acuse" />
+    <sequenceFlow id="MF14" sourceRef="M_Acuse" targetRef="M_EndOk" />
+    <sequenceFlow id="MF15" sourceRef="M_GwEvt" targetRef="M_SinAcuse" />
+    <sequenceFlow id="MF16" sourceRef="M_SinAcuse" targetRef="M_Verificar" />
+    <sequenceFlow id="MF17" sourceRef="M_Verificar" targetRef="M_EndVer" />
+  </process>
+  <bpmndi:BPMNDiagram id="Diagram_Main" name="Proceso principal">
+    <bpmndi:BPMNPlane id="Plane_Main" bpmnElement="Collab_Conciliacion">
+      <bpmndi:BPMNShape id="P_Main_di" bpmnElement="P_Main" isHorizontal="true"><dc:Bounds x="150" y="200" width="2300" height="900" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Balance_di" bpmnElement="Lane_Balance" isHorizontal="true"><dc:Bounds x="180" y="200" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Agente_di" bpmnElement="Lane_Agente" isHorizontal="true"><dc:Bounds x="180" y="350" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Analista_di" bpmnElement="Lane_Analista" isHorizontal="true"><dc:Bounds x="180" y="500" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_GerMed_di" bpmnElement="Lane_GerMed" isHorizontal="true"><dc:Bounds x="180" y="650" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_CCO_di" bpmnElement="Lane_CCO" isHorizontal="true"><dc:Bounds x="180" y="800" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_SegFis_di" bpmnElement="Lane_SegFis" isHorizontal="true"><dc:Bounds x="180" y="950" width="2270" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P_Mensual_di" bpmnElement="P_Mensual" isHorizontal="true"><dc:Bounds x="150" y="1260" width="1500" height="530" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LaneM_Balance_di" bpmnElement="LaneM_Balance" isHorizontal="true"><dc:Bounds x="180" y="1260" width="1470" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LaneM_Agente_di" bpmnElement="LaneM_Agente" isHorizontal="true"><dc:Bounds x="180" y="1410" width="1470" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LaneM_Cumpl_di" bpmnElement="LaneM_Cumpl" isHorizontal="true"><dc:Bounds x="180" y="1560" width="1470" height="230" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P_DMZ_di" bpmnElement="P_DMZ" isHorizontal="true"><dc:Bounds x="150" y="50" width="2300" height="100" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P_Autoridad_di" bpmnElement="P_Autoridad" isHorizontal="true"><dc:Bounds x="900" y="1130" width="420" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="P_Regulador_di" bpmnElement="P_Regulador" isHorizontal="true"><dc:Bounds x="1050" y="1850" width="500" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_Corte_di" bpmnElement="Start_Corte"><dc:Bounds x="222" y="257" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_M1_di" bpmnElement="Gw_M1" isMarkerVisible="true"><dc:Bounds x="305" y="250" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Obtener_di" bpmnElement="T_Obtener"><dc:Bounds x="390" y="235" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Calcular_di" bpmnElement="T_Calcular"><dc:Bounds x="540" y="235" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_Tol_di" bpmnElement="Gw_Tol" isMarkerVisible="true"><dc:Bounds x="705" y="250" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Archivar_di" bpmnElement="T_Archivar"><dc:Bounds x="800" y="235" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_Archivado_di" bpmnElement="End_Archivado"><dc:Bounds x="972" y="257" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Solicitar_di" bpmnElement="T_Solicitar"><dc:Bounds x="430" y="535" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_Par_di" bpmnElement="Gw_Par"><dc:Bounds x="705" y="400" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_MInv_di" bpmnElement="Gw_MInv" isMarkerVisible="true"><dc:Bounds x="975" y="400" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Sp_Investigar_di" bpmnElement="Sp_Investigar" isExpanded="false"><dc:Bounds x="1070" y="385" width="260" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Confirmar_di" bpmnElement="T_Confirmar"><dc:Bounds x="1040" y="835" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Call_Hurto_di" bpmnElement="Call_Hurto"><dc:Bounds x="1040" y="985" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_Hurto_di" bpmnElement="End_Hurto"><dc:Bounds x="1212" y="1007" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Vencimiento_di" bpmnElement="T_Vencimiento"><dc:Bounds x="1140" y="685" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_Vencimiento_di" bpmnElement="End_Vencimiento"><dc:Bounds x="1312" y="707" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Manual_di" bpmnElement="T_Manual"><dc:Bounds x="1240" y="535" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_Esc_di" bpmnElement="Gw_Esc" isMarkerVisible="true"><dc:Bounds x="705" y="1000" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_EvalEsc_di" bpmnElement="T_EvalEsc"><dc:Bounds x="800" y="985" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_Esc_di" bpmnElement="End_Esc"><dc:Bounds x="972" y="1007" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_M2_di" bpmnElement="Gw_M2" isMarkerVisible="true"><dc:Bounds x="1425" y="550" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Revisar_di" bpmnElement="T_Revisar"><dc:Bounds x="1520" y="535" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_Rev_di" bpmnElement="Gw_Rev" isMarkerVisible="true"><dc:Bounds x="1685" y="550" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Firmar_di" bpmnElement="T_Firmar"><dc:Bounds x="1780" y="535" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_AprobarCierre_di" bpmnElement="T_AprobarCierre"><dc:Bounds x="1780" y="685" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gw_Cierre_di" bpmnElement="Gw_Cierre" isMarkerVisible="true"><dc:Bounds x="1945" y="700" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Registrar_di" bpmnElement="T_Registrar"><dc:Bounds x="2040" y="235" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="End_Cerrado_di" bpmnElement="End_Cerrado"><dc:Bounds x="2212" y="257" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DSR_1_di" bpmnElement="DSR_1"><dc:Bounds x="1050" y="245" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DSR_2_di" bpmnElement="DSR_2"><dc:Bounds x="2325" y="245" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Be_Datos_di" bpmnElement="Be_Datos"><dc:Bounds x="472" y="297" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Be_Sospecha_di" bpmnElement="Be_Sospecha"><dc:Bounds x="1082" y="447" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Be_Plazo_di" bpmnElement="Be_Plazo"><dc:Bounds x="1182" y="447" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Be_Abst_di" bpmnElement="Be_Abst"><dc:Bounds x="1282" y="447" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="F01_di" bpmnElement="F01"><di:waypoint x="258" y="275" /><di:waypoint x="305" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F02_di" bpmnElement="F02"><di:waypoint x="355" y="275" /><di:waypoint x="390" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F03_di" bpmnElement="F03"><di:waypoint x="510" y="275" /><di:waypoint x="540" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F04_di" bpmnElement="F04"><di:waypoint x="660" y="275" /><di:waypoint x="705" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F05_di" bpmnElement="F05"><di:waypoint x="755" y="275" /><di:waypoint x="800" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F06_di" bpmnElement="F06"><di:waypoint x="920" y="275" /><di:waypoint x="972" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F07_di" bpmnElement="F07"><di:waypoint x="730" y="300" /><di:waypoint x="730" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F08_di" bpmnElement="F08"><di:waypoint x="490" y="333" /><di:waypoint x="490" y="535" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F09_di" bpmnElement="F09"><di:waypoint x="430" y="575" /><di:waypoint x="330" y="575" /><di:waypoint x="330" y="300" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F10_di" bpmnElement="F10"><di:waypoint x="755" y="425" /><di:waypoint x="975" y="425" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F11_di" bpmnElement="F11"><di:waypoint x="730" y="450" /><di:waypoint x="730" y="1000" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F12_di" bpmnElement="F12"><di:waypoint x="755" y="1025" /><di:waypoint x="800" y="1025" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F13_di" bpmnElement="F13"><di:waypoint x="920" y="1025" /><di:waypoint x="972" y="1025" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F14_di" bpmnElement="F14"><di:waypoint x="730" y="1050" /><di:waypoint x="730" y="1080" /><di:waypoint x="990" y="1080" /><di:waypoint x="990" y="1043" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F15_di" bpmnElement="F15"><di:waypoint x="1025" y="425" /><di:waypoint x="1070" y="425" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F16_di" bpmnElement="F16"><di:waypoint x="1100" y="483" /><di:waypoint x="1100" y="835" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F17_di" bpmnElement="F17"><di:waypoint x="1100" y="915" /><di:waypoint x="1100" y="985" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F18_di" bpmnElement="F18"><di:waypoint x="1160" y="1025" /><di:waypoint x="1212" y="1025" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F19_di" bpmnElement="F19"><di:waypoint x="1200" y="483" /><di:waypoint x="1200" y="685" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F20_di" bpmnElement="F20"><di:waypoint x="1260" y="725" /><di:waypoint x="1312" y="725" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F21_di" bpmnElement="F21"><di:waypoint x="1300" y="483" /><di:waypoint x="1300" y="535" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F22_di" bpmnElement="F22"><di:waypoint x="1360" y="575" /><di:waypoint x="1425" y="575" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F23_di" bpmnElement="F23"><di:waypoint x="1330" y="425" /><di:waypoint x="1450" y="425" /><di:waypoint x="1450" y="550" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F24_di" bpmnElement="F24"><di:waypoint x="1475" y="575" /><di:waypoint x="1520" y="575" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F25_di" bpmnElement="F25"><di:waypoint x="1640" y="575" /><di:waypoint x="1685" y="575" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F26_di" bpmnElement="F26"><di:waypoint x="1735" y="575" /><di:waypoint x="1780" y="575" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F27_di" bpmnElement="F27"><di:waypoint x="1710" y="550" /><di:waypoint x="1710" y="365" /><di:waypoint x="1000" y="365" /><di:waypoint x="1000" y="400" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F28_di" bpmnElement="F28"><di:waypoint x="1840" y="615" /><di:waypoint x="1840" y="685" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F29_di" bpmnElement="F29"><di:waypoint x="1900" y="725" /><di:waypoint x="1945" y="725" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F30_di" bpmnElement="F30"><di:waypoint x="1995" y="725" /><di:waypoint x="2100" y="725" /><di:waypoint x="2100" y="315" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F31_di" bpmnElement="F31"><di:waypoint x="1970" y="750" /><di:waypoint x="1970" y="787" /><di:waypoint x="1450" y="787" /><di:waypoint x="1450" y="600" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F32_di" bpmnElement="F32"><di:waypoint x="2160" y="275" /><di:waypoint x="2212" y="275" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DOA_Archivar_di" bpmnElement="DOA_Archivar"><di:waypoint x="860" y="235" /><di:waypoint x="860" y="212" /><di:waypoint x="1075" y="212" /><di:waypoint x="1075" y="245" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DOA_Registrar_di" bpmnElement="DOA_Registrar"><di:waypoint x="2100" y="235" /><di:waypoint x="2100" y="212" /><di:waypoint x="2350" y="212" /><di:waypoint x="2350" y="245" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="M_Start_di" bpmnElement="M_Start"><dc:Bounds x="222" y="1317" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_GwM1_di" bpmnElement="M_GwM1" isMarkerVisible="true"><dc:Bounds x="305" y="1310" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Consolidar_di" bpmnElement="M_Consolidar"><dc:Bounds x="400" y="1295" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_GwCerr_di" bpmnElement="M_GwCerr" isMarkerVisible="true"><dc:Bounds x="585" y="1310" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Pendientes_di" bpmnElement="M_Pendientes"><dc:Bounds x="550" y="1595" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_GwM4_di" bpmnElement="M_GwM4" isMarkerVisible="true"><dc:Bounds x="715" y="1460" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Borrador_di" bpmnElement="M_Borrador"><dc:Bounds x="810" y="1445" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Aprobar_di" bpmnElement="M_Aprobar"><dc:Bounds x="810" y="1595" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_GwRep_di" bpmnElement="M_GwRep" isMarkerVisible="true"><dc:Bounds x="975" y="1610" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Enviar_di" bpmnElement="M_Enviar"><dc:Bounds x="1070" y="1595" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_GwEvt_di" bpmnElement="M_GwEvt"><dc:Bounds x="1235" y="1610" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Acuse_di" bpmnElement="M_Acuse"><dc:Bounds x="1362" y="1617" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_EndOk_di" bpmnElement="M_EndOk"><dc:Bounds x="1482" y="1617" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_SinAcuse_di" bpmnElement="M_SinAcuse"><dc:Bounds x="1322" y="1712" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_Verificar_di" bpmnElement="M_Verificar"><dc:Bounds x="1410" y="1690" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="M_EndVer_di" bpmnElement="M_EndVer"><dc:Bounds x="1582" y="1712" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DSR_3_di" bpmnElement="DSR_3"><dc:Bounds x="435" y="1460" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="MF01_di" bpmnElement="MF01"><di:waypoint x="258" y="1335" /><di:waypoint x="305" y="1335" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF02_di" bpmnElement="MF02"><di:waypoint x="355" y="1335" /><di:waypoint x="400" y="1335" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF03_di" bpmnElement="MF03"><di:waypoint x="520" y="1335" /><di:waypoint x="585" y="1335" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF04_di" bpmnElement="MF04"><di:waypoint x="610" y="1360" /><di:waypoint x="610" y="1595" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF05_di" bpmnElement="MF05"><di:waypoint x="550" y="1635" /><di:waypoint x="330" y="1635" /><di:waypoint x="330" y="1360" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF06_di" bpmnElement="MF06"><di:waypoint x="635" y="1335" /><di:waypoint x="740" y="1335" /><di:waypoint x="740" y="1460" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF07_di" bpmnElement="MF07"><di:waypoint x="765" y="1485" /><di:waypoint x="810" y="1485" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF08_di" bpmnElement="MF08"><di:waypoint x="870" y="1525" /><di:waypoint x="870" y="1595" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF09_di" bpmnElement="MF09"><di:waypoint x="930" y="1635" /><di:waypoint x="975" y="1635" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF10_di" bpmnElement="MF10"><di:waypoint x="1025" y="1635" /><di:waypoint x="1070" y="1635" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF11_di" bpmnElement="MF11"><di:waypoint x="1000" y="1660" /><di:waypoint x="1000" y="1700" /><di:waypoint x="740" y="1700" /><di:waypoint x="740" y="1510" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF12_di" bpmnElement="MF12"><di:waypoint x="1190" y="1635" /><di:waypoint x="1235" y="1635" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF13_di" bpmnElement="MF13"><di:waypoint x="1285" y="1635" /><di:waypoint x="1362" y="1635" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF14_di" bpmnElement="MF14"><di:waypoint x="1398" y="1635" /><di:waypoint x="1482" y="1635" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF15_di" bpmnElement="MF15"><di:waypoint x="1260" y="1660" /><di:waypoint x="1260" y="1730" /><di:waypoint x="1322" y="1730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF16_di" bpmnElement="MF16"><di:waypoint x="1358" y="1730" /><di:waypoint x="1410" y="1730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MF17_di" bpmnElement="MF17"><di:waypoint x="1530" y="1730" /><di:waypoint x="1582" y="1730" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DIA_Consolidar_di" bpmnElement="DIA_Consolidar"><di:waypoint x="460" y="1460" /><di:waypoint x="460" y="1375" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Ann_Sup_Titulo_di" bpmnElement="Ann_Sup_Titulo"><dc:Bounds x="150" y="1990" width="2300" height="59" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_1_di" bpmnElement="Ann_Sup_1"><dc:Bounds x="150" y="2069" width="1130" height="134" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_2_di" bpmnElement="Ann_Sup_2"><dc:Bounds x="1320" y="2069" width="1130" height="149" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_3_di" bpmnElement="Ann_Sup_3"><dc:Bounds x="150" y="2223" width="1130" height="134" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_4_di" bpmnElement="Ann_Sup_4"><dc:Bounds x="1320" y="2238" width="1130" height="164" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_5_di" bpmnElement="Ann_Sup_5"><dc:Bounds x="150" y="2377" width="1130" height="119" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_6_di" bpmnElement="Ann_Sup_6"><dc:Bounds x="1320" y="2422" width="1130" height="134" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Sup_7_di" bpmnElement="Ann_Sup_7"><dc:Bounds x="150" y="2516" width="1130" height="59" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ann_Leyenda_di" bpmnElement="Ann_Leyenda"><dc:Bounds x="1460" y="220" width="520" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="MsgF1_di" bpmnElement="MsgF1"><di:waypoint x="450" y="150" /><di:waypoint x="450" y="235" /><bpmndi:BPMNLabel><dc:Bounds x="458" y="182" width="130" height="20" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MsgF2_di" bpmnElement="MsgF2"><di:waypoint x="1200" y="150" /><di:waypoint x="1200" y="385" /><bpmndi:BPMNLabel><dc:Bounds x="1208" y="258" width="130" height="20" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MsgF3_di" bpmnElement="MsgF3"><di:waypoint x="1100" y="1065" /><di:waypoint x="1100" y="1130" /><bpmndi:BPMNLabel><dc:Bounds x="1108" y="1088" width="180" height="20" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MsgF4_di" bpmnElement="MsgF4"><di:waypoint x="1130" y="1675" /><di:waypoint x="1130" y="1850" /><bpmndi:BPMNLabel><dc:Bounds x="1138" y="1752" width="130" height="20" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MsgF5_di" bpmnElement="MsgF5"><di:waypoint x="1380" y="1850" /><di:waypoint x="1380" y="1653" /><bpmndi:BPMNLabel><dc:Bounds x="1390" y="1800" width="110" height="20" /></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Diagram_Sub" name="Subproceso: investigar causas de la diferencia">
+    <bpmndi:BPMNPlane id="Plane_Sub" bpmnElement="Sp_Investigar">
+      <bpmndi:BPMNShape id="S_Start_di" bpmnElement="S_Start"><dc:Bounds x="132" y="202" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Series_di" bpmnElement="S_Series"><dc:Bounds x="210" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Regla_di" bpmnElement="S_Regla"><dc:Bounds x="360" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GwSosp_di" bpmnElement="S_GwSosp" isMarkerVisible="true"><dc:Bounds x="525" y="195" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Esc_di" bpmnElement="S_Esc"><dc:Bounds x="532" y="322" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GwJ_di" bpmnElement="S_GwJ" isMarkerVisible="true"><dc:Bounds x="635" y="195" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Docs_di" bpmnElement="S_Docs"><dc:Bounds x="730" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GwM_di" bpmnElement="S_GwM" isMarkerVisible="true"><dc:Bounds x="895" y="195" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Hipotesis_di" bpmnElement="S_Hipotesis"><dc:Bounds x="990" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Verificar_di" bpmnElement="S_Verificar"><dc:Bounds x="1140" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GwOk_di" bpmnElement="S_GwOk" isMarkerVisible="true"><dc:Bounds x="1305" y="195" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Componer_di" bpmnElement="S_Componer"><dc:Bounds x="1400" y="180" width="120" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_End_di" bpmnElement="S_End"><dc:Bounds x="1572" y="202" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_GwRetry_di" bpmnElement="S_GwRetry" isMarkerVisible="true"><dc:Bounds x="1305" y="325" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Err_di" bpmnElement="S_Err"><dc:Bounds x="1442" y="332" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SF01_di" bpmnElement="SF01"><di:waypoint x="168" y="220" /><di:waypoint x="210" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF02_di" bpmnElement="SF02"><di:waypoint x="330" y="220" /><di:waypoint x="360" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF03_di" bpmnElement="SF03"><di:waypoint x="480" y="220" /><di:waypoint x="525" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF04_di" bpmnElement="SF04"><di:waypoint x="550" y="245" /><di:waypoint x="550" y="322" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF05_di" bpmnElement="SF05"><di:waypoint x="568" y="340" /><di:waypoint x="660" y="340" /><di:waypoint x="660" y="245" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF06_di" bpmnElement="SF06"><di:waypoint x="575" y="220" /><di:waypoint x="635" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF07_di" bpmnElement="SF07"><di:waypoint x="685" y="220" /><di:waypoint x="730" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF08_di" bpmnElement="SF08"><di:waypoint x="850" y="220" /><di:waypoint x="895" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF09_di" bpmnElement="SF09"><di:waypoint x="945" y="220" /><di:waypoint x="990" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF10_di" bpmnElement="SF10"><di:waypoint x="1110" y="220" /><di:waypoint x="1140" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF11_di" bpmnElement="SF11"><di:waypoint x="1260" y="220" /><di:waypoint x="1305" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF12_di" bpmnElement="SF12"><di:waypoint x="1355" y="220" /><di:waypoint x="1400" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF13_di" bpmnElement="SF13"><di:waypoint x="1520" y="220" /><di:waypoint x="1572" y="220" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF14_di" bpmnElement="SF14"><di:waypoint x="1330" y="245" /><di:waypoint x="1330" y="325" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF15_di" bpmnElement="SF15"><di:waypoint x="1305" y="350" /><di:waypoint x="920" y="350" /><di:waypoint x="920" y="245" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SF16_di" bpmnElement="SF16"><di:waypoint x="1355" y="350" /><di:waypoint x="1442" y="350" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
